@@ -1,3 +1,8 @@
 /public/
 /node_modules/
 .DS_store
+/content/
+/data/
+/layouts/
+/pages/
+/static/
