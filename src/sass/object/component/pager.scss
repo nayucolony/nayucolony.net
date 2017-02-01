@@ -1,0 +1,23 @@
+.pager {
+  display: flex;
+  padding: 0;
+  // justify-content: space-between;
+  list-style-type: none;
+  flex-direction: column-reverse;
+
+  > li {
+    &:not(:last-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 0;
+    font-size: .9rem;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+}

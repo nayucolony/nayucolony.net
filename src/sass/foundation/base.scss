@@ -1,0 +1,42 @@
+$color-black : #000;
+$color-pale-black : #555;
+$color-white : #fff;
+$color-blue :#00bcd4;
+$color-white-bis : #fcfcfc;
+
+$breakpoints: (
+    'sm': 'screen and (min-width: 400px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1000px)',
+    'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin media-query($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+body {
+  font-family: "Roboto", '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  color: $color-black;
+  background: $color-white-bis;
+}
+
+a {
+  color: $color-black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: .2s;
+  color: $color-pale-black;
+}

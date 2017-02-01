@@ -1,0 +1,17 @@
+languageCode = "ja-JP"
+title = "nayucolony.net"
+baseurl = "http://nayucolony.net"
+theme = "nayucolony"
+googleAnalytics = "UA-88734859-1"
+PygmentsCodeFences = true
+pygmentsstyle = "default"
+pygmentsuseclasses = true
+
+[Params]
+site_name_jp = "nayucolony.net"
+author = "nayu"
+description = "ナユのブログです"
+
+[permalinks]
+post = ":filename"
+pages = ":filename"

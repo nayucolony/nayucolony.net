@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+    <div class="article-list">
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 20 }}
+      {{ range $paginator.Pages }}
+        <div class="article-list__item">
+          {{ .Render "li" }}
+        </div>
+      {{ end }}
+    </div>
+
+{{ end }}

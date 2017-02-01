@@ -1,0 +1,19 @@
+.l-main {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  @include media-query(md) {
+    width: 680px;
+  }
+  &.-top {
+    @include media-query(sm) {
+      width: 90%;
+    }
+    @include media-query(lg) {
+      width: 960px;
+    }
+    @include media-query(xl) {
+      width: 1020px;
+    }
+  }
+}

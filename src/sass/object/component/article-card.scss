@@ -1,0 +1,55 @@
+.article-card {
+
+  display: flex;
+  align-items: flex-start;;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  border-radius: 4px;
+  background: $color-white;
+  box-shadow: 0 3px 8px rgba(0,0,0,.04);
+
+  &__eyecatch {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: .02em;
+  }
+  &__date {
+    color: $color-pale-black;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  &__summary {
+    strong {
+      font-weight: normal;
+    }
+    a {
+      text-decoration: underline;
+      color: $color-blue;
+    }
+    h2,h3 {
+      font-size: inherit;
+      font-weight: normal;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__more {
+    font-size: 1em;
+    // font-weight: bold;
+    align-self: flex-end;
+    > a {
+      text-decoration: underline;
+
+    }
+  }
+
+
+}

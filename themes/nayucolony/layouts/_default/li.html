@@ -1,0 +1,19 @@
+<div class="article-card">
+  <img src="{{ .Params.image }}" alt="" class="article-card__eyecatch"/>
+  <div class="article-card__title">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </div>
+  <div class="article-card__date">
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+      {{ .Date.Format "2006年1月_2日" }}
+    </time>
+  </div>
+  <div class="article-card__summary">
+    {{ .Summary }}
+  </div>
+  {{ if .Truncated }}
+    <div class="article-card__more">
+      <a href="{{ .RelPermalink }}">続きを読む</a>
+    </div>
+  {{ end }}
+</div>
