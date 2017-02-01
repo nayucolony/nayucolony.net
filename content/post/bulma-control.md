@@ -1,11 +1,11 @@
 +++
 title = "bulma control"
 date = "2017-01-31T22:17:12+09:00"
-image = ""
+image = "/images/bulma/bulma.jpg"
 Title = "CSSフレームワーク「Bulma」の「control」って何？調べてみた"
 tags = ["",""]
 slug = ""
-
+draft=true
 +++
 このエントリでは、CSSフレームワーク「Bulma」の`control.sass`を見ていきます。これまでの`mixin.sass`や`function.sass`と違って、ファイル名だけで役割の判断が難しいファイルです。CSSで、controlって何？どのように使われているかを見ていきます。
 
@@ -15,10 +15,10 @@ _注意：Bulmaの元ファイルはSASS記法ですが、ここではSCSS記法
 ## ローカル変数
 ファイルの頭に2つのローカル変数が指定されています。
 
-~~~scss
+```scss
 $control-radius: $radius !default;
 $control-radius-small: $radius-small !default;
-~~~
+```
 
 おそらく、`contorol.sass`内で使用するであろう二種類の`border-radius`に名前空間を持たせています。
 `$radius`、`$radius-small`は`variables.sass`内に書かれています。
