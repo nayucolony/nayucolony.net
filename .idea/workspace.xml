@@ -2,19 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6624cb37-6165-460d-96c8-7308433a8001" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/post/mediaquery.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/post/mvc.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/post/vim02.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/post/wai-aria.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/bulma-functions/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/bulma-mixin01/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/bulma-mixin02/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/bulma-variables/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/hugo-syntax/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/btn_next.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/btn_prev.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo10_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo11_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo12_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo13_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo14_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo15_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo16_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo17_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo18_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo19_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo1_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo2_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo3_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo4_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo5_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo6_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo7_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo8_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/images/photo9_thum.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-demo/gallery/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vue-markdown/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/freelance/index.html" afterPath="$PROJECT_DIR$/public/freelance/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.xml" afterPath="$PROJECT_DIR$/public/index.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/post/index.html" afterPath="$PROJECT_DIR$/public/post/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/post/index.xml" afterPath="$PROJECT_DIR$/public/post/index.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/index.html" afterPath="$PROJECT_DIR$/public/tags/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/index.xml" afterPath="$PROJECT_DIR$/public/tags/index.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,8 +150,8 @@
       <file leaf-file-name="react-modal-position.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/post/react-modal-position.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -193,7 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,7 +387,7 @@
       <option name="presentableId" value="Default" />
       <updated>1491750098286</updated>
       <workItem from="1491750100090" duration="973000" />
-      <workItem from="1491760765173" duration="439000" />
+      <workItem from="1491760765173" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="add test article">
       <created>1491760932933</created>
@@ -358,11 +396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491760932933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete some test file">
+      <created>1491761413820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491761413820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1460000" />
+    <option name="totallyTimeSpent" value="1664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="34" width="1260" height="669" extended-state="0" />
@@ -397,7 +442,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="add test article" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test article" />
+    <MESSAGE value="delete some test file" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete some test file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -613,10 +659,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-548">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/post/react-modal-position.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
