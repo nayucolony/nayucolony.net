@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on nayucolony.net</title>
+    <link>http://nayucolony.net/posts/index.xml</link>
+    <description>Recent content in Posts on nayucolony.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 12 Dec 2016 21:14:21 +0900</lastBuildDate>
+    <atom:link href="http://nayucolony.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</title>
+      <link>http://nayucolony.net/posts/rscss/</link>
+      <pubDate>Mon, 12 Dec 2016 21:14:21 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/posts/rscss/</guid>
+      <description>
+
+&lt;p&gt;自分なりの静的サイト構築をまとめます。
+シチュエーション的には &lt;strong&gt;「カンプが上がってきたものをコーディングする」&lt;/strong&gt; みたいな感じです。&lt;/p&gt;
+
+&lt;p&gt;今回は、&lt;strong&gt;&lt;a href=&#34;http://rscss.io/&#34;&gt;「RSCSS」&lt;/a&gt;&lt;/strong&gt; という設計思想に基づいて作成していきます。
+いくつかの簡単なルールがありますが、作りながら出てきたルールを書いていきます。
+最後にまとめと、すべてのルールを書いたリンクをご紹介しますので、これを読む前にRSCSSを覚えてくる必要はありません。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;注意：あくまでCSS設計について考えるという点で、セマンティクスやアクセシビリティに関する完璧なことは書かれていません。もしよければ、言及いただければと思います！また、スクリーンショットを完全に再現しておらず、余白などは大きく差異の発生しない範囲で簡略化しているものもあります。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;必要な人のためにコードをすべて記述していますが、適宜読み飛ばして頂いてかまいません。
+また、Sassでの利用を前提とした設計思想ですので、scss形式での記述をしています。&lt;/p&gt;
+
+&lt;h2 id=&#34;まずデザイン見渡す&#34;&gt;まずデザイン見渡す。&lt;/h2&gt;
+
+&lt;p&gt;デザインがあがってきて一番やってはいけないことは突然コーディングを始めることです。&lt;br&gt;
+&lt;strong&gt;「料理の本を開いて突然料理を始める」&lt;/strong&gt; くらいアウトです。&lt;br&gt;
+最後まで見渡さずに突然ステップ１からはじめていくと、大抵、ステップ5くらいになって、&lt;em&gt;「ここで200°のオーブンで焼きます」&lt;/em&gt; みたいなことが突然でてきて &lt;em&gt;「なにそれ材料に書いてない！うちにあるのは電子レンジだけよ！」&lt;/em&gt; みたいな状態になったことはありませんか？わたしはあります。ざっと見渡せばわかったはずなのに。&lt;/p&gt;
+
+&lt;p&gt;そういうことを防ぐためにも、ページカンプをざっくり見渡します。
+デザイナーの意図を読み取ってあげるのが大切です。
+&lt;strong&gt;デザイナーは意味もなく素敵デザインを追い求める芸術家ではありません。
+彼らはデザイナーである以上ロジックに基づいてデザインをしています。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;例えば、&lt;em&gt;統一感を出すために意図的に使いまわされているスタイル&lt;/em&gt; なんかがあったりすることに気づくでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;ざっくり分けて考える&#34;&gt;ざっくり分けて考える&lt;/h2&gt;
+
+&lt;p&gt;コーディングをするまえに、ざっくりとセクション分けをします。
+分ける理由としては、以下のような理由があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;分業の目安とする&lt;/li&gt;
+&lt;li&gt;作業工程の見積もりができる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;私なりに分けた結果がこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./img/rscss/suda_layout.jpg&#34; alt=&#34;suda_layout.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;では、それぞれのセクションごとに組み込んでいきましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;ヘッダー編&#34;&gt;ヘッダー編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-ヘッダー&#34;&gt;機能で分けて考える（ヘッダー）&lt;/h3&gt;
+
+&lt;p&gt;そうです、まだ分けて考えるんです。
+機能で分けた１つ１つを、RSCSSでは &lt;strong&gt;「Component（コンポーネント）」&lt;/strong&gt; として考えます。&lt;/p&gt;
+
+&lt;p&gt;ここでの分け方も厳密な正解はありません。
+「機能」をある程度の目安としてください。&lt;/p&gt;
+
+&lt;p&gt;私なりにヘッダーを機能ごとに分けた結果が次の通りです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./img/rscss/suda_component.jpg&#34; alt=&#34;suda_component.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;このように、「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentの二つに分けて考えます。
+それぞれ別の機能を持っているもので、お互いに独立していますね。
+私は、&lt;strong&gt;「お互いに独立しているか？」&lt;/strong&gt; というのも機能で分離する目安にしています。&lt;/p&gt;
+
+&lt;p&gt;では、それぞれコーディングしていきます。&lt;/p&gt;
+
+&lt;h4 id=&#34;サイトタイトル&#34;&gt;サイトタイトル&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b9be4ccc-1c3f-12dd-4fbd-42bedf1c4fbe.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.07.01.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「サイトタイトル」Componentは以下の２パーツで構成されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ロゴ&lt;/li&gt;
+&lt;li&gt;サブタイトル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この構成要素をRSCSSでは &lt;strong&gt;Element（エレメント）&lt;/strong&gt; と呼びます。
+コードは次の通りです。&lt;/p&gt;
+&lt;div class=&#34;site-title&#34;&gt;
+  &lt;h1 class=&#34;logo&#34;&gt;
+    &lt;a href=&#34;&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/60x60.png&#34; alt=&#34;&#34; class=&#34;image&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/h1&gt;
+  &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;.site-title {
+  &amp;gt;.logo {
+    margin-bottom: 10px;
+  }
+  &amp;gt;.description{
+    font-size: 14px;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;ここで使っているRSCSSの記述ルールはこちら&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Componentを表す部分は単語2つを&lt;code&gt;-&lt;/code&gt;でつなぐ&lt;/li&gt;
+&lt;li&gt;Elementにつけるclassは単語１つ&lt;/li&gt;
+&lt;li&gt;Componentにレイアウト用のstyleはつけない&lt;/li&gt;
+&lt;li&gt;使えるものには必ず「子セレクタ&lt;code&gt;&amp;gt;&lt;/code&gt;」を使う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また「レイアウト用のスタイル」とは、以下のようなものとされています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Positioning (&lt;code&gt;position&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Floats (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;clear&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Margins (&lt;code&gt;margin&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Dimensions (&lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但し、&lt;code&gt;width&lt;/code&gt;,&lt;code&gt;height&lt;/code&gt;に関しては、アバターアイコンやロゴなどはどうしても指定する必要があったりするため、必要に応じて使用を許可されています。
+また、&lt;code&gt;position: relative;&lt;/code&gt; についても、Elementの絶対配置に必要となる場合がありますので適宜使用してください。&lt;/p&gt;
+
+&lt;p&gt;では、続いて「アイキャッチ（バナー）」Componentを作成しましょう。&lt;/p&gt;
+
+&lt;h4 id=&#34;アイキャッチ-バナー&#34;&gt;アイキャッチ（バナー）&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/6e7a6e35-986d-37fa-7ea9-abac789a5363.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.07.42.png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;hero-banner&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.hero-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://placehold.jp/1100x500.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このように、Elementを持たないComponentもあります。
+ここでは高さを固定し、背景画像にバナーを設定しています。&lt;/p&gt;
+
+&lt;p&gt;では、それぞれのComponentを配置する作業に移りましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-共通ヘッダー&#34;&gt;機能で分けたものをレイアウト（共通ヘッダー）&lt;/h3&gt;
+
+&lt;p&gt;共通ヘッダー内の二つのコンポーネントをレイアウトします。
+その時は「共通ヘッダー」Componentを考えます。
+先ほど作った「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentは構成要素、すなわちElementとして考えます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;common-header&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;site-title top&amp;quot;&amp;gt; //topを付与
+    &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/60x60.png&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/h1&amp;gt;
+    &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;バズる→スダる&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;hero-banner banner&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; //bannerを付与
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  &amp;gt;.top {
+    margin-bottom: 10px;
+  }
+  &amp;gt;.banner{/**/} //※記述なし、省略化
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もしくはSassの&lt;code&gt;@extend&lt;/code&gt;を用いて以下のようにもできます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;common-header&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;top&amp;quot;&amp;gt;  //*もともとあった.site-titleを削除
+    &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/60x60.png&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/h1&amp;gt;
+    &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;バズる→スダる&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;banner&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; //もともとあった.hero-bannerを削除
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;@import .site-title;
+@import .hero-banner;
+
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  &amp;gt;.top {
+    @extend .site-title
+    margin-bottom: 10px;
+  }
+  &amp;gt;.banner{
+    @extend .hero-banner
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;お好みの運用を選んでいきましょう。僕は前者の方が好きです。
+今後はこの記事では前者による記述を行っていきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;フッター編&#34;&gt;フッター編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-フッター&#34;&gt;機能で分けて考える（フッター）&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/466612c4-9741-0191-6a8a-f7a7c5d11ef7.jpeg&#34; alt=&#34;suda_footer.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;サイトタイトル-1&#34;&gt;サイトタイトル&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/f4a60b0d-e99c-5418-e7ee-0176327d0ff7.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.08.51.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;よく見ると、「サイトタイトル」Componentは「共通ヘッダー」のものと見た目が少し違うことがわかりますね。
+ここは、以下のようにしましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;site-heading -center&amp;quot;&amp;gt; //-centerを付与
+  &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+      &amp;lt;img src=&amp;quot;https://placehold.jp/150x150.png&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/h1&amp;gt;
+  &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;バズる→スダる&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+.site-title {
+  &gt;.logo {
+    margin-bottom: 10px;
+  }
+  &gt;.description{
+    font-size: 14px;
+  }
+  &amp;.-center{                  //
+    display: flex;            //
+    flex-direction: column;   //追加記述
+    align-items: center;      //
+  }                           //
+}
+
+&lt;p&gt;&lt;code&gt;-center&lt;/code&gt;のように、見た目違いを表す&lt;code&gt;-&lt;/code&gt;で始まるclassを「Variants」と言います。
+&lt;code&gt;site-title.scss&lt;/code&gt;に記述を追加しました。
+最近話題のFlexboxを使って中央揃えレイアウトをしてみました。&lt;/p&gt;
+
+&lt;h4 id=&#34;コピーライト&#34;&gt;コピーライト&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/0f4ee22e-725a-ec62-a6a9-6bd54b03c209.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.09.25.png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p class=&amp;quot;copyright-block&amp;quot;&amp;gt;
+  Copyright© スダ部, 2016 All Rights Reserved.powered by STINGER
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.copyright-block {
+  line-height: 1.5;
+  font-size: 12px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;RSCSSのルール「Componentを表す部分は単語2つを&lt;code&gt;-&lt;/code&gt;でつなぐ」のために２単語が思いつかないときは
+ブロック要素なら&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;alert-box&lt;/li&gt;
+&lt;li&gt;alert-card&lt;/li&gt;
+&lt;li&gt;alert-block&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;インライン要素なら&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;link-button&lt;/li&gt;
+&lt;li&gt;link-span&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などのような表し方を推奨されています。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-フッター&#34;&gt;機能で分けたものをレイアウト（フッター）&lt;/h3&gt;
+
+&lt;p&gt;ヘッダー同様、作成したComponentをElementとして考えていきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;common-footer&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;site-title -center title&amp;quot;&amp;gt;
+    &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/６0x６0.png&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/h1&amp;gt;
+    &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;バズる→スダる&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;p class=&amp;quot;copyright-block　copyright&amp;quot;&amp;gt;
+    Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+  &amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.common-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  &amp;gt;.title {
+    margin-bottom: 20px;
+  }
+  &amp;gt;.copyright {/**/} //記述なし、省略化
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;サイドバー編&#34;&gt;サイドバー編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-サイドバー&#34;&gt;機能で分けて考える（サイドバー）&lt;/h3&gt;
+
+&lt;p&gt;Componentに分けてみるとこんな感じになりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b5522c21-d6db-0420-5e28-dabcb6154d46.jpeg&#34; alt=&#34;suda_sidebar.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;プロフィールカード&#34;&gt;プロフィールカード&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/ce6915b7-ab6d-e990-61c7-15b90f20f765.jpeg&#34; alt=&#34;suda_sidebar_profile.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;内容的にいろいろ突っ込みどころの多いプロフィールComponentですが作成しましょう。
+（twitterのフォローボタンについてはtwitter側で生成するページがあるので割愛します）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;profile-card&amp;quot;&amp;gt;
+  &amp;lt;p class=&amp;quot;title&amp;quot;&amp;gt;スダシュウゴのプロフィール&amp;lt;/p&amp;gt;
+  &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+  &amp;lt;p class=&amp;quot;name&amp;quot;&amp;gt;スダシュウゴ&amp;lt;/p&amp;gt;
+  &amp;lt;p class=&amp;quot;twitter&amp;quot;&amp;gt;&amp;lt;!--ココにツイッターのボタンのコード--&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;
+    茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&amp;lt;br&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;『コソアドデザイン』&amp;lt;/a&amp;gt;代表
+  &amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.profile-card {
+  padding: 40px 15px 10px;
+  position: relative;
+  background: white;
+  &amp;gt;.title {
+    padding: 3px 20px;
+    background: #13b0fc;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+  &amp;gt;.image {
+    flex-grow: 0;
+  }
+  &amp;gt;.name {
+    font-size: 20px;
+    line-height: 2;
+  }
+  &amp;gt;.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ここではComponentに&lt;code&gt;position: relative&lt;/code&gt;を指定していますが、Element配置に使用しているため問題ありません。&lt;/p&gt;
+
+&lt;h4 id=&#34;問い合わせボタン&#34;&gt;問い合わせボタン&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/94d775ea-df94-19f0-f027-e4f0f682c6ea.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.10.10.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fa fa-envelope&lt;/code&gt;は「fontawesome」に使用するclassです。&lt;code&gt;aria-hidden=&amp;quot;true&amp;quot;&lt;/code&gt;はスクリーンリーダから見えなくするための記述で、説明は割愛します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button&amp;quot;&amp;gt;
+  &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+  &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;お問い合わせはコチラ！&amp;lt;/span&amp;gt;
+&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  color: white;
+  align-items: center;
+  background: #dd8500;
+  &amp;gt;.icon {
+    padding-right: 10px;
+    border-right:1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+  &amp;gt;.label {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;人気の記事リスト&#34;&gt;人気の記事リスト&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/6b64b33e-51ef-f858-0f77-081c0e463f08.jpeg&#34; alt=&#34;suda_sidebar_articlelist.jpg&#34; /&gt;
+記事カードそのものが１つの機能をもつComponentで、リストはその集合体と考えるのが良さそうですね。&lt;/p&gt;
+
+&lt;p&gt;記事カード単体のコードは次の通りです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;article-card&amp;quot;&amp;gt;
+  &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+    &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+  &amp;lt;/a&amp;gt;
+  &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+      &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.article-card {
+  display: flex;
+  &amp;gt;.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  &amp;gt;.metabox &amp;gt;.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  &amp;gt;.metabox &amp;gt;.count {
+    font-size: 10px;
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;RSCSSの推奨事項として、Sassで書く時のネスト階層は２段階までに抑えるというものがあります。
+なので、上記のようにあえてネストを避けた記述をしています。&lt;/p&gt;
+
+&lt;p&gt;また、Elementの命名ルールに従い&lt;code&gt;.meta-box&lt;/code&gt;のようにしたいところを&lt;code&gt;.metabox&lt;/code&gt;のように１単語にくっつけています。&lt;/p&gt;
+
+&lt;p&gt;人気の記事リスト全体のコードは次の通りです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;hot-articles&amp;quot;&amp;gt;
+  &amp;lt;p class=&amp;quot;heading&amp;quot;&amp;gt;人気の記事&amp;lt;/p&amp;gt;
+  &amp;lt;ul class=&amp;quot;list&amp;quot;&amp;gt;
+    &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.hot-articles {
+  &amp;gt;.heading {
+    font-weight: bold;
+    line-height: 2;
+  }
+  &amp;gt;.list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最初、記事カード単品を&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;で書いていたのに、リストでは&lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;になっていることにお気付きですか？
+このように、すべてclassでの運用を行っているため、要素を変更することができるのです。
+これはすべてclassで運用している利点でもあります。&lt;/p&gt;
+
+&lt;p&gt;また、今回はセマンティクスを無視したマークアップをしていますが、適宜&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;を&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;や&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;などに変えても問題ありません。classセレクタのみで運用することで要素の変更にも強いCSSになります。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト&#34;&gt;機能で分けたものをレイアウト&lt;/h3&gt;
+
+&lt;p&gt;ヘッダー、フッターと同様に、サイドバーComponentを考えます。
+コードは下記のようになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;side-section&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;profile profile-card&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;title&amp;quot;&amp;gt;スダシュウゴのプロフィール&amp;lt;/p&amp;gt;
+    &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+    &amp;lt;p class=&amp;quot;name&amp;quot;&amp;gt;スダシュウゴ&amp;lt;/p&amp;gt;
+    &amp;lt;p class=&amp;quot;twitter&amp;quot;&amp;gt;...&amp;lt;/p&amp;gt;
+    &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;
+      茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&amp;lt;br&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;「コソアドデザイン」&amp;lt;/a&amp;gt;代表
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;contact basic-button -contact&amp;quot;&amp;gt;
+    &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;お問い合わせはコチラ！&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+
+  &amp;lt;div class=&amp;quot;hot hot-articles&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;heading&amp;quot;&amp;gt;人気の記事&amp;lt;/p&amp;gt;
+    &amp;lt;ul class=&amp;quot;list&amp;quot;&amp;gt;
+      &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+          &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+          &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+            &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+          &amp;lt;/a&amp;gt;
+          &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/li&amp;gt;
+      &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+          &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+          &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+            &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+          &amp;lt;/a&amp;gt;
+          &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/li&amp;gt;
+      &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+          &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+        &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+          &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+            &amp;lt;p&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/p&amp;gt;
+          &amp;lt;/a&amp;gt;
+          &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;24 views&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+.side-section {
+  display: flex;
+  flex-direction: column;
+  &gt;.profile {
+    margin-bottom: 20px;
+  }
+  &gt;.contact {
+    margin-bottom: 20px;
+  }
+}
+
+&lt;h2 id=&#34;メイン編&#34;&gt;メイン編&lt;/h2&gt;
+
+&lt;p&gt;もう慣れてきましたか？
+最後のセクションです。
+&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/7c07b154-c495-fca8-6cf8-ab707c9f78eb.jpeg&#34; alt=&#34;suda_layout_main.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-メイン編&#34;&gt;機能で分けて考える（メイン編）&lt;/h3&gt;
+
+&lt;h4 id=&#34;ページネーション&#34;&gt;ページネーション&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/1ebbd788-5f77-c817-25d4-a1ae3b0b1134.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.06.27.png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ol class=&amp;quot;pagination-link&amp;quot;&amp;gt;
+  &amp;lt;li class=&amp;quot;number -current&amp;quot;&amp;gt;
+    1
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;2&amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;3&amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;next&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;next &amp;gt;&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.pagination-link {
+  list-style-type: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: baseline;
+  &amp;gt; .number,.next {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    font-size: 13px;
+    text-transform: capitalize;
+    &amp;amp;.-current {
+      font-size: 16px;
+    }
+    &amp;amp;:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  .link {
+    text-decoration: none;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-current&lt;/code&gt;のように、VariantがElementについています。
+&lt;strong&gt;Variantは、Elementにもつけることができます。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;RSCSSに直接関係するものではありませんが &lt;strong&gt;&lt;code&gt;:not(:last-child)&lt;/code&gt;&lt;/strong&gt; という擬似クラスに注目してください。
+これは、&lt;strong&gt;「最後の子要素以外」&lt;/strong&gt; を表しています。
+今までは、すべての要素にstyleを指定したあと&lt;code&gt;:last-child&lt;/code&gt;に打ち消しスタイルを当てていたことが多いかと思いますが、この記述だけでスマートに表現できます。&lt;/p&gt;
+
+&lt;h4 id=&#34;記事カード&#34;&gt;記事カード&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/62331fe9-6a85-46aa-8871-babb2cd34e05.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.12.11.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;記事カードですが、これはサイドバーの記事カード単品Componentに投稿日とタグが増え、タイトルの装飾が変わったものですね。
+これを全く別コンポーネントと解釈するか、見た目違いと解釈するかは人次第ですが、私だったらここは見た目違いと考えます！&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;article-cards&lt;/code&gt;にElementを追加し、&lt;code&gt;.title&lt;/code&gt;はVariantsで調整をかけましょう。
+また、レイアウト用コンポーネントとして&lt;code&gt;.row-items&lt;/code&gt;を作成しました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.article-card {
+  display: flex;
+  &amp;gt;.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  &amp;gt;.metabox &amp;gt;.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  &amp;gt;.metabox &amp;gt;.count {
+    font-size: 10px;
+  }
+  &amp;gt;.metabox &amp;gt;.time {
+    font-size: 14px;
+    margin-right: 10px;
+  }  
+  &amp;gt;.metabox &amp;gt;.layout-row {
+    display: flex;
+    align-items: baseline;
+  }
+  .categoryicon,.tagicon,.timeicon {
+    margin-right: 10px;
+  }
+  .categoryitem,.tagitem {
+    text-decoration: none;
+    font-size: 12px;
+    color:#666 ;
+  }
+  &amp;amp;.-large &amp;gt;.metabox &amp;gt;.title {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;今回の例だと、ネストが深くなりすぎるので追加したElementはComponent化したほうがいいかもしれません。&lt;/p&gt;
+
+&lt;p&gt;あとはこのカードたちを並べましょう。
+&lt;code&gt;:not(:last-child)&lt;/code&gt;を使って最後のアイテム以外に破線ボーダーを加えたらよさそうですね。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul class=&amp;quot;article-list&amp;quot;&amp;gt;
+  &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+      &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+        &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+      &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+      &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+        &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+      &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+      &amp;lt;img src=&amp;quot;https://placehold.jp/300x300.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+        &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+      &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.article-list {
+  &amp;gt;.item:not(:last-child) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px #ccc dotted;
+    }
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;シェアボタン&#34;&gt;シェアボタン&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b96a2331-8447-5fd5-e621-9bd8797e0b05.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.13.16.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これらは問い合わせボタンの色違いアイコン違いですね。
+Variantsで&lt;code&gt;background&lt;/code&gt;を変更すると早そうです。
+一気にリストのComponentまで作ってしまいましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;ul class=&amp;quot;sns-share&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -twitter&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Twitter&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -facebook&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Facebook&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -line&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;LINE&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -hatebu&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;はてブ&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -google&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Google+&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -pocket&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;icon fa fa-envelope&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Pocket&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  &amp;amp;.-contact {
+    background: #dd8500;
+  }
+  &amp;amp;.-twitter {
+    background: #55acee;
+  }
+  &amp;amp;.-facebook {
+    background: #3b5998;
+  }
+  &amp;amp;.-google {
+    background: #dc4e41;
+  }
+  &amp;amp;.-pocket {
+    background: #f03e51;
+  }
+  &amp;amp;.-hatebu {
+    background: #00a5de;
+  }
+  &amp;amp;.-line {
+    background: #25af00;
+  }
+  &amp;gt;.icon {
+    padding-right: 10px;
+    border-right: 1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+  &amp;gt;.label {
+    font-weight: bold;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.sns-share {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li{
+    width: calc(100%/3 - 10px);
+    &amp;amp;:nth-child(-n+3){
+      margin-bottom: 10px;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これでメインコンテンツのすべてのコンポーネントが出揃いました。
+あとは、メインセクションComponent内に配置しましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-メイン&#34;&gt;機能で分けたものをレイアウト（メイン）&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;main-section&amp;quot;&amp;gt;
+  &amp;lt;ul class=&amp;quot;article-list articles&amp;quot;&amp;gt;
+    &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/100x100.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+          &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+          &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+          &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/100x100.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+          &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+          &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+          &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;thumbnail&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;https://placehold.jp/100x100.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+      &amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;title&amp;quot;&amp;gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &amp;lt;/a&amp;gt;
+        &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+          &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;timeicon fa fa-clock-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1&amp;lt;/p&amp;gt;
+          &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+            &amp;lt;i class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;categoryitem&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+          &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;tagicon fa fa-tags&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;tagitem&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+
+  &amp;lt;ol class=&amp;quot;pagination-link pagination&amp;quot;&amp;gt;
+    &amp;lt;li class=&amp;quot;number -current&amp;quot;&amp;gt;
+      1
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;2&amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;3&amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;next&amp;quot;&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;link&amp;quot;&amp;gt;next &amp;gt;&amp;gt;&amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ol&amp;gt;
+  &amp;lt;ul class=&amp;quot;sns-share share&amp;quot;&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -twitter&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;icon fa fa-twitter&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Twitter&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -facebook&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;icon fa fa-facebook&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Facebook&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -line&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;icon fa fa-comment&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;LINE&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -hatebu&amp;quot;&amp;gt;
+        &amp;lt;span class=&amp;quot;icon&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;B!&amp;lt;/span&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;はてブ&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -google&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;icon fa fa-google-plus&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Google+&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;basic-button -pocket&amp;quot;&amp;gt;
+        &amp;lt;i class=&amp;quot;icon fa fa-get-pocket&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Pocket&amp;lt;/span&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.main-section {
+  padding: 30px 50px;
+  background: white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;セクションをページ内に配置する&#34;&gt;セクションをページ内に配置する&lt;/h2&gt;
+
+&lt;p&gt;一番最初に４つに分けたセクションが出揃いました。
+あとはこれらをページ内に配置するだけです。&lt;/p&gt;
+
+&lt;p&gt;方針としては、サイドバーとメインエリアを左右に並べるための&lt;code&gt;.content-section&lt;/code&gt;というComponentを挟んでレイアウトをしていきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;all-wrap&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;common-header&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;site-title top&amp;quot;&amp;gt;
+      &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+        &amp;lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; class=&amp;quot;image&amp;quot; src=&amp;quot;https://placehold.jp/60x60.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+      &amp;lt;/h1&amp;gt;
+      &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;
+        バズる→スダる
+      &amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;hero-banner banner&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;content-section&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;main-section&amp;quot;&amp;gt;
+      &amp;lt;ul class=&amp;quot;article-list&amp;quot;&amp;gt;
+        &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/100x100.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+          &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+              &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;timeicon fa fa-clock-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1
+              &amp;lt;/p&amp;gt;
+              &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=
+                &amp;quot;categoryitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+              &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;tagicon fa fa-tags&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=
+              &amp;quot;&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;
+            &amp;lt;/p&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/100x100.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+          &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+              &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;timeicon fa fa-clock-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1
+              &amp;lt;/p&amp;gt;
+              &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=
+                &amp;quot;categoryitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+              &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;tagicon fa fa-tags&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=
+              &amp;quot;&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;
+            &amp;lt;/p&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li class=&amp;quot;item article-card -large&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/100x100.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+          &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;layout-row&amp;quot;&amp;gt;
+              &amp;lt;p class=&amp;quot;time&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;timeicon fa fa-clock-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;2016/12/1
+              &amp;lt;/p&amp;gt;
+              &amp;lt;p class=&amp;quot;category&amp;quot;&amp;gt;
+                &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;categoryicon fa fa-folder-open-o&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=
+                &amp;quot;categoryitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;日記&amp;lt;/a&amp;gt;
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;p class=&amp;quot;tags&amp;quot;&amp;gt;
+              &amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;tagicon fa fa-tags&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=
+              &amp;quot;&amp;quot;&amp;gt;タグ１&amp;lt;/a&amp;gt;,&amp;lt;a class=&amp;quot;tagitem&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;タグ2&amp;lt;/a&amp;gt;
+            &amp;lt;/p&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+      &amp;lt;ol class=&amp;quot;pagination-link&amp;quot;&amp;gt;
+        &amp;lt;li class=&amp;quot;number -current&amp;quot;&amp;gt;1
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;2&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li class=&amp;quot;number&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;3&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li class=&amp;quot;next&amp;quot;&amp;gt;
+          &amp;lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;next &amp;amp;gt;&amp;amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+      &amp;lt;/ol&amp;gt;
+      &amp;lt;ul class=&amp;quot;sns-share&amp;quot;&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -twitter&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+          &amp;quot;icon fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Twitter&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -facebook&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+          &amp;quot;icon fa fa-facebook&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Facebook&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -line&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+          &amp;quot;icon fa fa-comment&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;LINE&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -hatebu&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;span aria-hidden=&amp;quot;true&amp;quot; class=&amp;quot;icon&amp;quot;&amp;gt;B!&amp;lt;/span&amp;gt;
+          &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;はてブ&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -google&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+          &amp;quot;icon fa fa-google-plus&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Google+&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;
+          &amp;lt;a class=&amp;quot;basic-button -pocket&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+          &amp;quot;icon fa fa-get-pocket&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Pocket&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+        &amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;side-section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;profile profile-card&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;title&amp;quot;&amp;gt;
+          スダシュウゴのプロフィール
+        &amp;lt;/p&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/300x300.png&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;name&amp;quot;&amp;gt;
+          スダシュウゴ
+        &amp;lt;/p&amp;gt;
+        &amp;lt;p class=&amp;quot;twitter&amp;quot;&amp;gt;
+          ...
+        &amp;lt;/p&amp;gt;
+        &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;
+          茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&amp;lt;br&amp;gt;
+          &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;「コソアドデザイン」&amp;lt;/a&amp;gt;代表
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;&amp;lt;a class=&amp;quot;contact basic-button -contact&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;i aria-hidden=&amp;quot;true&amp;quot; class=
+      &amp;quot;icon fa fa-envelope&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;お問い合わせはコチラ！&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+      &amp;lt;div class=&amp;quot;hot hot-articles&amp;quot;&amp;gt;
+        &amp;lt;p class=&amp;quot;heading&amp;quot;&amp;gt;
+          人気の記事
+        &amp;lt;/p&amp;gt;
+        &amp;lt;ul class=&amp;quot;list&amp;quot;&amp;gt;
+          &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/300x300.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+              &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;
+              &amp;lt;p&amp;gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &amp;lt;/p&amp;gt;&amp;lt;/a&amp;gt;
+              &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;
+                24 views
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/li&amp;gt;
+          &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/300x300.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+              &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;
+              &amp;lt;p&amp;gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &amp;lt;/p&amp;gt;&amp;lt;/a&amp;gt;
+              &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;
+                24 views
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/li&amp;gt;
+          &amp;lt;li class=&amp;quot;article-card&amp;quot;&amp;gt;
+            &amp;lt;a class=&amp;quot;thumbnail&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;https://placehold.jp/300x300.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;div class=&amp;quot;metabox&amp;quot;&amp;gt;
+              &amp;lt;a class=&amp;quot;title&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;
+              &amp;lt;p&amp;gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &amp;lt;/p&amp;gt;&amp;lt;/a&amp;gt;
+              &amp;lt;p class=&amp;quot;count&amp;quot;&amp;gt;
+                24 views
+              &amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;common-footer&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;site-title -center logo&amp;quot;&amp;gt;
+      &amp;lt;h1 class=&amp;quot;logo&amp;quot;&amp;gt;
+        &amp;lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; class=&amp;quot;image&amp;quot; src=&amp;quot;https://placehold.jp/60x60.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+      &amp;lt;/h1&amp;gt;
+      &amp;lt;p class=&amp;quot;description&amp;quot;&amp;gt;
+        バズる→スダる
+      &amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;p class=&amp;quot;copyright-block&amp;quot;&amp;gt;
+      Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.content-section {
+  display: flex;
+  justify-content: center;
+  &amp;gt;.main-section {
+    flex-basis: 740px;
+    margin-right: 20px;
+  }
+  &amp;gt;.side-section {
+    flex-basis: 320px;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仕上げに全体の調整をします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.all-wrap {
+  width: 1080px;
+  margin: 0 auto;
+  &amp;gt;.header {
+    margin-bottom: 10px;
+  }
+
+  &amp;gt;.main {
+    margin-bottom: 10px;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以上でコーディングが終了しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンポーネント(Component) で考える。名前付けは2単語で。( .screenshot-image )&lt;/li&gt;
+&lt;li&gt;コンポーネントは 要素(Element) を持つ。名前付けは1単語で。( .blog-post .title )&lt;/li&gt;
+&lt;li&gt;バリアント(Variant) の名前はダッシュを接頭辞（プレフィックス）としてつける ( .shop-banner.-with-icon )&lt;/li&gt;
+&lt;li&gt;コンポーネントはネストしていい&lt;/li&gt;
+&lt;li&gt;物事をシンプルにするために拡張していいことを覚えておいて。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/kk6/items/760efba180ec526903db&#34;&gt;RSCSSというCSS設計について&lt;/a&gt;より引用
+（公式ガイドラインの和訳をされています。本記事でRSCSSに興味を持たれた方はご一読ください。）&lt;/p&gt;
+
+&lt;h2 id=&#34;参考リンク&#34;&gt;参考リンク&lt;/h2&gt;
+
+&lt;p&gt;サンプルページは茨城のフリーランスデザイナー/カメラマンのスダシュウゴ氏のページを使用させていただきました。
+&lt;a href=&#34;http://sudabu.xyz/&#34;&gt;スダ部&lt;/a&gt;
+&lt;a href=&#34;http://sudare.xyz/&#34;&gt;コソアドデザイン&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;公式ガイドライン
+&lt;a href=&#34;http://rscss.io/&#34;&gt;RSCSS.io&lt;/a&gt;
+&lt;a href=&#34;http://qiita.com/kk6/items/760efba180ec526903db&#34;&gt;RSCSSというCSS設計について&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;この記事は &lt;a href=&#34;http://www.adventar.org/calendars/1551&#34;&gt;スダ Advent Calendar&lt;/a&gt; 1日目の記事です。
+CSS設計に迷える人達に少しでも手助けになれればいいなと思います。
+最後までお読みいただきありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

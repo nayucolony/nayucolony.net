@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。 | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/rscss" />
+    <meta property="og:image" content="https://nayucolony.net" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="自分なりの静的サイト構築をまとめます。
+シチュエーション的には 「カンプが上がってきたものをコーディングする」 みたいな感じです。
+
+今回は、「RSCSS」 という設計思想に基づいて作成していきます。
+
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</h1>
+    <time datetime="2016-12-12T21:14:21&#43;09:00">
+      2016年12月12日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/rscss" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="" alt=""/></div>
+  </header>
+  <p>自分なりの静的サイト構築をまとめます。
+シチュエーション的には <strong>「カンプが上がってきたものをコーディングする」</strong> みたいな感じです。</p>
+
+<p>今回は、<strong><a href="http://rscss.io/">「RSCSS」</a></strong> という設計思想に基づいて作成していきます。</p>
+
+<p></p>
+
+<p>いくつかの簡単なルールがありますが、作りながら出てきたルールを書いていきます。
+最後にまとめと、すべてのルールを書いたリンクをご紹介しますので、これを読む前にRSCSSを覚えてくる必要はありません。</p>
+
+<p><em>注意：あくまでCSS設計について考えるという点で、セマンティクスやアクセシビリティに関する完璧なことは書かれていません。もしよければ、言及いただければと思います！また、スクリーンショットを完全に再現しておらず、余白などは大きく差異の発生しない範囲で簡略化しているものもあります。</em></p>
+
+<p>必要な人のためにコードをすべて記述していますが、適宜読み飛ばして頂いてかまいません。
+また、Sassでの利用を前提とした設計思想ですので、scss形式での記述をしています。</p>
+
+<h2 id="まずデザイン見渡す">まずデザイン見渡す。</h2>
+
+<p>デザインがあがってきて一番やってはいけないことは突然コーディングを始めることです。<br>
+<strong>「料理の本を開いて突然料理を始める」</strong> くらいアウトです。<br>
+最後まで見渡さずに突然ステップ１からはじめていくと、大抵、ステップ5くらいになって、<em>「ここで200°のオーブンで焼きます」</em> みたいなことが突然でてきて <em>「なにそれ材料に書いてない！うちにあるのは電子レンジだけよ！」</em> みたいな状態になったことはありませんか？わたしはあります。ざっと見渡せばわかったはずなのに。</p>
+
+<p>そういうことを防ぐためにも、ページカンプをざっくり見渡します。
+デザイナーの意図を読み取ってあげるのが大切です。
+<strong>デザイナーは意味もなく素敵デザインを追い求める芸術家ではありません。
+彼らはデザイナーである以上ロジックに基づいてデザインをしています。</strong></p>
+
+<p>例えば、<em>統一感を出すために意図的に使いまわされているスタイル</em> なんかがあったりすることに気づくでしょう。</p>
+
+<h2 id="ざっくり分けて考える">ざっくり分けて考える</h2>
+
+<p>コーディングをするまえに、ざっくりとセクション分けをします。
+分ける理由としては、以下のような理由があります。</p>
+
+<ul>
+<li>分業の目安とする</li>
+<li>作業工程の見積もりができる</li>
+</ul>
+
+<p>私なりに分けた結果がこちらです。</p>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/ccf6cbb6-d46a-dc28-4508-052302bb5171.jpeg" alt="suda_layout.jpg" /></p>
+
+<p>では、それぞれのセクションごとに組み込んでいきましょう。</p>
+
+<h2 id="ヘッダー編">ヘッダー編</h2>
+
+<h3 id="機能で分けて考える-ヘッダー">機能で分けて考える（ヘッダー）</h3>
+
+<p>そうです、まだ分けて考えるんです。
+機能で分けた１つ１つを、RSCSSでは <strong>「Component（コンポーネント）」</strong> として考えます。</p>
+
+<p>ここでの分け方も厳密な正解はありません。
+「機能」をある程度の目安としてください。</p>
+
+<p>私なりにヘッダーを機能ごとに分けた結果が次の通りです。</p>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/4d6e5dda-e80b-d769-d2b8-89bda5d589f6.jpeg" alt="suda_component.jpg" /></p>
+
+<p>このように、「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentの二つに分けて考えます。
+それぞれ別の機能を持っているもので、お互いに独立していますね。
+私は、<strong>「お互いに独立しているか？」</strong> というのも機能で分離する目安にしています。</p>
+
+<p>では、それぞれコーディングしていきます。</p>
+
+<h4 id="サイトタイトル">サイトタイトル</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/b9be4ccc-1c3f-12dd-4fbd-42bedf1c4fbe.png" alt="スクリーンショット 2016-12-01 4.07.01.png" /></p>
+
+<p>「サイトタイトル」Componentは以下の２パーツで構成されています。</p>
+
+<ul>
+<li>ロゴ</li>
+<li>サブタイトル</li>
+</ul>
+
+<p>この構成要素をRSCSSでは <strong>Element（エレメント）</strong> と呼びます。
+コードは次の通りです。</p>
+<div class="site-title">
+  <h1 class="logo">
+    <a href="">
+      <img src="https://placehold.jp/60x60.png" alt="" class="image"/>
+    </a>
+  </h1>
+  <p class="description">バズる→スダる</p>
+</div>
+.site-title {
+
+  >.logo {
+    margin-bottom: 10px;
+  }
+
+  >.description{
+    font-size: 14px;
+  }
+}
+
+<p><strong>ここで使っているRSCSSの記述ルールはこちら</strong></p>
+
+<ul>
+<li>Componentを表す部分は単語2つを<code>-</code>でつなぐ</li>
+<li>Elementにつけるclassは単語１つ</li>
+<li>Componentにレイアウト用のstyleはつけない</li>
+<li>使えるものには必ず「子セレクタ<code>&gt;</code>」を使う。</li>
+</ul>
+
+<p>また「レイアウト用のスタイル」とは、以下のようなものとされています。</p>
+
+<ul>
+<li>Positioning (<code>position</code>, <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>)</li>
+<li>Floats (<code>float</code>, <code>clear</code>)</li>
+<li>Margins (<code>margin</code>)</li>
+<li>Dimensions (<code>width</code>, <code>height</code>)</li>
+</ul>
+
+<p>但し、<code>width</code>,<code>height</code>に関しては、アバターアイコンやロゴなどはどうしても指定する必要があったりするため、必要に応じて使用を許可されています。
+また、<code>position: relative;</code> についても、Elementの絶対配置に必要となる場合がありますので適宜使用してください。</p>
+
+<p>では、続いて「アイキャッチ（バナー）」Componentを作成しましょう。</p>
+
+<h4 id="アイキャッチ-バナー">アイキャッチ（バナー）</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/6e7a6e35-986d-37fa-7ea9-abac789a5363.png" alt="スクリーンショット 2016-12-01 4.07.42.png" /></p>
+<div class="hero-banner"></div>
+.hero-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://placehold.jp/1100x500.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+<p>このように、Elementを持たないComponentもあります。
+ここでは高さを固定し、背景画像にバナーを設定しています。</p>
+
+<p>では、それぞれのComponentを配置する作業に移りましょう。</p>
+
+<h3 id="機能で分けたものをレイアウト-共通ヘッダー">機能で分けたものをレイアウト（共通ヘッダー）</h3>
+
+<p>共通ヘッダー内の二つのコンポーネントをレイアウトします。
+その時は「共通ヘッダー」Componentを考えます。
+先ほど作った「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentは構成要素、すなわちElementとして考えます。</p>
+<div class="common-header">
+  <div class="site-title top"> //topを付与
+    <h1 class="logo">
+      <a href="">
+        <img src="https://placehold.jp/60x60.png" alt=""/>
+      </a>
+    </h1>
+    <p class="description">バズる→スダる</p>
+  </div>
+  <div class="hero-banner banner"></div> //bannerを付与
+</div>
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  >.top {
+    margin-bottom: 10px;
+  }
+  >.banner{/**/} //※記述なし、省略化
+}
+
+<p>もしくはSassの<code>@extend</code>を用いて以下のようにもできます。</p>
+<div class="common-header">
+  <div class="top">  //*もともとあった.site-titleを削除
+    <h1 class="logo">
+      <a href="">
+        <img src="https://placehold.jp/60x60.png" alt=""/>
+      </a>
+    </h1>
+    <p class="description">バズる→スダる</p>
+  </div>
+  <div class="banner"></div> //もともとあった.hero-bannerを削除
+</div>
+@import .site-title;
+@import .hero-banner;
+
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  >.top {
+    @extend .site-title
+    margin-bottom: 10px;
+  }
+  >.banner{
+    @extend .hero-banner
+  }
+}
+
+<p>お好みの運用を選んでいきましょう。僕は前者の方が好きです。
+今後はこの記事では前者による記述を行っていきます。</p>
+
+<h2 id="フッター編">フッター編</h2>
+
+<h3 id="機能で分けて考える-フッター">機能で分けて考える（フッター）</h3>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/466612c4-9741-0191-6a8a-f7a7c5d11ef7.jpeg" alt="suda_footer.jpg" /></p>
+
+<h4 id="サイトタイトル-1">サイトタイトル</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/f4a60b0d-e99c-5418-e7ee-0176327d0ff7.png" alt="スクリーンショット 2016-12-01 4.08.51.png" /></p>
+
+<p>よく見ると、「サイトタイトル」Componentは「共通ヘッダー」のものと見た目が少し違うことがわかりますね。
+ここは、以下のようにしましょう。</p>
+<div class="site-heading -center"> //-centerを付与
+  <h1 class="logo">
+    <a href="">
+      <img src="https://placehold.jp/150x150.png" alt=""/>
+    </a>
+  </h1>
+  <p class="description">バズる→スダる</p>
+</div>
+.site-title {
+  >.logo {
+    margin-bottom: 10px;
+  }
+  >.description{
+    font-size: 14px;
+  }
+  &.-center{                  //
+    display: flex;            //
+    flex-direction: column;   //追加記述
+    align-items: center;      //
+  }                           //
+}
+
+<p><code>-center</code>のように、見た目違いを表す<code>-</code>で始まるclassを「Variants」と言います。
+<code>site-title.scss</code>に記述を追加しました。
+最近話題のFlexboxを使って中央揃えレイアウトをしてみました。</p>
+
+<h4 id="コピーライト">コピーライト</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/0f4ee22e-725a-ec62-a6a9-6bd54b03c209.png" alt="スクリーンショット 2016-12-01 4.09.25.png" /></p>
+<p class="copyright-block">
+  Copyright© スダ部, 2016 All Rights Reserved.powered by STINGER
+</p>
+.copyright-block {
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+<p>RSCSSのルール「Componentを表す部分は単語2つを<code>-</code>でつなぐ」のために２単語が思いつかないときは
+ブロック要素なら</p>
+
+<ul>
+<li>alert-box</li>
+<li>alert-card</li>
+<li>alert-block</li>
+</ul>
+
+<p>インライン要素なら</p>
+
+<ul>
+<li>link-button</li>
+<li>link-span</li>
+</ul>
+
+<p>などのような表し方を推奨されています。</p>
+
+<h3 id="機能で分けたものをレイアウト-フッター">機能で分けたものをレイアウト（フッター）</h3>
+
+<p>ヘッダー同様、作成したComponentをElementとして考えていきます。</p>
+<div class="common-footer">
+  <div class="site-title -center title">
+    <h1 class="logo">
+      <a href="">
+        <img src="https://placehold.jp/６0x６0.png" alt=""/>
+      </a>
+    </h1>
+    <p class="description">バズる→スダる</p>
+  </div>
+  <p class="copyright-block　copyright">
+    Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+  </p>
+</div>
+.common-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  >.title {
+    margin-bottom: 20px;
+  }
+
+  >.copyright {/**/} //記述なし、省略化
+}
+
+<h2 id="サイドバー編">サイドバー編</h2>
+
+<h3 id="機能で分けて考える-サイドバー">機能で分けて考える（サイドバー）</h3>
+
+<p>Componentに分けてみるとこんな感じになりました。</p>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/b5522c21-d6db-0420-5e28-dabcb6154d46.jpeg" alt="suda_sidebar.jpg" /></p>
+
+<h4 id="プロフィールカード">プロフィールカード</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/ce6915b7-ab6d-e990-61c7-15b90f20f765.jpeg" alt="suda_sidebar_profile.jpg" /></p>
+
+<p>内容的にいろいろ突っ込みどころの多いプロフィールComponentですが作成しましょう。
+（twitterのフォローボタンについてはtwitter側で生成するページがあるので割愛します）</p>
+<div class="profile-card">
+  <p class="title">スダシュウゴのプロフィール</p>
+  <img src="https://placehold.jp/300x300.png" alt="" />
+  <p class="name">スダシュウゴ</p>
+  <p class="twitter"><!--ココにツイッターのボタンのコード--></p>
+  <p class="description">
+    茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。<br>
+    <a href="">『コソアドデザイン』</a>代表
+  </p>
+</div>
+.profile-card {
+  padding: 40px 15px 10px;
+  position: relative;
+  background: white;
+
+  >.title {
+    padding: 3px 20px;
+    background: #13b0fc;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+
+  >.image {
+    flex-grow: 0;
+  }
+
+  >.name {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  >.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+<p>ここではComponentに<code>position: relative</code>を指定していますが、Element配置に使用しているため問題ありません。</p>
+
+<h4 id="問い合わせボタン">問い合わせボタン</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/94d775ea-df94-19f0-f027-e4f0f682c6ea.png" alt="スクリーンショット 2016-12-01 4.10.10.png" /></p>
+
+<p><code>fa fa-envelope</code>は「fontawesome」に使用するclassです。<code>aria-hidden=&quot;true&quot;</code>はスクリーンリーダから見えなくするための記述で、説明は割愛します。</p>
+<a href="" class="basic-button">
+  <i class="icon fa fa-envelope" aria-hidden="true"></i>
+  <span class="label">お問い合わせはコチラ！</span>
+</a>
+.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  color: white;
+  align-items: center;
+  background: #dd8500;
+
+  >.icon {
+    padding-right: 10px;
+    border-right:1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  >.label {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+<h4 id="人気の記事リスト">人気の記事リスト</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/6b64b33e-51ef-f858-0f77-081c0e463f08.jpeg" alt="suda_sidebar_articlelist.jpg" />
+記事カードそのものが１つの機能をもつComponentで、リストはその集合体と考えるのが良さそうですね。</p>
+
+<p>記事カード単体のコードは次の通りです。</p>
+<div class="article-card">
+  <a href="" class="thumbnail">
+    <img src="https://placehold.jp/300x300.png" alt="" />
+  </a>
+  <div class="metabox">
+    <a href="" class="title">
+      <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+    </a>
+    <p class="count">24 views</p>
+  </div>
+</div>
+.article-card {
+  display: flex;
+
+  >.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  >.metabox >.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  >.metabox >.count {
+    font-size: 10px;
+  }
+}
+
+
+<p>RSCSSの推奨事項として、Sassで書く時のネスト階層は２段階までに抑えるというものがあります。
+なので、上記のようにあえてネストを避けた記述をしています。</p>
+
+<p>また、Elementの命名ルールに従い<code>.meta-box</code>のようにしたいところを<code>.metabox</code>のように１単語にくっつけています。</p>
+
+<p>人気の記事リスト全体のコードは次の通りです。</p>
+<div class="hot-articles">
+  <p class="heading">人気の記事</p>
+  <ul class="list">
+    <li class="article-card">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/300x300.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+          <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+        </a>
+        <p class="count">24 views</p>
+      </div>
+    </li>
+    <li class="article-card">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/300x300.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+          <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+        </a>
+        <p class="count">24 views</p>
+      </div>
+    </li>
+    <li class="article-card">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/300x300.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+          <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+        </a>
+        <p class="count">24 views</p>
+      </div>
+    </li>
+  </ul>
+</div>
+.hot-articles {
+
+  >.heading {
+    font-weight: bold;
+    line-height: 2;
+  }
+
+  >.list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+<p>最初、記事カード単品を<code>&lt;div&gt;</code>で書いていたのに、リストでは<code>&lt;li&gt;</code>になっていることにお気付きですか？
+このように、すべてclassでの運用を行っているため、要素を変更することができるのです。
+これはすべてclassで運用している利点でもあります。</p>
+
+<p>また、今回はセマンティクスを無視したマークアップをしていますが、適宜<code>&lt;div&gt;</code>を<code>&lt;section&gt;</code>や<code>&lt;header&gt;</code>、<code>&lt;footer&gt;</code>などに変えても問題ありません。classセレクタのみで運用することで要素の変更にも強いCSSになります。</p>
+
+<h3 id="機能で分けたものをレイアウト">機能で分けたものをレイアウト</h3>
+
+<p>ヘッダー、フッターと同様に、サイドバーComponentを考えます。
+コードは下記のようになります。</p>
+<div class="side-section">
+  <div class="profile profile-card">
+    <p class="title">スダシュウゴのプロフィール</p>
+    <img src="https://placehold.jp/300x300.png" alt="" />
+    <p class="name">スダシュウゴ</p>
+    <p class="twitter">...</p>
+    <p class="description">
+      茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。<br>
+      <a href="">「コソアドデザイン」</a>代表
+    </p>
+  </div>
+
+  <a href="" class="contact basic-button -contact">
+    <i class="icon fa fa-envelope" aria-hidden="true"></i>
+    <span class="label">お問い合わせはコチラ！</span>
+  </a>
+
+  <div class="hot hot-articles">
+    <p class="heading">人気の記事</p>
+    <ul class="list">
+      <li class="article-card">
+        <a href="" class="thumbnail">
+          <img src="https://placehold.jp/300x300.png" alt="" />
+        </a>
+        <div class="metabox">
+          <a href="" class="title">
+            <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+          </a>
+          <p class="count">24 views</p>
+        </div>
+      </li>
+      <li class="article-card">
+        <a href="" class="thumbnail">
+          <img src="https://placehold.jp/300x300.png" alt="" />
+        </a>
+        <div class="metabox">
+          <a href="" class="title">
+            <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+          </a>
+          <p class="count">24 views</p>
+        </div>
+      </li>
+      <li class="article-card">
+        <a href="" class="thumbnail">
+          <img src="https://placehold.jp/300x300.png" alt="" />
+        </a>
+        <div class="metabox">
+          <a href="" class="title">
+            <p>24歳スダシュウゴ、茨城でフリーランスはじめるってよ</p>
+          </a>
+          <p class="count">24 views</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+.side-section {
+  display: flex;
+  flex-direction: column;
+
+  >.profile {
+    margin-bottom: 20px;
+  }
+
+  >.contact {
+    margin-bottom: 20px;
+  }
+}
+
+<h2 id="メイン編">メイン編</h2>
+
+<p>もう慣れてきましたか？
+最後のセクションです。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/100561/7c07b154-c495-fca8-6cf8-ab707c9f78eb.jpeg" alt="suda_layout_main.jpg" /></p>
+
+<h3 id="機能で分けて考える-メイン編">機能で分けて考える（メイン編）</h3>
+
+<h4 id="ページネーション">ページネーション</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/1ebbd788-5f77-c817-25d4-a1ae3b0b1134.png" alt="スクリーンショット 2016-12-01 4.06.27.png" /></p>
+<ol class="pagination-link">
+  <li class="number -current">
+    1
+  </li>
+  <li class="number">
+    <a href="" class="link">2</a>
+  </li>
+  <li class="number">
+    <a href="" class="link">3</a>
+  </li>
+  <li class="next">
+    <a href="" class="link">next >></a>
+  </li>
+</ol>
+.pagination-link {
+  list-style-type: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: baseline;
+
+  > .number,.next {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    font-size: 13px;
+    text-transform: capitalize;
+
+    &.-current {
+      font-size: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+  }
+}
+
+<p><code>-current</code>のように、VariantがElementについています。
+<strong>Variantは、Elementにもつけることができます。</strong></p>
+
+<p>RSCSSに直接関係するものではありませんが <strong><code>:not(:last-child)</code></strong> という擬似クラスに注目してください。
+これは、<strong>「最後の子要素以外」</strong> を表しています。
+今までは、すべての要素にstyleを指定したあと<code>:last-child</code>に打ち消しスタイルを当てていたことが多いかと思いますが、この記述だけでスマートに表現できます。</p>
+
+<h4 id="記事カード">記事カード</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/62331fe9-6a85-46aa-8871-babb2cd34e05.png" alt="スクリーンショット 2016-12-01 4.12.11.png" /></p>
+
+<p>記事カードですが、これはサイドバーの記事カード単品Componentに投稿日とタグが増え、タイトルの装飾が変わったものですね。
+これを全く別コンポーネントと解釈するか、見た目違いと解釈するかは人次第ですが、私だったらここは見た目違いと考えます！</p>
+
+<p><code>article-cards</code>にElementを追加し、<code>.title</code>はVariantsで調整をかけましょう。
+また、レイアウト用コンポーネントとして<code>.row-items</code>を作成しました。</p>
+.article-card {
+  display: flex;
+
+  >.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  >.metabox >.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  >.metabox >.count {
+    font-size: 10px;
+  }
+
+  >.metabox >.time {
+    font-size: 14px;
+    margin-right: 10px;
+  }  
+
+  >.metabox >.layout-row {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .categoryicon,.tagicon,.timeicon {
+    margin-right: 10px;
+  }
+
+  .categoryitem,.tagitem {
+    text-decoration: none;
+    font-size: 12px;
+    color:#666 ;
+  }
+
+  &.-large >.metabox >.title {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+  }
+}
+
+<p>今回の例だと、ネストが深くなりすぎるので追加したElementはComponent化したほうがいいかもしれません。</p>
+
+<p>あとはこのカードたちを並べましょう。
+<code>:not(:last-child)</code>を使って最後のアイテム以外に破線ボーダーを加えたらよさそうですね。</p>
+<ul class="article-list">
+  <li class="item article-card -large">
+    <a href="" class="thumbnail">
+      <img src="https://placehold.jp/300x300.png" alt="" />
+    </a>
+    <div class="metabox">
+      <a href="" class="title">
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        </a>
+      <div class="layout-row">
+        <p class="time">
+          <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+        <p class="category">
+          <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+        </p>
+      </div>
+      <p class="tags">
+        <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+    </div>
+  </li>
+  <li class="item article-card -large">
+    <a href="" class="thumbnail">
+      <img src="https://placehold.jp/300x300.png" alt="" />
+    </a>
+    <div class="metabox">
+      <a href="" class="title">
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        </a>
+      <div class="layout-row">
+        <p class="time">
+          <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+        <p class="category">
+          <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+        </p>
+      </div>
+      <p class="tags">
+        <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+    </div>
+  </li>
+  <li class="item article-card -large">
+    <a href="" class="thumbnail">
+      <img src="https://placehold.jp/300x300.png" alt="" />
+    </a>
+    <div class="metabox">
+      <a href="" class="title">
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        </a>
+      <div class="layout-row">
+        <p class="time">
+          <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+        <p class="category">
+          <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+        </p>
+      </div>
+      <p class="tags">
+        <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+    </div>
+  </li>
+</ul>
+.article-list {
+
+  >.item:not(:last-child) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px #ccc dotted;
+  }
+}
+
+
+
+<h4 id="シェアボタン">シェアボタン</h4>
+
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/100561/b96a2331-8447-5fd5-e621-9bd8797e0b05.png" alt="スクリーンショット 2016-12-01 4.13.16.png" /></p>
+
+<p>これらは問い合わせボタンの色違いアイコン違いですね。
+Variantsで<code>background</code>を変更すると早そうです。
+一気にリストのComponentまで作ってしまいましょう。</p>
+
+<ul class="sns-share">
+  <li>
+    <a href="" class="basic-button -twitter">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a href="" class="basic-button -facebook">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a href="" class="basic-button -line">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">LINE</span>
+    </a>
+  </li>
+  <li>
+    <a href="" class="basic-button -hatebu">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">はてブ</span>
+    </a>
+  </li>
+  <li>
+    <a href="" class="basic-button -google">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">Google+</span>
+    </a>
+  </li>
+  <li>
+    <a href="" class="basic-button -pocket">
+      <i class="icon fa fa-envelope" aria-hidden="true"></i>
+      <span class="label">Pocket</span>
+    </a>
+  </li>
+</ul>
+.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+
+  &.-contact {
+    background: #dd8500;
+  }
+
+  &.-twitter {
+    background: #55acee;
+  }
+
+  &.-facebook {
+    background: #3b5998;
+  }
+
+  &.-google {
+    background: #dc4e41;
+  }
+
+  &.-pocket {
+    background: #f03e51;
+  }
+
+  &.-hatebu {
+    background: #00a5de;
+  }
+
+  &.-line {
+    background: #25af00;
+  }
+
+  >.icon {
+    padding-right: 10px;
+    border-right: 1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  >.label {
+    font-weight: bold;
+  }
+}
+.sns-share {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li{
+    width: calc(100%/3 - 10px);
+
+    &:nth-child(-n+3){
+      margin-bottom: 10px;
+    }
+  }
+}
+
+<p>これでメインコンテンツのすべてのコンポーネントが出揃いました。
+あとは、メインセクションComponent内に配置しましょう。</p>
+
+<h3 id="機能で分けたものをレイアウト-メイン">機能で分けたものをレイアウト（メイン）</h3>
+<div class="main-section">
+  <ul class="article-list articles">
+    <li class="item article-card -large">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/100x100.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    </a>
+        <div class="layout-row">
+          <p class="time">
+            <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+          <p class="category">
+            <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+          </p>
+        </div>
+        <p class="tags">
+          <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+      </div>
+    </li>
+    <li class="item article-card -large">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/100x100.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    </a>
+        <div class="layout-row">
+          <p class="time">
+            <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+          <p class="category">
+            <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+          </p>
+        </div>
+        <p class="tags">
+          <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+      </div>
+    </li>
+    <li class="item article-card -large">
+      <a href="" class="thumbnail">
+        <img src="https://placehold.jp/100x100.png" alt="" />
+      </a>
+      <div class="metabox">
+        <a href="" class="title">
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    </a>
+        <div class="layout-row">
+          <p class="time">
+            <i class="timeicon fa fa-clock-o" aria-hidden="true"></i>2016/12/1</p>
+          <p class="category">
+            <i class="categoryicon fa fa-folder-open-o" aria-hidden="true"></i><a href="" class="categoryitem">日記</a>
+          </p>
+        </div>
+        <p class="tags">
+          <i class="tagicon fa fa-tags" aria-hidden="true"></i><a href="" class="tagitem">タグ１</a>,<a href="" class="tagitem">タグ2</a></p>
+      </div>
+    </li>
+  </ul>
+
+  <ol class="pagination-link pagination">
+    <li class="number -current">
+      1
+    </li>
+    <li class="number">
+      <a href="" class="link">2</a>
+    </li>
+    <li class="number">
+      <a href="" class="link">3</a>
+    </li>
+    <li class="next">
+      <a href="" class="link">next >></a>
+    </li>
+  </ol>
+  <ul class="sns-share share">
+    <li>
+      <a href="" class="basic-button -twitter">
+        <i class="icon fa fa-twitter" aria-hidden="true"></i>
+        <span class="label">Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="" class="basic-button -facebook">
+        <i class="icon fa fa-facebook" aria-hidden="true"></i>
+        <span class="label">Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a href="" class="basic-button -line">
+        <i class="icon fa fa-comment" aria-hidden="true"></i>
+        <span class="label">LINE</span>
+      </a>
+    </li>
+    <li>
+      <a href="" class="basic-button -hatebu">
+        <span class="icon" aria-hidden="true">B!</span>
+        <span class="label">はてブ</span>
+      </a>
+    </li>
+    <li>
+      <a href="" class="basic-button -google">
+        <i class="icon fa fa-google-plus" aria-hidden="true"></i>
+        <span class="label">Google+</span>
+      </a>
+    </li>
+    <li>
+      <a href="" class="basic-button -pocket">
+        <i class="icon fa fa-get-pocket" aria-hidden="true"></i>
+        <span class="label">Pocket</span>
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+.main-section {
+  padding: 30px 50px;
+  background: white;
+}
+
+<h2 id="セクションをページ内に配置する">セクションをページ内に配置する</h2>
+
+<p>一番最初に４つに分けたセクションが出揃いました。
+あとはこれらをページ内に配置するだけです。</p>
+
+<p>方針としては、サイドバーとメインエリアを左右に並べるための<code>.content-section</code>というComponentを挟んでレイアウトをしていきます。</p>
+<div class="all-wrap">
+  <div class="common-header">
+    <div class="site-title top">
+      <h1 class="logo">
+        <a class="link" href=""><img alt="" class="image" src="https://placehold.jp/60x60.png"></a>
+      </h1>
+      <p class="description">
+        バズる→スダる
+      </p>
+    </div>
+    <div class="hero-banner banner"></div>
+  </div>
+  <div class="content-section">
+    <div class="main-section">
+      <ul class="article-list">
+        <li class="item article-card -large">
+          <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/100x100.png"></a>
+          <div class="metabox">
+            <a class="title" href="">24歳スダシュウゴ、茨城でフリーランスはじめるってよ</a>
+            <div class="layout-row">
+              <p class="time">
+                <i aria-hidden="true" class="timeicon fa fa-clock-o"></i>2016/12/1
+              </p>
+              <p class="category">
+                <i aria-hidden="true" class="categoryicon fa fa-folder-open-o"></i><a class=
+                "categoryitem" href="">日記</a>
+              </p>
+            </div>
+            <p class="tags">
+              <i aria-hidden="true" class="tagicon fa fa-tags"></i><a class="tagitem" href=
+              "">タグ１</a>,<a class="tagitem" href="">タグ2</a>
+            </p>
+          </div>
+        </li>
+        <li class="item article-card -large">
+          <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/100x100.png"></a>
+          <div class="metabox">
+            <a class="title" href="">24歳スダシュウゴ、茨城でフリーランスはじめるってよ</a>
+            <div class="layout-row">
+              <p class="time">
+                <i aria-hidden="true" class="timeicon fa fa-clock-o"></i>2016/12/1
+              </p>
+              <p class="category">
+                <i aria-hidden="true" class="categoryicon fa fa-folder-open-o"></i><a class=
+                "categoryitem" href="">日記</a>
+              </p>
+            </div>
+            <p class="tags">
+              <i aria-hidden="true" class="tagicon fa fa-tags"></i><a class="tagitem" href=
+              "">タグ１</a>,<a class="tagitem" href="">タグ2</a>
+            </p>
+          </div>
+        </li>
+        <li class="item article-card -large">
+          <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/100x100.png"></a>
+          <div class="metabox">
+            <a class="title" href="">24歳スダシュウゴ、茨城でフリーランスはじめるってよ</a>
+            <div class="layout-row">
+              <p class="time">
+                <i aria-hidden="true" class="timeicon fa fa-clock-o"></i>2016/12/1
+              </p>
+              <p class="category">
+                <i aria-hidden="true" class="categoryicon fa fa-folder-open-o"></i><a class=
+                "categoryitem" href="">日記</a>
+              </p>
+            </div>
+            <p class="tags">
+              <i aria-hidden="true" class="tagicon fa fa-tags"></i><a class="tagitem" href=
+              "">タグ１</a>,<a class="tagitem" href="">タグ2</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ol class="pagination-link">
+        <li class="number -current">1
+        </li>
+        <li class="number">
+          <a class="link" href="">2</a>
+        </li>
+        <li class="number">
+          <a class="link" href="">3</a>
+        </li>
+        <li class="next">
+          <a class="link" href="">next >></a>
+        </li>
+      </ol>
+      <ul class="sns-share">
+        <li>
+          <a class="basic-button -twitter" href=""><i aria-hidden="true" class=
+          "icon fa fa-twitter"></i> <span class="label">Twitter</span></a>
+        </li>
+        <li>
+          <a class="basic-button -facebook" href=""><i aria-hidden="true" class=
+          "icon fa fa-facebook"></i> <span class="label">Facebook</span></a>
+        </li>
+        <li>
+          <a class="basic-button -line" href=""><i aria-hidden="true" class=
+          "icon fa fa-comment"></i> <span class="label">LINE</span></a>
+        </li>
+        <li>
+          <a class="basic-button -hatebu" href=""><span aria-hidden="true" class="icon">B!</span>
+          <span class="label">はてブ</span></a>
+        </li>
+        <li>
+          <a class="basic-button -google" href=""><i aria-hidden="true" class=
+          "icon fa fa-google-plus"></i> <span class="label">Google+</span></a>
+        </li>
+        <li>
+          <a class="basic-button -pocket" href=""><i aria-hidden="true" class=
+          "icon fa fa-get-pocket"></i> <span class="label">Pocket</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="side-section">
+      <div class="profile profile-card">
+        <p class="title">
+          スダシュウゴのプロフィール
+        </p><img alt="" src="https://placehold.jp/300x300.png">
+        <p class="name">
+          スダシュウゴ
+        </p>
+        <p class="twitter">
+          ...
+        </p>
+        <p class="description">
+          茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。<br>
+          <a href="">「コソアドデザイン」</a>代表
+        </p>
+      </div><a class="contact basic-button -contact" href=""><i aria-hidden="true" class=
+      "icon fa fa-envelope"></i> <span class="label">お問い合わせはコチラ！</span></a>
+      <div class="hot hot-articles">
+        <p class="heading">
+          人気の記事
+        </p>
+        <ul class="list">
+          <li class="article-card">
+            <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/300x300.png"></a>
+            <div class="metabox">
+              <a class="title" href="">
+              <p>
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              </p></a>
+              <p class="count">
+                24 views
+              </p>
+            </div>
+          </li>
+          <li class="article-card">
+            <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/300x300.png"></a>
+            <div class="metabox">
+              <a class="title" href="">
+              <p>
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              </p></a>
+              <p class="count">
+                24 views
+              </p>
+            </div>
+          </li>
+          <li class="article-card">
+            <a class="thumbnail" href=""><img alt="" src="https://placehold.jp/300x300.png"></a>
+            <div class="metabox">
+              <a class="title" href="">
+              <p>
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              </p></a>
+              <p class="count">
+                24 views
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="common-footer">
+    <div class="site-title -center logo">
+      <h1 class="logo">
+        <a class="link" href=""><img alt="" class="image" src="https://placehold.jp/60x60.png"></a>
+      </h1>
+      <p class="description">
+        バズる→スダる
+      </p>
+    </div>
+    <p class="copyright-block">
+      Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+    </p>
+  </div>
+</div>
+.content-section {
+  display: flex;
+  justify-content: center;
+
+  >.main-section {
+    flex-basis: 740px;
+    margin-right: 20px;
+  }
+
+  >.side-section {
+    flex-basis: 320px;
+  }
+}
+
+<p>仕上げに全体の調整をします。</p>
+.all-wrap {
+  width: 1080px;
+  margin: 0 auto;
+
+  >.header {
+    margin-bottom: 10px;
+  }
+
+  >.main {
+    margin-bottom: 10px;
+  }
+}
+
+<p>以上でコーディングが終了しました。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<ul>
+<li>コンポーネント(Component) で考える。名前付けは2単語で。( <code>.screenshot-image</code> )</li>
+<li>コンポーネントは 要素(Element) を持つ。名前付けは1単語で。( <code>.blog-post</code> <code>.title</code> )</li>
+<li>バリアント(Variant) の名前はダッシュを接頭辞（プレフィックス）としてつける ( <code>.shop-banner.-with-icon</code> )</li>
+<li>コンポーネントはネストしていい</li>
+<li>物事をシンプルにするために拡張していいことを覚えておいて。</li>
+</ul>
+
+<p><a href="http://qiita.com/kk6/items/760efba180ec526903db">RSCSSというCSS設計について</a>より引用
+（公式ガイドラインの和訳をされています。本記事でRSCSSに興味を持たれた方はご一読ください。）</p>
+
+<h2 id="参考リンク">参考リンク</h2>
+
+<p>サンプルページは茨城のフリーランスデザイナー/カメラマンのスダシュウゴ氏のページを使用させていただきました。
+<a href="http://sudabu.xyz/">スダ部</a>
+<a href="http://sudare.xyz/">コソアドデザイン</a></p>
+
+<p>公式ガイドライン
+<a href="http://rscss.io/">RSCSS.io</a>
+<a href="http://qiita.com/kk6/items/760efba180ec526903db">RSCSSというCSS設計について</a></p>
+
+<h2 id="最後に">最後に</h2>
+
+<p>この記事は <a href="http://www.adventar.org/calendars/1551">スダ Advent Calendar</a> 1日目の記事です。
+CSS設計に迷える人達に少しでも手助けになれればいいなと思います。
+最後までお読みいただきありがとうございました。</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/vue01">Vue.jsをはじめてみる#1 ~公式ガイドを読む編~</a>
+    </li>
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/gulp-cli">globalにgulp-cliをインストールしようとするとエラーが発生する</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

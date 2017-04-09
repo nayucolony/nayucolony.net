@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>CSSフレームワーク「Bulma」に学ぶSassの変数定義 | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="CSSフレームワーク「Bulma」に学ぶSassの変数定義" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/bulma-variables" />
+    <meta property="og:image" content="https://nayucolony.net/images/bulma/bulma.jpg" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="CSSフレームワーク「Bulma」のvariables.sassファイルを見ていきます。
+
+変数定義は、なんとなくやっているものの、本当に便利な、意味のある変数定義について考えたことはあまりないため、叡智のつまったオープンソースのCSSフレームワークに学んで見ます。
+
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">CSSフレームワーク「Bulma」に学ぶSassの変数定義</h1>
+    <time datetime="2017-01-21T01:58:50&#43;09:00">
+      2017年1月21日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="CSSフレームワーク「Bulma」に学ぶSassの変数定義" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/bulma-variables" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="/images/bulma/bulma.jpg" alt=""/></div>
+  </header>
+  <p>CSSフレームワーク「<a href="http://buluma.io/">Bulma</a>」の<code>variables.sass</code>ファイルを見ていきます。</p>
+
+<p>変数定義は、なんとなくやっているものの、本当に便利な、意味のある変数定義について考えたことはあまりないため、叡智のつまったオープンソースのCSSフレームワークに学んで見ます。</p>
+
+<p></p>
+
+<h2 id="カラー">カラー</h2>
+// Colors
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
+
+<h3 id="hsl">HSL</h3>
+
+<p>CSS3から使用できるようになった <strong>HSL色空間</strong> を用いた記法が採用されています。
+<strong>RGB色空間</strong> に比べて、色から色への変化を調整しやすい色空間です。</p>
+
+<p>Hは色相(0~360)、Sは彩度(0~100%)、Lは輝度(0~100%)です。
+「少し暗く」というオーダーには輝度を下げたり、「彩度と輝度を保ったまま色味をずらす」ことで変にコントラストがつくことが防げたりと、なかなか便利です。</p>
+
+<h3 id="default">!default</h3>
+
+<p>Sassの機能である<code>!default</code>も用いられていますね。
+これは、<strong>「もしその変数に値が与えられていなかった場合にその値で定義する」</strong> というものです。</p>
+
+<h3 id="変数名">変数名</h3>
+
+<p>変数名の<code>$white-bis</code>,<code>&amp;white-ter</code>に用いられている&rdquo;bis&rdquo;,&ldquo;ter&rdquo;にも注目です。
+これはフランス語で「2番目」「3番目」という意味です。
+個人的にはなかなかオシャレな表記だとおもいます。</p>
+
+<h2 id="フォント周り">フォント周り</h2>
+// Typography
+$family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+$family-monospace: "Inconsolata", "Consolas", "Monaco", monospace !default
+
+$size-1: 3.5rem !default
+$size-2: 2.75rem !default
+$size-3: 2rem !default
+$size-4: 1.5rem !default
+$size-5: 1.25rem !default
+$size-6: 14px !default
+$size-7: 0.75rem !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-semibold: 500 !default
+$weight-bold: 700 !default
+
+<p><code>font-family</code>そのものではなく、<code>font-family</code>を設定するときに使うsans-serifフォントや、<code>code</code>などで指定する等幅フォントをここにまとめています。</p>
+
+<p>指定されているフォントがそれぞれどういった背景を持っているかを表にまとめました。</p>
+
+<table>
+<thead>
+<tr>
+<th>font-family</th>
+<th>対象環境</th>
+<th>備考</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>-apple-system</td>
+<td>Mac OS X システムフォント(El capitan以降)</td>
+<td>San Fransiscoを呼び出すSafari向けの記述</td>
+</tr>
+
+<tr>
+<td>BlinkMacSystemFont</td>
+<td>同上</td>
+<td>San Fransiscoを呼び出すChrome向けの記述</td>
+</tr>
+
+<tr>
+<td>Segoe UI</td>
+<td>Windows のシステムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Roboto</td>
+<td>Android4.0~のシステムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Oxygen</td>
+<td>不明</td>
+<td>Google Fontsに存在を確認</td>
+</tr>
+
+<tr>
+<td>Ubuntu</td>
+<td>Ubuntuシステムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Cantarell</td>
+<td>GNOMEシステムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Fira Sans</td>
+<td>Firefox OS用システムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Droid Sans</td>
+<td>Androidシステムフォント()</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Helvetica Neue</td>
+<td>Mac OS X 10.10 (Yosemite)システムフォント</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Helvetica</td>
+<td>Mac標準フォント/iOSシステムフォント(~iOS8)</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Arial</td>
+<td>Mac/Windows共通フォント</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>かなり細かくシステムフォントが指定されていることがわかります。
+海外フォント事情はよくわかっていないのですが、例えば&rdquo;Oxygen&rdquo;なんかは調べた限りではただのWebフォントという情報しか手に入れることができませんでした。何かのシステムフォントという背景も見当たらず、どういう環境向けの表記なのかが気になります。</p>
+
+<h2 id="色々な設定">色々な設定</h2>
+// Miscellaneous
+$easing: ease-out !default
+$radius-small: 2px !default
+$radius: 3px !default
+$radius-large: 5px !default
+$speed: 86ms !default
+
+<p><code>a</code>要素のhoverアニメーションの挙動や、<code>border-radius</code>プロパティの半径などが指定されています。</p>
+
+<h3 id="miscellaneousって何">Miscellaneousって何？</h3>
+
+<p><code>Miscellaneous</code>とは「雑多な・多種多様な」という意味です。<br />
+<a href="http://ejje.weblio.jp/content/miscellaneous">miscellaneousの意味 - 英和辞典 Weblio辞書</a></p>
+
+<p>日本語でいうと<code>// いろいろ</code>ですよね。こんなの書いてたら殺されそうですよね。こっそり採用したいです。</p>
+
+<p>ちなみにGithubで「Miscellaneous」を検索するとなかなかでございました。
+<img src="/images/bulma-variables/github.png" alt="" />
+<a href="https://github.com/search?utf8=%E2%9C%93&amp;q=Miscellaneous">Search・Miscellaneous - Github</a></p>
+
+<p>使っていきたい、ミセラニアス。</p>
+
+<h2 id="役割付きカラー">役割付きカラー</h2>
+
+// 2. Primary colors
+
+$primary: $turquoise !default
+
+$info: $blue !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+<p>役割を持っている色には、役割を冠した名前をつけています。
+「danger（危険）」を表す色は赤、「success（成功）」は緑などのように関連づけられています。</p>
+
+<h2 id="派生変数">派生変数</h2>
+// Invert colors
+$orange-invert: findColorInvert($orange) !default
+$yellow-invert: findColorInvert($yellow) !default
+$green-invert: findColorInvert($green) !default
+$turquoise-invert: findColorInvert($turquoise) !default
+$blue-invert: findColorInvert($blue) !default
+$purple-invert: findColorInvert($purple) !default
+$red-invert: findColorInvert($red) !default
+
+$primary-invert: $turquoise-invert !default
+$info-invert: $blue-invert !default
+$success-invert: $green-invert !default
+$warning-invert: $yellow-invert !default
+$danger-invert: $red-invert !default
+$light-invert: $dark !default
+$dark-invert: $light !default
+
+<p><a href="/bulma-functions/">CSSフレームワーク「Bulma」のユーザー定義関数を見てみる</a>で登場した<code>findColorInvert</code>関数が用いられています。
+ここでは <strong>「ある色を背景色とした時にふさわしい文字色は白か黒か」</strong> を<code>findColorInvert</code>関数に判定させ、帰ってきた数値を<code>$orange-invert</code>のように定義しています。</p>
+
+<p>もし元々の色に変更を加えても、ここの値は自動的に決定されるため、いちいち考え直して修正を加える必要がなく、機能的です。</p>
+
+<h2 id="ベーシックカラー">ベーシックカラー</h2>
+// General colors
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+<p>背景、ボーダーなどに用いる色は改めて名前をつけています。</p>
+
+<h2 id="文字色">文字色</h2>
+// Text colors
+$text: $grey-dark !default
+$text-invert: findColorInvert($text) !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+<p>文字色を定義しています。</p>
+
+<h2 id="コードカラー">コードカラー</h2>
+// Code colors
+$code: $red !default
+$code-background: $background !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+<p><code>code</code>や<code>pre</code>の色を管理しています。</p>
+
+<h2 id="リンクカラー">リンクカラー</h2>
+// Link colors
+$link: $primary !default
+$link-invert: $primary-invert !default
+$link-visited: $purple !default
+
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+
+$link-focus: $grey-darker !default
+$link-focus-border: $primary !default
+
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+<p>CSSフレームワークでは<code>.is-active</code>のようなクラスを大量に定義することになるので、ここで変数化しておくことで呼び出しやすくなります。</p>
+
+<h2 id="タイポグラフィ">タイポグラフィ</h2>
+// Typography
+$family-primary: $family-sans-serif !default
+$family-code: $family-monospace !default
+
+$size-small: $size-7 !default
+$size-normal: 1rem !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+
+<p>平文及びコードについての<code>font-family</code>が定義されています。
+また、よく使う文字サイズについても定義されています。</p>
+
+<h2 id="マッピング">マッピング</h2>
+// 4. Lists and maps
+
+$colors: (white: ($white, $black), black: ($black, $white), light: ($light, $light-invert), dark: ($dark, $dark-invert), primary: ($primary, $primary-invert), info: ($info, $info-invert), success: ($success, $success-invert), warning: ($warning, $warning-invert), danger: ($danger, $danger-invert)) !default
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default
+
+
+<p>後々、Sassの機能<code>@each</code>を使う時のために変数リストを定義します。
+改めて<code>@each</code>の部分で説明しますが、端的に言うと、<strong>「ここで定義した全てのパターンについてクラスを生成する」</strong> みたいな事ができます。</p>
+
+<h2 id="思ったこととか">思ったこととか</h2>
+
+<p>変数一つとっても様々ですね。</p>
+
+<ul>
+<li>色名とカラーコードを結びつける <code>$blue: hsl(217, 71%,  53%)</code></li>
+<li>色名に名前をつける<code>$info: $blue !default</code></li>
+</ul>
+
+<p>という風に、複数段階に渡って変数を定義しているのが印象的でした。
+<code>$info: hsl(217, 71%,  53%)</code>といきなり定義しまうと、<strong>「もし、青をもっと暗くしたい」</strong> というときに困るんですね。
+こういう記述をしていると、あらゆる場所を書き換えていく必要が発生します。</p>
+
+<p>その点、二段階に渡って変数化しておくと、<code>$blue: hsl(217, 71%,  53%)</code>の部分を編集することで、全ての<code>$blue</code>を使っている部分全てに編集を適用することができます。</p>
+
+<p>他にも、一箇所変更すると、受動的に関数などを元に決定される部分もあり、 <strong>「いい依存」</strong> だなと私は思います。</p>
+
+<p>Photoshopでいう、スマートオブジェクトをうまくつかいこなすようなイメージで、受動的に決まる部分をしっかりと作り込むことで、よりスマートなコードを書いていきたいですね。</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/bulma-functions">CSSフレームワーク「Bulma」のユーザー定義関数を見てみる</a>
+    </li>
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/bulma-mixin01">CSSフレームワーク「Bulma」のmixinを眺める その1</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

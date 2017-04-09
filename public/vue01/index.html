@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>Vue.jsをはじめてみる#1 ~公式ガイドを読む編~ | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="Vue.jsをはじめてみる#1 ~公式ガイドを読む編~" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/vue01" />
+    <meta property="og:image" content="https://nayucolony.net" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="はじめに
+
+CSSがすきなフロントエンドエンジニアのナユです。
+フロントエンドエンジニア Advent Calendar 2016 12日目の記事です。
+
+私はCSSがすきですが、フロントエンドエンジニアを名乗る以上はしっかりとしたJavaScriptがかける必要があります。
+ですので、このアドベントカレンダーを機に「Vue.js」勉強ログをつけてみることにしました。
+
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">Vue.jsをはじめてみる#1 ~公式ガイドを読む編~</h1>
+    <time datetime="2016-12-12T20:40:55&#43;09:00">
+      2016年12月12日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="Vue.jsをはじめてみる#1 ~公式ガイドを読む編~" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/vue01" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="" alt=""/></div>
+  </header>
+  <h2 id="はじめに">はじめに</h2>
+
+<p>CSSがすきなフロントエンドエンジニアのナユです。
+<a href="http://qiita.com/advent-calendar/2016/frontend-engineers">フロントエンドエンジニア Advent Calendar 2016</a> 12日目の記事です。</p>
+
+<p>私はCSSがすきですが、フロントエンドエンジニアを名乗る以上はしっかりとしたJavaScriptがかける必要があります。
+ですので、このアドベントカレンダーを機に「Vue.js」勉強ログをつけてみることにしました。</p>
+
+<p></p>
+
+<p>ありがとうアドベントカレンダー。これがなければゆうゆうと「来年は頑張る」とかいってたはず。</p>
+
+<h2 id="現状スキルセット">現状スキルセット</h2>
+
+<p>スキルセットとしては、
+ - ただ動くだけのjQuery/JavaScriptなら調べながら使えます。
+ - あとはHTML/CSSをかけます。
+ - Reactちょっとだけやったことあります</p>
+
+<p>というレベル。ほぼマークアップエンジニアです。
+いや、アクセシビリティはそんなに詳しくないので、戒めの意味でも「HTMLコーダー」レベルです。</p>
+
+<p>今の課題は、「いいJavaScriptを書く」というところにあるかなと思っているので、知見を広げるために「Vue.js」というフレームワークを触ってみることにします。</p>
+
+<p>同じくらいのスキルセットの人は一緒に頑張りましょう。
+もっと上のレベルの方は、ご教授のほどよろしくお願いします！</p>
+
+<h2 id="概要を掴む">概要を掴む</h2>
+
+<p>まずは、Vue.jsがなんなのか、あたりをつかみます。</p>
+
+<p><a href="https://jp.vuejs.org/">vue.js</a>
+日本語公式ページあるの嬉しい。
+軽くて速い、仮想DOM、ふむふむ。</p>
+
+<blockquote>
+<p>公式ガイドは、HTML、CSS そして JavaScript の中レベルのフロントエンドの知識を前提にしています。フロントエンドの開発が初めてであるならば、最初のステップとして、フレームワークに直接入門するのは良いアイデアではないかもしれません。基礎を学んで戻ってきましょう！他のフレームワークでの以前の経験は役に立ちますが、必至ではありません。</p>
+</blockquote>
+
+<p><a href="https://jp.vuejs.org/v2/guide/">はじめに - Vue.js</a></p>
+
+<p>えっ、どうしようかな……
+とりあえず、一通り触ってみて、わかるレベルでやっていきます。</p>
+
+<h2 id="インストール">インストール</h2>
+
+<p>少なくとも、触ってみるだけならば
+<code>&lt;script src=&quot;https://unpkg.com/vue/dist/vue.js&quot;&gt;&lt;/script&gt;</code>
+を読み込むだけでいいっぽい。
+この辺はjQueryと同じですね。</p>
+
+<p>npmからインストールしてきてbuildして…ていうのはしっかりした開発か、自分が必要になったら改めて検討します。</p>
+
+<h2 id="まずはhello-world">まずはHello,World</h2>
+<div id="app">
+  {{ message }}
+</div>
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+
+<ul>
+<li><code>el</code>:書き出しターゲット(Vue特有の表現っぽい。elementの略かな？)</li>
+<li><code>data</code>:データ対応（この場合、messageが<code>Hello Vue!</code>）</li>
+</ul>
+
+<p>html内の<code>{{ message }}</code>にappで定義した<code>message:Hello Vue!</code>が書き込まれるっていう風な動きですね。</p>
+
+<p><code>new</code>っていうのは、JavaScriptの<code>new演算子</code>ですね。
+ちょっと復習します。</p>
+
+<h3 id="new演算子">new演算子？</h3>
+
+<p>JavaScriptには、オブジェクトという考え方があります。
+そこで用いられるのがnew演算子です。
+まずは、オブジェクトについて少し説明。</p>
+
+<h4 id="オブジェクト">オブジェクト</h4>
+
+<p>名前をキーにアクセスできる配列の事を言います。
+いろんなデータやデータ操作についてのあれこれがつまった入れ物のようなものです。</p>
+
+<p>例えば「nayu」というオブジェクトを定義するときはこんな感じです。</p>
+var nayu = {
+  name  : nayu,
+  sex   : male,
+  birth : 1993/04/28,
+  part  : frontendengineer
+}
+
+<p>こういう風に、オブジェクト内に名前をつけて情報を定義しておきます。
+すると、「ナユの誕生日」をデータとして使いたい時に<code>nayu.birth</code>だとか<code>nayu['birth']</code>だとかでデータにアクセスできます(これらの違いは割愛)。
+<code>nayu</code>,<code>1993/04/28</code>などのデータを <strong>プロパティ</strong> と呼びます。</p>
+
+<p>これらは宣言したあとからも外から書き換えることができます。</p>
+
+<p>さて、この、すごい入れ物であるオブジェクト。
+今は「nayu」オブジェクトを自分で定義しましたが、JavaScriptにはもともといろいろなオブジェクトが用意されていて、呼び出すだけで様々なデータ操作が行えます。</p>
+
+<p>では、もともと用意されたオブジェクトに直接外からアクセスしてデータを書き換える行為が発生したときはどうでしょう。</p>
+
+<p>答えは、そのデータを使っている別の場所では予定と違うデータに書き換わってしまっていて、不都合が発生します。</p>
+
+<p>そのため、用意されているオブジェクトを使う時は、「原本」ではなく「コピー」を作って使いましょうということになっています。</p>
+
+<p>この、オブジェクトをコピーする行為を「インスタンス化」、できあがったコピーは「インスタンス」と呼びます。
+（instanceは「事実、事例、実例」という意味があります。
+実物のサンプルコピーということで、まさに実例ですね。）</p>
+
+<p>Gitでいうとブランチを切ってきてそのエリアで作業する、みたいなものです。</p>
+
+<p>さて、本題に戻りましょう。
+今の<code>new</code>演算子はインスタンスを作ることだということを踏まえて見てみると、この操作はVue.jsの元々用意しているオブジェクト<code>Vue</code>をインスタンス化し、それの中身を書き換えて<code>app</code>という名前のオブジェクトとして定義した、ということが記述されているとわかります。</p>
+
+<p>ふむふむ、なるほど、Vue.jsは、テンプレートを提供してくれているのですね。
+コピーして、書き換えて、好きに使えよ、という感じでしょうか。</p>
+
+<h2 id="v-bindでデータバインディング">v-bindでデータバインディング</h2>
+<div id="app-2">
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds to see my dynamically bound title!
+  </span>
+</div>
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'You loaded this page on ' + new Date()
+  }
+})
+
+<p>htmlの方で１点、みたこともないものが出てきましたね。
+<code>v-bind:title</code>とは何でしょうか…。</p>
+
+<p>公式ガイドによると、ディレクティブというもののようです。
+挙動を見ると、「<code>title</code>属性に<code>message</code>のプロパティを書き込んだ」という風に見えます。
+HTMLにデータを書き込むことを「束縛する」と表現するのか…？
+データバインディング、みたいな単語はたまに聞くのですが、その辺も関連してくるのかな。
+この辺はおいおい勉強していきましょう。</p>
+
+<h2 id="v-ifで条件分岐">v-ifで条件分岐</h2>
+<div id="app-3">
+  <p v-if="seen">Now you see me</p>
+</div>
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})
+
+<p><code>v-if</code>ができました。if文っぽいですね。
+<code>seen:true</code>を返すと要素が出現、<code>seen:false</code>を返すと要素が消滅します。
+別に<code>seen</code>じゃなくて<code>nyanko</code>とかでも行けました。
+要は、<code>v-if=&quot;true&quot;</code>なのか<code>v-if=&quot;false&quot;</code>なのかで判断するっていうことですね。うん、これはすぐわかった。</p>
+
+<p>ちなみに、ガイドによると、消滅、更新、などのタイミングでのトランジションエフェクトもVueは提供してくれているようです。これはよさそうですね。</p>
+
+<h2 id="v-forでループ">v-forでループ</h2>
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+})
+
+<p>なるほど、徐々にVueのやり口が見えてきました。
+<code>todos</code>の<code>text</code>プロパティが尽きるまで<code>&lt;li&gt;</code>を描画するんですね。</p>
+
+<p><code>XX in YY</code>は、in YYは、JS側のtodosオブジェクトをさしてますね。
+todoはHTML側で任意に設定されています。
+textはtodosオブジェクト内で定義されています。
+この辺の文法は、またしっかり学ぶ必要がありそうです。</p>
+
+<p>consoleから<code>app4.todos.push({ text: 'New item' })</code>を叩くと要素が増えました。
+<code>push()</code>は配列の末尾にデータを突っ込むメソッドですね。</p>
+
+<h2 id="v-on-v-modelでユーザー入力の制御">v-on,v-modelでユーザー入力の制御</h2>
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
+<p><code>v-on:click</code>
+clickイベントらしきものができました。
+clickすると<code>reverseMessage</code>メソッドを呼び出す感じですね。
+定義の仕方は、<code>methods</code>オブジェクトに<code>reverseMessage</code>を記述。
+中身は普通のJavaScriptのfunctionですね。
+内容的には、
+ - split(&ldquo;)：<code>app5</code>の<code>message</code>を一文字ずつ区切って配列に格納
+ - reverse()：順番を全部ひっくり返す
+ - join(&ldquo;)：連結（つなぎ部分に挿入する文字はなし）</p>
+
+<p>そのインスタンスのみで通用する値、メソッドがあるってなんか不思議な気分ですね。
+こういうのがない場合、グローバルに存在する関数はどこからでも呼出せていたので。
+これだと<code>el:#app-5</code>内で通用する関数ってことですよね。
+他の場所で使いたければ、都度指定する必要があるわけでしょう。</p>
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+
+<p>なるほど、データバインディングがなんとなくわかりました。
+つまりは、リアルタイムに片方を、もしくはお互いを更新するってことですね？
+さっきの<code>v-bind</code>はJavaScriptからHTMLだったけれど、今回の<code>v-model</code>は双方向ですね。</p>
+
+<p>HTMLの<code>&lt;input&gt;</code>の要素がJavaScriptの<code>message</code>を書き換え、すぐさまHTMLの<code>{{ message }}</code>に反映するといった感じですね。
+なるほどです。データバインディング、すばらしい。</p>
+
+<h2 id="コンポーネントシステム">コンポーネントシステム</h2>
+
+<p>これは多分、だいたいCSS設計のコンポーネントシステムとおなじようなものでしょう。。</p>
+
+<h3 id="コンポーネントの定義">コンポーネントの定義</h3>
+Vue.component('todo-item', {
+  template: '<li>This is a todo</li>'
+})
+<ol>
+  <!-- todos 配列にある各 todo に対して todo-item コンポーネントのインスタンス作成する -->
+  <todo-item></todo-item>
+</ol>
+
+<p>なんとなく、感覚的にわかった感じはあります。</p>
+
+<h3 id="コンポーネントに値を渡す">コンポーネントに値を渡す</h3>
+<div id="app-7">
+  <ol>
+    <!-- todo オブジェクトによって各 todo-item を提供します。それは、内容を動的にできるように表します。-->
+    <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+  </ol>
+</div>
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+var app7 = new Vue({
+  el: '#app-7',
+  data: {
+    groceryList: [
+      { text: 'Vegetables' },
+      { text: 'Cheese' },
+      { text: 'Whatever else humans are supposed to eat' }
+    ]
+  }
+})
+
+<p>流れ的には
+ - <code>&lt;todo-item&gt;</code>コンポーネントはprops(値)の箱をもっていて、親コンポーネントからpropsを受け取る。
+ - <code>v-bind</code>を使って<code>todo.text</code>データをHTML上の<code>&lt;todo-item&gt;</code>と紐付ける
+ - HTML上に<code>&lt;todo-item&gt;</code>が<code>groceryList</code>のアイテムの数だけ生成される</p>
+
+<p>うーん、理屈はわかったんだけど、<code>v-for</code>あたりをうまくかけるかは微妙です。
+いちいち参照しないとわかんなそう。すぐ慣れる気はします。</p>
+
+<hr />
+
+<p>さて、ふんわりとした雰囲気は掴むことができました。
+次回は引き続きガイドを進めつつ、わからない単語がでてきたら都度調べて、という風にやっていきます。</p>
+
+<h2 id="参考文献">参考文献</h2>
+
+<p><a href="http://gihyo.jp/book/2016/978-4-7741-8411-1">改訂新版 JavaScript本格入門</a>
+<a href="https://jp.vuejs.org/">vue.js</a></p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/react-modal-position">Android4.4系でReact-modalの表示位置がずれる</a>
+    </li>
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/rscss">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

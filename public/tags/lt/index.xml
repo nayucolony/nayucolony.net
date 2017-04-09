@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lt on nayucolony.net</title>
+    <link>http://nayucolony.net/tags/lt/index.xml</link>
+    <description>Recent content in Lt on nayucolony.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <atom:link href="http://nayucolony.net/tags/lt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DIST.13「トクするCSS」に出演しました。</title>
+      <link>http://nayucolony.net/dist13</link>
+      <pubDate>Wed, 14 Dec 2016 13:36:56 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/dist13</guid>
+      <description>&lt;p&gt;2016年12月2日に開催された&lt;a href=&#34;https://dist.connpass.com/event/44273/&#34;&gt;DIST.13 「トクするCSS」&lt;/a&gt;にLTスピーカーとして出演しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;出演の経緯&#34;&gt;出演の経緯&lt;/h2&gt;
+
+&lt;p&gt;元々DISTというイベントの存在は知っていたのですが、詳細まではよく知りませんでした。
+イベントページ公開直後に社内slackで（募集してるみたいだよ）というDMが飛んできたので勢いで応募しました。&lt;/p&gt;
+
+&lt;p&gt;主催側でオファーがかかっていたまぼろしの宮田さん（&lt;a href=&#34;https://twitter.com/yuki_m015&#34;&gt;@yuki_m015&lt;/a&gt;）やICSの鹿野さん（&lt;a href=&#34;https://twitter.com/tonkotsuboy_com&#34;&gt;@tonkotsuboy_com&lt;/a&gt;）が出演されるということまではわかっており、知っている人が出演するという安心からかあまり気負いせずに参加できたのでラッキーでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;発表内容について&#34;&gt;発表内容について&lt;/h2&gt;
+
+&lt;p&gt;テーマである「CSS」について特に鉄板ネタを持っているわけではありませんでした。&lt;/p&gt;
+
+&lt;p&gt;唯一、webデザイナーになった当初から意識し続けていた「CSS設計」という話題ならばなんとか喋れそうな気がしたので、内容自体はそっち方面ということは決めていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;タイトル-君の名は-について&#34;&gt;タイトル「君の名は。」について&lt;/h2&gt;
+
+&lt;p&gt;私は文章を書くときもスライドを作るときも真っ先にタイトルを決めてしまうタイプなのですが、今回はその時マイブームだった「君の名は。」を採用しました。&lt;/p&gt;
+
+&lt;p&gt;ですが、そのあとのちょまど騒動の流れでこの記事が目につき、めちゃくちゃ後悔しました（笑）&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;発表内容とは関係の無いネタ（例えば、アニメやマンガ、ゲームなど）を散りばめたり、そこを押してこられると、元ネタを知らないとさっぱり分かりません。発表内容をより伝えるアクセントとして使うのは良いですが、コンテキストが共有できていないものはなかなか伝わりづらいですね。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.shin1x1.com/entry/improve-the-presentation-skills-for-beginners&#34;&gt;「ここを気をつけるともっと良くなる勉強会の発表」&lt;/a&gt; より引用&lt;/p&gt;
+
+&lt;p&gt;次からはちゃんとタイトル付けていこうかなと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;内容の決まった経緯&#34;&gt;内容の決まった経緯&lt;/h2&gt;
+
+&lt;p&gt;テーマである「&lt;a href=&#34;http://rscss.io/&#34;&gt;RSCSS&lt;/a&gt;」ですが、これは今流行っているCSS設計の主たる方針から外れる部分があります。
+そこがあえて主流から少し外れたテーマの対比がシナジー効果を生み出さないかな〜？みたいな気持ちでセレクトしました。&lt;/p&gt;
+
+&lt;p&gt;今の主流な方針としては、詳細度をフラットに保つべくBEMなどの命名規則がよく用いられています。
+ユニークなclassを付与することで、対象の要素にスコープするというものです。
+BEMを使えば全てのclassの詳細度は（0,0,1,0）をキープし続けられるので上書き戦争で悩むことはなくなります。
+&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/Specificity&#34;&gt;詳細度 – CSS | MDN&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一方で、RSCSSはユニークなのはComponentのネーミングのみでElementは他のComponent内のElementのネーミングと高い頻度でバッチングします。
+そこで、意図せずスタイルが当たってしまうことを防止するために子セレクタによる指定をするというものです。
+完全にHTMLの構造に依存するため、かなりComponentの粒度に気を使う必要はあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;伝えたかったこと-技術面&#34;&gt;伝えたかったこと（技術面）&lt;/h2&gt;
+
+&lt;p&gt;私は &lt;strong&gt;「BEMって長くて面倒くさいよな！RSCSS使おうぜ！」&lt;/strong&gt; という意図のLTをしていたわけではありません。
+RSCSSに一度触れるとBEMでは意識しなかった部分が見えてきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;コンポーネントの粒度に対する意識&#34;&gt;コンポーネントの粒度に対する意識&lt;/h2&gt;
+
+&lt;p&gt;BEMで初学者がやりがちな&lt;code&gt;.Block__Element__Element&lt;/code&gt;なんかも、RSCSSを一度経由することで、「そこでは改めてblockとして切り直せばいい」という考えにスムーズに持っていけるのではないか、と思っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;レイアウトに対する意識&#34;&gt;レイアウトに対する意識&lt;/h2&gt;
+
+&lt;p&gt;これも初学者に多いかと思うのですが、例えば.blockそのものにmarginやfloat、widthなどを与えてしまうと使い回しは困難になります。
+LTではお話できませんでしたが、RSCSSでは 「Componentにレイアウトに絡むスタイルは付けない」 というルールがあります。
+そのため、レイアウトに関するスタイルはElementにあてる必要が出てきます。すると、必然的にComponentを配置する際はそれをElementとして扱うために親Componentを用意してあげる必要があります。&lt;/p&gt;
+
+&lt;p&gt;一度この思想に触れることで、実案件でBEMに戻った時にも、レイアウトはレイアウトで考える、スムーズなコーディングができるのではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;（このあたりの考え方はSMACSSに由来するものだと思われますので、興味のあるかたはそちらも学習してみるとより理解が深まるかと思います！）
+&lt;a href=&#34;https://app.codegrid.net/entry/smacss-1&#34;&gt;SMACSSによるCSSの設計 – CodeGrid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;……などなどと、いろんなことを思いながらの内容セレクトなのでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;LTしてみたことについての感想です。&lt;/p&gt;
+
+&lt;h2 id=&#34;質問を頂けた&#34;&gt;質問を頂けた&lt;/h2&gt;
+
+&lt;p&gt;質疑応答の時間に、私宛に質問を頂けたのがすごく心に残っています。
+質問がくる＝内容に興味を持って頂けたということなので、嬉しくてめちゃくちゃ早口でレスポンスを返すという舞い上がりっぷりを披露してしまいました。&lt;/p&gt;
+
+&lt;h2 id=&#34;反省点&#34;&gt;反省点&lt;/h2&gt;
+
+&lt;p&gt;LTに対する内容が多すぎたため、かなり早口の説明になってしまいました。
+もう少しフォーカスしてゆっくり、丁寧に、深くお話するのがLT向きかなとスライドを作る途中ずっと思っていました。&lt;/p&gt;
+
+&lt;p&gt;また、当日のLTでは一部画像の引用元を明記していなかったため、後日その点について指摘を頂きました。
+（当該スライドは削除して公開しています。）
+一人やらかすとコミュニティ全体がモラルの低い集まりという印象になってしまうということは色々なところを見てきているのですが、当事者としての意識が低かったなと反省しています。今後気をつけます。&lt;/p&gt;
+
+&lt;h2 id=&#34;伝えたいこととか&#34;&gt;伝えたいこととか&lt;/h2&gt;
+
+&lt;p&gt;技術面ではなく、LTすることに対してです。&lt;/p&gt;
+
+&lt;p&gt;一番邪魔なのは「自意識過剰さ」&lt;/p&gt;
+
+&lt;p&gt;私は 「どうしてあなたの話をいつまでもみんなに覚えてもらえてると思ってるの？」 と自分に問いかけることにしています。&lt;/p&gt;
+
+&lt;p&gt;自分みたいな弱小なエンジニアの発表が、聴衆全員に興味を持たれて、少しでも間違っていたら全員からマサカリが飛んできて…みたいに思ってしまうのは、ここで悩んでいる人にはちょっと早すぎます。&lt;/p&gt;
+
+&lt;p&gt;由来は何かのマンガの一コマだったと思うのですが思い出せません。ですが、こう考えることでかなり登壇に対するハードルは下がったので、いつか人前で話してみたいという人にはおすすめです。&lt;/p&gt;
+
+&lt;h2 id=&#34;distはいいぞ&#34;&gt;DISTはいいぞ&lt;/h2&gt;
+
+&lt;p&gt;DIST自体がかなり注目のイベントであるため、そこに参加することでかなりいろんな人とのつながりができます。&lt;/p&gt;
+
+&lt;p&gt;また、主催オファーのかかってる人は界隈の経験豊富な方々で、その人達と同じ場所に出演したという事実はかなり自信につながりました。&lt;/p&gt;
+
+&lt;p&gt;資格などもなく、ただ早い者勝ちで応募するだけでその方々と同じ舞台でLTができるのはDISTのすごいところです。&lt;/p&gt;
+
+&lt;p&gt;テーマは毎回違うので、自分の得意とするテーマが回ってきた時はぜひLT枠での参加をしてみることをお勧めします！
+（トークはちょっと…という方でも、見る側や懇親会、スタッフも募集されてるみたいなのでぜひ参加してみてください！）&lt;/p&gt;
+
+&lt;h2 id=&#34;関連リンク&#34;&gt;関連リンク&lt;/h2&gt;
+
+&lt;p&gt;動画アーカイブ
+&lt;a href=&#34;https://www.youtube.com/watch?v=moICBCi3Nyk&amp;amp;t=4491s&#34;&gt;DIST.13 「トクするCSS」 – youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;発表スライド
+&lt;a href=&#34;https://speakerdeck.com/nayucolony/jun-falseming-ha&#34;&gt;「君の名は。」 – Speaker Deck&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;補足解説記事
+&lt;a href=&#34;http://nayucolony.net/rscss/&#34;&gt;RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
