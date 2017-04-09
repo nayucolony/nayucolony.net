@@ -110,18 +110,19 @@ ga('send', 'pageview');
 <p><em>※「Bulma」の元ファイルは.sassファイルですが、多く用いられている.scssファイル形式の記述に書き換えています。</em></p>
 
 <h2 id="arrow">arrow</h2>
-@mixin arrow($color) {
-  border: 1px solid $color;
-  border-right: 0;
-  border-top: 0;
-  content: " ";
-  display: block;
-  height: 0.5em;
-  pointer-events: none;
-  position: absolute;
-  transform: rotate(-45deg);
-  width: 0.5em;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> arrow</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="err">$</span><span class="nt">color</span><span class="o">;</span>
+  <span class="nt">border-right</span><span class="nd">:</span> <span class="nt">0</span><span class="o">;</span>
+  <span class="nt">border-top</span><span class="nd">:</span> <span class="nt">0</span><span class="o">;</span>
+  <span class="nt">content</span><span class="nd">:</span> <span class="s2">&quot; &quot;</span><span class="o">;</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">block</span><span class="o">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5em</span><span class="o">;</span>
+  <span class="nt">pointer-events</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="o">;</span>
+  <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">-45deg</span><span class="o">);</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5em</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <h3 id="渡される引数">渡される引数</h3>
 
@@ -135,11 +136,12 @@ ga('send', 'pageview');
 左辺と底辺に<code>border</code>をつけて直角にしたものを、45度回転させて下向き矢印に見せています。</p>
 
 <h2 id="block">block</h2>
-@mixin block {
-  &:not(:last-child) {
-    margin-bottom: 1.5rem
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> block</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:last-child</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">margin-bottom</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.5rem</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <h3 id="機能-1">機能</h3>
 
@@ -159,13 +161,14 @@ ga('send', 'pageview');
 <p><code>margin-bottom: 1.5rem</code>は別の場所で使われている可能性もあるので、一括置換は難しいです。</p>
 
 <h2 id="clearfix">clearfix</h2>
-@mixin clearfix {
-  &:after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> clearfix</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="nt">clear</span><span class="nd">:</span> <span class="nt">both</span><span class="o">;</span>
+    <span class="nt">content</span><span class="nd">:</span> <span class="s2">&quot; &quot;</span><span class="o">;</span>
+    <span class="nt">display</span><span class="nd">:</span> <span class="nt">table</span><span class="o">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p><code>float</code>レイアウトに用いる<code>clearfix</code>です。</p>
 
@@ -180,13 +183,14 @@ ga('send', 'pageview');
 <p>フレームワークは運用コストを低くするためのものなので、「使うときに必要な作業を減らす」という点で<code>@mixin</code>による運用が合理的な選択です。</p>
 
 <h2 id="center">center</h2>
-@mixin center($size) {
-  left: 50%;
-  margin-left: -($size / 2);
-  margin-top: -($size / 2);
-  position: absolute;
-  top: 50%;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> center</span><span class="p">(</span><span class="nv">$size</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">left</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+  <span class="nt">margin-left</span><span class="nd">:</span> <span class="nt">-</span><span class="o">(</span><span class="err">$</span><span class="nt">size</span> <span class="o">/</span> <span class="nt">2</span><span class="o">);</span>
+  <span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">-</span><span class="o">(</span><span class="err">$</span><span class="nt">size</span> <span class="o">/</span> <span class="nt">2</span><span class="o">);</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="o">;</span>
+  <span class="nt">top</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <h3 id="渡される引数-1">渡される引数</h3>
 
@@ -199,75 +203,76 @@ ga('send', 'pageview');
 <p>いちいち <strong>「<code>position: absolute</code>で天地左右50%の位置に配置して、オブジェクトの<code>width</code>プロパティの値の半分をネガティブマージンでずらす」</strong> という指定を、<code>width</code>プロパティの数値を渡すだけで返してくれるので非常に便利です。</p>
 
 <h2 id="delete">delete</h2>
-＠mixin delete {
-  // We need even pixel dimensions to ensure the delete cross can be perfectly centered
-  $dimension-small: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-small)) * 1px;
-  $dimension-normal: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-normal)) * 1px;
-  $dimension-medium: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-medium)) * 1px;
-  $dimension-large: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-large)) * 1px;
-  @include unselectable;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background-color: rgba($black, 0.2);
-  border: none;
-  border-radius: 290486px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: $size-normal;
-  height: $dimension-normal;
-  outline: none;
-  position: relative;
-  transform: rotate(45deg);
-  transform-origin: center center;
-  vertical-align: top;
-  width: $dimension-normal;
-  &:before,
-  &:after {
-    background-color: $white;
-    content: "";
-    display: block;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="err">＠</span><span class="nt">mixin</span> <span class="nt">delete</span> <span class="p">{</span>
+  <span class="c1">// We need even pixel dimensions to ensure the delete cross can be perfectly centered</span>
+  <span class="nv">$dimension-small</span><span class="o">:</span> <span class="nf">roundToEvenNumber</span><span class="p">(</span><span class="mi">1</span><span class="mf">.5</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-6</span><span class="p">)</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-small</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="nv">$dimension-normal</span><span class="o">:</span> <span class="nf">roundToEvenNumber</span><span class="p">(</span><span class="mi">1</span><span class="mf">.5</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-6</span><span class="p">)</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-normal</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="nv">$dimension-medium</span><span class="o">:</span> <span class="nf">roundToEvenNumber</span><span class="p">(</span><span class="mi">1</span><span class="mf">.5</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-6</span><span class="p">)</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-medium</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="nv">$dimension-large</span><span class="o">:</span> <span class="nf">roundToEvenNumber</span><span class="p">(</span><span class="mi">1</span><span class="mf">.5</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-6</span><span class="p">)</span> <span class="o">*</span> <span class="nf">removeUnit</span><span class="p">(</span><span class="nv">$size-large</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">@include</span><span class="nd"> unselectable</span><span class="p">;</span>
+  <span class="nt">-moz-appearance</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">-webkit-appearance</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">background-color</span><span class="nd">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">$</span><span class="nt">black</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.2</span><span class="o">);</span>
+  <span class="nt">border</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">border-radius</span><span class="nd">:</span> <span class="nt">290486px</span><span class="o">;</span>
+  <span class="nt">cursor</span><span class="nd">:</span> <span class="nt">pointer</span><span class="o">;</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span><span class="o">;</span>
+  <span class="nt">font-size</span><span class="nd">:</span> <span class="err">$</span><span class="nt">size-normal</span><span class="o">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-normal</span><span class="o">;</span>
+  <span class="nt">outline</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">relative</span><span class="o">;</span>
+  <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">45deg</span><span class="o">);</span>
+  <span class="nt">transform-origin</span><span class="nd">:</span> <span class="nt">center</span> <span class="nt">center</span><span class="o">;</span>
+  <span class="nt">vertical-align</span><span class="nd">:</span> <span class="nt">top</span><span class="o">;</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-normal</span><span class="o">;</span>
+  <span class="k">&amp;</span><span class="nd">:before</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">white</span><span class="o">;</span>
+    <span class="nt">content</span><span class="nd">:</span> <span class="s2">&quot;&quot;</span><span class="o">;</span>
+    <span class="nt">display</span><span class="nd">:</span> <span class="nt">block</span><span class="o">;</span>
+    <span class="nt">left</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+    <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="o">;</span>
+    <span class="nt">top</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+    <span class="nt">transform</span><span class="nd">:</span> <span class="nt">translateX</span><span class="o">(</span><span class="nt">-50</span><span class="err">%</span><span class="o">)</span> <span class="nt">translateY</span><span class="o">(</span><span class="nt">-50</span><span class="err">%</span><span class="o">);</span>
+  <span class="p">}</span>
 
-  &:before {
-    height: 2px;
-    width: 50%;
-  }
+  <span class="k">&amp;</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="nt">2px</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+  <span class="p">}</span>
 
-  &:after {
-    height: 50%;
-    width: 2px;
-  }
+  <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="nt">2px</span><span class="o">;</span>
+  <span class="p">}</span>
 
-  &:hover,
-  &:focus {
-    background-color: rgba($black, 0.3);
-  }
+  <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">$</span><span class="nt">black</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.3</span><span class="o">);</span>
+  <span class="p">}</span>
 
-  &:active {
-    background-color: rgba($black, 0.4);
-  }
+  <span class="k">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">$</span><span class="nt">black</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.4</span><span class="o">);</span>
+  <span class="p">}</span>
 
-  // Sizes
-  &.is-small {
-    height: $dimension-small;
-    width: $dimension-small;
-  }
+  <span class="c1">// Sizes</span>
+  <span class="k">&amp;</span><span class="nc">.is-small</span> <span class="p">{</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-small</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-small</span><span class="o">;</span>
+  <span class="p">}</span>
 
-  &.is-medium {
-    height: $dimension-medium;
-    width: $dimension-medium;
-  }
+  <span class="k">&amp;</span><span class="nc">.is-medium</span> <span class="p">{</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-medium</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-medium</span><span class="o">;</span>
+  <span class="p">}</span>
 
-  &.is-large {
-    height: $dimension-large;
-    width: $dimension-large;
-  }
+  <span class="k">&amp;</span><span class="nc">.is-large</span> <span class="p">{</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-large</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimension-large</span><span class="o">;</span>
+  <span class="p">}</span>
 
-}
+<span class="p">}</span>
+</code></pre></div>
 
 <p>閉じるボタンです。</p>
 
@@ -283,15 +288,16 @@ ga('send', 'pageview');
 <p>pxの小数点以下の処理は強制的に切り捨てであったり、四捨五入であったりとブラウザによりけりなので、完璧に中央配置するには親要素の<code>width</code>プロパティの値が偶数である必要があります。</p>
 
 <h2 id="fa">fa</h2>
-@mixin fa($size, $dimensions) {
-  display: inline-block;
-  font-size: $size;
-  height: $dimensions;
-  line-height: $dimensions;
-  text-align: center;
-  vertical-align: top;
-  width: $dimensions;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> fa</span><span class="p">(</span><span class="nv">$size</span><span class="o">,</span> <span class="nv">$dimensions</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span><span class="o">;</span>
+  <span class="nt">font-size</span><span class="nd">:</span> <span class="err">$</span><span class="nt">size</span><span class="o">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimensions</span><span class="o">;</span>
+  <span class="nt">line-height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimensions</span><span class="o">;</span>
+  <span class="nt">text-align</span><span class="nd">:</span> <span class="nt">center</span><span class="o">;</span>
+  <span class="nt">vertical-align</span><span class="nd">:</span> <span class="nt">top</span><span class="o">;</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimensions</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>font awesomeアイコンの配置用<code>@mixin</code>。</p>
 
@@ -300,61 +306,62 @@ ga('send', 'pageview');
 <p>これにより、アイコンの縦軸を揃えることができます。</p>
 
 <h2 id="hamburger">hamburger</h2>
-@mixin hamburger($dimensions) {
-  cursor: pointer;
-  display: block;
-  height: $dimensions;
-  position: relative;
-  width: $dimensions;
-  span {
-    background-color: $text;
-    display: block;
-    height: 1px;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    top: 50%;
-    transition: none $speed $easing;
-    transition-property: background, left, opacity, transform;
-    width: 15px;
-    &:nth-child(1) {
-      margin-top: -6px;
-    }
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> hamburger</span><span class="p">(</span><span class="nv">$dimensions</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">cursor</span><span class="nd">:</span> <span class="nt">pointer</span><span class="o">;</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">block</span><span class="o">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimensions</span><span class="o">;</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">relative</span><span class="o">;</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">dimensions</span><span class="o">;</span>
+  <span class="nt">span</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">text</span><span class="o">;</span>
+    <span class="nt">display</span><span class="nd">:</span> <span class="nt">block</span><span class="o">;</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="nt">1px</span><span class="o">;</span>
+    <span class="nt">left</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+    <span class="nt">margin-left</span><span class="nd">:</span> <span class="nt">-7px</span><span class="o">;</span>
+    <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="o">;</span>
+    <span class="nt">top</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="o">;</span>
+    <span class="nt">transition</span><span class="nd">:</span> <span class="nt">none</span> <span class="err">$</span><span class="nt">speed</span> <span class="err">$</span><span class="nt">easing</span><span class="o">;</span>
+    <span class="nt">transition-property</span><span class="nd">:</span> <span class="nt">background</span><span class="o">,</span> <span class="nt">left</span><span class="o">,</span> <span class="nt">opacity</span><span class="o">,</span> <span class="nt">transform</span><span class="o">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="nt">15px</span><span class="o">;</span>
+    <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">-6px</span><span class="o">;</span>
+    <span class="p">}</span>
 
-    &:nth-child(2) {
-      margin-top: -1px;
-    }
+    <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">-1px</span><span class="o">;</span>
+    <span class="p">}</span>
 
-    &:nth-child(3) {
-      margin-top: 4px;
-    }
-  }
+    <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">4px</span><span class="o">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-  &:hover {
-    background-color: $background;
-  }
+  <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">background</span><span class="o">;</span>
+  <span class="p">}</span>
 
-  // Modifers
-  &.is-active {
-    span {
-      background-color: $link;
-      &:nth-child(1) {
-        margin-left: -5px;
-        transform: rotate(45deg);
-        transform-origin: left top;
-      }
-      &:nth-child(2) {
-        opacity: 0;
-      }
+  <span class="c1">// Modifers</span>
+  <span class="k">&amp;</span><span class="nc">.is-active</span> <span class="p">{</span>
+    <span class="nt">span</span> <span class="p">{</span>
+      <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">link</span><span class="o">;</span>
+      <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span> <span class="p">{</span>
+        <span class="nt">margin-left</span><span class="nd">:</span> <span class="nt">-5px</span><span class="o">;</span>
+        <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">45deg</span><span class="o">);</span>
+        <span class="nt">transform-origin</span><span class="nd">:</span> <span class="nt">left</span> <span class="nt">top</span><span class="o">;</span>
+      <span class="p">}</span>
+      <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
+        <span class="nt">opacity</span><span class="nd">:</span> <span class="nt">0</span><span class="o">;</span>
+      <span class="p">}</span>
 
-      &:nth-child(3) {
-        margin-left: -5px;
-        transform: rotate(-45deg);
-        transform-origin: left bottom;
-      }
-    }
-  }
-}
+      <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span>
+        <span class="nt">margin-left</span><span class="nd">:</span> <span class="nt">-5px</span><span class="o">;</span>
+        <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">-45deg</span><span class="o">);</span>
+        <span class="nt">transform-origin</span><span class="nd">:</span> <span class="nt">left</span> <span class="nt">bottom</span><span class="o">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <h3 id="渡される引数-2">渡される引数</h3>
 
@@ -369,33 +376,34 @@ ga('send', 'pageview');
 <p><code>.is-active</code>クラスを付与することで真ん中の線が<code>opacity:0</code>になり透明に、上下の線が45度ずつ傾き、中心で交わり「×」になります。</p>
 
 <h2 id="spinaround">spinAround</h2>
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@keyframes</span> <span class="nt">spinAround</span> <span class="p">{</span>
+  <span class="nt">from</span> <span class="p">{</span>
+    <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">0deg</span><span class="o">);</span>
+  <span class="p">}</span>
+  <span class="nt">to</span> <span class="p">{</span>
+    <span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">359deg</span><span class="o">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>回転アニメーションで用いるキーフレームです。</p>
 
 <p>この次の<code>loader</code>で使います。</p>
 
 <h2 id="loader">loader</h2>
-@mixin loader {
-  animation: spinAround 500ms infinite linear;
-  border: 2px solid $border;
-  border-radius: 290486px;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  content: "";
-  display: block;
-  height: 1rem;
-  position: relative;
-  width: 1rem;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> loader</span> <span class="p">{</span>
+  <span class="nt">animation</span><span class="nd">:</span> <span class="nt">spinAround</span> <span class="nt">500ms</span> <span class="nt">infinite</span> <span class="nt">linear</span><span class="o">;</span>
+  <span class="nt">border</span><span class="nd">:</span> <span class="nt">2px</span> <span class="nt">solid</span> <span class="err">$</span><span class="nt">border</span><span class="o">;</span>
+  <span class="nt">border-radius</span><span class="nd">:</span> <span class="nt">290486px</span><span class="o">;</span>
+  <span class="nt">border-right-color</span><span class="nd">:</span> <span class="nt">transparent</span><span class="o">;</span>
+  <span class="nt">border-top-color</span><span class="nd">:</span> <span class="nt">transparent</span><span class="o">;</span>
+  <span class="nt">content</span><span class="nd">:</span> <span class="s2">&quot;&quot;</span><span class="o">;</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">block</span><span class="o">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="nt">1rem</span><span class="o">;</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">relative</span><span class="o">;</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="nt">1rem</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>ローディングアニメーション表示用の<code>@mixin</code>です。</p>
 
@@ -406,9 +414,10 @@ ga('send', 'pageview');
 <p>結果、<strong>半円がぐるぐる周り続けるローディングアニメーション</strong> になります。</p>
 
 <h2 id="overflow-touch">overflow-touch</h2>
-@mixin overflow-touch {
-  -webkit-overflow-scrolling: touch;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> overflow-touch</span> <span class="p">{</span>
+  <span class="nt">-webkit-overflow-scrolling</span><span class="nd">:</span> <span class="nt">touch</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>iOS Sarariで慣性スクロールを有効にします。</p>
 
@@ -422,13 +431,14 @@ iOS Safariでは <strong>「二本指でスワイプ」</strong> することで
 これを指定することで一本指でスクロールができるようになります。</p>
 
 <h2 id="overlay">overlay</h2>
-@mixin overlay($offset: 0) {
-  bottom: $offset;
-  left: $offset;
-  position: absolute;
-  right: $offset;
-  top: $offset;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> overlay</span><span class="p">(</span><span class="nv">$offset</span><span class="o">:</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">bottom</span><span class="nd">:</span> <span class="err">$</span><span class="nt">offset</span><span class="o">;</span>
+  <span class="nt">left</span><span class="nd">:</span> <span class="err">$</span><span class="nt">offset</span><span class="o">;</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="o">;</span>
+  <span class="nt">right</span><span class="nd">:</span> <span class="err">$</span><span class="nt">offset</span><span class="o">;</span>
+  <span class="nt">top</span><span class="nd">:</span> <span class="err">$</span><span class="nt">offset</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>中央配置用<code>@mixin</code>です。</p>
 
@@ -439,13 +449,14 @@ iOS Safariでは <strong>「二本指でスワイプ」</strong> することで
 <p>親要素のアスペクト比に強制的にフィットさせるような使い方ができます。</p>
 
 <h2 id="placeholder">placeholder</h2>
-@mixin placeholder {
-  $placeholders: ':-moz' ':-webkit-input' '-moz' '-ms-input';
-  @each $placeholder in $placeholders {
-    &:#{$placeholder}-placeholder
-      @content      
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> placeholder</span> <span class="p">{</span>
+  <span class="nv">$placeholders</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">:-moz&#39;</span> <span class="s1">&#39;</span><span class="s2">:-webkit-input&#39;</span> <span class="s1">&#39;</span><span class="s2">-moz&#39;</span> <span class="s1">&#39;</span><span class="s2">-ms-input&#39;</span><span class="p">;</span>
+  <span class="k">@each</span> <span class="err">$</span><span class="nt">placeholder</span> <span class="nt">in</span> <span class="err">$</span><span class="nt">placeholders</span> <span class="p">{</span>
+    <span class="k">&amp;</span><span class="nd">:</span><span class="si">#{</span><span class="nv">$placeholder</span><span class="si">}</span><span class="nd">-placeholder</span>
+      <span class="o">@</span><span class="nt">content</span>      
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p><code>input</code>要素のplaceholderの装飾に用いられます。
 実は文字色とか変えられるんですよね。</p>
@@ -454,13 +465,14 @@ iOS Safariでは <strong>「二本指でスワイプ」</strong> することで
 （ここ、Autoprefixer効かないんでしょうか）</p>
 
 <h2 id="unselectable">unselectable</h2>
-@mixin unselectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> unselectable</span> <span class="p">{</span>
+  <span class="nt">-webkit-touch-callout</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">-webkit-user-select</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">-moz-user-select</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">-ms-user-select</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">user-select</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>例えばpaginationの「&hellip;」などは装飾的に用いられているテキストなので選択できないようにします。</p>
 

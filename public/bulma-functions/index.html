@@ -104,15 +104,16 @@ ga('send', 'pageview');
 </p>
 
 <h2 id="powernumber関数">powerNumber関数</h2>
-@function powerNumber($number, $exp)
-  $value: 1
-  @if $exp > 0
-    @for $i from 1 through $exp
-      $value: $value * $number
-  @else if $exp < 0
-    @for $i from 1 through -$exp
-      $value: $value / $number
-  @return $value
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span></span><span class="k">@function</span> <span class="nt">powerNumber</span><span class="o">(</span><span class="err">$</span><span class="nt">number</span><span class="o">,</span> <span class="err">$</span><span class="nt">exp</span><span class="o">)</span>
+  <span class="nv">$value</span><span class="o">:</span> <span class="mi">1</span>
+  <span class="k">@if</span> <span class="nv">$exp</span> <span class="o">&gt;</span> <span class="mi">0</span>
+    <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="mi">1</span> <span class="ow">through</span> <span class="nv">$exp</span>
+      <span class="nv">$value</span><span class="o">:</span> <span class="nv">$value</span> <span class="o">*</span> <span class="nv">$number</span>
+  <span class="k">@else</span> <span class="nt">if</span> <span class="err">$</span><span class="nt">exp</span> <span class="o">&lt;</span> <span class="nt">0</span>
+    <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="mi">1</span> <span class="ow">through</span> <span class="o">-</span><span class="nv">$exp</span>
+      <span class="nv">$value</span><span class="o">:</span> <span class="nv">$value</span> <span class="o">/</span> <span class="nv">$number</span>
+  <span class="k">@return</span> <span class="err">$</span><span class="nt">value</span>
+</code></pre></div>
 
 <h3 id="機能">機能</h3>
 
@@ -125,18 +126,19 @@ ga('send', 'pageview');
 負の数ならば、for文を用いて指数値の回数分の除算を行います。</p>
 
 <h2 id="colorluminance関数">colorLuminance関数</h2>
-@function colorLuminance($color)
-  $color-rgb: ('red': red($color),'green': green($color),'blue': blue($color))
-  @each $name, $value in $color-rgb
-    $adjusted: 0
-    $value: $value / 255
-    @if $value < 0.03928
-      $value: $value / 12.92
-    @else
-      $value: ($value + .055) / 1.055
-      $value: powerNumber($value, 2)
-    $color-rgb: map-merge($color-rgb, ($name: $value))
-  @return (map-get($color-rgb, 'red') * .2126) + (map-get($color-rgb, 'green') * .7152) + (map-get($color-rgb, 'blue') * .0722)
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span></span><span class="k">@function</span> <span class="nt">colorLuminance</span><span class="o">(</span><span class="err">$</span><span class="nt">color</span><span class="o">)</span>
+  <span class="na">$color-rgb</span><span class="o">:</span> <span class="p">(</span><span class="s1">&#39;</span><span class="s2">red&#39;</span><span class="o">:</span> <span class="nf">red</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span><span class="o">,</span><span class="s1">&#39;</span><span class="s2">green&#39;</span><span class="o">:</span> <span class="nf">green</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span><span class="o">,</span><span class="s1">&#39;</span><span class="s2">blue&#39;</span><span class="o">:</span> <span class="nf">blue</span><span class="p">(</span><span class="nv">$color</span><span class="p">))</span>
+  <span class="k">@each</span> <span class="err">$</span><span class="nt">name</span><span class="o">,</span> <span class="err">$</span><span class="nt">value</span> <span class="nt">in</span> <span class="err">$</span><span class="nt">color-rgb</span>
+    <span class="nv">$adjusted</span><span class="o">:</span> <span class="mi">0</span>
+    <span class="nv">$value</span><span class="o">:</span> <span class="nv">$value</span> <span class="o">/</span> <span class="mi">255</span>
+    <span class="k">@if</span> <span class="nv">$value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="mf">.03928</span>
+      <span class="nv">$value</span><span class="o">:</span> <span class="nv">$value</span> <span class="o">/</span> <span class="mi">12</span><span class="mf">.92</span>
+    <span class="k">@else</span>
+      <span class="nv">$value</span><span class="o">:</span> <span class="p">(</span><span class="nv">$value</span> <span class="o">+</span> <span class="mf">.055</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1</span><span class="mf">.055</span>
+      <span class="nv">$value</span><span class="o">:</span> <span class="nf">powerNumber</span><span class="p">(</span><span class="nv">$value</span><span class="o">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="na">$color-rgb</span><span class="o">:</span> <span class="nf">map-merge</span><span class="p">(</span><span class="nv">$color-rgb</span><span class="o">,</span> <span class="p">(</span><span class="nv">$name</span><span class="o">:</span> <span class="nv">$value</span><span class="p">))</span>
+  <span class="k">@return</span> <span class="o">(</span><span class="nt">map-get</span><span class="o">(</span><span class="err">$</span><span class="nt">color-rgb</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">red&#39;</span><span class="o">)</span> <span class="o">*</span> <span class="nc">.2126</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">map-get</span><span class="o">(</span><span class="err">$</span><span class="nt">color-rgb</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">green&#39;</span><span class="o">)</span> <span class="o">*</span> <span class="nc">.7152</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">map-get</span><span class="o">(</span><span class="err">$</span><span class="nt">color-rgb</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">blue&#39;</span><span class="o">)</span> <span class="o">*</span> <span class="nc">.0722</span><span class="o">)</span>
+</code></pre></div>
 
 <h3 id="機能-1">機能</h3>
 
@@ -149,11 +151,12 @@ rgb(0,0,0)の輝度を0、rgb(255,255,255)の輝度は1で、その他の色は0
 <p>この関数は、次の<code>findColorInvert</code>関数で用いられます。</p>
 
 <h2 id="findcolorinvert">findColorInvert</h2>
-@function findColorInvert($color)
-  @if (colorLuminance($color) > 0.55)
-    @return rgba(#000, 0.7)
-  @else
-    @return #fff
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span></span><span class="k">@function</span> <span class="nt">findColorInvert</span><span class="o">(</span><span class="err">$</span><span class="nt">color</span><span class="o">)</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nf">colorLuminance</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="mf">.55</span><span class="p">)</span>
+    <span class="k">@return</span> <span class="nt">rgba</span><span class="o">(</span><span class="nn">#000</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.7</span><span class="o">)</span>
+  <span class="k">@else</span>
+    <span class="k">@return</span> <span class="nn">#fff</span>
+</code></pre></div>
 
 <h3 id="機能-2">機能</h3>
 
@@ -172,10 +175,11 @@ rgb(0,0,0)の輝度を0、rgb(255,255,255)の輝度は1で、その他の色は0
 <p>参考：<a href="https://css-tricks.com/snippets/sass/luminance-color-function/">Color Luminance Function - CSS-TRICS</a></p>
 
 <h2 id="removeunit関数">removeUnit関数</h2>
-@function removeUnit($number)
-  @if type-of($number) == 'number' and not unitless($number)
-    @return $number / ($number * 0 + 1)
-  @return $number
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span></span><span class="k">@function</span> <span class="nt">removeUnit</span><span class="o">(</span><span class="err">$</span><span class="nt">number</span><span class="o">)</span>
+  <span class="k">@if</span> <span class="nf">type-of</span><span class="p">(</span><span class="nv">$number</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s2">number&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nf">unitless</span><span class="p">(</span><span class="nv">$number</span><span class="p">)</span>
+    <span class="k">@return</span> <span class="err">$</span><span class="nt">number</span> <span class="o">/</span> <span class="o">(</span><span class="err">$</span><span class="nt">number</span> <span class="o">*</span> <span class="nt">0</span> <span class="o">+</span> <span class="nt">1</span><span class="o">)</span>
+  <span class="k">@return</span> <span class="err">$</span><span class="nt">number</span>
+</code></pre></div>
 
 <h3 id="機能-3">機能</h3>
 
@@ -200,8 +204,9 @@ Sassでは、<strong>単位数で除算を行うことで数値のみが取り�
 <p>単位を消す理由は、次の関数の解説で行います。</p>
 
 <h2 id="roundtoevennumber関数">roundToEvenNumber関数</h2>
-@function roundToEvenNumber($number)
-  @return floor($number / 2) * 2
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span></span><span class="k">@function</span> <span class="nt">roundToEvenNumber</span><span class="o">(</span><span class="err">$</span><span class="nt">number</span><span class="o">)</span>
+  <span class="k">@return</span> <span class="nt">floor</span><span class="o">(</span><span class="err">$</span><span class="nt">number</span> <span class="o">/</span> <span class="nt">2</span><span class="o">)</span> <span class="o">*</span> <span class="nt">2</span>
+</code></pre></div>
 
 <h3 id="機能-4">機能</h3>
 

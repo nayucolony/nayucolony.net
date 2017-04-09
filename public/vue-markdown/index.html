@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>公式チュートリアルから始めるVue.js vol.1「Markdown エディタ」 | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="公式チュートリアルから始めるVue.js vol.1「Markdown エディタ」" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/vue-markdown" />
+    <meta property="og:image" content="https://nayucolony.net/images/vue/vue-tutorial01.jpg" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="はじめに
+
+今回はVue.jsの公式チュートリアル「Markdown エディタ」を通して、Vue.jsと関連技術を調べました。
+CSSはあまり凝ったことはしていなかったので、HTML/JSを見ていきます。
+
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">公式チュートリアルから始めるVue.js vol.1「Markdown エディタ」</h1>
+    <time datetime="2017-02-06T19:45:41&#43;09:00">
+      2017年2月 6日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="公式チュートリアルから始めるVue.js vol.1「Markdown エディタ」" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/vue-markdown" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="/images/vue/vue-tutorial01.jpg" alt=""/></div>
+  </header>
+  <h2 id="はじめに">はじめに</h2>
+
+<p>今回はVue.jsの公式チュートリアル<a href="https://jp.vuejs.org/v2/examples/">「Markdown エディタ」</a>を通して、Vue.jsと関連技術を調べました。
+CSSはあまり凝ったことはしていなかったので、HTML/JSを見ていきます。</p>
+
+<p></p>
+
+<h2 id="html">HTML</h2>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;editor&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">:value</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="err">@</span><span class="na">input</span><span class="o">=</span><span class="s">&quot;update&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-html</span><span class="o">=</span><span class="s">&quot;compiledMarkdown&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/vue/dist/vue.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;App.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h3 id="読み込むscript群">読み込むscript群</h3>
+
+<ul>
+<li>Vue.js</li>
+<li>marked.js（markdown記法をhtmlに変換する<code>marked</code>関数を使うため）</li>
+<li>underscore.js(functionの発火タイミングを調整する<code>_debounce</code>を使うため)</li>
+</ul>
+
+<h3 id="valueって">:valueって？</h3>
+
+<p><code>v-bind:value=&quot;input&quot;</code>の略記。</p>
+
+<h3 id="じゃあv-bind-value-input-って">じゃあv-bind:value=&ldquo;input&rdquo;って？</h3>
+
+<p><code>v-</code>で始まる属性を「ディレクティブ」という。
+ディレクティブの一つで、Vueインスタンスという箱に入っている値と結びつける（=bind）役割。</p>
+
+<p>JavaScriptと絡むのでそこで説明。</p>
+
+<h3 id="input-update-って">@input=&ldquo;update&rdquo;って？</h3>
+
+<p><code>v-on=&quot;input:update&quot;</code>の略記。</p>
+
+<h3 id="じゃあv-on-input-update-って">じゃあv-on:input=&ldquo;update&rdquo;って？</h3>
+
+<p>イベントハンドラと結びつけるディレクティブ。
+<code>input</code>が行われるたびに<code>update</code>を呼び出す。</p>
+
+<p>JavaScriptと絡むのでそこで説明。</p>
+
+<h3 id="v-html-compiledmarkdown-って">v-html=&ldquo;compiledMarkdown&rdquo;って？</h3>
+
+<p><code>innerHTML</code>と結びつけるためのディレクティブ。
+<code>compiledMarkdown</code>を<code>innerHTML</code>に記述する。</p>
+
+<p>JavaScriptと絡むのでそこで説明。</p>
+
+<h2 id="javascript">JavaScript</h2>
+<div class="highlight"><pre><code class="language-JavaScript" data-lang="JavaScript"><span></span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+  <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#editor&#39;</span><span class="p">,</span>
+  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">input</span><span class="o">:</span> <span class="s1">&#39;# hello&#39;</span>
+  <span class="p">},</span>
+  <span class="nx">computed</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">compiledMarkdown</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">marked</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">input</span><span class="p">,</span> <span class="p">{</span> <span class="nx">sanitize</span><span class="o">:</span> <span class="kc">true</span> <span class="p">})</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">update</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">debounce</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">input</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
+    <span class="p">},</span> <span class="mi">300</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div>
+
+<h3 id="書き方の説明">書き方の説明</h3>
+
+<p><code>new Vue({ AA:'aa',BB:'bb',CC:{cc1:cc1,cc2:cc2},DD:dd})</code>のような書き方をする。
+このひとまとまりを <strong>Vueインスタンス</strong> と呼ぶ。</p>
+
+<h2 id="elって">elって？</h2>
+<div class="highlight"><pre><code class="language-JavaScript" data-lang="JavaScript"><span></span><span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#editor&#39;</span><span class="p">,</span>
+</code></pre></div>
+
+<p>どのDOM要素にVueインスタンスを結びつけるかを記述する。
+例では<code>#editor</code>にVueインスタンスを結びつける。
+CSSセレクタで指定できる。</p>
+
+<h2 id="dataって">dataって？</h2>
+<div class="highlight"><pre><code class="language-JavaScript" data-lang="JavaScript"><span></span><span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">input</span><span class="o">:</span> <span class="s1">&#39;# hello&#39;</span>
+<span class="p">},</span>
+</code></pre></div>
+
+<p>データ群を管理する。
+今回は<code>input:'# hello'</code>というデータが入っている。</p>
+
+<p>これは最初にスルーした<code>v-bind:value=&quot;input&quot;</code>に関連する部分。
+<code>value</code>プロパティが<code>input</code>すなわち<code># hello</code>という値と直接結びついているということ。</p>
+
+<p>つまり、<code>textarea</code>オブジェクトの<code>value</code>プロパティが<code># hello</code>になる。また、何らかの操作で<code>input</code>の値を書き換えた時、連動して<code>value</code>プロパティも書き換わる。</p>
+
+<h3 id="textarea要素とvalue属性-textareaオブジェクトとvalueプロパティ">textarea要素とvalue属性、textareaオブジェクトとvalueプロパティ</h3>
+
+<p>HTML要素的には、<code>&lt;textarea&gt;</code>要素には<code>value</code>属性はないです。
+ここでの<code>value</code>は<code>HTMLTextAreaElement</code>オブジェクトの<code>value</code>プロパティです。</p>
+
+<p><code>textarea</code>要素の初期値を決定するときは<code>&lt;textarea&gt;初期テキスト&lt;/textarer&gt;</code>のようにしますが、JavaScript的には<code>innerHTML</code>ではなく<code>value</code>です。でも<code>&lt;textarea&gt;</code>要素には<code>value</code>属性はないです。
+（ちょっとややこしい上に上手な説明ができない）</p>
+
+<h2 id="computedって">computedって？</h2>
+<div class="highlight"><pre><code class="language-JavaScript" data-lang="JavaScript"><span></span><span class="nx">computed</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">compiledMarkdown</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">marked</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">input</span><span class="p">,</span> <span class="p">{</span> <span class="nx">sanitize</span><span class="o">:</span> <span class="kc">true</span> <span class="p">})</span>
+  <span class="p">}</span>
+<span class="p">},</span>
+</code></pre></div>
+
+<p>ここでは<code>compiledMarkdown</code>という名前の関数が書かれています。</p>
+
+<p>これは、<code>v-html</code>と結びつく。
+<code>this.input</code>というのは、一つ前で示した<code>data</code>の<code>input</code>のこと。
+<code>data</code>の中の値にアクセスしたいときは<code>this.input</code>のように書く。</p>
+
+<p><code>input</code>の要素を<code>marked()</code>関数に渡して、帰ってきた文字列を<code>div</code>の<code>innerHTML</code>とする。</p>
+
+<h3 id="compiledmarkdownで行われていること">compiledMarkdownで行われていること</h3>
+
+<p>marked.jsの<code>marked</code>関数を使って、<strong>引き渡したmarkdown記法の文字列をhtmlに変換している。</strong></p>
+
+<h3 id="sanitize-true-とは">{sanitize:true}とは？</h3>
+
+<p>引き渡した文字列を変換するときに、特殊文字を一般的な文字列にするための引数。
+「サニタイジング」や「エスケープ」ともいう。</p>
+
+<p>例えば、変換後の文字列が<code>&lt;strong&gt;HTMLの特殊文字列&lt;strong&gt;</code>だった場合
+サニタイジングを行った場合、<code>&lt;strong&gt;</code>が<code>&amp;lt;strong&amp;gt;</code>と置き換えられる。</p>
+
+<h2 id="methodsって">methodsって？</h2>
+<div class="highlight"><pre><code class="language-JavaScript" data-lang="JavaScript"><span></span><span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">update</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">debounce</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">input</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
+  <span class="p">},</span> <span class="mi">300</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p><code>update</code>という名前の関数が存在している。</p>
+
+<h3 id="引数eとは">引数eとは？</h3>
+
+<p>イベントをオブジェクトとして引き渡せる。
+<code>e.target.value</code>はフォームに入力された値が入ってる。</p>
+
+<h3 id="update関数で行われていること">update関数で行われていること</h3>
+
+<p>この関数は<code>data</code>の<code>input</code>に<code>e.target.value</code>すなわち「フォームの入力値」を入れるという処理を行う。</p>
+
+<p>これは、<code>v-on=&quot;input:update&quot;</code>と結びつく。
+<code>v-on:input</code>は「inputが起こるたびに<code>update</code>を実行」という意味になる。</p>
+
+<h3 id="computedとmethodsの違い">computedとmethodsの違い。</h3>
+
+<p>methodsは、何かのタイミングで呼び出されるもの。
+computedは、その中で使われている値に変化があったら自動的に関数が動くもの。
+また、computedは関数の体をしていながら、プロパティのように呼び出せる。
+今回も<code>v-html=&quot;compiledMarkdown&quot;</code>のように、まるでdataの値かの様に記述されている。</p>
+
+<h3 id="debounce関数">debounce関数</h3>
+
+<p><code>_debounce()</code>はVue.jsの機能ではない。
+というか、Vue1系には存在したがVue2系になって削除されたもの。</p>
+
+<p><code>underscore.js</code>に同じ関数が存在するので、これを読み込むことで使えるようになる。</p>
+
+<p><code>debounce</code>は <strong>「連続して関数が呼び出された時、最後の実行から指定した時間が経過するまでの呼び出しが無効になる」</strong> みたいな処理を行う。
+<code>v-on:input</code>としているため、文字がタイプされるたびに関数呼び出しがかかる。
+しかし、すごい速さで処理を書けると負荷がかかるため、第二引数で指定した時間が経過後に改めて<code>input</code>による呼び出しがかかった場合に実行という形になる。
+<strong>入力中には発火せず、入力後（キータイプをとめたら）実行される。</strong></p>
+
+<p>若干定期的なラグの後に表示が行われるのはこのため。</p>
+
+<p>また<code>underscore.js</code>の関連した関数に<code>throttle()</code>という関数がある。
+これは、<strong>入力中でも実行される。</strong></p>
+
+<p>今回は割りとどちらでもいいが、予測変換なんかは<code>throttle</code>の方がいい。
+打ち終わった後に出されるよりも入力中にリアルタイムで現れてくれたほうがいいから。</p>
+
+<h2 id="まとめ-全体の流れ">まとめ：全体の流れ</h2>
+
+<h3 id="1-文字入力がおこる">1.文字入力がおこる</h3>
+
+<p>文字入力が起こるたびに<code>@input=&quot;update&quot;</code>により<code>update</code>関数が呼び出される。</p>
+
+<h3 id="2-update関数が走る">2.update関数が走る</h3>
+
+<ul>
+<li>dataの<code>input</code>が、入力された値に書き換わる。</li>
+<li><code>input</code>は<code>v-bind:value</code>によりバインドされているので、<code>textarea</code>の<code>value</code>プロパティも入力値に書き換わる。</li>
+</ul>
+
+<h3 id="3-compiledmarkdownが走る">3.compiledMarkdownが走る</h3>
+
+<ul>
+<li><code>input</code>が書き換わるたびに<code>compiledMarkdown</code>が自動で走る。</li>
+<li><code>input</code>の値は<code>marked()</code>関数に渡され、サニタイズされたhtml文字列が返ってくる。</li>
+<li><code>v-html=&quot;compiledMarkdown&quot;</code>によりバインドされているので、返された値は<code>innerHTML</code>に随時書き込まれる。</li>
+</ul>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>ちょっとしたチュートリアルでも、一つ一つを調べていくと体系的な知識がみについてよいですね。今後もチュートリアルを通して、生きた知識を身に着けていきたいなと思います。</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/hugo-syntax">テンプレートエンジン「Hugo」でScss記法のシンタックスハイライトを有効にする！</a>
+    </li>
+    
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

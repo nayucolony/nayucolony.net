@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6624cb37-6165-460d-96c8-7308433a8001" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/aigis/index.html" afterPath="$PROJECT_DIR$/public/aigis/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom-vendorprefix/index.html" afterPath="$PROJECT_DIR$/public/atom-vendorprefix/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bemoji/index.html" afterPath="$PROJECT_DIR$/public/bemoji/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bulma-functions/index.html" afterPath="$PROJECT_DIR$/public/bulma-functions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bulma-mixin01/index.html" afterPath="$PROJECT_DIR$/public/bulma-mixin01/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bulma-mixin02/index.html" afterPath="$PROJECT_DIR$/public/bulma-mixin02/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bulma-variables/index.html" afterPath="$PROJECT_DIR$/public/bulma-variables/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/freelance/index.html" afterPath="$PROJECT_DIR$/public/freelance/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/gulp-cli/index.html" afterPath="$PROJECT_DIR$/public/gulp-cli/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.xml" afterPath="$PROJECT_DIR$/public/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/post/index.html" afterPath="$PROJECT_DIR$/public/post/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/post/index.xml" afterPath="$PROJECT_DIR$/public/post/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/posts/index.xml" afterPath="$PROJECT_DIR$/public/posts/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/posts/rscss/index.html" afterPath="$PROJECT_DIR$/public/posts/rscss/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/react-modal-position/index.html" afterPath="$PROJECT_DIR$/public/react-modal-position/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/rscss/index.html" afterPath="$PROJECT_DIR$/public/rscss/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/editor/index.xml" afterPath="$PROJECT_DIR$/public/tags/editor/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/gulp/index.xml" afterPath="$PROJECT_DIR$/public/tags/gulp/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/index.html" afterPath="$PROJECT_DIR$/public/tags/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/index.xml" afterPath="$PROJECT_DIR$/public/tags/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vue01/index.html" afterPath="$PROJECT_DIR$/public/vue01/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/config.toml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -216,16 +238,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491750098286</updated>
-      <workItem from="1491750100090" duration="760000" />
+      <workItem from="1491750100090" duration="973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760000" />
+    <option name="totallyTimeSpent" value="973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="34" width="1260" height="669" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -235,7 +256,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -277,7 +298,7 @@
     <entry file="file://$PROJECT_DIR$/config.toml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -285,7 +306,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

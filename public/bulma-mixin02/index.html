@@ -104,13 +104,14 @@ ga('send', 'pageview');
 <p></p>
 
 <h2 id="responsiveness">Responsiveness</h2>
-// Responsiveness
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="c1">// Responsiveness</span>
 
-$tablet: 769px !default;
-$desktop: 1000px !default; // 960px container + 40px
-$widescreen: 1192px !default; // 1152px container + 40
-// 960 and 1152 have been chosen because
-// they are divisible by both 12 and 16
+<span class="nv">$tablet</span><span class="o">:</span> <span class="mi">769</span><span class="kt">px</span> <span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$desktop</span><span class="o">:</span> <span class="mi">1000</span><span class="kt">px</span> <span class="nv">!default</span><span class="p">;</span> <span class="c1">// 960px container + 40px</span>
+<span class="nv">$widescreen</span><span class="o">:</span> <span class="mi">1192</span><span class="kt">px</span> <span class="nv">!default</span><span class="p">;</span> <span class="c1">// 1152px container + 40</span>
+<span class="c1">// 960 and 1152 have been chosen because</span>
+<span class="c1">// they are divisible by both 12 and 16</span>
+</code></pre></div>
 
 <p>画面幅の定義を行っています。</p>
 
@@ -131,11 +132,12 @@ $widescreen: 1192px !default; // 1152px container + 40
 769px以上を「tablet」としています。よって0~768pxがモバイルサイズです。この中にiPadが含まれるので注意です。</p>
 
 <h2 id="from">from</h2>
-@mixin from($device) {
-  @media screen and (min-width: $device) {
-    @content  
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> from</span><span class="p">(</span><span class="nv">$device</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$device</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>  
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>値を投げると「~~px以上のとき」を指定できる。<br />
 CSSをモバイルファーストで記述していく場合に使うことが多いでしょう。<br />
@@ -146,11 +148,12 @@ CSSをモバイルファーストで記述していく場合に使うことが�
 つまり「PC」向けのスタイルを記述することになりますね。</p>
 
 <h2 id="until">until</h2>
-@mixin until($device) {
-  @media screen and (max-width: $device - 1px) {
-    @content  
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> until</span><span class="p">(</span><span class="nv">$device</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="nv">$device</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>  
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>値を投げると「〜〜px以下のとき」を指定できる。
 こちらは<code>from</code>とは逆に、PCファーストで記述していく場合に使うことが多いです。</p>
@@ -160,71 +163,78 @@ CSSをモバイルファーストで記述していく場合に使うことが�
 iPad幅ですね。</p>
 
 <h2 id="mobile">mobile</h2>
-@mixin mobile {
-  @media screen and (max-width: $tablet - 1px) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> mobile</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="nv">$tablet</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>一つ前の<code>@include until($tablet)</code>と同じ動きになります。
 mobile幅まで有効なスタイルです。</p>
 
 <h2 id="tablet">tablet</h2>
-@mixin tablet {
-  @media screen and (min-width: $tablet) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> tablet</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$tablet</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>横幅769px以上で有効になるスタイルです。
 iPadが含まれません。Bulmaのブレークポイント的には、iPadはmobileに含んでしまうようです。</p>
 
 <h2 id="tablet-only">tablet-only</h2>
-@mixin tablet-only {
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> tablet-only</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$tablet</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="nv">$desktop</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>タブレット以上デスクトップ未満、すなわちタブレットのみで適用されるスタイルです。
 数値で言うと、769px~999px。</p>
 
 <h2 id="touch">touch</h2>
-@mixin touch {
-  @media screen and (max-width: $desktop - 1px) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> touch</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="nv">$desktop</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>デスクトップ未満で適用される。0~999px。
 タッチデバイス = スマホとタブレット。</p>
 
 <h2 id="desktop">desktop</h2>
-@mixin desktop {
-  @media screen and (min-width: $desktop) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> desktop</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$desktop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>デスクトップ以上、すなわちデスクトップ。
 数値で言うと、1000px以上。</p>
 
 <h2 id="desktop-only">desktop-only</h2>
-@mixin desktop-only {
-  @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> desktop-only</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$desktop</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="nv">$widescreen</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>デスクトップ以上、ワイドスクリーン未満、すなわちデスクトップオンリー。
 1000px~1199px。</p>
 
 <h2 id="widescreen">widescreen</h2>
-@mixin widescreen {
-  @media screen and (min-width: $widescreen) {
-    @content    
-  }
-}
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span></span><span class="k">@mixin</span><span class="nf"> widescreen</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">min-width</span><span class="o">:</span> <span class="nv">$widescreen</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span>    
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>ワイドスクリーンサイズ以上。1200px以上。</p>
 
@@ -259,6 +269,11 @@ iPadが含まれません。Bulmaのブレークポイント的には、iPadはm
       <a class="pager__link" href="http://nayucolony.net/bulma-mixin01">CSSフレームワーク「Bulma」のmixinを眺める その1</a>
     </li>
     
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/hugo-syntax">テンプレートエンジン「Hugo」でScss記法のシンタックスハイライトを有効にする！</a>
+    </li>
     
   </ol>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
