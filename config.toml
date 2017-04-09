@@ -6,6 +6,7 @@ googleAnalytics = "UA-88734859-1"
 PygmentsCodeFences = true
 pygmentsstyle = "default"
 pygmentsuseclasses = true
+publishDir = "docs"
 
 [Params]
 site_name_jp = "nayucolony.net"
@@ -15,3 +16,5 @@ description = "ナユのブログです"
 [permalinks]
 post = ":filename"
 pages = ":filename"
+
+
