@@ -627,20 +627,10 @@ a:hover {
     font-weight: bold;
     font-size: 1.2em; }
 
-.article-list {
-  -moz-column-count: auto;
-  column-count: auto;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  -moz-column-fill: auto;
-  column-fill: auto;
-  -moz-column-width: 300px;
-  column-width: 300px; }
-  .article-list__item {
-    display: inline-block;
-    width: 100%; }
-    .article-list__item:not(:last-child) {
-      margin-bottom: 20px; }
+.article-list__item {
+  width: 100%; }
+  .article-list__item:not(:last-child) {
+    margin-bottom: 20px; }
 
 .article-card {
   display: -ms-flexbox;

@@ -1,10 +1,5 @@
 .article-list {
-  column-count: auto;
-  column-gap: 20px;
-  column-fill: auto;
-  column-width: 300px;
   &__item {
-    display: inline-block;
     width: 100%;
     &:not(:last-child) {
       margin-bottom: 20px;
