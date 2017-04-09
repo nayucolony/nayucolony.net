@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nayucolony.net</title>
+    <link>http://nayucolony.net/tags/index.xml</link>
+    <description>Recent content on nayucolony.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <atom:link href="http://nayucolony.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>フリーランスエンジニアTips勉強会に行ってきました</title>
+      <link>http://nayucolony.net/freelance</link>
+      <pubDate>Wed, 18 Jan 2017 20:02:45 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/freelance</guid>
+      <description>&lt;p&gt;2017年、自分の幅を広げるべく、個人としてもコーディングのお仕事を受ける体制にしています &lt;strong&gt;（絶賛募集中です）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;フリーランスになる予定は今のところありませんが、「個人として仕事を受ける」という点についてどんなものか知りたかったので、&lt;a href=&#34;https://hiwell.connpass.com/event/47213/&#34;&gt;「知らなきゃ損！フリーランスエンジニアTips勉強会」&lt;/a&gt;に参加してきました。
+
+以下、セミナーのメモ書きです。
+ほぼ自分用ですが、ご参考になればと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスで悩みがちなところ&#34;&gt;フリーランスで悩みがちなところ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;稼げるのか？&lt;/li&gt;
+&lt;li&gt;仕事はあるのか？&lt;/li&gt;
+&lt;li&gt;そもそも何をすればいいのか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;フリーランスになると何が変わる&#34;&gt;フリーランスになると何が変わる？&lt;/h2&gt;
+
+&lt;p&gt;結論：フリーランスになったからと言って、仕事内容は変わらない。&lt;/p&gt;
+
+&lt;p&gt;ただし以下のような点が変化と言える
+- 会社に守ってもらえなくなる。自分の身は自分で守る。
+- 自分で仕事を探す必要がある。
+- 保険、税金周りの事務手続きを自分でやることになる。
+- 「会社で年末調整」→「自分で確定申告」に&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスのメリット&#34;&gt;フリーランスのメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分の報酬額を決められる。&lt;/li&gt;
+&lt;li&gt;興味のある仕事を自分で決められる。&lt;/li&gt;
+&lt;li&gt;働きたいときに働ける。&lt;/li&gt;
+&lt;li&gt;やめたいときにやめられる。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;色んなものが経費計上できる。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;会社の規定に束縛されない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;デメリット&#34;&gt;デメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分を売り込む手間がかかる&lt;/li&gt;
+&lt;li&gt;休めば休むほど報酬が減る&lt;/li&gt;
+&lt;li&gt;自分を守るのも自分&lt;/li&gt;
+&lt;li&gt;事務処理が増える&lt;/li&gt;
+&lt;li&gt;仕事→100%安定するとは言い切れない（体調面とかも含め）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;長く続けるコツ&#34;&gt;長く続けるコツ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;勤怠が良好である&lt;/li&gt;
+&lt;li&gt;最新技術にアンテナをはる&lt;/li&gt;
+&lt;li&gt;フリーランスとしてのキャリア設計&lt;/li&gt;
+&lt;li&gt;契約を守る（お客さんとの）&lt;/li&gt;
+&lt;li&gt;市場動向に見合った価格設定
+
+&lt;ul&gt;
+&lt;li&gt;現状は売り手市場だがお客さんの予算に噛み合わないと契約には至らない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;信頼関係を作るためのコミュニケーション能力&lt;/li&gt;
+&lt;li&gt;PJT体制、配置に柔軟に対応する
+
+&lt;ul&gt;
+&lt;li&gt;「若いディレクターの下で働きたくない」とかだとキツい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;相場&#34;&gt;相場&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;結論から言うと、人による&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース1&#34;&gt;モデルケース1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人6年目&lt;/li&gt;
+&lt;li&gt;22歳で新卒入社、27歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;月収30万円から50万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース2&#34;&gt;モデルケース2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人16年目&lt;/li&gt;
+&lt;li&gt;20歳で新卒入社、30歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;43万円から75万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;元々高額な場合（ゲーム会社など、相場の高い会社にいた場合）下がることもあるが、収入が上がっているパターンが多い。&lt;/p&gt;
+
+&lt;h2 id=&#34;キャリア形成&#34;&gt;キャリア形成&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「社員→フリーランス→法人化」とか「社員→フリーランス→正社員」とかもある&lt;/li&gt;
+&lt;li&gt;フリーランスになったからと言って会社勤めができなくなるわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;なる前にやるべきこと&#34;&gt;なる前にやるべきこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;絶対やっておくべき&#34;&gt;絶対やっておくべき&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クレジットカードをつくる
+
+&lt;ul&gt;
+&lt;li&gt;プライベートと事業の使い分けをする&lt;/li&gt;
+&lt;li&gt;経費処理が楽になる&lt;/li&gt;
+&lt;li&gt;フリーになって与信判断が厳しくなる前に作るべき&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;不動産契約（自宅購入）
+
+&lt;ul&gt;
+&lt;li&gt;これも与信判断は会社員のほうがおりやすいことから&lt;/li&gt;
+&lt;li&gt;最近はだいぶシビアなので検討している人は会社員のうちに&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ローンの借り換え
+
+&lt;ul&gt;
+&lt;li&gt;車、自宅、などなど&lt;/li&gt;
+&lt;li&gt;審査項目に影響&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;余力があればやっておこう&#34;&gt;余力があればやっておこう&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通帳（口座）、印鑑（事業用）&lt;/li&gt;
+&lt;li&gt;会計ソフト（弥生とか、freeeとか、MFクラウドとか）&lt;/li&gt;
+&lt;li&gt;名刺（なくてもいいけど売り込みには便利）&lt;/li&gt;
+&lt;li&gt;書類テンプレ（請求書フォーマットなどがあると便利）&lt;/li&gt;
+&lt;li&gt;ネット環境（Wi-Fiがあればだいたいなんとかなる）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人脈作り&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フリーランスどうしの交流&lt;/li&gt;
+&lt;li&gt;交流会、勉強会など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;退職後にやるべきこと&#34;&gt;退職後にやるべきこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;厚生年金→国民年金に切り替える&lt;/li&gt;
+&lt;li&gt;社保→国民健保に切り替える
+
+&lt;ul&gt;
+&lt;li&gt;離職票もって役所いけ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;個人事業の開業届け
+
+&lt;ul&gt;
+&lt;li&gt;やらないと後々面倒（2ヶ月以内にやっとけ）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;白色or青色申告承認申請書
+
+&lt;ul&gt;
+&lt;li&gt;税金対策&lt;/li&gt;
+&lt;li&gt;青色のほうがおすすめかも&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;事務処理&#34;&gt;事務処理&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今会社がやってくれていることを全部自分でしないといけない
+
+&lt;ul&gt;
+&lt;li&gt;会計ソフトとか使ってこまめにやっておけば楽にできる&lt;/li&gt;
+&lt;li&gt;ギリギリまで放置すると確定申告で苦しむ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;副業サラリーマンの場合、開業届が必須のわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;税金&#34;&gt;税金&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;収入-経費=所得&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;確定申告が必要なもの&#34;&gt;確定申告が必要なもの&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;所得税&lt;/li&gt;
+&lt;li&gt;消費税&lt;/li&gt;
+&lt;li&gt;復興特別所得税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;不要-支払書に従うだけでok&#34;&gt;不要（支払書に従うだけでOK）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;住民税&lt;/li&gt;
+&lt;li&gt;国民健保税&lt;/li&gt;
+&lt;li&gt;事業税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;経費にできる&#34;&gt;経費にできる&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;通信費&lt;/li&gt;
+&lt;li&gt;飲食費
+
+&lt;ul&gt;
+&lt;li&gt;飲み会&lt;/li&gt;
+&lt;li&gt;ランチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;事務所経費&lt;/li&gt;
+&lt;li&gt;備品購入費&lt;/li&gt;
+&lt;li&gt;その他
+
+&lt;ul&gt;
+&lt;li&gt;書籍&lt;/li&gt;
+&lt;li&gt;セミナー&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;確定申告&#34;&gt;確定申告&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;毎年2/15~3/15あたり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;仕事のとりかた&#34;&gt;仕事のとりかた&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;個人で取りに行くか&lt;/li&gt;
+&lt;li&gt;エージェントを経由するか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェントの選び方&#34;&gt;エージェントの選び方&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レスポンスが早い&lt;/li&gt;
+&lt;li&gt;営業マンの努力が見える（距離が縮まる）&lt;/li&gt;
+&lt;li&gt;エンド直案件が多い&lt;/li&gt;
+&lt;li&gt;悪いことも言ってくれる&lt;/li&gt;
+&lt;li&gt;業界動向の情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;キャリアサポートの情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;福利厚生サービスを提供してくれる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hiwellでは&#34;&gt;Hiwellでは&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一気通貫のフォロー
+
+&lt;ul&gt;
+&lt;li&gt;ワンストップで全てやってくれる&lt;/li&gt;
+&lt;li&gt;アフターフォローも充実&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;エンド&amp;amp;元請直案件が多い&lt;/li&gt;
+&lt;li&gt;福利厚生
+
+&lt;ul&gt;
+&lt;li&gt;教育、ツール、健康、お金、交流など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェント登録から参画までのフロー&#34;&gt;エージェント登録から参画までのフロー&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;登録面談
+
+&lt;ul&gt;
+&lt;li&gt;価格とか条件周りのすり合わせ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;案件紹介&lt;/li&gt;
+&lt;li&gt;客先面談&lt;/li&gt;
+&lt;li&gt;参画決定&lt;/li&gt;
+&lt;li&gt;アフターフォロー&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といったところで第一部が終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;第2部-hiwell経由で仕事をしているエンジニアさんの話&#34;&gt;第2部：Hiwell経由で仕事をしているエンジニアさんの話&lt;/h2&gt;
+
+&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;経営陣が企画提案を聞き入れてくれない&lt;/li&gt;
+&lt;li&gt;昇給も怪しい&lt;/li&gt;
+&lt;li&gt;賞与が何期も出ない&lt;/li&gt;
+&lt;li&gt;査定もあやふや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このあたりから来る企業への不信感からフリーランスへ転向&lt;/p&gt;
+
+&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソシャゲ&lt;/li&gt;
+&lt;li&gt;Webサイト&lt;/li&gt;
+&lt;li&gt;アプリ制作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;収入&#34;&gt;収入&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;会社員時代は40万前後&lt;/li&gt;
+&lt;li&gt;フリーランスになってからは50万~80万前後
+
+&lt;ul&gt;
+&lt;li&gt;コツコツ単価交渉&lt;/li&gt;
+&lt;li&gt;残業など含めると100万を超える月も&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;経費&#34;&gt;経費&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;家賃&lt;/li&gt;
+&lt;li&gt;通信光熱費&lt;/li&gt;
+&lt;li&gt;顧問料&lt;/li&gt;
+&lt;li&gt;MBP&lt;/li&gt;
+&lt;li&gt;kindle&lt;/li&gt;
+&lt;li&gt;iPad&lt;/li&gt;
+&lt;li&gt;接待交際費&lt;/li&gt;
+&lt;li&gt;タクシー&lt;/li&gt;
+&lt;li&gt;ガチャ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;など&lt;/p&gt;
+
+&lt;h2 id=&#34;やりがい&#34;&gt;やりがい&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;フリーだからどうということはない&lt;br /&gt;
+会社勤めと同じく、エンジニアとしてやることをやるだけ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;生活&#34;&gt;生活&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕事面はフリーランスだからどうとかはない。自分しだい。&lt;/li&gt;
+&lt;li&gt;経済的に余裕ができた&lt;/li&gt;
+&lt;li&gt;支払いの滞納刷ると辛い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;将来&#34;&gt;将来&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;起業は性格的に向いてないと思っている&lt;/li&gt;
+&lt;li&gt;就職はもういいや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;とのことで第二部終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;フリーランスになったからといって、仕事の内容も変わらなければ、仕事に対する姿勢も変わらないというのが一貫した結論でした。&lt;/p&gt;
+
+&lt;p&gt;収入があがり、事務手続きなどやることが増える、というような話が多かったです。&lt;/p&gt;
+
+&lt;p&gt;現状、まだまだ現職でやるべきことがたっくさんあるので、フリーランスになる予定はありませんが、市場にある色んな仕事を通して、経験値を積んでいけたらなという気持ちです。&lt;/p&gt;
+
+&lt;p&gt;お仕事がありましたらぜひご連絡ください〜！→&lt;a href=&#34;https://twitter.com/nayucolony&#34;&gt;@nayucolony&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>フリーランスエンジニアTips勉強会に行ってきました</title>
+      <link>http://nayucolony.net/freelance</link>
+      <pubDate>Wed, 18 Jan 2017 20:02:45 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/freelance</guid>
+      <description>&lt;p&gt;2017年、自分の幅を広げるべく、個人としてもコーディングのお仕事を受ける体制にしています &lt;strong&gt;（絶賛募集中です）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;フリーランスになる予定は今のところありませんが、「個人として仕事を受ける」という点についてどんなものか知りたかったので、&lt;a href=&#34;https://hiwell.connpass.com/event/47213/&#34;&gt;「知らなきゃ損！フリーランスエンジニアTips勉強会」&lt;/a&gt;に参加してきました。
+
+以下、セミナーのメモ書きです。
+ほぼ自分用ですが、ご参考になればと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスで悩みがちなところ&#34;&gt;フリーランスで悩みがちなところ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;稼げるのか？&lt;/li&gt;
+&lt;li&gt;仕事はあるのか？&lt;/li&gt;
+&lt;li&gt;そもそも何をすればいいのか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;フリーランスになると何が変わる&#34;&gt;フリーランスになると何が変わる？&lt;/h2&gt;
+
+&lt;p&gt;結論：フリーランスになったからと言って、仕事内容は変わらない。&lt;/p&gt;
+
+&lt;p&gt;ただし以下のような点が変化と言える
+- 会社に守ってもらえなくなる。自分の身は自分で守る。
+- 自分で仕事を探す必要がある。
+- 保険、税金周りの事務手続きを自分でやることになる。
+- 「会社で年末調整」→「自分で確定申告」に&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスのメリット&#34;&gt;フリーランスのメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分の報酬額を決められる。&lt;/li&gt;
+&lt;li&gt;興味のある仕事を自分で決められる。&lt;/li&gt;
+&lt;li&gt;働きたいときに働ける。&lt;/li&gt;
+&lt;li&gt;やめたいときにやめられる。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;色んなものが経費計上できる。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;会社の規定に束縛されない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;デメリット&#34;&gt;デメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分を売り込む手間がかかる&lt;/li&gt;
+&lt;li&gt;休めば休むほど報酬が減る&lt;/li&gt;
+&lt;li&gt;自分を守るのも自分&lt;/li&gt;
+&lt;li&gt;事務処理が増える&lt;/li&gt;
+&lt;li&gt;仕事→100%安定するとは言い切れない（体調面とかも含め）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;長く続けるコツ&#34;&gt;長く続けるコツ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;勤怠が良好である&lt;/li&gt;
+&lt;li&gt;最新技術にアンテナをはる&lt;/li&gt;
+&lt;li&gt;フリーランスとしてのキャリア設計&lt;/li&gt;
+&lt;li&gt;契約を守る（お客さんとの）&lt;/li&gt;
+&lt;li&gt;市場動向に見合った価格設定
+
+&lt;ul&gt;
+&lt;li&gt;現状は売り手市場だがお客さんの予算に噛み合わないと契約には至らない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;信頼関係を作るためのコミュニケーション能力&lt;/li&gt;
+&lt;li&gt;PJT体制、配置に柔軟に対応する
+
+&lt;ul&gt;
+&lt;li&gt;「若いディレクターの下で働きたくない」とかだとキツい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;相場&#34;&gt;相場&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;結論から言うと、人による&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース1&#34;&gt;モデルケース1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人6年目&lt;/li&gt;
+&lt;li&gt;22歳で新卒入社、27歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;月収30万円から50万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース2&#34;&gt;モデルケース2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人16年目&lt;/li&gt;
+&lt;li&gt;20歳で新卒入社、30歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;43万円から75万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;元々高額な場合（ゲーム会社など、相場の高い会社にいた場合）下がることもあるが、収入が上がっているパターンが多い。&lt;/p&gt;
+
+&lt;h2 id=&#34;キャリア形成&#34;&gt;キャリア形成&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「社員→フリーランス→法人化」とか「社員→フリーランス→正社員」とかもある&lt;/li&gt;
+&lt;li&gt;フリーランスになったからと言って会社勤めができなくなるわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;なる前にやるべきこと&#34;&gt;なる前にやるべきこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;絶対やっておくべき&#34;&gt;絶対やっておくべき&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クレジットカードをつくる
+
+&lt;ul&gt;
+&lt;li&gt;プライベートと事業の使い分けをする&lt;/li&gt;
+&lt;li&gt;経費処理が楽になる&lt;/li&gt;
+&lt;li&gt;フリーになって与信判断が厳しくなる前に作るべき&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;不動産契約（自宅購入）
+
+&lt;ul&gt;
+&lt;li&gt;これも与信判断は会社員のほうがおりやすいことから&lt;/li&gt;
+&lt;li&gt;最近はだいぶシビアなので検討している人は会社員のうちに&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ローンの借り換え
+
+&lt;ul&gt;
+&lt;li&gt;車、自宅、などなど&lt;/li&gt;
+&lt;li&gt;審査項目に影響&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;余力があればやっておこう&#34;&gt;余力があればやっておこう&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通帳（口座）、印鑑（事業用）&lt;/li&gt;
+&lt;li&gt;会計ソフト（弥生とか、freeeとか、MFクラウドとか）&lt;/li&gt;
+&lt;li&gt;名刺（なくてもいいけど売り込みには便利）&lt;/li&gt;
+&lt;li&gt;書類テンプレ（請求書フォーマットなどがあると便利）&lt;/li&gt;
+&lt;li&gt;ネット環境（Wi-Fiがあればだいたいなんとかなる）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人脈作り&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フリーランスどうしの交流&lt;/li&gt;
+&lt;li&gt;交流会、勉強会など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;退職後にやるべきこと&#34;&gt;退職後にやるべきこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;厚生年金→国民年金に切り替える&lt;/li&gt;
+&lt;li&gt;社保→国民健保に切り替える
+
+&lt;ul&gt;
+&lt;li&gt;離職票もって役所いけ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;個人事業の開業届け
+
+&lt;ul&gt;
+&lt;li&gt;やらないと後々面倒（2ヶ月以内にやっとけ）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;白色or青色申告承認申請書
+
+&lt;ul&gt;
+&lt;li&gt;税金対策&lt;/li&gt;
+&lt;li&gt;青色のほうがおすすめかも&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;事務処理&#34;&gt;事務処理&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今会社がやってくれていることを全部自分でしないといけない
+
+&lt;ul&gt;
+&lt;li&gt;会計ソフトとか使ってこまめにやっておけば楽にできる&lt;/li&gt;
+&lt;li&gt;ギリギリまで放置すると確定申告で苦しむ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;副業サラリーマンの場合、開業届が必須のわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;税金&#34;&gt;税金&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;収入-経費=所得&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;確定申告が必要なもの&#34;&gt;確定申告が必要なもの&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;所得税&lt;/li&gt;
+&lt;li&gt;消費税&lt;/li&gt;
+&lt;li&gt;復興特別所得税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;不要-支払書に従うだけでok&#34;&gt;不要（支払書に従うだけでOK）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;住民税&lt;/li&gt;
+&lt;li&gt;国民健保税&lt;/li&gt;
+&lt;li&gt;事業税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;経費にできる&#34;&gt;経費にできる&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;通信費&lt;/li&gt;
+&lt;li&gt;飲食費
+
+&lt;ul&gt;
+&lt;li&gt;飲み会&lt;/li&gt;
+&lt;li&gt;ランチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;事務所経費&lt;/li&gt;
+&lt;li&gt;備品購入費&lt;/li&gt;
+&lt;li&gt;その他
+
+&lt;ul&gt;
+&lt;li&gt;書籍&lt;/li&gt;
+&lt;li&gt;セミナー&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;確定申告&#34;&gt;確定申告&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;毎年2/15~3/15あたり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;仕事のとりかた&#34;&gt;仕事のとりかた&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;個人で取りに行くか&lt;/li&gt;
+&lt;li&gt;エージェントを経由するか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェントの選び方&#34;&gt;エージェントの選び方&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レスポンスが早い&lt;/li&gt;
+&lt;li&gt;営業マンの努力が見える（距離が縮まる）&lt;/li&gt;
+&lt;li&gt;エンド直案件が多い&lt;/li&gt;
+&lt;li&gt;悪いことも言ってくれる&lt;/li&gt;
+&lt;li&gt;業界動向の情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;キャリアサポートの情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;福利厚生サービスを提供してくれる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hiwellでは&#34;&gt;Hiwellでは&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一気通貫のフォロー
+
+&lt;ul&gt;
+&lt;li&gt;ワンストップで全てやってくれる&lt;/li&gt;
+&lt;li&gt;アフターフォローも充実&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;エンド&amp;amp;元請直案件が多い&lt;/li&gt;
+&lt;li&gt;福利厚生
+
+&lt;ul&gt;
+&lt;li&gt;教育、ツール、健康、お金、交流など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェント登録から参画までのフロー&#34;&gt;エージェント登録から参画までのフロー&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;登録面談
+
+&lt;ul&gt;
+&lt;li&gt;価格とか条件周りのすり合わせ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;案件紹介&lt;/li&gt;
+&lt;li&gt;客先面談&lt;/li&gt;
+&lt;li&gt;参画決定&lt;/li&gt;
+&lt;li&gt;アフターフォロー&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といったところで第一部が終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;第2部-hiwell経由で仕事をしているエンジニアさんの話&#34;&gt;第2部：Hiwell経由で仕事をしているエンジニアさんの話&lt;/h2&gt;
+
+&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;経営陣が企画提案を聞き入れてくれない&lt;/li&gt;
+&lt;li&gt;昇給も怪しい&lt;/li&gt;
+&lt;li&gt;賞与が何期も出ない&lt;/li&gt;
+&lt;li&gt;査定もあやふや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このあたりから来る企業への不信感からフリーランスへ転向&lt;/p&gt;
+
+&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソシャゲ&lt;/li&gt;
+&lt;li&gt;Webサイト&lt;/li&gt;
+&lt;li&gt;アプリ制作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;収入&#34;&gt;収入&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;会社員時代は40万前後&lt;/li&gt;
+&lt;li&gt;フリーランスになってからは50万~80万前後
+
+&lt;ul&gt;
+&lt;li&gt;コツコツ単価交渉&lt;/li&gt;
+&lt;li&gt;残業など含めると100万を超える月も&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;経費&#34;&gt;経費&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;家賃&lt;/li&gt;
+&lt;li&gt;通信光熱費&lt;/li&gt;
+&lt;li&gt;顧問料&lt;/li&gt;
+&lt;li&gt;MBP&lt;/li&gt;
+&lt;li&gt;kindle&lt;/li&gt;
+&lt;li&gt;iPad&lt;/li&gt;
+&lt;li&gt;接待交際費&lt;/li&gt;
+&lt;li&gt;タクシー&lt;/li&gt;
+&lt;li&gt;ガチャ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;など&lt;/p&gt;
+
+&lt;h2 id=&#34;やりがい&#34;&gt;やりがい&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;フリーだからどうということはない&lt;br /&gt;
+会社勤めと同じく、エンジニアとしてやることをやるだけ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;生活&#34;&gt;生活&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕事面はフリーランスだからどうとかはない。自分しだい。&lt;/li&gt;
+&lt;li&gt;経済的に余裕ができた&lt;/li&gt;
+&lt;li&gt;支払いの滞納刷ると辛い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;将来&#34;&gt;将来&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;起業は性格的に向いてないと思っている&lt;/li&gt;
+&lt;li&gt;就職はもういいや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;とのことで第二部終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;フリーランスになったからといって、仕事の内容も変わらなければ、仕事に対する姿勢も変わらないというのが一貫した結論でした。&lt;/p&gt;
+
+&lt;p&gt;収入があがり、事務手続きなどやることが増える、というような話が多かったです。&lt;/p&gt;
+
+&lt;p&gt;現状、まだまだ現職でやるべきことがたっくさんあるので、フリーランスになる予定はありませんが、市場にある色んな仕事を通して、経験値を積んでいけたらなという気持ちです。&lt;/p&gt;
+
+&lt;p&gt;お仕事がありましたらぜひご連絡ください〜！→&lt;a href=&#34;https://twitter.com/nayucolony&#34;&gt;@nayucolony&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://nayucolony.net/results</link>
+      <pubDate>Mon, 16 Jan 2017 00:45:58 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/results</guid>
+      <description>
+
+&lt;h2 id=&#34;オフィスデータバンク様&#34;&gt;オフィスデータバンク様&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://office-db.jp/&#34;&gt;https://office-db.jp/&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;http://nayucolony.net/images/odb/odb.png&#34; alt=&#34;オフィスデータバンクスクリーンショット&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;制作時期&#34;&gt;制作時期&lt;/h3&gt;
+
+&lt;p&gt;2016年7月~2016年8月&lt;/p&gt;
+
+&lt;h3 id=&#34;担当内容&#34;&gt;担当内容&lt;/h3&gt;
+
+&lt;p&gt;コーディング(レスポンシブ対応)、デザイン、ロゴデザイン&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://nayucolony.net/results</link>
+      <pubDate>Mon, 16 Jan 2017 00:45:58 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/results</guid>
+      <description>
+
+&lt;h2 id=&#34;オフィスデータバンク様&#34;&gt;オフィスデータバンク様&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://office-db.jp/&#34;&gt;https://office-db.jp/&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;http://nayucolony.net/images/odb/odb.png&#34; alt=&#34;オフィスデータバンクスクリーンショット&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;制作時期&#34;&gt;制作時期&lt;/h3&gt;
+
+&lt;p&gt;2016年7月~2016年8月&lt;/p&gt;
+
+&lt;h3 id=&#34;担当内容&#34;&gt;担当内容&lt;/h3&gt;
+
+&lt;p&gt;コーディング(レスポンシブ対応)、デザイン、ロゴデザイン&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2016年のアウトプット活動まとめ</title>
+      <link>http://nayucolony.net/2016-output</link>
+      <pubDate>Fri, 23 Dec 2016 13:46:37 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/2016-output</guid>
+      <description>&lt;p&gt;今年もお世話になりました。&lt;/p&gt;
+
+&lt;p&gt;外で活動するようになったのは転職して9月からなので、そこからのものしかないですが（記憶もその辺からしかない）まとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;to-r-media&#34;&gt;to-R Media&lt;/h2&gt;
+
+&lt;p&gt;オウンドメディアで７本書きました。
+業務として書ける（書かなければならない）環境があるのはやはりいいですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;flocssで始めるcss設計&#34;&gt;FLOCSSで始めるCSS設計&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-01/&#34;&gt;第一回 CSS設計の目的とFLOCSSの概要&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-02/&#34;&gt;第二回 Componentを作ってみよう&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-03/&#34;&gt;第三回 Layoutレイヤーとは？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-04/&#34;&gt;第四回 Projectレイヤーを使いこなす！&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-05/&#34;&gt;第五回 Foundationレイヤーについて&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;5分でできるnpmとgulpのインストール&#34;&gt;5分でできるnpmとgulpのインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/npm-gulp/&#34;&gt;5分でできるnpmとgulpのインストール（GIFアニメ付き）&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ejsでサイト制作効率化&#34;&gt;EJSでサイト制作効率化&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/ejs-01/&#34;&gt;第一回 EJSの基本&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;qiita&#34;&gt;Qiita&lt;/h2&gt;
+
+&lt;p&gt;Qiitaは主に自分用メモとして使ってます。
+自分メモが誰かの役に立ったらいいなあくらいの気持ちです。
+2016年は７本書きました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/e5832f078e9cab259c2c&#34;&gt;styleguideジェネレータ「aigis」を使ってみた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/c571597ed37127311132&#34;&gt;AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/382237c34bcc1a84f4d5&#34;&gt;RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/a33119c72cf8b5d90846&#34;&gt;絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/af28266c523b8fe0d67c&#34;&gt;Vue.jsをはじめてみる #1 ~公式ガイドを読む編~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/b7eca434e663b1bc059a&#34;&gt;Android4.4系でReact-modalの表示位置がずれる&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/74f2c85253796b19c594&#34;&gt;globalにgulp-cliをインストールしようとするとエラーが発生する&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;登壇&#34;&gt;登壇&lt;/h2&gt;
+
+&lt;p&gt;4回LTしました。
+始めてのLTは「雑兵meetup」という勉強会でした。
+自分たちはすごい技術者じゃないんだから、びびらないでアウトプットしていこう、みたいなコンセプトの勉強会です。&lt;/p&gt;
+
+&lt;p&gt;そこで、２回ほど登壇してなれたので、「DIST」というフロントエンド技術系の勉強会で登壇しました。
+まだまだだなと感じたので引き続き勉強頑張ります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/37665/&#34;&gt;雑兵MeetUp #6 zohyo-fes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/41256/&#34;&gt;雑兵MeetUp ＃７ 沈黙（ダマ）の神殿 〜転職知見共有スペシャル〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/44940/&#34;&gt;雑兵MeetUp ＃８ LT大会 〜伝えたい事が、あるんだ〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dist.connpass.com/event/44273/&#34;&gt;DIST.13 トクするCSS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;イベントレポート&#34;&gt;イベントレポート&lt;/h2&gt;
+
+&lt;p&gt;イベントはたくさんいったのですがレポートは２本だけかきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/fontplusday5/&#34;&gt;FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/hackathon-firtststep-19/&#34;&gt;「はじめてのハッカソンvol.19 」に参加してきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;とある界隈の人たちでやりました。これは楽しかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1551&#34;&gt;スダ Advent Calendar 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;振り返り&#34;&gt;振り返り&lt;/h2&gt;
+
+&lt;p&gt;大きな区切りとして、Web業界に入って1年を迎えました。
+（2016年10月に初めてのWebの会社に入社したので、1年2ヶ月）&lt;/p&gt;
+
+&lt;p&gt;1年たったので、もう新人ぶってもいられないなあと思い、新米エンジニア、みたいに名乗るのをやめたんですけど、やっぱり近い年代のすごい人たちがちらついて焦ったりもしつつ、知識と経験の足りなさを実感しています。
+来年は少しでも追いつけるようにしたい。&lt;/p&gt;
+
+&lt;p&gt;活動は、トータルしてみると、20本のなにかしらをしています。&lt;/p&gt;
+
+&lt;p&gt;転職したのが9月なので、４ヶ月で20本。 月5本と考えると、週に1度は何かしらの発信を行えていたんだなあという感じです。ちょっと忙しくてサボった時期もあったんですが、アドベントカレンダーでなんとか巻き返せました。&lt;/p&gt;
+
+&lt;h2 id=&#34;2017年の目標&#34;&gt;2017年の目標&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2016年の倍のペースで執筆、登壇を行う&lt;/li&gt;
+&lt;li&gt;執筆登壇合わせて100本目指す&lt;/li&gt;
+&lt;li&gt;質より量とは言わないけど、量は質を凌駕する&lt;/li&gt;
+&lt;li&gt;頭の中にあるうちはなんだって傑作（自戒）&lt;/li&gt;
+&lt;li&gt;外部メディアに寄稿する(声がかかれば)&lt;/li&gt;
+&lt;li&gt;でも声かからないと思うので「技術書典2」参加を検討中&lt;/li&gt;
+&lt;li&gt;LTだけでなく、まとまった時間でセッションorメンター&lt;/li&gt;
+&lt;li&gt;これはさすがに声かからないと思うので勉強会主催を考え中&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;高専にいたときから「ないなら作れよ」とよく耳にしてきたもので、こんな感じになりました。
+声かかるの待ってても残念な結果になることは目に見えているので、自分から動かなきゃなって思ってます。
+1年くらい経って、その活動が身を結んでたらいいな〜とか思います。&lt;/p&gt;
+
+&lt;p&gt;それでは、来年もよろしくお願いいたします。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2016年のアウトプット活動まとめ</title>
+      <link>http://nayucolony.net/2016-output</link>
+      <pubDate>Fri, 23 Dec 2016 13:46:37 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/2016-output</guid>
+      <description>&lt;p&gt;今年もお世話になりました。&lt;/p&gt;
+
+&lt;p&gt;外で活動するようになったのは転職して9月からなので、そこからのものしかないですが（記憶もその辺からしかない）まとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;to-r-media&#34;&gt;to-R Media&lt;/h2&gt;
+
+&lt;p&gt;オウンドメディアで７本書きました。
+業務として書ける（書かなければならない）環境があるのはやはりいいですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;flocssで始めるcss設計&#34;&gt;FLOCSSで始めるCSS設計&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-01/&#34;&gt;第一回 CSS設計の目的とFLOCSSの概要&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-02/&#34;&gt;第二回 Componentを作ってみよう&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-03/&#34;&gt;第三回 Layoutレイヤーとは？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-04/&#34;&gt;第四回 Projectレイヤーを使いこなす！&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-05/&#34;&gt;第五回 Foundationレイヤーについて&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;5分でできるnpmとgulpのインストール&#34;&gt;5分でできるnpmとgulpのインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/npm-gulp/&#34;&gt;5分でできるnpmとgulpのインストール（GIFアニメ付き）&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ejsでサイト制作効率化&#34;&gt;EJSでサイト制作効率化&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/ejs-01/&#34;&gt;第一回 EJSの基本&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;qiita&#34;&gt;Qiita&lt;/h2&gt;
+
+&lt;p&gt;Qiitaは主に自分用メモとして使ってます。
+自分メモが誰かの役に立ったらいいなあくらいの気持ちです。
+2016年は７本書きました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/e5832f078e9cab259c2c&#34;&gt;styleguideジェネレータ「aigis」を使ってみた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/c571597ed37127311132&#34;&gt;AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/382237c34bcc1a84f4d5&#34;&gt;RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/a33119c72cf8b5d90846&#34;&gt;絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/af28266c523b8fe0d67c&#34;&gt;Vue.jsをはじめてみる #1 ~公式ガイドを読む編~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/b7eca434e663b1bc059a&#34;&gt;Android4.4系でReact-modalの表示位置がずれる&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/74f2c85253796b19c594&#34;&gt;globalにgulp-cliをインストールしようとするとエラーが発生する&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;登壇&#34;&gt;登壇&lt;/h2&gt;
+
+&lt;p&gt;4回LTしました。
+始めてのLTは「雑兵meetup」という勉強会でした。
+自分たちはすごい技術者じゃないんだから、びびらないでアウトプットしていこう、みたいなコンセプトの勉強会です。&lt;/p&gt;
+
+&lt;p&gt;そこで、２回ほど登壇してなれたので、「DIST」というフロントエンド技術系の勉強会で登壇しました。
+まだまだだなと感じたので引き続き勉強頑張ります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/37665/&#34;&gt;雑兵MeetUp #6 zohyo-fes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/41256/&#34;&gt;雑兵MeetUp ＃７ 沈黙（ダマ）の神殿 〜転職知見共有スペシャル〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/44940/&#34;&gt;雑兵MeetUp ＃８ LT大会 〜伝えたい事が、あるんだ〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dist.connpass.com/event/44273/&#34;&gt;DIST.13 トクするCSS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;イベントレポート&#34;&gt;イベントレポート&lt;/h2&gt;
+
+&lt;p&gt;イベントはたくさんいったのですがレポートは２本だけかきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/fontplusday5/&#34;&gt;FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/hackathon-firtststep-19/&#34;&gt;「はじめてのハッカソンvol.19 」に参加してきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;とある界隈の人たちでやりました。これは楽しかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1551&#34;&gt;スダ Advent Calendar 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;振り返り&#34;&gt;振り返り&lt;/h2&gt;
+
+&lt;p&gt;大きな区切りとして、Web業界に入って1年を迎えました。
+（2016年10月に初めてのWebの会社に入社したので、1年2ヶ月）&lt;/p&gt;
+
+&lt;p&gt;1年たったので、もう新人ぶってもいられないなあと思い、新米エンジニア、みたいに名乗るのをやめたんですけど、やっぱり近い年代のすごい人たちがちらついて焦ったりもしつつ、知識と経験の足りなさを実感しています。
+来年は少しでも追いつけるようにしたい。&lt;/p&gt;
+
+&lt;p&gt;活動は、トータルしてみると、20本のなにかしらをしています。&lt;/p&gt;
+
+&lt;p&gt;転職したのが9月なので、４ヶ月で20本。 月5本と考えると、週に1度は何かしらの発信を行えていたんだなあという感じです。ちょっと忙しくてサボった時期もあったんですが、アドベントカレンダーでなんとか巻き返せました。&lt;/p&gt;
+
+&lt;h2 id=&#34;2017年の目標&#34;&gt;2017年の目標&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2016年の倍のペースで執筆、登壇を行う&lt;/li&gt;
+&lt;li&gt;執筆登壇合わせて100本目指す&lt;/li&gt;
+&lt;li&gt;質より量とは言わないけど、量は質を凌駕する&lt;/li&gt;
+&lt;li&gt;頭の中にあるうちはなんだって傑作（自戒）&lt;/li&gt;
+&lt;li&gt;外部メディアに寄稿する(声がかかれば)&lt;/li&gt;
+&lt;li&gt;でも声かからないと思うので「技術書典2」参加を検討中&lt;/li&gt;
+&lt;li&gt;LTだけでなく、まとまった時間でセッションorメンター&lt;/li&gt;
+&lt;li&gt;これはさすがに声かからないと思うので勉強会主催を考え中&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;高専にいたときから「ないなら作れよ」とよく耳にしてきたもので、こんな感じになりました。
+声かかるの待ってても残念な結果になることは目に見えているので、自分から動かなきゃなって思ってます。
+1年くらい経って、その活動が身を結んでたらいいな〜とか思います。&lt;/p&gt;
+
+&lt;p&gt;それでは、来年もよろしくお願いいたします。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>globalにgulp-cliをインストールしようとするとエラーが発生する</title>
+      <link>http://nayucolony.net/gulp-cli</link>
+      <pubDate>Tue, 13 Dec 2016 13:18:13 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/gulp-cli</guid>
+      <description>&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
+
+&lt;p&gt;gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
+インストールは中断され、gulp-cliがインストールできない。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+nayucolony:~ demo$ sudo npm install -g gulp-cli
+/usr/local/bin/gulp -&gt; /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
+npm ERR! Darwin 15.6.0
+npm ERR! argv &#34;/usr/local/bin/node&#34; &#34;/usr/local/bin/npm&#34; &#34;install&#34; &#34;-g&#34; &#34;gulp-cli&#34;
+npm ERR! node v6.9.2
+npm ERR! npm  v3.10.9
+npm ERR! path /usr/local/share/man/man1/gulp.1
+npm ERR! code EEXIST
+
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/demo/npm-debug.log
+nayucolony:~ demo$ gulp -v
+-bash: /usr/local/bin/gulp: No such file or directory
+nayucolony:~ demo$
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;下記に注目&lt;/p&gt;
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+&lt;p&gt;npm側から操作できないゴミファイルが存在してインストールがうまくいってない様子&lt;/p&gt;
+
+&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
+
+&lt;p&gt;下記のコマンドを叩いて、上記の２行目に表示されているゴミファイルを削除する&lt;/p&gt;
+sudo rm /usr/local/share/man/man1/gulp.1
+
+&lt;p&gt;その後、改めて&lt;/p&gt;
+sudo npm install -g gulp-cli
+
+&lt;p&gt;を叩くことでインストールが完了した。&lt;/p&gt;
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;sudo&lt;/code&gt;は管理者権限で実行するためのコマンドで、パスワードを要求されることがあるので都度入力を行うこと。&lt;/p&gt;
+
+&lt;p&gt;また、本件とは関係しないが、gulp-cliをglobalにインストールすることについては公式の推奨事項ではあるものの、否定的な意見もあるのでよく考えて行うこと。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android4.4系でReact-modalの表示位置がずれる</title>
+      <link>http://nayucolony.net/react-modal-position</link>
+      <pubDate>Mon, 12 Dec 2016 13:16:23 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/react-modal-position</guid>
+      <description>&lt;h2 id=&#34;条件&#34;&gt;条件&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android4.4系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
+
+&lt;p&gt;React-modalの表示位置がずれる
+&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/package/react-modal&#34;&gt;https://www.npmjs.com/package/react-modal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Examplesの記述の&lt;code&gt;transform&lt;/code&gt;はAndroid4.4系のブラウザではベンダープレフィックスが必要。
+Autoprefixerを使っていたとしても、js内に直接記述して引き渡す場合にはAutoprefixerを経由しない。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
+
+&lt;p&gt;cssファイルにて下記のclassにスタイルを適用させ、Autoprefixerを経由するようにする（推奨）&lt;/p&gt;
+.ReactModalPortal .ReactModal__Content {
+    transform: translate(-50%,-50%);
+}
+
+&lt;p&gt;または下記のように併記する。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;,
+    webkitTransform       : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;js内に直接スタイルを記述する場合はベンダープレフィックスの有無に注意しましょう&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android4.4系でReact-modalの表示位置がずれる</title>
+      <link>http://nayucolony.net/react-modal-position</link>
+      <pubDate>Mon, 12 Dec 2016 13:16:23 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/react-modal-position</guid>
+      <description>&lt;h2 id=&#34;条件&#34;&gt;条件&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android4.4系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
+
+&lt;p&gt;React-modalの表示位置がずれる
+&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/package/react-modal&#34;&gt;https://www.npmjs.com/package/react-modal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Examplesの記述の&lt;code&gt;transform&lt;/code&gt;はAndroid4.4系のブラウザではベンダープレフィックスが必要。
+Autoprefixerを使っていたとしても、js内に直接記述して引き渡す場合にはAutoprefixerを経由しない。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
+
+&lt;p&gt;cssファイルにて下記のclassにスタイルを適用させ、Autoprefixerを経由するようにする（推奨）&lt;/p&gt;
+.ReactModalPortal .ReactModal__Content {
+    transform: translate(-50%,-50%);
+}
+
+&lt;p&gt;または下記のように併記する。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;,
+    webkitTransform       : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;js内に直接スタイルを記述する場合はベンダープレフィックスの有無に注意しましょう&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。</title>
+      <link>http://nayucolony.net/fontplusday5</link>
+      <pubDate>Thu, 08 Dec 2016 13:40:41 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/fontplusday5</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://nayucolony.net/images/fontplusday5/eyecatch.jpg&#34; alt=&#34;FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］&#34; /&gt;
+（アイキャッチは&lt;a href=&#34;https://fontplus.connpass.com/event/44793/&#34;&gt;イベントページ&lt;/a&gt;より）&lt;/p&gt;
+
+&lt;p&gt;私は文章に起こす過程で咀嚼していくタイプなので、自分用メモですが公開します。
+（全文を文章に起こすのはさすがに無理で、これは咀嚼して文章に起こしたものなので、少し違った解釈があるかもしれませんがご了承ください）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;オープニング&#34;&gt;オープニング&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;佐藤さんが好きだということでお招きして開催している。&lt;/li&gt;
+&lt;li&gt;好きな点：より深いデザインの話をわかりやすくお話していただける&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;セッション-webにおけるタイポグラフィ&#34;&gt;セッション「Webにおけるタイポグラフィ」&lt;/h2&gt;
+
+&lt;p&gt;登壇者：&lt;a href=&#34;http://yoshihiko.com/&#34;&gt;佐藤好彦 (Yoshihiko Sato)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;スライドではなく1枚の大きなパネルでのトーク&lt;/p&gt;
+
+&lt;h2 id=&#34;最近の話&#34;&gt;最近の話&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テレビをみるようになった(見れる時代になってきた)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tver.jp/&#34;&gt;TVer&lt;/a&gt;などの配信サービスの普及&lt;/li&gt;
+&lt;li&gt;番組表に合わせないといけない時代でなくなった&lt;/li&gt;
+&lt;li&gt;TV配信コンテンツが充実してきた&lt;/li&gt;
+&lt;li&gt;録画視聴率が計測されている&lt;/li&gt;
+&lt;li&gt;タイムシフト視聴率:放送視聴率より録画の方が多い&lt;/li&gt;
+&lt;li&gt;視聴率が落ちていたわけではなく、測っていない部分をチェックするとしっかり見られていたことが判明。&lt;/li&gt;
+&lt;li&gt;ラジオでも似たようなサービスが増えた&lt;/li&gt;
+&lt;li&gt;SNSでTVのキャプチャがシェアされた時、TVをつけてももう終わっている&lt;/li&gt;
+&lt;li&gt;コンテンツに合わせた生活をしていないとテレビラジオの情報は手に入らない&lt;/li&gt;
+&lt;li&gt;現状、&lt;a href=&#34;https://www.youtube.com/?gl=JP&amp;amp;hl=ja&#34;&gt;Youtube&lt;/a&gt;などが技術面での懸念を克服し、技術的にはいつでもテレビを配信できる状況。&lt;/li&gt;
+&lt;li&gt;だが未だされていない。&lt;/li&gt;
+&lt;li&gt;コンテンツの見せ方をどうしていくのか&lt;/li&gt;
+&lt;li&gt;（主に関係各所の調整で難航中…）&lt;/li&gt;
+&lt;li&gt;解決の兆しは徐々に見えつつある&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.spotify.com/jp/&#34;&gt;spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.apple.com/jp/apple-music/&#34;&gt;apple music&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.co.jp/gp/kindle/ku/sign-up&#34;&gt;amazon kindle unlimited&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;「何をしたいか」「どう見せたいか」という話につながる。&lt;/li&gt;
+&lt;li&gt;デザインは手段であるべき&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;third-decade-of-web-webの30年&#34;&gt;Third decade of Web(webの30年)&lt;/h2&gt;
+
+&lt;h2 id=&#34;1994-2003-最初の10年&#34;&gt;1994~2003（最初の10年）&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;インフラの時代&lt;/li&gt;
+&lt;li&gt;真上に伸びていくイメージ&lt;/li&gt;
+&lt;li&gt;「ネットに繋ぐための会社」が儲かった&lt;/li&gt;
+&lt;li&gt;CDでいうとCDプレーヤーが売れた&lt;/li&gt;
+&lt;li&gt;普及が当たり前になると、CDというコンテンツに目が行き始める&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2004-2013-次の10年&#34;&gt;2004~2013（次の10年）&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「Webを作る会社」が伸びた&lt;/li&gt;
+&lt;li&gt;HTML,Flash,etc&lt;/li&gt;
+&lt;li&gt;できることが増えていく&lt;/li&gt;
+&lt;li&gt;SNSの普及&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.flickr.com/&#34;&gt;Flicker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.twitter.com/&#34;&gt;twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;これからの10年は&#34;&gt;これからの10年は？&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;線から面へ、次の次元は奥行き&lt;/li&gt;
+&lt;li&gt;厚みが生まれてくるのではないか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hyperlink-2004-2013に関連した話&#34;&gt;HyperLink(2004~2013に関連した話)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;もう最近はこう言わなくなったけれど…&lt;/li&gt;
+&lt;li&gt;情報をつなぐ =&amp;gt; 人を繋ぐ&lt;/li&gt;
+&lt;li&gt;SNSの発展&lt;/li&gt;
+&lt;li&gt;リアル世界に交流の広場という場所が少なくなったことに由来しているのではないか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linkの本質&#34;&gt;Linkの本質&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;情報がどのサーバにあってもいいというのが本質的な利点&lt;/li&gt;
+&lt;li&gt;Appleは今、ファイルを管理「させない」&lt;/li&gt;
+&lt;li&gt;ファイラがない、ディレクトリの概念も見せない&lt;/li&gt;
+&lt;li&gt;処理は全て自動か裏で行う。概念だけを見せる。&lt;/li&gt;
+&lt;li&gt;頑なにブラックボックス化している&lt;/li&gt;
+&lt;li&gt;Web全体もその方向に向かっている？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;テキストによる表現&#34;&gt;テキストによる表現&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ここだけが取り残されている&lt;/li&gt;
+&lt;li&gt;Facebookには音が入らない&lt;/li&gt;
+&lt;li&gt;違法性を遮断するため？&lt;/li&gt;
+&lt;li&gt;游ゴシック問題&lt;/li&gt;
+&lt;li&gt;解像度で紙に劣る&lt;/li&gt;
+&lt;li&gt;環境による見え方の違いが当たり前という現状&lt;/li&gt;
+&lt;li&gt;Webフォントに日本語がない、海外に遅れをとる現状&lt;/li&gt;
+&lt;li&gt;フォントでの解決ができない場合画像で解決するしかない状態&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2016年は転換の年&#34;&gt;2016年は転換の年&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上記の問題が解決されつつある（ようやくまとまりつつある）&lt;/li&gt;
+&lt;li&gt;フラットデザインという解決策&lt;/li&gt;
+&lt;li&gt;著書で詳しく書いてます&lt;/li&gt;
+&lt;li&gt;フラットデザインも流行って廃れる？&lt;/li&gt;
+&lt;li&gt;必然性に伴った流行&lt;/li&gt;
+&lt;li&gt;最近はわざわざフラットデザインとも呼ばなくなった&lt;/li&gt;
+&lt;li&gt;普及するとそこに触れなくなるものと同じ(n)&lt;/li&gt;
+&lt;li&gt;スマートフォンの解像度の高まり&lt;/li&gt;
+&lt;li&gt;2010年 iPhoneのRetina&lt;/li&gt;
+&lt;li&gt;その時は誰もがもっているわけではないが徐々に普及してきた&lt;/li&gt;
+&lt;li&gt;Webフォントの普及&lt;/li&gt;
+&lt;li&gt;海外フォントはすでに実現されていた&lt;/li&gt;
+&lt;li&gt;日本でも普及し始めた&lt;/li&gt;
+&lt;li&gt;速度的にも問題がなくなってきた&lt;/li&gt;
+&lt;li&gt;ページ内で使用されている文字から優先的なレンダリングを行うようになっている？（不明）&lt;/li&gt;
+&lt;li&gt;游ゴシック、游明朝&lt;/li&gt;
+&lt;li&gt;ウェイトの話はあるものの、共通フォントができた&lt;/li&gt;
+&lt;li&gt;Webにおけるグラフィック環境が整いつつある。&lt;/li&gt;
+&lt;li&gt;徐々に紙に迫りつつある&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;タイポグラフィとは&#34;&gt;タイポグラフィとは&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;文字表現によって価値を生み出す。&lt;/li&gt;
+&lt;li&gt;緊張感、親しみやすさ、美しさを表す&lt;/li&gt;
+&lt;li&gt;文字でイメージを作る&lt;/li&gt;
+&lt;li&gt;役割&lt;/li&gt;
+&lt;li&gt;目を引くため（あいさつ/おかず）&lt;/li&gt;
+&lt;li&gt;読むため（会話/ごはん）&lt;/li&gt;
+&lt;li&gt;インターフェースとして&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;webがエディトリアルに近づいてきている&#34;&gt;Webがエディトリアルに近づいてきている&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webはナビとコンテンツで成り立つものが多い。&lt;/li&gt;
+&lt;li&gt;どちらにデザインの比重を置くかが移り変わってきている。&lt;/li&gt;
+&lt;li&gt;従来は、共通部分であるナビゲーションにデザインとしてのウェイトがあった&lt;/li&gt;
+&lt;li&gt;最近はコンテンツ重視&lt;/li&gt;
+&lt;li&gt;SPではナビは「ハンバーガーメニュー」にまでシンプル化&lt;/li&gt;
+&lt;li&gt;書籍は大きなものから小さなものになった&lt;/li&gt;
+&lt;li&gt;大判本=&amp;gt;個人でよむ本=&amp;gt;雑誌、新書&lt;/li&gt;
+&lt;li&gt;Webは大きなモニターから小さなモニターになった&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;書籍と同じあゆみをしているので、エディトリアルに近づいてきている？&lt;/p&gt;
+
+&lt;h2 id=&#34;リズム-のしくみ&#34;&gt;「リズム」のしくみ&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;モダンスイスアーキテクチャのパッケージ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;音楽で見ると…&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ただノートを並べてもリズムは生まれない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;正しく並んでいるだけで、音の切れ目が見えないとリズムは感じない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex.)全部四分音符&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;それぞれを区切るとリズムに近く&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex)全部八分音符のスタッカート&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;規則的に変化する要素を入れるとリズムを感じる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex.)三拍目だけ四分音符にする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;そこからベースのリズムを抜いてもリズムが残る&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;休符を意図して入れることがリズムをうむ&lt;/p&gt;
+
+&lt;h2 id=&#34;視覚における-リズム&#34;&gt;視覚における「リズム」&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;繰り返しだけではない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;余白がまとまりを感じさせる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;音楽も、シーケンサーのグリッドを見ると視覚的なリズムも感じられる。&lt;/p&gt;
+
+&lt;h2 id=&#34;レイアウトの基準は行の高さ&#34;&gt;レイアウトの基準は行の高さ&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;句読点のあとの余白（文字半個分のマージン）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;漢字とかなの余白部分&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Webではline-height&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;not font-size&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remはrootのfont-sizeに対する相対的な大きさ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;emは親要素のfont-sizeに対する相対的な大きさ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;相対を使う以上、その文章においてどうあるべきかを考えるべきなのに、文字サイズを基準にレイアウトするのはおかしくない？（行高が基準になってない、文字の上下の余白を考慮されていない）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;font-sizeではなくline-heightを基準にレイアウトするべき。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remにはベーシックなline-heightのサイズを指定するというアイデア（この手法は一般的に使われているとは言えないが検証の価値はあるのではないか）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remがline-heightになっていない場合カラムレイアウトをするときの横が合わない（デモ）&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;情報のまとまりを作る&#34;&gt;情報のまとまりを作る&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ただ文章を並べていることはまとまりがなく読みづらい&lt;/li&gt;
+&lt;li&gt;何もかも盛り込んで「おひつ」をだすのではなく、咀嚼できるレベルで「おにぎり」をだす&lt;/li&gt;
+&lt;li&gt;どの規模のおにぎりにしていくかは編集技術&lt;/li&gt;
+&lt;li&gt;編集技術を持って適切なまとまりを作る&lt;/li&gt;
+&lt;li&gt;業務においてはしっかりワークフローを持って実現されるべき&lt;/li&gt;
+&lt;li&gt;芸能人のアメブロに見る「まとまり」と「リズム」&lt;/li&gt;
+&lt;li&gt;意図した改行による「間」を演出している&lt;/li&gt;
+&lt;li&gt;そういえばスクリーンリーダーとか使うときに「間」を表現する手段ってないですよね。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;文字詰め&#34;&gt;文字詰め&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webでも文字詰めができるようになった&lt;/li&gt;
+&lt;li&gt;正しくは、普及に近づいた&lt;/li&gt;
+&lt;li&gt;参考:文字詰めできるCSSのfont-feature-settingsが凄い！ 日本語フォントこそ指定したい自動カーニング&lt;/li&gt;
+&lt;li&gt;Webではテキストはベタ組みするべきじゃない？という意見が多数&lt;/li&gt;
+&lt;li&gt;もともと最適化されているものに触れるべきではない？&lt;/li&gt;
+&lt;li&gt;使う使わないではなく、どう見せるためにどう使うか&lt;/li&gt;
+&lt;li&gt;長文で句読点が詰まっていると当然に読みづらい&lt;/li&gt;
+&lt;li&gt;デザイン的な見出しでは問題ない場合もある&lt;/li&gt;
+&lt;li&gt;行長、文章長、英単語などの兼ね合いで採択の是非は考慮するべき&lt;/li&gt;
+&lt;li&gt;特に英単語を含む文章においてのwrap,justifyなどの兼ね合いでカーニングを詰めたり開けたりの考慮は発生する&lt;/li&gt;
+&lt;li&gt;その際にJavaScriptなどであれこれするのではなく、CSSという選択肢が存在するということが重要&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここまでが本編トークでした。&lt;/p&gt;
+
+&lt;p&gt;次のパネルディスカッション以降のことはメモしていませんorz&lt;/p&gt;
+
+&lt;p&gt;今日私が一番すごいなとおもったのは、スピーカーの佐藤氏は一枚の大きなスライドをiPhoneに入れたものをスライドに投影し、ピンチインアウトで見せ場を操作しながらお話されていたという点です。
+スライドではそうはいきません。
+意図して大きく切り抜いたものをスライドとして用意しておく必要があります。&lt;/p&gt;
+
+&lt;p&gt;そういう場面切り替えの柔軟性もさることながら、引いてみたときに一枚の大きな「まとめられた」情報群として存在する資料でもあります。&lt;/p&gt;
+
+&lt;p&gt;ここにエディトリアルデザインの強さを感じました。&lt;/p&gt;
+
+&lt;p&gt;以上です。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</title>
+      <link>http://nayucolony.net/atom-vendorprefix</link>
+      <pubDate>Wed, 19 Oct 2016 13:14:00 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/atom-vendorprefix</guid>
+      <description>&lt;h2 id=&#34;勝手にベンダープレフィックスがつく&#34;&gt;勝手にベンダープレフィックスがつく&lt;/h2&gt;
+
+&lt;p&gt;emmet、つかってますか？&lt;br&gt;
+flexbox、つかってますか？&lt;br&gt;
+私は使ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ある日、&lt;code&gt;df&lt;/code&gt;で展開しようとして&lt;/p&gt;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+
+&lt;p&gt;みたいになってイライラしてました。
+これからはね、 &lt;strong&gt;Autoprefixer&lt;/strong&gt; の時代だからね、こんなもの勝手につけなくていいの。&lt;/p&gt;
+
+&lt;p&gt;Autoprefixerについては下記参照。&lt;br /&gt;
+&lt;a href=&#34;http://qiita.com/tonkotsuboy_com/items/377913c51b1ac00deffe&#34;&gt;CSSベンダープレフィックス-webkit-を今この瞬間に辞める為のAutoprefixerの導入とお薦め設定&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+
+&lt;p&gt;ホームディレクトリ&lt;code&gt;（Macintosh HD/ユーザ/ :house:）&lt;/code&gt;に
+&lt;code&gt;emmet&lt;/code&gt;というフォルダをつくって、その中に&lt;code&gt;preferences.json&lt;/code&gt;というフォルダを作る。&lt;/p&gt;
+
+&lt;p&gt;これは、Atomのemmetが標準でここのファイルを読み込むようになってて、ユーザーは元ファイルをいじらなくてもここにファイルを自作しておけば設定を上塗りしてくれるんです。&lt;/p&gt;
+
+&lt;p&gt;中身は以下の通り&lt;/p&gt;
+{
+  &#34;css.autoInsertVendorPrefixes&#34;: false,
+  &#34;less.autoInsertVendorPrefixes&#34;: false,
+  &#34;scss.autoInsertVendorPrefixes&#34;: false,
+  &#34;sass.autoInsertVendorPrefixes&#34;: false,
+  &#34;caniuse.enabled&#34;: false
+}
+
+&lt;p&gt;あとはAtomを再起動すればおっけーです。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;quot;caniuse.vendor&amp;quot;:false&lt;/code&gt;を書いちゃうと挿入機能がうまく無効化してくれない場合があるので
+上記のようにするといいと思います。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

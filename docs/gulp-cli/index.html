@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>globalにgulp-cliをインストールしようとするとエラーが発生する | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="globalにgulp-cliをインストールしようとするとエラーが発生する" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/gulp-cli" />
+    <meta property="og:image" content="https://nayucolony.net" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="現象
+
+gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
+インストールは中断され、gulp-cliがインストールできない。
+
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">globalにgulp-cliをインストールしようとするとエラーが発生する</h1>
+    <time datetime="2016-12-13T13:18:13&#43;09:00">
+      2016年12月13日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="globalにgulp-cliをインストールしようとするとエラーが発生する" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/gulp-cli" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="" alt=""/></div>
+  </header>
+  <h2 id="現象">現象</h2>
+
+<p>gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
+インストールは中断され、gulp-cliがインストールできない。</p>
+
+<p></p>
+nayucolony:~ demo$ sudo npm install -g gulp-cli
+/usr/local/bin/gulp -> /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
+npm ERR! Darwin 15.6.0
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp-cli"
+npm ERR! node v6.9.2
+npm ERR! npm  v3.10.9
+npm ERR! path /usr/local/share/man/man1/gulp.1
+npm ERR! code EEXIST
+
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/demo/npm-debug.log
+nayucolony:~ demo$ gulp -v
+-bash: /usr/local/bin/gulp: No such file or directory
+nayucolony:~ demo$
+
+<h2 id="原因">原因</h2>
+
+<p>下記に注目</p>
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+<p>npm側から操作できないゴミファイルが存在してインストールがうまくいってない様子</p>
+
+<h2 id="対応">対応</h2>
+
+<p>下記のコマンドを叩いて、上記の２行目に表示されているゴミファイルを削除する</p>
+sudo rm /usr/local/share/man/man1/gulp.1
+
+<p>その後、改めて</p>
+sudo npm install -g gulp-cli
+
+<p>を叩くことでインストールが完了した。</p>
+
+<h2 id="備考">備考</h2>
+
+<p><code>sudo</code>は管理者権限で実行するためのコマンドで、パスワードを要求されることがあるので都度入力を行うこと。</p>
+
+<p>また、本件とは関係しないが、gulp-cliをglobalにインストールすることについては公式の推奨事項ではあるものの、否定的な意見もあるのでよく考えて行うこと。</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/rscss">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</a>
+    </li>
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/dist13">DIST.13「トクするCSS」に出演しました。</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

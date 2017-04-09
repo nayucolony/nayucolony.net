@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~ | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/bemoji" />
+    <meta property="og:image" content="https://nayucolony.net" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="こんにちは、CSSが好きなフロントエンドエンジニアのナユです。
+
+絵文字 / Emoji Advent Calendar 2016 11日目の記事です。
+（仮タイトルから内容が変わっちゃいました。すみません＞＜）
+
+10日目の湊川あいさんとわかばちゃんコンビに続いて、絵文字でわかるシリーズです。
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~</h1>
+    <time datetime="2016-12-11T21:14:11&#43;09:00">
+      2016年12月11日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/bemoji" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="" alt=""/></div>
+  </header>
+  <p>こんにちは、CSSが好きなフロントエンドエンジニアのナユです。</p>
+
+<p><a href="http://qiita.com/advent-calendar/2016/emoji">絵文字 / Emoji Advent Calendar 2016</a> 11日目の記事です。<br>
+（仮タイトルから内容が変わっちゃいました。すみません＞＜）</p>
+
+<p>10日目の湊川あいさんとわかばちゃんコンビに続いて、絵文字でわかるシリーズです。
+</p>
+
+<h1 id="はじめに">はじめに</h1>
+
+<p>コーディングをするにあたり、近年よく「コンポーネント指向のCSS設計」という言葉を耳にします。<br />
+しかし、参考になるコード量も少なく、あったとしてもよくあるUIをコーディングしてみよう、といったものが大半です。</p>
+
+<p>本稿は、「CSS設計を勉強したいけれど参考資料が少ない&hellip;」とお悩みの人に少しでもお手伝いができればと思って書かれています。<br />
+少々難しい点があるかもしれませんが、ご質問などはコメントもしくはtwitter(<a href="https://twitter.com/nayucolony">@nayucolony</a>)までリプライをくださいませ！</p>
+
+<h1 id="内容">内容</h1>
+
+<p>本稿は、Emojiを用いて</p>
+
+<ul>
+<li>コンポーネント指向のCSS設計</li>
+<li>BEMを用いた命名規則</li>
+</ul>
+
+<p>を中心に学習していくといった内容になっています。</p>
+
+<p>また、Sass(scss記法)を前提としています。 Scss記法がわからないという方は、<code>&amp;</code>がどういう役割かだけを学習して呼んでいただければと思います。</p>
+
+<h1 id="bemoji">BEMoji</h1>
+
+<p>せっかくですので、今回は、絵文字によるBEM、BEMojiを用います。</p>
+
+<p>BEMとルールは同じですが、単語を表す部分をEmojiで表現します。 （筆者のオリジナルですので、文献を探さないでください。ありませんorz）</p>
+
+<p>絵文字アドベントカレンダーということで、思いつきでやったところ動作したので今回に限り採用いたします。</p>
+
+<p>対応ブラウザは未検証ですが、chrome最新版とかなら多分動くんじゃないでしょうか。</p>
+
+<p>脳内で「👀 =&gt;eyes」のように変換していただければと思います。</p>
+
+<h1 id="コンポーネント設計-block">コンポーネント設計 ~Block~</h1>
+
+<p>いきなり顔を作る前に、まずは顔の構成要素を見てみましょう。<br>
+（以降、構成要素を、「コンポーネント」といったり「モジュール」「パーツ」などと呼んだりします。） BEM（及びBEMoji）では <strong>「Block」</strong> という単位で呼びます。</p>
+
+<p>例えば、目、鼻、口のようなパーツがあります。 これらは、機能的にそれ以上分割できない要素と考えられます。 まずは、それらの一番小さな、基礎的な要素から設計を始めます。</p>
+
+<table>
+<thead>
+<tr>
+<th>パーツ名</th>
+<th>Emoji</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>目</td>
+<td>👀</td>
+</tr>
+
+<tr>
+<td>眉</td>
+<td>➖</td>
+</tr>
+
+<tr>
+<td>鼻</td>
+<td>👃</td>
+</tr>
+
+<tr>
+<td>口</td>
+<td>👄</td>
+</tr>
+</tbody>
+</table>
+
+<p>また、今回はOOCSSのように「classを与えることで絵文字が描画される」という作りで考えていきます。 classを付与した要素の::after擬似要素にEmojiを描画していきます。</p>
+<div class="👀"></div>
+.👀{
+  &::after{
+    content:"👀";
+  }
+}
+
+<p>鼻、口も同様です。</p>
+<div class="👃"></div>
+<div class="👄"></div>
+.👃{
+  &::after{
+    content:"👃";
+  }
+}
+.👄{
+  &::after{
+    content:"👄";
+  }
+}
+
+<h1 id="コンポーネント設計-modifier">コンポーネント設計 ~modifier~</h1>
+
+<p>👂については正面から見て右側しかEmojiが存在しないため、<code>transform:rotateY(180deg)</code>を用いてY軸を中心に180度ひっくり返したものを左耳とします。</p>
+
+<p>このように、同じblockだとしても見た目が違うものについては<strong>modifier</strong>として<code>--</code>で表していきます。</p>
+
+<p>下記のように記述します。</p>
+<div class="👂 👂--⬅️"></div>
+<div class="👂"></div>
+.👂{
+  &::after {
+    content: "👂";
+  }
+
+  &--⬅️ {
+    transform:rotateY(180deg);
+  }
+}
+
+<p>これで、顔に用いるパーツを一通り定義し終えました。</p>
+
+<h1 id="コンポーネント設計-element-block-in-block">コンポーネント設計 ~Element &amp; Block in Block~</h1>
+
+<p>さて、パーツができたので、続いての作業は顔面への配置です。 😶をBlockとして考えます。</p>
+
+<p>今までは、blockそのものが目や鼻などのパーツとして成立していました。 しかし、😶は今まで定義してきた目や鼻などによって成り立つ、言わば構成要素を持ちます。</p>
+
+<p>ここで初めてでてくるのはBlockを構成する要素を表す<strong>Element</strong>です。 😶にとっての👀や👃は、Elementとして考えることができます。</p>
+
+<p>「さっきは全てBlockっていっていたのに、Elementなの？どういうこと？」と思われるかもしれませんが、まずは下記のコードを見てみましょう。</p>
+<div class="😶">
+  <div class="👂 👂--⬅️ 😶__👂⬅️"></div>
+  <div class="👂 😶__👂➡️"></div>
+  <div class="👀 😶__👀"></div>
+  <div class="👃 😶__👃"></div>
+  <div class="👄 😶__👄"></div>
+</div>
+
+<p>このように、<strong>Blockとしてのclassも持ちながら、Elementとしてのclassも持つ</strong> という状態になります。</p>
+
+<p>Elementには<strong>「😶のパーツとして振る舞う時特有のスタイル」</strong> を定義していきます。</p>
+
+<p>下記のように記述します。</p>
+.😶{
+  background: #C66D2F;
+  width: 200px;
+  height: 300px;
+  border-radius: 50% 50% 50% 50%;
+  position: relative;
+  &::before { //ほっぺ
+    content:"";
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
+    position: absolute;
+    background: #C66D2F;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+  }
+  &::after { //ほっぺ
+    content:"";
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
+    position: absolute;
+    background: #C66D2F;
+    bottom: 0;
+    left: -10px;
+    z-index: -1;
+  }
+  &__👀{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 50px;
+    z-index: 1;
+  }
+  &__👃{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 50%;
+    transform:translateY(-50%);
+  }
+  &__👄{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 60%;
+  }
+  &__👂➡️{
+    position: absolute;
+    font-size:5rem;
+    right: -45px;
+    top:45px;
+  }
+  &__👂⬅️{
+    position: absolute;
+    font-size:5rem;
+    left: -45px;
+    top:45px;
+  }
+  &__➖⬅️{
+    position: absolute;
+    font-size:4rem;
+    left: 40px;
+    top:20px;
+    transform:rotate(40deg);
+  }
+  &__➖➡️{
+    position: absolute;
+    font-size:4rem;
+    right: 35px;
+    top:25px;
+    transform:rotate(-10deg);
+  }
+}
+
+<p>必然的に、レイアウトや文字サイズの調整に関わる部分が多くなりますね。 （Emojiは文字なので<code>font-size</code>で大きさを定義します）</p>
+
+<p>以上のように、Blockの中にBlockを内包し、それらをElementとして扱うことがよくありますので覚えておきましょう。</p>
+
+<h1 id="デモ">デモ</h1>
+
+<p>同様にして体、帽子なども調整したものがこれです（外部リンク）。</p>
+
+<!--![image](https://qiita-image-store.s3.amazonaws.com/0/100561/ee51a43b-e235-fc4c-91f5-81064959ca38.png)-->
+
+<p><a href="https://codepen.io/nayucolony/pen/VmBrJO/">Mrs.Emoji - codepen</a></p>
+
+<p>👣コンポーネント、👒コンポーネントが増え、さらにそれらが🍟コンポーネントのElementとして記述されています。 全て、😶コンポーネントと同様の手法でできています。 Block in Block in Blockなんてこともあるということがわかりますね。 何階層になったとしても同じです。</p>
+
+<p>今回は😶や👣で例えましたが、これらは訳すと&hellip;Head,Foot。すなわち、webサイトでいうとHeaderやFooterですね。 🍟は全体を表しているので、<code>&lt;body&gt;</code>要素と考えれば、これもWebサイトとして見えてくる&hellip;かもしれません。</p>
+
+<p>手はしっくりこなかったので付けませんでした（笑）</p>
+
+<h1 id="まとめ">まとめ</h1>
+
+<ul>
+<li>BEMはBlock,Element,modifierの3つの要素がある。</li>
+<li>記述するときは<code>.block__element--modifier</code>のように行う。</li>
+<li>コンポーネントは小さな割り出しから考える。</li>
+<li>コンポーネントが集まって、新たなコンポーネントとなるとき、その構成要素はElementとしても振る舞う。</li>
+</ul>
+
+<h1 id="おわりに">おわりに</h1>
+
+<p>コンポーネント設計に欠かせないものは、デザインを読み解くことです。 都度修正すること、スケールすることを考えると、「できてればいい」では済まなくなってきています。 コンポーネント設計をする感覚を身につけることで、修正につよいwebサイト制作を行っていきましょう！</p>
+
+<p>ご質問などはコメントもしくはtwitter(<a href="https://twitter.com/nayucolony">@nayucolony</a>)までお気軽にリプライをくださいませ！</p>
+
+<h1 id="next">NEXT</h1>
+
+<p><a href="http://qiita.com/advent-calendar/2016/emoji">絵文字 / Emoji Advent Calendar 2016</a> 12日目の記事は<a href="https://twitter.com/ncaq">エヌユル</a>さんです！</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    <li class="pager__item">
+      <div class="pager__label -prev">前の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/fontplusday5">FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。</a>
+    </li>
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/react-modal-position">Android4.4系でReact-modalの表示位置がずれる</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on nayucolony.net</title>
+    <link>http://nayucolony.net/tags/editor/index.xml</link>
+    <description>Recent content in Editor on nayucolony.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <atom:link href="http://nayucolony.net/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</title>
+      <link>http://nayucolony.net/atom-vendorprefix</link>
+      <pubDate>Wed, 19 Oct 2016 13:14:00 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/atom-vendorprefix</guid>
+      <description>&lt;h2 id=&#34;勝手にベンダープレフィックスがつく&#34;&gt;勝手にベンダープレフィックスがつく&lt;/h2&gt;
+
+&lt;p&gt;emmet、つかってますか？&lt;br&gt;
+flexbox、つかってますか？&lt;br&gt;
+私は使ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ある日、&lt;code&gt;df&lt;/code&gt;で展開しようとして&lt;/p&gt;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+
+&lt;p&gt;みたいになってイライラしてました。
+これからはね、 &lt;strong&gt;Autoprefixer&lt;/strong&gt; の時代だからね、こんなもの勝手につけなくていいの。&lt;/p&gt;
+
+&lt;p&gt;Autoprefixerについては下記参照。&lt;br /&gt;
+&lt;a href=&#34;http://qiita.com/tonkotsuboy_com/items/377913c51b1ac00deffe&#34;&gt;CSSベンダープレフィックス-webkit-を今この瞬間に辞める為のAutoprefixerの導入とお薦め設定&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+
+&lt;p&gt;ホームディレクトリ&lt;code&gt;（Macintosh HD/ユーザ/ :house:）&lt;/code&gt;に
+&lt;code&gt;emmet&lt;/code&gt;というフォルダをつくって、その中に&lt;code&gt;preferences.json&lt;/code&gt;というフォルダを作る。&lt;/p&gt;
+
+&lt;p&gt;これは、Atomのemmetが標準でここのファイルを読み込むようになってて、ユーザーは元ファイルをいじらなくてもここにファイルを自作しておけば設定を上塗りしてくれるんです。&lt;/p&gt;
+
+&lt;p&gt;中身は以下の通り&lt;/p&gt;
+{
+  &#34;css.autoInsertVendorPrefixes&#34;: false,
+  &#34;less.autoInsertVendorPrefixes&#34;: false,
+  &#34;scss.autoInsertVendorPrefixes&#34;: false,
+  &#34;sass.autoInsertVendorPrefixes&#34;: false,
+  &#34;caniuse.enabled&#34;: false
+}
+
+&lt;p&gt;あとはAtomを再起動すればおっけーです。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;quot;caniuse.vendor&amp;quot;:false&lt;/code&gt;を書いちゃうと挿入機能がうまく無効化してくれない場合があるので
+上記のようにするといいと思います。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

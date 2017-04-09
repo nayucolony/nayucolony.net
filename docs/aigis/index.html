@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    
+    <title>styleguideジェネレータ「aigis」を使ってみた | nayucolony.net</title>
+    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta property="og:title" content="styleguideジェネレータ「aigis」を使ってみた" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nayucolony.net/aigis" />
+    <meta property="og:image" content="https://nayucolony.net" />
+    <meta property="og:site_name" content="nayucolony.net" />
+    <meta property="og:description" content="スタイルガイドジェネレータ「aigis」というものがあるらしく、ちょっと触って見るついでにメモを残しておきます。
+
+exampleを触ってだいたいの感触を掴むというのがこのエントリの趣旨です。
+
+aigisとは
+
+株式会社ピクセルグリッド謹製のスタイルガイドジェネレータです。
+" />
+
+    
+    <meta property="fb:app_id" content="736893639822676" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nayucolony" />
+    <meta name="twitter:creator" content="@nayucolony" />
+
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,300,100" rel="stylesheet" type="text/css">
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88734859-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <script src="/js/prism.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1><a href="/">nayucolony.net</a></h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navi">
+        <li><a href="/about/">このブログについて</a></li>
+        <li><a href="/results/">制作実績</a></li>
+      </ul>
+    </nav>
+
+    <main class="l-main ">
+    
+<article class="article-post">
+	<header>
+    <h1 class="article-post__title">styleguideジェネレータ「aigis」を使ってみた</h1>
+    <time datetime="2016-09-21T21:14:27&#43;09:00">
+      2016年9月21日
+    </time>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="styleguideジェネレータ「aigis」を使ってみた" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/aigis" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="hero"><img src="" alt=""/></div>
+  </header>
+  <p>スタイルガイドジェネレータ「aigis」というものがあるらしく、ちょっと触って見るついでにメモを残しておきます。</p>
+
+<p>exampleを触ってだいたいの感触を掴むというのがこのエントリの趣旨です。</p>
+
+<h2 id="aigisとは">aigisとは</h2>
+
+<p><a href="https://www.pxgrid.com/">株式会社ピクセルグリッド</a>謹製のスタイルガイドジェネレータです。
+</p>
+
+<p>以下、<a href="https://pxgrid.github.io/aigis/docs/jp/">日本語ドキュメント</a>より引用。</p>
+
+<blockquote>
+<p>aigisでは、メンテナブルなスタイルガイドを作成することができます。 aigisを使えば以下の様なことが可能です。</p>
+
+<ul>
+<li>テキストファイルであれば、.scss .styls .mdなど、どのような形式からでもスタイルガイドを作成できます。</li>
+<li>Markdownを使用してドキュメントを記述することができます。</li>
+<li>スタイルガイドのテーマをカスタマイズすることができます。またテーマでは、JadeやHandlebarsといったテンプレートエンジンを利用できます。</li>
+</ul>
+</blockquote>
+
+<p>なお、このエントリは割と <strong>黒い画面こわい人向け</strong> の記事です。</p>
+
+<p>黒い画面怖くない人は、適宜読み飛ばしてください！
+(とか言っておきながら、npmコマンドとgitコマンドが動く環境になっていることが前提です！)</p>
+
+<h2 id="作業用フォルダをつくる">作業用フォルダをつくる</h2>
+
+<p>そういえば、いつも作業するときホームディレクトリに「Works」とか「Practice」とか作ってその中でやってるんですけど、なんかディレクトリ作るのに参考になるサイトないですかね〜。</p>
+
+<p>とりあえずホームディレクトリに練習用フォルダを作っちゃいましょう。</p>
+
+<p><code>cd ~</code>でホームディレクトリに戻れます。</p>
+
+<p>ちなみに、ホームディレクトリとは<code>Macintosh HD &gt; ユーザ &gt; ***(あなたのユーザ名)</code> <strong>←ココ</strong></p>
+$ cd ~            //ホームディレクトリへ移動
+$ mkdir practice  //practiceというフォルダを作る
+$ cd ./practice   //practiceへ移動
+
+<p>（$マークよりも右側を記述してくださいね）</p>
+
+<h2 id="aigisを落としてくる">aigisを落としてくる</h2>
+$ git clone https://github.com/pxgrid/aigis.git
+
+<p>これは、今いるディレクトリに<a href="https://github.com/pxgrid/aigis">aigis</a>の中身をダウンロードしてくるコマンド。</p>
+
+<p>gitコマンドねーよ！みたいなことを言われた人はがんばってgitをインストールしてください。</p>
+Cloning into 'aigis'...
+remote: Counting objects: 4360, done.
+remote: Total 4360 (delta 0), reused 0 (delta 0), pack-reused 4360
+Receiving objects: 100% (4360/4360), 933.49 KiB | 246.00 KiB/s, done.
+Resolving deltas: 100% (2229/2229), done.
+Checking connectivity... done.
+
+<p>まあなんかこんな感じになったらokです。</p>
+
+<h2 id="aigisをインストールする">aigisをインストールする</h2>
+
+<p>落としてきたのは、aigisに必要なファイルのダウンロード指示書だと思ってください。</p>
+
+<p>（いろんなプログラムを組み合わせて動いてるから、全部詰め込むと重いんだよ）</p>
+
+<p>ここで、追加でaigisに関連するファイルをインストールします。</p>
+$ cd ./aigis/examples                //サンプルフォルダへ移動
+$ npm install --save-dev node-aigis  //aigisをインストール
+$ ./node_modules/.bin/aigis -v       //aigisのバージョンチェック
+1.1.5                                //バージョン
+
+<p><code>$ npm install --save-dev node-aigis</code>が動かねーよっていう方は多分npmだのnode.jsだのが入っていないので頑張っていれてください。</p>
+
+<p>記事書いてる時点では1.1.5でしたがまあこの辺の数字は随時かわるかもしれません。</p>
+
+<h2 id="aigisのテンプレートを生成">aigisのテンプレートを生成</h2>
+
+<p><code>$ ./node_modules/.bin/aigis init</code></p>
+
+<p>こうなったらokです</p>
+Created the following files and directories:
+Cowardly refusing to overwrite existing: aigis_config.yml
+  aigis_assets
+  aigis_assets/css/highlight/okadia.css
+  aigis_assets/css/theme.css
+  template_ejs
+  template_ejs/components.ejs
+  template_ejs/index.ejs
+  template_ejs/sidemenu.ejs
+
+<h2 id="aigisを起動">aigisを起動</h2>
+
+<p><code>$ ./node_modules/.bin/aigis run -c ./aigis_config.yml</code></p>
+
+<p>こんな感じになります。
+意味的には、今いるファイルにある<code>aigis_config.yml</code>をaigisに読み込ませるような感じです。</p>
+[Info] Config File: /Users/yuki/practice/aigis/examples/aigis_config.yml
+[Info] Start: Generate Styleguide
+[Info] Output: /Users/yuki/practice/aigis/examples/styleguide
+[Info] Finish: Generate Styleguide
+
+<p>はい、これでok。</p>
+
+<h2 id="スタイルガイドを見てみる">スタイルガイドを見てみる</h2>
+
+<p>では、Finderでホームディレクトリ内に作った<code>practice</code>フォルダの中の<code>aigis</code>フォルダを開いてみましょう。<br />
+<code>styleguide</code>といフォルダがあると思いますが、これが先ほどaigisを起動させることで生成されたスタイルガイドです。
+<code>index.html</code>を開くと、スタイルガイドが生成されていることがわかると思います。</p>
+
+<h3 id="index-html">index.html</h3>
+
+<p>基本的には、全て<code>aigis_config.yml</code>がどのファイルをどうするのかという管理をしています。</p>
+# Index page created from markdown file
+index: ./index.md
+
+<p><code>index.html</code>は、<code>aigis_config.yml</code>と同階層にある<code>index.md</code>から生成しますよ、とのこと。</p>
+
+<h3 id="その他ページ">その他ページ</h3>
+
+<p>サイドバーの<code>base</code>をクリックするとbase部分に関する記述が出てきます。
+（なんか最後にスラッシュついてないのでちょっとおかしな遷移しますが）
+他ページも同様です。
+このあたりも<code>aigis_config.yml</code>に書いています</p>
+#The directory containing the source files to parse recursively
+source:
+  - ./css
+  - ./demo.md
+
+<p>つまり、今いる<code>examples</code>フォルダ内の<code>css</code>フォルダ内のテキストファイル(今回だと<code>style.css</code>)、もしくは<code>demo.md</code>から生成しますよということですね。
+他にも対象ファイルを増やしたければここに追記していきましょう。
+ちなみに、最初の「aigisとは？」の部分に書いたように、拡張子はかなりいろんな部分をサポートしているみたいです。
+ただし、<code>aigis_config.yml</code>の以下の部分で「どの拡張子のファイルを対象にするのか」は書いておくこと。</p>
+# The types that aigis will scan to document comment
+source_type:
+  - .css   
+  - .sass  
+  - .scss  
+  - .styl  
+# If you want to generate documents from markdown
+# source_type: .md
+
+<p>また、<code>.md</code>がリストにないのに<code>demo.md</code>が対象になっているのは、ファイル名と拡張子を指定しているからです。
+<code>./css</code>のように、フォルダを指定した場合はフォルダ内にある上記リストの拡張子を持つファイルのみが生成対象になります。
+ファイル名と拡張子まで指定しなくても<code>.md</code>を生成対象にしたい場合、一番下の行の#を消してコメントアウトを解除するか、リストに<code>.md</code>を追加してしまいましょう。</p>
+
+<p>(<code>//</code>で始まる部分は説明用に私が記述したものです。)</p>
+
+<div class="highlight">
+<pre>
+
+
+//以下、メタ情報。カテゴリやタグの情報を書くとサイドバーとメインに自動反映してくれる。
+
+/*
+---                 
+name: Button
+category:           
+  - mod/btn         
+  - base            
+  - mod             
+tag:                
+  - latest          
+  - base            
+compile: false
+---
+
+//以下、メインセクション記述。markdownで書くこと。
+
+Button styles.
+* Base button style.          
+* Use `a` or `button` tag.
+
+//以下シンタックスエリア。ファイル形式を書くと自動でシンタックスハイライトがかかる。
+
+```html
+&lt;a class="ag-btn">Button&lt;/a>
+&lt;button class="ag-btn ag-btn--primary">Button&lt;/button>
+```
+
+```ejs
+&lt;a class="ag-btn">&lt;%- name %>&lt;/a>
+&lt;button class="ag-btn ag-btn--primary">&lt;%- name %>&lt;/button>
+```
+
+```jade
+a.ag-btn
+  != name
+button.ag-btn.ag-btn--primary
+  != name
+```
+
+```hbs
+{{include './button.html'}}
+&lt;hr>
+&lt;a class="ag-btn">{{name}}&lt;/a>
+&lt;button class="ag-btn ag-btn--primary">{{name}}&lt;/button>
+```
+
+*/
+
+//以下、コンポーネントのCSS
+
+
+.ag-btn {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: none;
+  background-color: #3DB680;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 40px;
+  min-width: 200px;
+  font-size: 20px;
+  box-sizing: border-box;
+ }
+
+.ag-btn--primary {
+  color: black;
+  background-color: #FFEA3A;
+ }
+
+</pre>
+</div>
+
+<p><code>:</code>の後に半角スペースが空いてないとエラー吐いたりするなど割とシビアなので注意。
+あんまり縦長になるとつらそうなので、1スタイル1ファイルとかでいいかもしれませんね。
+今回だと、<code>header.css</code>、<code>footer.css</code>・・・などのように。</p>
+
+<p>ちなみに、今回は<code>examples/styleguide</code>の中にファイルが吐き出されましたが、フォルダ名なんかは<code>aigis_config.yml</code>内のここで変えられますよ。</p>
+# The directory that aigis will build to
+dest: ./styleguide
+
+<p>この<code>dest:</code>以降を任意のパスに書き換えることで好きな階層の好きなフォルダ内に吐き出させることができます。</p>
+
+<p>また、更新があった場合は随時
+<code>./node_modules/.bin/aigis run -c ./aigis_config.yml</code>
+を叩いて生成しなおしてください。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>さて、これで、aigisを使って自由にメンテナブルなstyleguideを作ることができますね！</p>
+
+<p>スニペット管理にもなりますし、これでスタイル管理することで迷子にならないサイト制作をしていきましょう！</p>
+
+<p>気が向いたら、gulpにaigisを組み込んで、変化があったら自動で生成されるようにしたりする方法も書きたいなと思います！</p>
+
+<p>またこの記事は何か気づきがありしだい追記していく予定なのでどうぞよろしくおねがいします！</p>
+  <footer>
+    <hr>
+    <ul class="share-buttons">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </li>
+      <li class="share-buttons__pocket">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+      </li>
+    </ul>
+<hr>
+    
+  <ol class="pager">
+    
+    
+    <li class="pager__item">
+      <div class="pager__label -next">次の投稿</div>
+      <a class="pager__link" href="http://nayucolony.net/atom-vendorprefix">AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</a>
+    </li>
+    
+  </ol>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-4453008968844470"
+       data-ad-slot="3062777540"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </footer>
+
+</article>
+
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+

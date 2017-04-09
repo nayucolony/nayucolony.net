@@ -1,0 +1,3285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on nayucolony.net</title>
+    <link>http://nayucolony.net/post/index.xml</link>
+    <description>Recent content in Posts on nayucolony.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 18 Jan 2017 20:02:45 +0900</lastBuildDate>
+    <atom:link href="http://nayucolony.net/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>フリーランスエンジニアTips勉強会に行ってきました</title>
+      <link>http://nayucolony.net/freelance</link>
+      <pubDate>Wed, 18 Jan 2017 20:02:45 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/freelance</guid>
+      <description>&lt;p&gt;2017年、自分の幅を広げるべく、個人としてもコーディングのお仕事を受ける体制にしています &lt;strong&gt;（絶賛募集中です）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;フリーランスになる予定は今のところありませんが、「個人として仕事を受ける」という点についてどんなものか知りたかったので、&lt;a href=&#34;https://hiwell.connpass.com/event/47213/&#34;&gt;「知らなきゃ損！フリーランスエンジニアTips勉強会」&lt;/a&gt;に参加してきました。
+
+以下、セミナーのメモ書きです。
+ほぼ自分用ですが、ご参考になればと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスで悩みがちなところ&#34;&gt;フリーランスで悩みがちなところ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;稼げるのか？&lt;/li&gt;
+&lt;li&gt;仕事はあるのか？&lt;/li&gt;
+&lt;li&gt;そもそも何をすればいいのか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;フリーランスになると何が変わる&#34;&gt;フリーランスになると何が変わる？&lt;/h2&gt;
+
+&lt;p&gt;結論：フリーランスになったからと言って、仕事内容は変わらない。&lt;/p&gt;
+
+&lt;p&gt;ただし以下のような点が変化と言える
+- 会社に守ってもらえなくなる。自分の身は自分で守る。
+- 自分で仕事を探す必要がある。
+- 保険、税金周りの事務手続きを自分でやることになる。
+- 「会社で年末調整」→「自分で確定申告」に&lt;/p&gt;
+
+&lt;h2 id=&#34;フリーランスのメリット&#34;&gt;フリーランスのメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分の報酬額を決められる。&lt;/li&gt;
+&lt;li&gt;興味のある仕事を自分で決められる。&lt;/li&gt;
+&lt;li&gt;働きたいときに働ける。&lt;/li&gt;
+&lt;li&gt;やめたいときにやめられる。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;色んなものが経費計上できる。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;会社の規定に束縛されない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;デメリット&#34;&gt;デメリット&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分で自分を売り込む手間がかかる&lt;/li&gt;
+&lt;li&gt;休めば休むほど報酬が減る&lt;/li&gt;
+&lt;li&gt;自分を守るのも自分&lt;/li&gt;
+&lt;li&gt;事務処理が増える&lt;/li&gt;
+&lt;li&gt;仕事→100%安定するとは言い切れない（体調面とかも含め）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;長く続けるコツ&#34;&gt;長く続けるコツ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;勤怠が良好である&lt;/li&gt;
+&lt;li&gt;最新技術にアンテナをはる&lt;/li&gt;
+&lt;li&gt;フリーランスとしてのキャリア設計&lt;/li&gt;
+&lt;li&gt;契約を守る（お客さんとの）&lt;/li&gt;
+&lt;li&gt;市場動向に見合った価格設定
+
+&lt;ul&gt;
+&lt;li&gt;現状は売り手市場だがお客さんの予算に噛み合わないと契約には至らない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;信頼関係を作るためのコミュニケーション能力&lt;/li&gt;
+&lt;li&gt;PJT体制、配置に柔軟に対応する
+
+&lt;ul&gt;
+&lt;li&gt;「若いディレクターの下で働きたくない」とかだとキツい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;相場&#34;&gt;相場&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;結論から言うと、人による&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース1&#34;&gt;モデルケース1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人6年目&lt;/li&gt;
+&lt;li&gt;22歳で新卒入社、27歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;月収30万円から50万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;モデルケース2&#34;&gt;モデルケース2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社会人16年目&lt;/li&gt;
+&lt;li&gt;20歳で新卒入社、30歳でフリーランスに&lt;/li&gt;
+&lt;li&gt;43万円から75万円に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;元々高額な場合（ゲーム会社など、相場の高い会社にいた場合）下がることもあるが、収入が上がっているパターンが多い。&lt;/p&gt;
+
+&lt;h2 id=&#34;キャリア形成&#34;&gt;キャリア形成&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「社員→フリーランス→法人化」とか「社員→フリーランス→正社員」とかもある&lt;/li&gt;
+&lt;li&gt;フリーランスになったからと言って会社勤めができなくなるわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;なる前にやるべきこと&#34;&gt;なる前にやるべきこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;絶対やっておくべき&#34;&gt;絶対やっておくべき&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クレジットカードをつくる
+
+&lt;ul&gt;
+&lt;li&gt;プライベートと事業の使い分けをする&lt;/li&gt;
+&lt;li&gt;経費処理が楽になる&lt;/li&gt;
+&lt;li&gt;フリーになって与信判断が厳しくなる前に作るべき&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;不動産契約（自宅購入）
+
+&lt;ul&gt;
+&lt;li&gt;これも与信判断は会社員のほうがおりやすいことから&lt;/li&gt;
+&lt;li&gt;最近はだいぶシビアなので検討している人は会社員のうちに&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ローンの借り換え
+
+&lt;ul&gt;
+&lt;li&gt;車、自宅、などなど&lt;/li&gt;
+&lt;li&gt;審査項目に影響&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;余力があればやっておこう&#34;&gt;余力があればやっておこう&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通帳（口座）、印鑑（事業用）&lt;/li&gt;
+&lt;li&gt;会計ソフト（弥生とか、freeeとか、MFクラウドとか）&lt;/li&gt;
+&lt;li&gt;名刺（なくてもいいけど売り込みには便利）&lt;/li&gt;
+&lt;li&gt;書類テンプレ（請求書フォーマットなどがあると便利）&lt;/li&gt;
+&lt;li&gt;ネット環境（Wi-Fiがあればだいたいなんとかなる）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人脈作り&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フリーランスどうしの交流&lt;/li&gt;
+&lt;li&gt;交流会、勉強会など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;退職後にやるべきこと&#34;&gt;退職後にやるべきこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;厚生年金→国民年金に切り替える&lt;/li&gt;
+&lt;li&gt;社保→国民健保に切り替える
+
+&lt;ul&gt;
+&lt;li&gt;離職票もって役所いけ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;個人事業の開業届け
+
+&lt;ul&gt;
+&lt;li&gt;やらないと後々面倒（2ヶ月以内にやっとけ）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;白色or青色申告承認申請書
+
+&lt;ul&gt;
+&lt;li&gt;税金対策&lt;/li&gt;
+&lt;li&gt;青色のほうがおすすめかも&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;事務処理&#34;&gt;事務処理&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今会社がやってくれていることを全部自分でしないといけない
+
+&lt;ul&gt;
+&lt;li&gt;会計ソフトとか使ってこまめにやっておけば楽にできる&lt;/li&gt;
+&lt;li&gt;ギリギリまで放置すると確定申告で苦しむ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;副業サラリーマンの場合、開業届が必須のわけではない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;税金&#34;&gt;税金&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;収入-経費=所得&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;確定申告が必要なもの&#34;&gt;確定申告が必要なもの&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;所得税&lt;/li&gt;
+&lt;li&gt;消費税&lt;/li&gt;
+&lt;li&gt;復興特別所得税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;不要-支払書に従うだけでok&#34;&gt;不要（支払書に従うだけでOK）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;住民税&lt;/li&gt;
+&lt;li&gt;国民健保税&lt;/li&gt;
+&lt;li&gt;事業税&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;経費にできる&#34;&gt;経費にできる&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;通信費&lt;/li&gt;
+&lt;li&gt;飲食費
+
+&lt;ul&gt;
+&lt;li&gt;飲み会&lt;/li&gt;
+&lt;li&gt;ランチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;事務所経費&lt;/li&gt;
+&lt;li&gt;備品購入費&lt;/li&gt;
+&lt;li&gt;その他
+
+&lt;ul&gt;
+&lt;li&gt;書籍&lt;/li&gt;
+&lt;li&gt;セミナー&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;確定申告&#34;&gt;確定申告&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;毎年2/15~3/15あたり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;仕事のとりかた&#34;&gt;仕事のとりかた&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;個人で取りに行くか&lt;/li&gt;
+&lt;li&gt;エージェントを経由するか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェントの選び方&#34;&gt;エージェントの選び方&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レスポンスが早い&lt;/li&gt;
+&lt;li&gt;営業マンの努力が見える（距離が縮まる）&lt;/li&gt;
+&lt;li&gt;エンド直案件が多い&lt;/li&gt;
+&lt;li&gt;悪いことも言ってくれる&lt;/li&gt;
+&lt;li&gt;業界動向の情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;キャリアサポートの情報を提供してくれる&lt;/li&gt;
+&lt;li&gt;福利厚生サービスを提供してくれる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hiwellでは&#34;&gt;Hiwellでは&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一気通貫のフォロー
+
+&lt;ul&gt;
+&lt;li&gt;ワンストップで全てやってくれる&lt;/li&gt;
+&lt;li&gt;アフターフォローも充実&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;エンド&amp;amp;元請直案件が多い&lt;/li&gt;
+&lt;li&gt;福利厚生
+
+&lt;ul&gt;
+&lt;li&gt;教育、ツール、健康、お金、交流など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;エージェント登録から参画までのフロー&#34;&gt;エージェント登録から参画までのフロー&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;登録面談
+
+&lt;ul&gt;
+&lt;li&gt;価格とか条件周りのすり合わせ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;案件紹介&lt;/li&gt;
+&lt;li&gt;客先面談&lt;/li&gt;
+&lt;li&gt;参画決定&lt;/li&gt;
+&lt;li&gt;アフターフォロー&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といったところで第一部が終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;第2部-hiwell経由で仕事をしているエンジニアさんの話&#34;&gt;第2部：Hiwell経由で仕事をしているエンジニアさんの話&lt;/h2&gt;
+
+&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;経営陣が企画提案を聞き入れてくれない&lt;/li&gt;
+&lt;li&gt;昇給も怪しい&lt;/li&gt;
+&lt;li&gt;賞与が何期も出ない&lt;/li&gt;
+&lt;li&gt;査定もあやふや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このあたりから来る企業への不信感からフリーランスへ転向&lt;/p&gt;
+
+&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソシャゲ&lt;/li&gt;
+&lt;li&gt;Webサイト&lt;/li&gt;
+&lt;li&gt;アプリ制作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;収入&#34;&gt;収入&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;会社員時代は40万前後&lt;/li&gt;
+&lt;li&gt;フリーランスになってからは50万~80万前後
+
+&lt;ul&gt;
+&lt;li&gt;コツコツ単価交渉&lt;/li&gt;
+&lt;li&gt;残業など含めると100万を超える月も&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;経費&#34;&gt;経費&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;交通費&lt;/li&gt;
+&lt;li&gt;家賃&lt;/li&gt;
+&lt;li&gt;通信光熱費&lt;/li&gt;
+&lt;li&gt;顧問料&lt;/li&gt;
+&lt;li&gt;MBP&lt;/li&gt;
+&lt;li&gt;kindle&lt;/li&gt;
+&lt;li&gt;iPad&lt;/li&gt;
+&lt;li&gt;接待交際費&lt;/li&gt;
+&lt;li&gt;タクシー&lt;/li&gt;
+&lt;li&gt;ガチャ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;など&lt;/p&gt;
+
+&lt;h2 id=&#34;やりがい&#34;&gt;やりがい&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;フリーだからどうということはない&lt;br /&gt;
+会社勤めと同じく、エンジニアとしてやることをやるだけ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;生活&#34;&gt;生活&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕事面はフリーランスだからどうとかはない。自分しだい。&lt;/li&gt;
+&lt;li&gt;経済的に余裕ができた&lt;/li&gt;
+&lt;li&gt;支払いの滞納刷ると辛い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;将来&#34;&gt;将来&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;起業は性格的に向いてないと思っている&lt;/li&gt;
+&lt;li&gt;就職はもういいや&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;とのことで第二部終了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;フリーランスになったからといって、仕事の内容も変わらなければ、仕事に対する姿勢も変わらないというのが一貫した結論でした。&lt;/p&gt;
+
+&lt;p&gt;収入があがり、事務手続きなどやることが増える、というような話が多かったです。&lt;/p&gt;
+
+&lt;p&gt;現状、まだまだ現職でやるべきことがたっくさんあるので、フリーランスになる予定はありませんが、市場にある色んな仕事を通して、経験値を積んでいけたらなという気持ちです。&lt;/p&gt;
+
+&lt;p&gt;お仕事がありましたらぜひご連絡ください〜！→&lt;a href=&#34;https://twitter.com/nayucolony&#34;&gt;@nayucolony&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vimを使い始めました</title>
+      <link>http://nayucolony.net/vim01</link>
+      <pubDate>Thu, 12 Jan 2017 21:14:11 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/vim01</guid>
+      <description>&lt;p&gt;2017年の豊富の一つとして「Vimを使いこなす」を設定しました。&lt;br&gt;
+理由は「エンジニアぽくてかっこいいから」です。&lt;br&gt;
+前から手を出しては挫折し、みたいなことを繰り返していたのですが、今年こそマジなのでどうぞよろしくお願いします。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;vim学習方針&#34;&gt;Vim学習方針&lt;/h2&gt;
+
+&lt;p&gt;Vimを身につける方針を自分なりに決めました。&lt;/p&gt;
+
+&lt;h3 id=&#34;vimtutor先生と仲良くする&#34;&gt;vimtutor先生と仲良くする&lt;/h3&gt;
+
+&lt;p&gt;Vimを教えてくれる「vimtutor」コマンドで学ぶことを全てのベースとします。&lt;br&gt;
+基本的な操作を見に染み込ませます。&lt;br&gt;
+なれてからも月に一度はやって、基本に帰るようにしたいなと思っています。&lt;/p&gt;
+
+&lt;h3 id=&#34;実際の操作は-実践vim-で覚える&#34;&gt;実際の操作は「実践Vim」で覚える。&lt;/h3&gt;
+
+&lt;p&gt;「実践Vim」がメイチョだと聞いて買いました。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=nayucolony05-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00HWLJI3U&amp;linkId=5318db4907549838415e827db03a4e6e&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;kindleで買いました。&lt;br&gt;
+毎日10%ずつくらい習得して、二週間くらいでマスターする予定です。&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;思考の速度で編集するには-を意識&#34;&gt;「思考の速度で編集するには？」を意識&lt;/h3&gt;
+
+&lt;p&gt;これはゆるめにやっていきたい項目です。&lt;br&gt;
+例えば、ファイルの先頭にカーソルを持って行きたい時、無心でカーソルキーを連打するのではなく、「そういうコマンドはないのか？」を調べて、使ってみる、、、といったような感じです。&lt;/p&gt;
+
+&lt;p&gt;毎回毎回は難しいと思うので、最低1日1個は習得したいですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;vimを使うと丁寧な習慣がつく気がしている&#34;&gt;Vimを使うと丁寧な習慣がつく気がしている。&lt;/h2&gt;
+
+&lt;p&gt;コマンドであれこれすることは「丁寧な思考」に結びつく気がしています。&lt;br&gt;
+例えば、タイポで単語を削除する必要があるときなど。&lt;br&gt;
+普通にbackspaceを連打すればいい話ではありますが、一息ついて「単語削除」系のコマンドを打つことで、なんとなく「優雅」な気持ちになれそうな気がします（笑）&lt;/p&gt;
+
+&lt;h2 id=&#34;プラグインは都度いれていく&#34;&gt;プラグインは都度いれていく&lt;/h2&gt;
+
+&lt;p&gt;おすすめプラグインを紹介している記事などはたくさんありますが、方針としては
+「こういうのないかな？」と思った時に調べて、それに合うものを都度導入するというスタイルで行きたいと思っています。&lt;br&gt;
+ひとまずは、markdown記述に関するプラグインをいくつかいれました。&lt;br&gt;
+(管理は「dein.vim」を導入したのでその中で行います。)&lt;/p&gt;
+
+&lt;h2 id=&#34;進捗はここに書く&#34;&gt;進捗はここに書く&lt;/h2&gt;
+
+&lt;p&gt;「実践Vim」については、10%ずつくらい、キリがいいところで報告します。&lt;br&gt;
+また、業務中に気づいたコマンドなんかもちょこちょこ書いていく予定。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2016年のアウトプット活動まとめ</title>
+      <link>http://nayucolony.net/2016-output</link>
+      <pubDate>Fri, 23 Dec 2016 13:46:37 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/2016-output</guid>
+      <description>&lt;p&gt;今年もお世話になりました。&lt;/p&gt;
+
+&lt;p&gt;外で活動するようになったのは転職して9月からなので、そこからのものしかないですが（記憶もその辺からしかない）まとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;to-r-media&#34;&gt;to-R Media&lt;/h2&gt;
+
+&lt;p&gt;オウンドメディアで７本書きました。
+業務として書ける（書かなければならない）環境があるのはやはりいいですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;flocssで始めるcss設計&#34;&gt;FLOCSSで始めるCSS設計&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-01/&#34;&gt;第一回 CSS設計の目的とFLOCSSの概要&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-02/&#34;&gt;第二回 Componentを作ってみよう&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-03/&#34;&gt;第三回 Layoutレイヤーとは？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-04/&#34;&gt;第四回 Projectレイヤーを使いこなす！&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/flocss-05/&#34;&gt;第五回 Foundationレイヤーについて&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;5分でできるnpmとgulpのインストール&#34;&gt;5分でできるnpmとgulpのインストール&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/npm-gulp/&#34;&gt;5分でできるnpmとgulpのインストール（GIFアニメ付き）&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ejsでサイト制作効率化&#34;&gt;EJSでサイト制作効率化&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.to-r.net/media/ejs-01/&#34;&gt;第一回 EJSの基本&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;qiita&#34;&gt;Qiita&lt;/h2&gt;
+
+&lt;p&gt;Qiitaは主に自分用メモとして使ってます。
+自分メモが誰かの役に立ったらいいなあくらいの気持ちです。
+2016年は７本書きました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/e5832f078e9cab259c2c&#34;&gt;styleguideジェネレータ「aigis」を使ってみた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/c571597ed37127311132&#34;&gt;AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/382237c34bcc1a84f4d5&#34;&gt;RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/a33119c72cf8b5d90846&#34;&gt;絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/af28266c523b8fe0d67c&#34;&gt;Vue.jsをはじめてみる #1 ~公式ガイドを読む編~&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/b7eca434e663b1bc059a&#34;&gt;Android4.4系でReact-modalの表示位置がずれる&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/nayucolony/items/74f2c85253796b19c594&#34;&gt;globalにgulp-cliをインストールしようとするとエラーが発生する&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;登壇&#34;&gt;登壇&lt;/h2&gt;
+
+&lt;p&gt;4回LTしました。
+始めてのLTは「雑兵meetup」という勉強会でした。
+自分たちはすごい技術者じゃないんだから、びびらないでアウトプットしていこう、みたいなコンセプトの勉強会です。&lt;/p&gt;
+
+&lt;p&gt;そこで、２回ほど登壇してなれたので、「DIST」というフロントエンド技術系の勉強会で登壇しました。
+まだまだだなと感じたので引き続き勉強頑張ります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/37665/&#34;&gt;雑兵MeetUp #6 zohyo-fes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/41256/&#34;&gt;雑兵MeetUp ＃７ 沈黙（ダマ）の神殿 〜転職知見共有スペシャル〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zohyo.connpass.com/event/44940/&#34;&gt;雑兵MeetUp ＃８ LT大会 〜伝えたい事が、あるんだ〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dist.connpass.com/event/44273/&#34;&gt;DIST.13 トクするCSS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;イベントレポート&#34;&gt;イベントレポート&lt;/h2&gt;
+
+&lt;p&gt;イベントはたくさんいったのですがレポートは２本だけかきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/fontplusday5/&#34;&gt;FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nayucolony.net/hackathon-firtststep-19/&#34;&gt;「はじめてのハッカソンvol.19 」に参加してきました。&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;とある界隈の人たちでやりました。これは楽しかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1551&#34;&gt;スダ Advent Calendar 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;振り返り&#34;&gt;振り返り&lt;/h2&gt;
+
+&lt;p&gt;大きな区切りとして、Web業界に入って1年を迎えました。
+（2016年10月に初めてのWebの会社に入社したので、1年2ヶ月）&lt;/p&gt;
+
+&lt;p&gt;1年たったので、もう新人ぶってもいられないなあと思い、新米エンジニア、みたいに名乗るのをやめたんですけど、やっぱり近い年代のすごい人たちがちらついて焦ったりもしつつ、知識と経験の足りなさを実感しています。
+来年は少しでも追いつけるようにしたい。&lt;/p&gt;
+
+&lt;p&gt;活動は、トータルしてみると、20本のなにかしらをしています。&lt;/p&gt;
+
+&lt;p&gt;転職したのが9月なので、４ヶ月で20本。 月5本と考えると、週に1度は何かしらの発信を行えていたんだなあという感じです。ちょっと忙しくてサボった時期もあったんですが、アドベントカレンダーでなんとか巻き返せました。&lt;/p&gt;
+
+&lt;h2 id=&#34;2017年の目標&#34;&gt;2017年の目標&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2016年の倍のペースで執筆、登壇を行う&lt;/li&gt;
+&lt;li&gt;執筆登壇合わせて100本目指す&lt;/li&gt;
+&lt;li&gt;質より量とは言わないけど、量は質を凌駕する&lt;/li&gt;
+&lt;li&gt;頭の中にあるうちはなんだって傑作（自戒）&lt;/li&gt;
+&lt;li&gt;外部メディアに寄稿する(声がかかれば)&lt;/li&gt;
+&lt;li&gt;でも声かからないと思うので「技術書典2」参加を検討中&lt;/li&gt;
+&lt;li&gt;LTだけでなく、まとまった時間でセッションorメンター&lt;/li&gt;
+&lt;li&gt;これはさすがに声かからないと思うので勉強会主催を考え中&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;高専にいたときから「ないなら作れよ」とよく耳にしてきたもので、こんな感じになりました。
+声かかるの待ってても残念な結果になることは目に見えているので、自分から動かなきゃなって思ってます。
+1年くらい経って、その活動が身を結んでたらいいな〜とか思います。&lt;/p&gt;
+
+&lt;p&gt;それでは、来年もよろしくお願いいたします。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIST.13「トクするCSS」に出演しました。</title>
+      <link>http://nayucolony.net/dist13</link>
+      <pubDate>Wed, 14 Dec 2016 13:36:56 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/dist13</guid>
+      <description>&lt;p&gt;2016年12月2日に開催された&lt;a href=&#34;https://dist.connpass.com/event/44273/&#34;&gt;DIST.13 「トクするCSS」&lt;/a&gt;にLTスピーカーとして出演しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;出演の経緯&#34;&gt;出演の経緯&lt;/h2&gt;
+
+&lt;p&gt;元々DISTというイベントの存在は知っていたのですが、詳細まではよく知りませんでした。
+イベントページ公開直後に社内slackで（募集してるみたいだよ）というDMが飛んできたので勢いで応募しました。&lt;/p&gt;
+
+&lt;p&gt;主催側でオファーがかかっていたまぼろしの宮田さん（&lt;a href=&#34;https://twitter.com/yuki_m015&#34;&gt;@yuki_m015&lt;/a&gt;）やICSの鹿野さん（&lt;a href=&#34;https://twitter.com/tonkotsuboy_com&#34;&gt;@tonkotsuboy_com&lt;/a&gt;）が出演されるということまではわかっており、知っている人が出演するという安心からかあまり気負いせずに参加できたのでラッキーでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;発表内容について&#34;&gt;発表内容について&lt;/h2&gt;
+
+&lt;p&gt;テーマである「CSS」について特に鉄板ネタを持っているわけではありませんでした。&lt;/p&gt;
+
+&lt;p&gt;唯一、webデザイナーになった当初から意識し続けていた「CSS設計」という話題ならばなんとか喋れそうな気がしたので、内容自体はそっち方面ということは決めていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;タイトル-君の名は-について&#34;&gt;タイトル「君の名は。」について&lt;/h2&gt;
+
+&lt;p&gt;私は文章を書くときもスライドを作るときも真っ先にタイトルを決めてしまうタイプなのですが、今回はその時マイブームだった「君の名は。」を採用しました。&lt;/p&gt;
+
+&lt;p&gt;ですが、そのあとのちょまど騒動の流れでこの記事が目につき、めちゃくちゃ後悔しました（笑）&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;発表内容とは関係の無いネタ（例えば、アニメやマンガ、ゲームなど）を散りばめたり、そこを押してこられると、元ネタを知らないとさっぱり分かりません。発表内容をより伝えるアクセントとして使うのは良いですが、コンテキストが共有できていないものはなかなか伝わりづらいですね。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.shin1x1.com/entry/improve-the-presentation-skills-for-beginners&#34;&gt;「ここを気をつけるともっと良くなる勉強会の発表」&lt;/a&gt; より引用&lt;/p&gt;
+
+&lt;p&gt;次からはちゃんとタイトル付けていこうかなと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;内容の決まった経緯&#34;&gt;内容の決まった経緯&lt;/h2&gt;
+
+&lt;p&gt;テーマである「&lt;a href=&#34;http://rscss.io/&#34;&gt;RSCSS&lt;/a&gt;」ですが、これは今流行っているCSS設計の主たる方針から外れる部分があります。
+そこがあえて主流から少し外れたテーマの対比がシナジー効果を生み出さないかな〜？みたいな気持ちでセレクトしました。&lt;/p&gt;
+
+&lt;p&gt;今の主流な方針としては、詳細度をフラットに保つべくBEMなどの命名規則がよく用いられています。
+ユニークなclassを付与することで、対象の要素にスコープするというものです。
+BEMを使えば全てのclassの詳細度は（0,0,1,0）をキープし続けられるので上書き戦争で悩むことはなくなります。
+&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/Specificity&#34;&gt;詳細度 – CSS | MDN&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一方で、RSCSSはユニークなのはComponentのネーミングのみでElementは他のComponent内のElementのネーミングと高い頻度でバッチングします。
+そこで、意図せずスタイルが当たってしまうことを防止するために子セレクタによる指定をするというものです。
+完全にHTMLの構造に依存するため、かなりComponentの粒度に気を使う必要はあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;伝えたかったこと-技術面&#34;&gt;伝えたかったこと（技術面）&lt;/h2&gt;
+
+&lt;p&gt;私は &lt;strong&gt;「BEMって長くて面倒くさいよな！RSCSS使おうぜ！」&lt;/strong&gt; という意図のLTをしていたわけではありません。
+RSCSSに一度触れるとBEMでは意識しなかった部分が見えてきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;コンポーネントの粒度に対する意識&#34;&gt;コンポーネントの粒度に対する意識&lt;/h2&gt;
+
+&lt;p&gt;BEMで初学者がやりがちな&lt;code&gt;.Block__Element__Element&lt;/code&gt;なんかも、RSCSSを一度経由することで、「そこでは改めてblockとして切り直せばいい」という考えにスムーズに持っていけるのではないか、と思っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;レイアウトに対する意識&#34;&gt;レイアウトに対する意識&lt;/h2&gt;
+
+&lt;p&gt;これも初学者に多いかと思うのですが、例えば.blockそのものにmarginやfloat、widthなどを与えてしまうと使い回しは困難になります。
+LTではお話できませんでしたが、RSCSSでは 「Componentにレイアウトに絡むスタイルは付けない」 というルールがあります。
+そのため、レイアウトに関するスタイルはElementにあてる必要が出てきます。すると、必然的にComponentを配置する際はそれをElementとして扱うために親Componentを用意してあげる必要があります。&lt;/p&gt;
+
+&lt;p&gt;一度この思想に触れることで、実案件でBEMに戻った時にも、レイアウトはレイアウトで考える、スムーズなコーディングができるのではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;（このあたりの考え方はSMACSSに由来するものだと思われますので、興味のあるかたはそちらも学習してみるとより理解が深まるかと思います！）
+&lt;a href=&#34;https://app.codegrid.net/entry/smacss-1&#34;&gt;SMACSSによるCSSの設計 – CodeGrid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;……などなどと、いろんなことを思いながらの内容セレクトなのでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;LTしてみたことについての感想です。&lt;/p&gt;
+
+&lt;h2 id=&#34;質問を頂けた&#34;&gt;質問を頂けた&lt;/h2&gt;
+
+&lt;p&gt;質疑応答の時間に、私宛に質問を頂けたのがすごく心に残っています。
+質問がくる＝内容に興味を持って頂けたということなので、嬉しくてめちゃくちゃ早口でレスポンスを返すという舞い上がりっぷりを披露してしまいました。&lt;/p&gt;
+
+&lt;h2 id=&#34;反省点&#34;&gt;反省点&lt;/h2&gt;
+
+&lt;p&gt;LTに対する内容が多すぎたため、かなり早口の説明になってしまいました。
+もう少しフォーカスしてゆっくり、丁寧に、深くお話するのがLT向きかなとスライドを作る途中ずっと思っていました。&lt;/p&gt;
+
+&lt;p&gt;また、当日のLTでは一部画像の引用元を明記していなかったため、後日その点について指摘を頂きました。
+（当該スライドは削除して公開しています。）
+一人やらかすとコミュニティ全体がモラルの低い集まりという印象になってしまうということは色々なところを見てきているのですが、当事者としての意識が低かったなと反省しています。今後気をつけます。&lt;/p&gt;
+
+&lt;h2 id=&#34;伝えたいこととか&#34;&gt;伝えたいこととか&lt;/h2&gt;
+
+&lt;p&gt;技術面ではなく、LTすることに対してです。&lt;/p&gt;
+
+&lt;p&gt;一番邪魔なのは「自意識過剰さ」&lt;/p&gt;
+
+&lt;p&gt;私は 「どうしてあなたの話をいつまでもみんなに覚えてもらえてると思ってるの？」 と自分に問いかけることにしています。&lt;/p&gt;
+
+&lt;p&gt;自分みたいな弱小なエンジニアの発表が、聴衆全員に興味を持たれて、少しでも間違っていたら全員からマサカリが飛んできて…みたいに思ってしまうのは、ここで悩んでいる人にはちょっと早すぎます。&lt;/p&gt;
+
+&lt;p&gt;由来は何かのマンガの一コマだったと思うのですが思い出せません。ですが、こう考えることでかなり登壇に対するハードルは下がったので、いつか人前で話してみたいという人にはおすすめです。&lt;/p&gt;
+
+&lt;h2 id=&#34;distはいいぞ&#34;&gt;DISTはいいぞ&lt;/h2&gt;
+
+&lt;p&gt;DIST自体がかなり注目のイベントであるため、そこに参加することでかなりいろんな人とのつながりができます。&lt;/p&gt;
+
+&lt;p&gt;また、主催オファーのかかってる人は界隈の経験豊富な方々で、その人達と同じ場所に出演したという事実はかなり自信につながりました。&lt;/p&gt;
+
+&lt;p&gt;資格などもなく、ただ早い者勝ちで応募するだけでその方々と同じ舞台でLTができるのはDISTのすごいところです。&lt;/p&gt;
+
+&lt;p&gt;テーマは毎回違うので、自分の得意とするテーマが回ってきた時はぜひLT枠での参加をしてみることをお勧めします！
+（トークはちょっと…という方でも、見る側や懇親会、スタッフも募集されてるみたいなのでぜひ参加してみてください！）&lt;/p&gt;
+
+&lt;h2 id=&#34;関連リンク&#34;&gt;関連リンク&lt;/h2&gt;
+
+&lt;p&gt;動画アーカイブ
+&lt;a href=&#34;https://www.youtube.com/watch?v=moICBCi3Nyk&amp;amp;t=4491s&#34;&gt;DIST.13 「トクするCSS」 – youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;発表スライド
+&lt;a href=&#34;https://speakerdeck.com/nayucolony/jun-falseming-ha&#34;&gt;「君の名は。」 – Speaker Deck&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;補足解説記事
+&lt;a href=&#34;http://nayucolony.net/rscss/&#34;&gt;RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>globalにgulp-cliをインストールしようとするとエラーが発生する</title>
+      <link>http://nayucolony.net/gulp-cli</link>
+      <pubDate>Tue, 13 Dec 2016 13:18:13 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/gulp-cli</guid>
+      <description>&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
+
+&lt;p&gt;gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
+インストールは中断され、gulp-cliがインストールできない。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+nayucolony:~ demo$ sudo npm install -g gulp-cli
+/usr/local/bin/gulp -&gt; /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
+npm ERR! Darwin 15.6.0
+npm ERR! argv &#34;/usr/local/bin/node&#34; &#34;/usr/local/bin/npm&#34; &#34;install&#34; &#34;-g&#34; &#34;gulp-cli&#34;
+npm ERR! node v6.9.2
+npm ERR! npm  v3.10.9
+npm ERR! path /usr/local/share/man/man1/gulp.1
+npm ERR! code EEXIST
+
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/demo/npm-debug.log
+nayucolony:~ demo$ gulp -v
+-bash: /usr/local/bin/gulp: No such file or directory
+nayucolony:~ demo$
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;下記に注目&lt;/p&gt;
+npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
+npm ERR! File exists: /usr/local/share/man/man1/gulp.1
+npm ERR! Move it away, and try again.
+
+&lt;p&gt;npm側から操作できないゴミファイルが存在してインストールがうまくいってない様子&lt;/p&gt;
+
+&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
+
+&lt;p&gt;下記のコマンドを叩いて、上記の２行目に表示されているゴミファイルを削除する&lt;/p&gt;
+sudo rm /usr/local/share/man/man1/gulp.1
+
+&lt;p&gt;その後、改めて&lt;/p&gt;
+sudo npm install -g gulp-cli
+
+&lt;p&gt;を叩くことでインストールが完了した。&lt;/p&gt;
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;sudo&lt;/code&gt;は管理者権限で実行するためのコマンドで、パスワードを要求されることがあるので都度入力を行うこと。&lt;/p&gt;
+
+&lt;p&gt;また、本件とは関係しないが、gulp-cliをglobalにインストールすることについては公式の推奨事項ではあるものの、否定的な意見もあるのでよく考えて行うこと。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</title>
+      <link>http://nayucolony.net/rscss</link>
+      <pubDate>Mon, 12 Dec 2016 21:14:21 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/rscss</guid>
+      <description>&lt;p&gt;自分なりの静的サイト構築をまとめます。
+シチュエーション的には &lt;strong&gt;「カンプが上がってきたものをコーディングする」&lt;/strong&gt; みたいな感じです。&lt;/p&gt;
+
+&lt;p&gt;今回は、&lt;strong&gt;&lt;a href=&#34;http://rscss.io/&#34;&gt;「RSCSS」&lt;/a&gt;&lt;/strong&gt; という設計思想に基づいて作成していきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;いくつかの簡単なルールがありますが、作りながら出てきたルールを書いていきます。
+最後にまとめと、すべてのルールを書いたリンクをご紹介しますので、これを読む前にRSCSSを覚えてくる必要はありません。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;注意：あくまでCSS設計について考えるという点で、セマンティクスやアクセシビリティに関する完璧なことは書かれていません。もしよければ、言及いただければと思います！また、スクリーンショットを完全に再現しておらず、余白などは大きく差異の発生しない範囲で簡略化しているものもあります。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;必要な人のためにコードをすべて記述していますが、適宜読み飛ばして頂いてかまいません。
+また、Sassでの利用を前提とした設計思想ですので、scss形式での記述をしています。&lt;/p&gt;
+
+&lt;h2 id=&#34;まずデザイン見渡す&#34;&gt;まずデザイン見渡す。&lt;/h2&gt;
+
+&lt;p&gt;デザインがあがってきて一番やってはいけないことは突然コーディングを始めることです。&lt;br&gt;
+&lt;strong&gt;「料理の本を開いて突然料理を始める」&lt;/strong&gt; くらいアウトです。&lt;br&gt;
+最後まで見渡さずに突然ステップ１からはじめていくと、大抵、ステップ5くらいになって、&lt;em&gt;「ここで200°のオーブンで焼きます」&lt;/em&gt; みたいなことが突然でてきて &lt;em&gt;「なにそれ材料に書いてない！うちにあるのは電子レンジだけよ！」&lt;/em&gt; みたいな状態になったことはありませんか？わたしはあります。ざっと見渡せばわかったはずなのに。&lt;/p&gt;
+
+&lt;p&gt;そういうことを防ぐためにも、ページカンプをざっくり見渡します。
+デザイナーの意図を読み取ってあげるのが大切です。
+&lt;strong&gt;デザイナーは意味もなく素敵デザインを追い求める芸術家ではありません。
+彼らはデザイナーである以上ロジックに基づいてデザインをしています。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;例えば、&lt;em&gt;統一感を出すために意図的に使いまわされているスタイル&lt;/em&gt; なんかがあったりすることに気づくでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;ざっくり分けて考える&#34;&gt;ざっくり分けて考える&lt;/h2&gt;
+
+&lt;p&gt;コーディングをするまえに、ざっくりとセクション分けをします。
+分ける理由としては、以下のような理由があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;分業の目安とする&lt;/li&gt;
+&lt;li&gt;作業工程の見積もりができる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;私なりに分けた結果がこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/ccf6cbb6-d46a-dc28-4508-052302bb5171.jpeg&#34; alt=&#34;suda_layout.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;では、それぞれのセクションごとに組み込んでいきましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;ヘッダー編&#34;&gt;ヘッダー編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-ヘッダー&#34;&gt;機能で分けて考える（ヘッダー）&lt;/h3&gt;
+
+&lt;p&gt;そうです、まだ分けて考えるんです。
+機能で分けた１つ１つを、RSCSSでは &lt;strong&gt;「Component（コンポーネント）」&lt;/strong&gt; として考えます。&lt;/p&gt;
+
+&lt;p&gt;ここでの分け方も厳密な正解はありません。
+「機能」をある程度の目安としてください。&lt;/p&gt;
+
+&lt;p&gt;私なりにヘッダーを機能ごとに分けた結果が次の通りです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/4d6e5dda-e80b-d769-d2b8-89bda5d589f6.jpeg&#34; alt=&#34;suda_component.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;このように、「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentの二つに分けて考えます。
+それぞれ別の機能を持っているもので、お互いに独立していますね。
+私は、&lt;strong&gt;「お互いに独立しているか？」&lt;/strong&gt; というのも機能で分離する目安にしています。&lt;/p&gt;
+
+&lt;p&gt;では、それぞれコーディングしていきます。&lt;/p&gt;
+
+&lt;h4 id=&#34;サイトタイトル&#34;&gt;サイトタイトル&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b9be4ccc-1c3f-12dd-4fbd-42bedf1c4fbe.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.07.01.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「サイトタイトル」Componentは以下の２パーツで構成されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ロゴ&lt;/li&gt;
+&lt;li&gt;サブタイトル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この構成要素をRSCSSでは &lt;strong&gt;Element（エレメント）&lt;/strong&gt; と呼びます。
+コードは次の通りです。&lt;/p&gt;
+&lt;div class=&#34;site-title&#34;&gt;
+  &lt;h1 class=&#34;logo&#34;&gt;
+    &lt;a href=&#34;&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/60x60.png&#34; alt=&#34;&#34; class=&#34;image&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/h1&gt;
+  &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+&lt;/div&gt;
+.site-title {
+
+  &gt;.logo {
+    margin-bottom: 10px;
+  }
+
+  &gt;.description{
+    font-size: 14px;
+  }
+}
+
+&lt;p&gt;&lt;strong&gt;ここで使っているRSCSSの記述ルールはこちら&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Componentを表す部分は単語2つを&lt;code&gt;-&lt;/code&gt;でつなぐ&lt;/li&gt;
+&lt;li&gt;Elementにつけるclassは単語１つ&lt;/li&gt;
+&lt;li&gt;Componentにレイアウト用のstyleはつけない&lt;/li&gt;
+&lt;li&gt;使えるものには必ず「子セレクタ&lt;code&gt;&amp;gt;&lt;/code&gt;」を使う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また「レイアウト用のスタイル」とは、以下のようなものとされています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Positioning (&lt;code&gt;position&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Floats (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;clear&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Margins (&lt;code&gt;margin&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Dimensions (&lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但し、&lt;code&gt;width&lt;/code&gt;,&lt;code&gt;height&lt;/code&gt;に関しては、アバターアイコンやロゴなどはどうしても指定する必要があったりするため、必要に応じて使用を許可されています。
+また、&lt;code&gt;position: relative;&lt;/code&gt; についても、Elementの絶対配置に必要となる場合がありますので適宜使用してください。&lt;/p&gt;
+
+&lt;p&gt;では、続いて「アイキャッチ（バナー）」Componentを作成しましょう。&lt;/p&gt;
+
+&lt;h4 id=&#34;アイキャッチ-バナー&#34;&gt;アイキャッチ（バナー）&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/6e7a6e35-986d-37fa-7ea9-abac789a5363.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.07.42.png&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hero-banner&#34;&gt;&lt;/div&gt;
+.hero-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://placehold.jp/1100x500.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+&lt;p&gt;このように、Elementを持たないComponentもあります。
+ここでは高さを固定し、背景画像にバナーを設定しています。&lt;/p&gt;
+
+&lt;p&gt;では、それぞれのComponentを配置する作業に移りましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-共通ヘッダー&#34;&gt;機能で分けたものをレイアウト（共通ヘッダー）&lt;/h3&gt;
+
+&lt;p&gt;共通ヘッダー内の二つのコンポーネントをレイアウトします。
+その時は「共通ヘッダー」Componentを考えます。
+先ほど作った「サイトタイトル」Componentと「アイキャッチ（バナー）」Componentは構成要素、すなわちElementとして考えます。&lt;/p&gt;
+&lt;div class=&#34;common-header&#34;&gt;
+  &lt;div class=&#34;site-title top&#34;&gt; //topを付与
+    &lt;h1 class=&#34;logo&#34;&gt;
+      &lt;a href=&#34;&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/60x60.png&#34; alt=&#34;&#34;/&gt;
+      &lt;/a&gt;
+    &lt;/h1&gt;
+    &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;hero-banner banner&#34;&gt;&lt;/div&gt; //bannerを付与
+&lt;/div&gt;
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  &gt;.top {
+    margin-bottom: 10px;
+  }
+  &gt;.banner{/**/} //※記述なし、省略化
+}
+
+&lt;p&gt;もしくはSassの&lt;code&gt;@extend&lt;/code&gt;を用いて以下のようにもできます。&lt;/p&gt;
+&lt;div class=&#34;common-header&#34;&gt;
+  &lt;div class=&#34;top&#34;&gt;  //*もともとあった.site-titleを削除
+    &lt;h1 class=&#34;logo&#34;&gt;
+      &lt;a href=&#34;&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/60x60.png&#34; alt=&#34;&#34;/&gt;
+      &lt;/a&gt;
+    &lt;/h1&gt;
+    &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;banner&#34;&gt;&lt;/div&gt; //もともとあった.hero-bannerを削除
+&lt;/div&gt;
+@import .site-title;
+@import .hero-banner;
+
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  &gt;.top {
+    @extend .site-title
+    margin-bottom: 10px;
+  }
+  &gt;.banner{
+    @extend .hero-banner
+  }
+}
+
+&lt;p&gt;お好みの運用を選んでいきましょう。僕は前者の方が好きです。
+今後はこの記事では前者による記述を行っていきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;フッター編&#34;&gt;フッター編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-フッター&#34;&gt;機能で分けて考える（フッター）&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/466612c4-9741-0191-6a8a-f7a7c5d11ef7.jpeg&#34; alt=&#34;suda_footer.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;サイトタイトル-1&#34;&gt;サイトタイトル&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/f4a60b0d-e99c-5418-e7ee-0176327d0ff7.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.08.51.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;よく見ると、「サイトタイトル」Componentは「共通ヘッダー」のものと見た目が少し違うことがわかりますね。
+ここは、以下のようにしましょう。&lt;/p&gt;
+&lt;div class=&#34;site-heading -center&#34;&gt; //-centerを付与
+  &lt;h1 class=&#34;logo&#34;&gt;
+    &lt;a href=&#34;&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/150x150.png&#34; alt=&#34;&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/h1&gt;
+  &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+&lt;/div&gt;
+.site-title {
+  &gt;.logo {
+    margin-bottom: 10px;
+  }
+  &gt;.description{
+    font-size: 14px;
+  }
+  &amp;.-center{                  //
+    display: flex;            //
+    flex-direction: column;   //追加記述
+    align-items: center;      //
+  }                           //
+}
+
+&lt;p&gt;&lt;code&gt;-center&lt;/code&gt;のように、見た目違いを表す&lt;code&gt;-&lt;/code&gt;で始まるclassを「Variants」と言います。
+&lt;code&gt;site-title.scss&lt;/code&gt;に記述を追加しました。
+最近話題のFlexboxを使って中央揃えレイアウトをしてみました。&lt;/p&gt;
+
+&lt;h4 id=&#34;コピーライト&#34;&gt;コピーライト&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/0f4ee22e-725a-ec62-a6a9-6bd54b03c209.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.09.25.png&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;copyright-block&#34;&gt;
+  Copyright© スダ部, 2016 All Rights Reserved.powered by STINGER
+&lt;/p&gt;
+.copyright-block {
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+&lt;p&gt;RSCSSのルール「Componentを表す部分は単語2つを&lt;code&gt;-&lt;/code&gt;でつなぐ」のために２単語が思いつかないときは
+ブロック要素なら&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;alert-box&lt;/li&gt;
+&lt;li&gt;alert-card&lt;/li&gt;
+&lt;li&gt;alert-block&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;インライン要素なら&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;link-button&lt;/li&gt;
+&lt;li&gt;link-span&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などのような表し方を推奨されています。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-フッター&#34;&gt;機能で分けたものをレイアウト（フッター）&lt;/h3&gt;
+
+&lt;p&gt;ヘッダー同様、作成したComponentをElementとして考えていきます。&lt;/p&gt;
+&lt;div class=&#34;common-footer&#34;&gt;
+  &lt;div class=&#34;site-title -center title&#34;&gt;
+    &lt;h1 class=&#34;logo&#34;&gt;
+      &lt;a href=&#34;&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/６0x６0.png&#34; alt=&#34;&#34;/&gt;
+      &lt;/a&gt;
+    &lt;/h1&gt;
+    &lt;p class=&#34;description&#34;&gt;バズる→スダる&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p class=&#34;copyright-block　copyright&#34;&gt;
+    Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+  &lt;/p&gt;
+&lt;/div&gt;
+.common-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  &gt;.title {
+    margin-bottom: 20px;
+  }
+
+  &gt;.copyright {/**/} //記述なし、省略化
+}
+
+&lt;h2 id=&#34;サイドバー編&#34;&gt;サイドバー編&lt;/h2&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-サイドバー&#34;&gt;機能で分けて考える（サイドバー）&lt;/h3&gt;
+
+&lt;p&gt;Componentに分けてみるとこんな感じになりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b5522c21-d6db-0420-5e28-dabcb6154d46.jpeg&#34; alt=&#34;suda_sidebar.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;プロフィールカード&#34;&gt;プロフィールカード&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/ce6915b7-ab6d-e990-61c7-15b90f20f765.jpeg&#34; alt=&#34;suda_sidebar_profile.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;内容的にいろいろ突っ込みどころの多いプロフィールComponentですが作成しましょう。
+（twitterのフォローボタンについてはtwitter側で生成するページがあるので割愛します）&lt;/p&gt;
+&lt;div class=&#34;profile-card&#34;&gt;
+  &lt;p class=&#34;title&#34;&gt;スダシュウゴのプロフィール&lt;/p&gt;
+  &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+  &lt;p class=&#34;name&#34;&gt;スダシュウゴ&lt;/p&gt;
+  &lt;p class=&#34;twitter&#34;&gt;&lt;!--ココにツイッターのボタンのコード--&gt;&lt;/p&gt;
+  &lt;p class=&#34;description&#34;&gt;
+    茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&lt;br&gt;
+    &lt;a href=&#34;&#34;&gt;『コソアドデザイン』&lt;/a&gt;代表
+  &lt;/p&gt;
+&lt;/div&gt;
+.profile-card {
+  padding: 40px 15px 10px;
+  position: relative;
+  background: white;
+
+  &gt;.title {
+    padding: 3px 20px;
+    background: #13b0fc;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+
+  &gt;.image {
+    flex-grow: 0;
+  }
+
+  &gt;.name {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  &gt;.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+&lt;p&gt;ここではComponentに&lt;code&gt;position: relative&lt;/code&gt;を指定していますが、Element配置に使用しているため問題ありません。&lt;/p&gt;
+
+&lt;h4 id=&#34;問い合わせボタン&#34;&gt;問い合わせボタン&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/94d775ea-df94-19f0-f027-e4f0f682c6ea.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.10.10.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fa fa-envelope&lt;/code&gt;は「fontawesome」に使用するclassです。&lt;code&gt;aria-hidden=&amp;quot;true&amp;quot;&lt;/code&gt;はスクリーンリーダから見えなくするための記述で、説明は割愛します。&lt;/p&gt;
+&lt;a href=&#34;&#34; class=&#34;basic-button&#34;&gt;
+  &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;span class=&#34;label&#34;&gt;お問い合わせはコチラ！&lt;/span&gt;
+&lt;/a&gt;
+.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  color: white;
+  align-items: center;
+  background: #dd8500;
+
+  &gt;.icon {
+    padding-right: 10px;
+    border-right:1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  &gt;.label {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+&lt;h4 id=&#34;人気の記事リスト&#34;&gt;人気の記事リスト&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/6b64b33e-51ef-f858-0f77-081c0e463f08.jpeg&#34; alt=&#34;suda_sidebar_articlelist.jpg&#34; /&gt;
+記事カードそのものが１つの機能をもつComponentで、リストはその集合体と考えるのが良さそうですね。&lt;/p&gt;
+
+&lt;p&gt;記事カード単体のコードは次の通りです。&lt;/p&gt;
+&lt;div class=&#34;article-card&#34;&gt;
+  &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+    &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;metabox&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+      &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+    &lt;/a&gt;
+    &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+.article-card {
+  display: flex;
+
+  &gt;.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  &gt;.metabox &gt;.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &gt;.metabox &gt;.count {
+    font-size: 10px;
+  }
+}
+
+
+&lt;p&gt;RSCSSの推奨事項として、Sassで書く時のネスト階層は２段階までに抑えるというものがあります。
+なので、上記のようにあえてネストを避けた記述をしています。&lt;/p&gt;
+
+&lt;p&gt;また、Elementの命名ルールに従い&lt;code&gt;.meta-box&lt;/code&gt;のようにしたいところを&lt;code&gt;.metabox&lt;/code&gt;のように１単語にくっつけています。&lt;/p&gt;
+
+&lt;p&gt;人気の記事リスト全体のコードは次の通りです。&lt;/p&gt;
+&lt;div class=&#34;hot-articles&#34;&gt;
+  &lt;p class=&#34;heading&#34;&gt;人気の記事&lt;/p&gt;
+  &lt;ul class=&#34;list&#34;&gt;
+    &lt;li class=&#34;article-card&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+        &lt;/a&gt;
+        &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;article-card&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+        &lt;/a&gt;
+        &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;article-card&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+        &lt;/a&gt;
+        &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+.hot-articles {
+
+  &gt;.heading {
+    font-weight: bold;
+    line-height: 2;
+  }
+
+  &gt;.list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+&lt;p&gt;最初、記事カード単品を&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;で書いていたのに、リストでは&lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;になっていることにお気付きですか？
+このように、すべてclassでの運用を行っているため、要素を変更することができるのです。
+これはすべてclassで運用している利点でもあります。&lt;/p&gt;
+
+&lt;p&gt;また、今回はセマンティクスを無視したマークアップをしていますが、適宜&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;を&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;や&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;などに変えても問題ありません。classセレクタのみで運用することで要素の変更にも強いCSSになります。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト&#34;&gt;機能で分けたものをレイアウト&lt;/h3&gt;
+
+&lt;p&gt;ヘッダー、フッターと同様に、サイドバーComponentを考えます。
+コードは下記のようになります。&lt;/p&gt;
+&lt;div class=&#34;side-section&#34;&gt;
+  &lt;div class=&#34;profile profile-card&#34;&gt;
+    &lt;p class=&#34;title&#34;&gt;スダシュウゴのプロフィール&lt;/p&gt;
+    &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+    &lt;p class=&#34;name&#34;&gt;スダシュウゴ&lt;/p&gt;
+    &lt;p class=&#34;twitter&#34;&gt;...&lt;/p&gt;
+    &lt;p class=&#34;description&#34;&gt;
+      茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&lt;br&gt;
+      &lt;a href=&#34;&#34;&gt;「コソアドデザイン」&lt;/a&gt;代表
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;a href=&#34;&#34; class=&#34;contact basic-button -contact&#34;&gt;
+    &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;label&#34;&gt;お問い合わせはコチラ！&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;div class=&#34;hot hot-articles&#34;&gt;
+    &lt;p class=&#34;heading&#34;&gt;人気の記事&lt;/p&gt;
+    &lt;ul class=&#34;list&#34;&gt;
+      &lt;li class=&#34;article-card&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+          &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+        &lt;/a&gt;
+        &lt;div class=&#34;metabox&#34;&gt;
+          &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+            &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+          &lt;/a&gt;
+          &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;article-card&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+          &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+        &lt;/a&gt;
+        &lt;div class=&#34;metabox&#34;&gt;
+          &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+            &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+          &lt;/a&gt;
+          &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;article-card&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+          &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+        &lt;/a&gt;
+        &lt;div class=&#34;metabox&#34;&gt;
+          &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+            &lt;p&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/p&gt;
+          &lt;/a&gt;
+          &lt;p class=&#34;count&#34;&gt;24 views&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+.side-section {
+  display: flex;
+  flex-direction: column;
+
+  &gt;.profile {
+    margin-bottom: 20px;
+  }
+
+  &gt;.contact {
+    margin-bottom: 20px;
+  }
+}
+
+&lt;h2 id=&#34;メイン編&#34;&gt;メイン編&lt;/h2&gt;
+
+&lt;p&gt;もう慣れてきましたか？
+最後のセクションです。
+&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/7c07b154-c495-fca8-6cf8-ab707c9f78eb.jpeg&#34; alt=&#34;suda_layout_main.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けて考える-メイン編&#34;&gt;機能で分けて考える（メイン編）&lt;/h3&gt;
+
+&lt;h4 id=&#34;ページネーション&#34;&gt;ページネーション&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/1ebbd788-5f77-c817-25d4-a1ae3b0b1134.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.06.27.png&#34; /&gt;&lt;/p&gt;
+&lt;ol class=&#34;pagination-link&#34;&gt;
+  &lt;li class=&#34;number -current&#34;&gt;
+    1
+  &lt;/li&gt;
+  &lt;li class=&#34;number&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;2&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;number&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;3&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;next&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;next &gt;&gt;&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+.pagination-link {
+  list-style-type: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: baseline;
+
+  &gt; .number,.next {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    font-size: 13px;
+    text-transform: capitalize;
+
+    &amp;.-current {
+      font-size: 16px;
+    }
+
+    &amp;:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+  }
+}
+
+&lt;p&gt;&lt;code&gt;-current&lt;/code&gt;のように、VariantがElementについています。
+&lt;strong&gt;Variantは、Elementにもつけることができます。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;RSCSSに直接関係するものではありませんが &lt;strong&gt;&lt;code&gt;:not(:last-child)&lt;/code&gt;&lt;/strong&gt; という擬似クラスに注目してください。
+これは、&lt;strong&gt;「最後の子要素以外」&lt;/strong&gt; を表しています。
+今までは、すべての要素にstyleを指定したあと&lt;code&gt;:last-child&lt;/code&gt;に打ち消しスタイルを当てていたことが多いかと思いますが、この記述だけでスマートに表現できます。&lt;/p&gt;
+
+&lt;h4 id=&#34;記事カード&#34;&gt;記事カード&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/62331fe9-6a85-46aa-8871-babb2cd34e05.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.12.11.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;記事カードですが、これはサイドバーの記事カード単品Componentに投稿日とタグが増え、タイトルの装飾が変わったものですね。
+これを全く別コンポーネントと解釈するか、見た目違いと解釈するかは人次第ですが、私だったらここは見た目違いと考えます！&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;article-cards&lt;/code&gt;にElementを追加し、&lt;code&gt;.title&lt;/code&gt;はVariantsで調整をかけましょう。
+また、レイアウト用コンポーネントとして&lt;code&gt;.row-items&lt;/code&gt;を作成しました。&lt;/p&gt;
+.article-card {
+  display: flex;
+
+  &gt;.metabox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  &gt;.metabox &gt;.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &gt;.metabox &gt;.count {
+    font-size: 10px;
+  }
+
+  &gt;.metabox &gt;.time {
+    font-size: 14px;
+    margin-right: 10px;
+  }  
+
+  &gt;.metabox &gt;.layout-row {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .categoryicon,.tagicon,.timeicon {
+    margin-right: 10px;
+  }
+
+  .categoryitem,.tagitem {
+    text-decoration: none;
+    font-size: 12px;
+    color:#666 ;
+  }
+
+  &amp;.-large &gt;.metabox &gt;.title {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+  }
+}
+
+&lt;p&gt;今回の例だと、ネストが深くなりすぎるので追加したElementはComponent化したほうがいいかもしれません。&lt;/p&gt;
+
+&lt;p&gt;あとはこのカードたちを並べましょう。
+&lt;code&gt;:not(:last-child)&lt;/code&gt;を使って最後のアイテム以外に破線ボーダーを加えたらよさそうですね。&lt;/p&gt;
+&lt;ul class=&#34;article-list&#34;&gt;
+  &lt;li class=&#34;item article-card -large&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;metabox&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &lt;/a&gt;
+      &lt;div class=&#34;layout-row&#34;&gt;
+        &lt;p class=&#34;time&#34;&gt;
+          &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+        &lt;p class=&#34;category&#34;&gt;
+          &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;p class=&#34;tags&#34;&gt;
+        &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;item article-card -large&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;metabox&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &lt;/a&gt;
+      &lt;div class=&#34;layout-row&#34;&gt;
+        &lt;p class=&#34;time&#34;&gt;
+          &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+        &lt;p class=&#34;category&#34;&gt;
+          &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;p class=&#34;tags&#34;&gt;
+        &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;item article-card -large&#34;&gt;
+    &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+      &lt;img src=&#34;https://placehold.jp/300x300.png&#34; alt=&#34;&#34; /&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;metabox&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+          24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+        &lt;/a&gt;
+      &lt;div class=&#34;layout-row&#34;&gt;
+        &lt;p class=&#34;time&#34;&gt;
+          &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+        &lt;p class=&#34;category&#34;&gt;
+          &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;p class=&#34;tags&#34;&gt;
+        &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+.article-list {
+
+  &gt;.item:not(:last-child) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px #ccc dotted;
+  }
+}
+
+
+
+&lt;h4 id=&#34;シェアボタン&#34;&gt;シェアボタン&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://qiita-image-store.s3.amazonaws.com/0/100561/b96a2331-8447-5fd5-e621-9bd8797e0b05.png&#34; alt=&#34;スクリーンショット 2016-12-01 4.13.16.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これらは問い合わせボタンの色違いアイコン違いですね。
+Variantsで&lt;code&gt;background&lt;/code&gt;を変更すると早そうです。
+一気にリストのComponentまで作ってしまいましょう。&lt;/p&gt;
+
+&lt;ul class=&#34;sns-share&#34;&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -twitter&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -facebook&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -line&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;LINE&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -hatebu&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;はてブ&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -google&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&#34;&#34; class=&#34;basic-button -pocket&#34;&gt;
+      &lt;i class=&#34;icon fa fa-envelope&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;span class=&#34;label&#34;&gt;Pocket&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+.basic-button {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+
+  &amp;.-contact {
+    background: #dd8500;
+  }
+
+  &amp;.-twitter {
+    background: #55acee;
+  }
+
+  &amp;.-facebook {
+    background: #3b5998;
+  }
+
+  &amp;.-google {
+    background: #dc4e41;
+  }
+
+  &amp;.-pocket {
+    background: #f03e51;
+  }
+
+  &amp;.-hatebu {
+    background: #00a5de;
+  }
+
+  &amp;.-line {
+    background: #25af00;
+  }
+
+  &gt;.icon {
+    padding-right: 10px;
+    border-right: 1px solid white;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  &gt;.label {
+    font-weight: bold;
+  }
+}
+.sns-share {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li{
+    width: calc(100%/3 - 10px);
+
+    &amp;:nth-child(-n+3){
+      margin-bottom: 10px;
+    }
+  }
+}
+
+&lt;p&gt;これでメインコンテンツのすべてのコンポーネントが出揃いました。
+あとは、メインセクションComponent内に配置しましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;機能で分けたものをレイアウト-メイン&#34;&gt;機能で分けたものをレイアウト（メイン）&lt;/h3&gt;
+&lt;div class=&#34;main-section&#34;&gt;
+  &lt;ul class=&#34;article-list articles&#34;&gt;
+    &lt;li class=&#34;item article-card -large&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/100x100.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &lt;/a&gt;
+        &lt;div class=&#34;layout-row&#34;&gt;
+          &lt;p class=&#34;time&#34;&gt;
+            &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+          &lt;p class=&#34;category&#34;&gt;
+            &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class=&#34;tags&#34;&gt;
+          &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;item article-card -large&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/100x100.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &lt;/a&gt;
+        &lt;div class=&#34;layout-row&#34;&gt;
+          &lt;p class=&#34;time&#34;&gt;
+            &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+          &lt;p class=&#34;category&#34;&gt;
+            &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class=&#34;tags&#34;&gt;
+          &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;item article-card -large&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;thumbnail&#34;&gt;
+        &lt;img src=&#34;https://placehold.jp/100x100.png&#34; alt=&#34;&#34; /&gt;
+      &lt;/a&gt;
+      &lt;div class=&#34;metabox&#34;&gt;
+        &lt;a href=&#34;&#34; class=&#34;title&#34;&gt;
+      24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+    &lt;/a&gt;
+        &lt;div class=&#34;layout-row&#34;&gt;
+          &lt;p class=&#34;time&#34;&gt;
+            &lt;i class=&#34;timeicon fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;2016/12/1&lt;/p&gt;
+          &lt;p class=&#34;category&#34;&gt;
+            &lt;i class=&#34;categoryicon fa fa-folder-open-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;categoryitem&#34;&gt;日記&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class=&#34;tags&#34;&gt;
+          &lt;i class=&#34;tagicon fa fa-tags&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ１&lt;/a&gt;,&lt;a href=&#34;&#34; class=&#34;tagitem&#34;&gt;タグ2&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ol class=&#34;pagination-link pagination&#34;&gt;
+    &lt;li class=&#34;number -current&#34;&gt;
+      1
+    &lt;/li&gt;
+    &lt;li class=&#34;number&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;number&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&#34;next&#34;&gt;
+      &lt;a href=&#34;&#34; class=&#34;link&#34;&gt;next &gt;&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;ul class=&#34;sns-share share&#34;&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -twitter&#34;&gt;
+        &lt;i class=&#34;icon fa fa-twitter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;label&#34;&gt;Twitter&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -facebook&#34;&gt;
+        &lt;i class=&#34;icon fa fa-facebook&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;label&#34;&gt;Facebook&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -line&#34;&gt;
+        &lt;i class=&#34;icon fa fa-comment&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;label&#34;&gt;LINE&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -hatebu&#34;&gt;
+        &lt;span class=&#34;icon&#34; aria-hidden=&#34;true&#34;&gt;B!&lt;/span&gt;
+        &lt;span class=&#34;label&#34;&gt;はてブ&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -google&#34;&gt;
+        &lt;i class=&#34;icon fa fa-google-plus&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;label&#34;&gt;Google+&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&#34;&#34; class=&#34;basic-button -pocket&#34;&gt;
+        &lt;i class=&#34;icon fa fa-get-pocket&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;label&#34;&gt;Pocket&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+
+.main-section {
+  padding: 30px 50px;
+  background: white;
+}
+
+&lt;h2 id=&#34;セクションをページ内に配置する&#34;&gt;セクションをページ内に配置する&lt;/h2&gt;
+
+&lt;p&gt;一番最初に４つに分けたセクションが出揃いました。
+あとはこれらをページ内に配置するだけです。&lt;/p&gt;
+
+&lt;p&gt;方針としては、サイドバーとメインエリアを左右に並べるための&lt;code&gt;.content-section&lt;/code&gt;というComponentを挟んでレイアウトをしていきます。&lt;/p&gt;
+&lt;div class=&#34;all-wrap&#34;&gt;
+  &lt;div class=&#34;common-header&#34;&gt;
+    &lt;div class=&#34;site-title top&#34;&gt;
+      &lt;h1 class=&#34;logo&#34;&gt;
+        &lt;a class=&#34;link&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; class=&#34;image&#34; src=&#34;https://placehold.jp/60x60.png&#34;&gt;&lt;/a&gt;
+      &lt;/h1&gt;
+      &lt;p class=&#34;description&#34;&gt;
+        バズる→スダる
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;hero-banner banner&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;content-section&#34;&gt;
+    &lt;div class=&#34;main-section&#34;&gt;
+      &lt;ul class=&#34;article-list&#34;&gt;
+        &lt;li class=&#34;item article-card -large&#34;&gt;
+          &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/100x100.png&#34;&gt;&lt;/a&gt;
+          &lt;div class=&#34;metabox&#34;&gt;
+            &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/a&gt;
+            &lt;div class=&#34;layout-row&#34;&gt;
+              &lt;p class=&#34;time&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;timeicon fa fa-clock-o&#34;&gt;&lt;/i&gt;2016/12/1
+              &lt;/p&gt;
+              &lt;p class=&#34;category&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;categoryicon fa fa-folder-open-o&#34;&gt;&lt;/i&gt;&lt;a class=
+                &#34;categoryitem&#34; href=&#34;&#34;&gt;日記&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p class=&#34;tags&#34;&gt;
+              &lt;i aria-hidden=&#34;true&#34; class=&#34;tagicon fa fa-tags&#34;&gt;&lt;/i&gt;&lt;a class=&#34;tagitem&#34; href=
+              &#34;&#34;&gt;タグ１&lt;/a&gt;,&lt;a class=&#34;tagitem&#34; href=&#34;&#34;&gt;タグ2&lt;/a&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item article-card -large&#34;&gt;
+          &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/100x100.png&#34;&gt;&lt;/a&gt;
+          &lt;div class=&#34;metabox&#34;&gt;
+            &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/a&gt;
+            &lt;div class=&#34;layout-row&#34;&gt;
+              &lt;p class=&#34;time&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;timeicon fa fa-clock-o&#34;&gt;&lt;/i&gt;2016/12/1
+              &lt;/p&gt;
+              &lt;p class=&#34;category&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;categoryicon fa fa-folder-open-o&#34;&gt;&lt;/i&gt;&lt;a class=
+                &#34;categoryitem&#34; href=&#34;&#34;&gt;日記&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p class=&#34;tags&#34;&gt;
+              &lt;i aria-hidden=&#34;true&#34; class=&#34;tagicon fa fa-tags&#34;&gt;&lt;/i&gt;&lt;a class=&#34;tagitem&#34; href=
+              &#34;&#34;&gt;タグ１&lt;/a&gt;,&lt;a class=&#34;tagitem&#34; href=&#34;&#34;&gt;タグ2&lt;/a&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item article-card -large&#34;&gt;
+          &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/100x100.png&#34;&gt;&lt;/a&gt;
+          &lt;div class=&#34;metabox&#34;&gt;
+            &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;24歳スダシュウゴ、茨城でフリーランスはじめるってよ&lt;/a&gt;
+            &lt;div class=&#34;layout-row&#34;&gt;
+              &lt;p class=&#34;time&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;timeicon fa fa-clock-o&#34;&gt;&lt;/i&gt;2016/12/1
+              &lt;/p&gt;
+              &lt;p class=&#34;category&#34;&gt;
+                &lt;i aria-hidden=&#34;true&#34; class=&#34;categoryicon fa fa-folder-open-o&#34;&gt;&lt;/i&gt;&lt;a class=
+                &#34;categoryitem&#34; href=&#34;&#34;&gt;日記&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p class=&#34;tags&#34;&gt;
+              &lt;i aria-hidden=&#34;true&#34; class=&#34;tagicon fa fa-tags&#34;&gt;&lt;/i&gt;&lt;a class=&#34;tagitem&#34; href=
+              &#34;&#34;&gt;タグ１&lt;/a&gt;,&lt;a class=&#34;tagitem&#34; href=&#34;&#34;&gt;タグ2&lt;/a&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ol class=&#34;pagination-link&#34;&gt;
+        &lt;li class=&#34;number -current&#34;&gt;1
+        &lt;/li&gt;
+        &lt;li class=&#34;number&#34;&gt;
+          &lt;a class=&#34;link&#34; href=&#34;&#34;&gt;2&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;number&#34;&gt;
+          &lt;a class=&#34;link&#34; href=&#34;&#34;&gt;3&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;next&#34;&gt;
+          &lt;a class=&#34;link&#34; href=&#34;&#34;&gt;next &gt;&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;ul class=&#34;sns-share&#34;&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -twitter&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+          &#34;icon fa fa-twitter&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;Twitter&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -facebook&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+          &#34;icon fa fa-facebook&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;Facebook&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -line&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+          &#34;icon fa fa-comment&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;LINE&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -hatebu&#34; href=&#34;&#34;&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;icon&#34;&gt;B!&lt;/span&gt;
+          &lt;span class=&#34;label&#34;&gt;はてブ&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -google&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+          &#34;icon fa fa-google-plus&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;Google+&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;basic-button -pocket&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+          &#34;icon fa fa-get-pocket&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;Pocket&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;side-section&#34;&gt;
+      &lt;div class=&#34;profile profile-card&#34;&gt;
+        &lt;p class=&#34;title&#34;&gt;
+          スダシュウゴのプロフィール
+        &lt;/p&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/300x300.png&#34;&gt;
+        &lt;p class=&#34;name&#34;&gt;
+          スダシュウゴ
+        &lt;/p&gt;
+        &lt;p class=&#34;twitter&#34;&gt;
+          ...
+        &lt;/p&gt;
+        &lt;p class=&#34;description&#34;&gt;
+          茨城県を中心に活動しているフリーのWebデザイナー。おっぱいへの執着心が強い。&lt;br&gt;
+          &lt;a href=&#34;&#34;&gt;「コソアドデザイン」&lt;/a&gt;代表
+        &lt;/p&gt;
+      &lt;/div&gt;&lt;a class=&#34;contact basic-button -contact&#34; href=&#34;&#34;&gt;&lt;i aria-hidden=&#34;true&#34; class=
+      &#34;icon fa fa-envelope&#34;&gt;&lt;/i&gt; &lt;span class=&#34;label&#34;&gt;お問い合わせはコチラ！&lt;/span&gt;&lt;/a&gt;
+      &lt;div class=&#34;hot hot-articles&#34;&gt;
+        &lt;p class=&#34;heading&#34;&gt;
+          人気の記事
+        &lt;/p&gt;
+        &lt;ul class=&#34;list&#34;&gt;
+          &lt;li class=&#34;article-card&#34;&gt;
+            &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/300x300.png&#34;&gt;&lt;/a&gt;
+            &lt;div class=&#34;metabox&#34;&gt;
+              &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;
+              &lt;p&gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &lt;/p&gt;&lt;/a&gt;
+              &lt;p class=&#34;count&#34;&gt;
+                24 views
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;article-card&#34;&gt;
+            &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/300x300.png&#34;&gt;&lt;/a&gt;
+            &lt;div class=&#34;metabox&#34;&gt;
+              &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;
+              &lt;p&gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &lt;/p&gt;&lt;/a&gt;
+              &lt;p class=&#34;count&#34;&gt;
+                24 views
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;article-card&#34;&gt;
+            &lt;a class=&#34;thumbnail&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; src=&#34;https://placehold.jp/300x300.png&#34;&gt;&lt;/a&gt;
+            &lt;div class=&#34;metabox&#34;&gt;
+              &lt;a class=&#34;title&#34; href=&#34;&#34;&gt;
+              &lt;p&gt;
+                24歳スダシュウゴ、茨城でフリーランスはじめるってよ
+              &lt;/p&gt;&lt;/a&gt;
+              &lt;p class=&#34;count&#34;&gt;
+                24 views
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;common-footer&#34;&gt;
+    &lt;div class=&#34;site-title -center logo&#34;&gt;
+      &lt;h1 class=&#34;logo&#34;&gt;
+        &lt;a class=&#34;link&#34; href=&#34;&#34;&gt;&lt;img alt=&#34;&#34; class=&#34;image&#34; src=&#34;https://placehold.jp/60x60.png&#34;&gt;&lt;/a&gt;
+      &lt;/h1&gt;
+      &lt;p class=&#34;description&#34;&gt;
+        バズる→スダる
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;copyright-block&#34;&gt;
+      Copyright© スダ部 , 2016 All Rights Reserved.powered by STINGER
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+.content-section {
+  display: flex;
+  justify-content: center;
+
+  &gt;.main-section {
+    flex-basis: 740px;
+    margin-right: 20px;
+  }
+
+  &gt;.side-section {
+    flex-basis: 320px;
+  }
+}
+
+&lt;p&gt;仕上げに全体の調整をします。&lt;/p&gt;
+.all-wrap {
+  width: 1080px;
+  margin: 0 auto;
+
+  &gt;.header {
+    margin-bottom: 10px;
+  }
+
+  &gt;.main {
+    margin-bottom: 10px;
+  }
+}
+
+&lt;p&gt;以上でコーディングが終了しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンポーネント(Component) で考える。名前付けは2単語で。( &lt;code&gt;.screenshot-image&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;コンポーネントは 要素(Element) を持つ。名前付けは1単語で。( &lt;code&gt;.blog-post&lt;/code&gt; &lt;code&gt;.title&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;バリアント(Variant) の名前はダッシュを接頭辞（プレフィックス）としてつける ( &lt;code&gt;.shop-banner.-with-icon&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;コンポーネントはネストしていい&lt;/li&gt;
+&lt;li&gt;物事をシンプルにするために拡張していいことを覚えておいて。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/kk6/items/760efba180ec526903db&#34;&gt;RSCSSというCSS設計について&lt;/a&gt;より引用
+（公式ガイドラインの和訳をされています。本記事でRSCSSに興味を持たれた方はご一読ください。）&lt;/p&gt;
+
+&lt;h2 id=&#34;参考リンク&#34;&gt;参考リンク&lt;/h2&gt;
+
+&lt;p&gt;サンプルページは茨城のフリーランスデザイナー/カメラマンのスダシュウゴ氏のページを使用させていただきました。
+&lt;a href=&#34;http://sudabu.xyz/&#34;&gt;スダ部&lt;/a&gt;
+&lt;a href=&#34;http://sudare.xyz/&#34;&gt;コソアドデザイン&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;公式ガイドライン
+&lt;a href=&#34;http://rscss.io/&#34;&gt;RSCSS.io&lt;/a&gt;
+&lt;a href=&#34;http://qiita.com/kk6/items/760efba180ec526903db&#34;&gt;RSCSSというCSS設計について&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;この記事は &lt;a href=&#34;http://www.adventar.org/calendars/1551&#34;&gt;スダ Advent Calendar&lt;/a&gt; 1日目の記事です。
+CSS設計に迷える人達に少しでも手助けになれればいいなと思います。
+最後までお読みいただきありがとうございました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vue.jsをはじめてみる#1 ~公式ガイドを読む編~</title>
+      <link>http://nayucolony.net/vue01</link>
+      <pubDate>Mon, 12 Dec 2016 20:40:55 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/vue01</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;CSSがすきなフロントエンドエンジニアのナユです。
+&lt;a href=&#34;http://qiita.com/advent-calendar/2016/frontend-engineers&#34;&gt;フロントエンドエンジニア Advent Calendar 2016&lt;/a&gt; 12日目の記事です。&lt;/p&gt;
+
+&lt;p&gt;私はCSSがすきですが、フロントエンドエンジニアを名乗る以上はしっかりとしたJavaScriptがかける必要があります。
+ですので、このアドベントカレンダーを機に「Vue.js」勉強ログをつけてみることにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ありがとうアドベントカレンダー。これがなければゆうゆうと「来年は頑張る」とかいってたはず。&lt;/p&gt;
+
+&lt;h2 id=&#34;現状スキルセット&#34;&gt;現状スキルセット&lt;/h2&gt;
+
+&lt;p&gt;スキルセットとしては、
+ - ただ動くだけのjQuery/JavaScriptなら調べながら使えます。
+ - あとはHTML/CSSをかけます。
+ - Reactちょっとだけやったことあります&lt;/p&gt;
+
+&lt;p&gt;というレベル。ほぼマークアップエンジニアです。
+いや、アクセシビリティはそんなに詳しくないので、戒めの意味でも「HTMLコーダー」レベルです。&lt;/p&gt;
+
+&lt;p&gt;今の課題は、「いいJavaScriptを書く」というところにあるかなと思っているので、知見を広げるために「Vue.js」というフレームワークを触ってみることにします。&lt;/p&gt;
+
+&lt;p&gt;同じくらいのスキルセットの人は一緒に頑張りましょう。
+もっと上のレベルの方は、ご教授のほどよろしくお願いします！&lt;/p&gt;
+
+&lt;h2 id=&#34;概要を掴む&#34;&gt;概要を掴む&lt;/h2&gt;
+
+&lt;p&gt;まずは、Vue.jsがなんなのか、あたりをつかみます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jp.vuejs.org/&#34;&gt;vue.js&lt;/a&gt;
+日本語公式ページあるの嬉しい。
+軽くて速い、仮想DOM、ふむふむ。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;公式ガイドは、HTML、CSS そして JavaScript の中レベルのフロントエンドの知識を前提にしています。フロントエンドの開発が初めてであるならば、最初のステップとして、フレームワークに直接入門するのは良いアイデアではないかもしれません。基礎を学んで戻ってきましょう！他のフレームワークでの以前の経験は役に立ちますが、必至ではありません。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jp.vuejs.org/v2/guide/&#34;&gt;はじめに - Vue.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;えっ、どうしようかな……
+とりあえず、一通り触ってみて、わかるレベルでやっていきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
+
+&lt;p&gt;少なくとも、触ってみるだけならば
+&lt;code&gt;&amp;lt;script src=&amp;quot;https://unpkg.com/vue/dist/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;
+を読み込むだけでいいっぽい。
+この辺はjQueryと同じですね。&lt;/p&gt;
+
+&lt;p&gt;npmからインストールしてきてbuildして…ていうのはしっかりした開発か、自分が必要になったら改めて検討します。&lt;/p&gt;
+
+&lt;h2 id=&#34;まずはhello-world&#34;&gt;まずはHello,World&lt;/h2&gt;
+&lt;div id=&#34;app&#34;&gt;
+  {{ message }}
+&lt;/div&gt;
+var app = new Vue({
+  el: &#39;#app&#39;,
+  data: {
+    message: &#39;Hello Vue!&#39;
+  }
+})
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;el&lt;/code&gt;:書き出しターゲット(Vue特有の表現っぽい。elementの略かな？)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data&lt;/code&gt;:データ対応（この場合、messageが&lt;code&gt;Hello Vue!&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;html内の&lt;code&gt;{{ message }}&lt;/code&gt;にappで定義した&lt;code&gt;message:Hello Vue!&lt;/code&gt;が書き込まれるっていう風な動きですね。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;new&lt;/code&gt;っていうのは、JavaScriptの&lt;code&gt;new演算子&lt;/code&gt;ですね。
+ちょっと復習します。&lt;/p&gt;
+
+&lt;h3 id=&#34;new演算子&#34;&gt;new演算子？&lt;/h3&gt;
+
+&lt;p&gt;JavaScriptには、オブジェクトという考え方があります。
+そこで用いられるのがnew演算子です。
+まずは、オブジェクトについて少し説明。&lt;/p&gt;
+
+&lt;h4 id=&#34;オブジェクト&#34;&gt;オブジェクト&lt;/h4&gt;
+
+&lt;p&gt;名前をキーにアクセスできる配列の事を言います。
+いろんなデータやデータ操作についてのあれこれがつまった入れ物のようなものです。&lt;/p&gt;
+
+&lt;p&gt;例えば「nayu」というオブジェクトを定義するときはこんな感じです。&lt;/p&gt;
+var nayu = {
+  name  : nayu,
+  sex   : male,
+  birth : 1993/04/28,
+  part  : frontendengineer
+}
+
+&lt;p&gt;こういう風に、オブジェクト内に名前をつけて情報を定義しておきます。
+すると、「ナユの誕生日」をデータとして使いたい時に&lt;code&gt;nayu.birth&lt;/code&gt;だとか&lt;code&gt;nayu[&#39;birth&#39;]&lt;/code&gt;だとかでデータにアクセスできます(これらの違いは割愛)。
+&lt;code&gt;nayu&lt;/code&gt;,&lt;code&gt;1993/04/28&lt;/code&gt;などのデータを &lt;strong&gt;プロパティ&lt;/strong&gt; と呼びます。&lt;/p&gt;
+
+&lt;p&gt;これらは宣言したあとからも外から書き換えることができます。&lt;/p&gt;
+
+&lt;p&gt;さて、この、すごい入れ物であるオブジェクト。
+今は「nayu」オブジェクトを自分で定義しましたが、JavaScriptにはもともといろいろなオブジェクトが用意されていて、呼び出すだけで様々なデータ操作が行えます。&lt;/p&gt;
+
+&lt;p&gt;では、もともと用意されたオブジェクトに直接外からアクセスしてデータを書き換える行為が発生したときはどうでしょう。&lt;/p&gt;
+
+&lt;p&gt;答えは、そのデータを使っている別の場所では予定と違うデータに書き換わってしまっていて、不都合が発生します。&lt;/p&gt;
+
+&lt;p&gt;そのため、用意されているオブジェクトを使う時は、「原本」ではなく「コピー」を作って使いましょうということになっています。&lt;/p&gt;
+
+&lt;p&gt;この、オブジェクトをコピーする行為を「インスタンス化」、できあがったコピーは「インスタンス」と呼びます。
+（instanceは「事実、事例、実例」という意味があります。
+実物のサンプルコピーということで、まさに実例ですね。）&lt;/p&gt;
+
+&lt;p&gt;Gitでいうとブランチを切ってきてそのエリアで作業する、みたいなものです。&lt;/p&gt;
+
+&lt;p&gt;さて、本題に戻りましょう。
+今の&lt;code&gt;new&lt;/code&gt;演算子はインスタンスを作ることだということを踏まえて見てみると、この操作はVue.jsの元々用意しているオブジェクト&lt;code&gt;Vue&lt;/code&gt;をインスタンス化し、それの中身を書き換えて&lt;code&gt;app&lt;/code&gt;という名前のオブジェクトとして定義した、ということが記述されているとわかります。&lt;/p&gt;
+
+&lt;p&gt;ふむふむ、なるほど、Vue.jsは、テンプレートを提供してくれているのですね。
+コピーして、書き換えて、好きに使えよ、という感じでしょうか。&lt;/p&gt;
+
+&lt;h2 id=&#34;v-bindでデータバインディング&#34;&gt;v-bindでデータバインディング&lt;/h2&gt;
+&lt;div id=&#34;app-2&#34;&gt;
+  &lt;span v-bind:title=&#34;message&#34;&gt;
+    Hover your mouse over me for a few seconds to see my dynamically bound title!
+  &lt;/span&gt;
+&lt;/div&gt;
+var app2 = new Vue({
+  el: &#39;#app-2&#39;,
+  data: {
+    message: &#39;You loaded this page on &#39; + new Date()
+  }
+})
+
+&lt;p&gt;htmlの方で１点、みたこともないものが出てきましたね。
+&lt;code&gt;v-bind:title&lt;/code&gt;とは何でしょうか…。&lt;/p&gt;
+
+&lt;p&gt;公式ガイドによると、ディレクティブというもののようです。
+挙動を見ると、「&lt;code&gt;title&lt;/code&gt;属性に&lt;code&gt;message&lt;/code&gt;のプロパティを書き込んだ」という風に見えます。
+HTMLにデータを書き込むことを「束縛する」と表現するのか…？
+データバインディング、みたいな単語はたまに聞くのですが、その辺も関連してくるのかな。
+この辺はおいおい勉強していきましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;v-ifで条件分岐&#34;&gt;v-ifで条件分岐&lt;/h2&gt;
+&lt;div id=&#34;app-3&#34;&gt;
+  &lt;p v-if=&#34;seen&#34;&gt;Now you see me&lt;/p&gt;
+&lt;/div&gt;
+var app3 = new Vue({
+  el: &#39;#app-3&#39;,
+  data: {
+    seen: true
+  }
+})
+
+&lt;p&gt;&lt;code&gt;v-if&lt;/code&gt;ができました。if文っぽいですね。
+&lt;code&gt;seen:true&lt;/code&gt;を返すと要素が出現、&lt;code&gt;seen:false&lt;/code&gt;を返すと要素が消滅します。
+別に&lt;code&gt;seen&lt;/code&gt;じゃなくて&lt;code&gt;nyanko&lt;/code&gt;とかでも行けました。
+要は、&lt;code&gt;v-if=&amp;quot;true&amp;quot;&lt;/code&gt;なのか&lt;code&gt;v-if=&amp;quot;false&amp;quot;&lt;/code&gt;なのかで判断するっていうことですね。うん、これはすぐわかった。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、ガイドによると、消滅、更新、などのタイミングでのトランジションエフェクトもVueは提供してくれているようです。これはよさそうですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;v-forでループ&#34;&gt;v-forでループ&lt;/h2&gt;
+&lt;div id=&#34;app-4&#34;&gt;
+  &lt;ol&gt;
+    &lt;li v-for=&#34;todo in todos&#34;&gt;
+      {{ todo.text }}
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+var app4 = new Vue({
+  el: &#39;#app-4&#39;,
+  data: {
+    todos: [
+      { text: &#39;Learn JavaScript&#39; },
+      { text: &#39;Learn Vue&#39; },
+      { text: &#39;Build something awesome&#39; }
+    ]
+  }
+})
+
+&lt;p&gt;なるほど、徐々にVueのやり口が見えてきました。
+&lt;code&gt;todos&lt;/code&gt;の&lt;code&gt;text&lt;/code&gt;プロパティが尽きるまで&lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;を描画するんですね。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;XX in YY&lt;/code&gt;は、in YYは、JS側のtodosオブジェクトをさしてますね。
+todoはHTML側で任意に設定されています。
+textはtodosオブジェクト内で定義されています。
+この辺の文法は、またしっかり学ぶ必要がありそうです。&lt;/p&gt;
+
+&lt;p&gt;consoleから&lt;code&gt;app4.todos.push({ text: &#39;New item&#39; })&lt;/code&gt;を叩くと要素が増えました。
+&lt;code&gt;push()&lt;/code&gt;は配列の末尾にデータを突っ込むメソッドですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;v-on-v-modelでユーザー入力の制御&#34;&gt;v-on,v-modelでユーザー入力の制御&lt;/h2&gt;
+&lt;div id=&#34;app-5&#34;&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
+  &lt;button v-on:click=&#34;reverseMessage&#34;&gt;Reverse Message&lt;/button&gt;
+&lt;/div&gt;
+var app5 = new Vue({
+  el: &#39;#app-5&#39;,
+  data: {
+    message: &#39;Hello Vue.js!&#39;
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split(&#39;&#39;).reverse().join(&#39;&#39;)
+    }
+  }
+})
+
+&lt;p&gt;&lt;code&gt;v-on:click&lt;/code&gt;
+clickイベントらしきものができました。
+clickすると&lt;code&gt;reverseMessage&lt;/code&gt;メソッドを呼び出す感じですね。
+定義の仕方は、&lt;code&gt;methods&lt;/code&gt;オブジェクトに&lt;code&gt;reverseMessage&lt;/code&gt;を記述。
+中身は普通のJavaScriptのfunctionですね。
+内容的には、
+ - split(&amp;ldquo;)：&lt;code&gt;app5&lt;/code&gt;の&lt;code&gt;message&lt;/code&gt;を一文字ずつ区切って配列に格納
+ - reverse()：順番を全部ひっくり返す
+ - join(&amp;ldquo;)：連結（つなぎ部分に挿入する文字はなし）&lt;/p&gt;
+
+&lt;p&gt;そのインスタンスのみで通用する値、メソッドがあるってなんか不思議な気分ですね。
+こういうのがない場合、グローバルに存在する関数はどこからでも呼出せていたので。
+これだと&lt;code&gt;el:#app-5&lt;/code&gt;内で通用する関数ってことですよね。
+他の場所で使いたければ、都度指定する必要があるわけでしょう。&lt;/p&gt;
+&lt;div id=&#34;app-6&#34;&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
+  &lt;input v-model=&#34;message&#34;&gt;
+&lt;/div&gt;
+var app6 = new Vue({
+  el: &#39;#app-6&#39;,
+  data: {
+    message: &#39;Hello Vue!&#39;
+  }
+})
+
+&lt;p&gt;なるほど、データバインディングがなんとなくわかりました。
+つまりは、リアルタイムに片方を、もしくはお互いを更新するってことですね？
+さっきの&lt;code&gt;v-bind&lt;/code&gt;はJavaScriptからHTMLだったけれど、今回の&lt;code&gt;v-model&lt;/code&gt;は双方向ですね。&lt;/p&gt;
+
+&lt;p&gt;HTMLの&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;の要素がJavaScriptの&lt;code&gt;message&lt;/code&gt;を書き換え、すぐさまHTMLの&lt;code&gt;{{ message }}&lt;/code&gt;に反映するといった感じですね。
+なるほどです。データバインディング、すばらしい。&lt;/p&gt;
+
+&lt;h2 id=&#34;コンポーネントシステム&#34;&gt;コンポーネントシステム&lt;/h2&gt;
+
+&lt;p&gt;これは多分、だいたいCSS設計のコンポーネントシステムとおなじようなものでしょう。。&lt;/p&gt;
+
+&lt;h3 id=&#34;コンポーネントの定義&#34;&gt;コンポーネントの定義&lt;/h3&gt;
+Vue.component(&#39;todo-item&#39;, {
+  template: &#39;&lt;li&gt;This is a todo&lt;/li&gt;&#39;
+})
+&lt;ol&gt;
+  &lt;!-- todos 配列にある各 todo に対して todo-item コンポーネントのインスタンス作成する --&gt;
+  &lt;todo-item&gt;&lt;/todo-item&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;なんとなく、感覚的にわかった感じはあります。&lt;/p&gt;
+
+&lt;h3 id=&#34;コンポーネントに値を渡す&#34;&gt;コンポーネントに値を渡す&lt;/h3&gt;
+&lt;div id=&#34;app-7&#34;&gt;
+  &lt;ol&gt;
+    &lt;!-- todo オブジェクトによって各 todo-item を提供します。それは、内容を動的にできるように表します。--&gt;
+    &lt;todo-item v-for=&#34;item in groceryList&#34; v-bind:todo=&#34;item&#34;&gt;&lt;/todo-item&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+Vue.component(&#39;todo-item&#39;, {
+  props: [&#39;todo&#39;],
+  template: &#39;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&#39;
+})
+var app7 = new Vue({
+  el: &#39;#app-7&#39;,
+  data: {
+    groceryList: [
+      { text: &#39;Vegetables&#39; },
+      { text: &#39;Cheese&#39; },
+      { text: &#39;Whatever else humans are supposed to eat&#39; }
+    ]
+  }
+})
+
+&lt;p&gt;流れ的には
+ - &lt;code&gt;&amp;lt;todo-item&amp;gt;&lt;/code&gt;コンポーネントはprops(値)の箱をもっていて、親コンポーネントからpropsを受け取る。
+ - &lt;code&gt;v-bind&lt;/code&gt;を使って&lt;code&gt;todo.text&lt;/code&gt;データをHTML上の&lt;code&gt;&amp;lt;todo-item&amp;gt;&lt;/code&gt;と紐付ける
+ - HTML上に&lt;code&gt;&amp;lt;todo-item&amp;gt;&lt;/code&gt;が&lt;code&gt;groceryList&lt;/code&gt;のアイテムの数だけ生成される&lt;/p&gt;
+
+&lt;p&gt;うーん、理屈はわかったんだけど、&lt;code&gt;v-for&lt;/code&gt;あたりをうまくかけるかは微妙です。
+いちいち参照しないとわかんなそう。すぐ慣れる気はします。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;さて、ふんわりとした雰囲気は掴むことができました。
+次回は引き続きガイドを進めつつ、わからない単語がでてきたら都度調べて、という風にやっていきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://gihyo.jp/book/2016/978-4-7741-8411-1&#34;&gt;改訂新版 JavaScript本格入門&lt;/a&gt;
+&lt;a href=&#34;https://jp.vuejs.org/&#34;&gt;vue.js&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android4.4系でReact-modalの表示位置がずれる</title>
+      <link>http://nayucolony.net/react-modal-position</link>
+      <pubDate>Mon, 12 Dec 2016 13:16:23 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/react-modal-position</guid>
+      <description>&lt;h2 id=&#34;条件&#34;&gt;条件&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android4.4系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
+
+&lt;p&gt;React-modalの表示位置がずれる
+&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/package/react-modal&#34;&gt;https://www.npmjs.com/package/react-modal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Examplesの記述の&lt;code&gt;transform&lt;/code&gt;はAndroid4.4系のブラウザではベンダープレフィックスが必要。
+Autoprefixerを使っていたとしても、js内に直接記述して引き渡す場合にはAutoprefixerを経由しない。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
+
+&lt;p&gt;cssファイルにて下記のclassにスタイルを適用させ、Autoprefixerを経由するようにする（推奨）&lt;/p&gt;
+.ReactModalPortal .ReactModal__Content {
+    transform: translate(-50%,-50%);
+}
+
+&lt;p&gt;または下記のように併記する。&lt;/p&gt;
+const customStyles = {
+  content : {
+    top                   : &#39;50%&#39;,
+    left                  : &#39;50%&#39;,
+    right                 : &#39;auto&#39;,
+    bottom                : &#39;auto&#39;,
+    marginRight           : &#39;-50%&#39;,
+    transform             : &#39;translate(-50%, -50%)&#39;,
+    webkitTransform       : &#39;translate(-50%, -50%)&#39;
+  }
+};
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;js内に直接スタイルを記述する場合はベンダープレフィックスの有無に注意しましょう&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~</title>
+      <link>http://nayucolony.net/bemoji</link>
+      <pubDate>Sun, 11 Dec 2016 21:14:11 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/bemoji</guid>
+      <description>&lt;p&gt;こんにちは、CSSが好きなフロントエンドエンジニアのナユです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/advent-calendar/2016/emoji&#34;&gt;絵文字 / Emoji Advent Calendar 2016&lt;/a&gt; 11日目の記事です。&lt;br&gt;
+（仮タイトルから内容が変わっちゃいました。すみません＞＜）&lt;/p&gt;
+
+&lt;p&gt;10日目の湊川あいさんとわかばちゃんコンビに続いて、絵文字でわかるシリーズです。
+&lt;/p&gt;
+
+&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+
+&lt;p&gt;コーディングをするにあたり、近年よく「コンポーネント指向のCSS設計」という言葉を耳にします。&lt;br /&gt;
+しかし、参考になるコード量も少なく、あったとしてもよくあるUIをコーディングしてみよう、といったものが大半です。&lt;/p&gt;
+
+&lt;p&gt;本稿は、「CSS設計を勉強したいけれど参考資料が少ない&amp;hellip;」とお悩みの人に少しでもお手伝いができればと思って書かれています。&lt;br /&gt;
+少々難しい点があるかもしれませんが、ご質問などはコメントもしくはtwitter(&lt;a href=&#34;https://twitter.com/nayucolony&#34;&gt;@nayucolony&lt;/a&gt;)までリプライをくださいませ！&lt;/p&gt;
+
+&lt;h1 id=&#34;内容&#34;&gt;内容&lt;/h1&gt;
+
+&lt;p&gt;本稿は、Emojiを用いて&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンポーネント指向のCSS設計&lt;/li&gt;
+&lt;li&gt;BEMを用いた命名規則&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;を中心に学習していくといった内容になっています。&lt;/p&gt;
+
+&lt;p&gt;また、Sass(scss記法)を前提としています。 Scss記法がわからないという方は、&lt;code&gt;&amp;amp;&lt;/code&gt;がどういう役割かだけを学習して呼んでいただければと思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;bemoji&#34;&gt;BEMoji&lt;/h1&gt;
+
+&lt;p&gt;せっかくですので、今回は、絵文字によるBEM、BEMojiを用います。&lt;/p&gt;
+
+&lt;p&gt;BEMとルールは同じですが、単語を表す部分をEmojiで表現します。 （筆者のオリジナルですので、文献を探さないでください。ありませんorz）&lt;/p&gt;
+
+&lt;p&gt;絵文字アドベントカレンダーということで、思いつきでやったところ動作したので今回に限り採用いたします。&lt;/p&gt;
+
+&lt;p&gt;対応ブラウザは未検証ですが、chrome最新版とかなら多分動くんじゃないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;脳内で「👀 =&amp;gt;eyes」のように変換していただければと思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;コンポーネント設計-block&#34;&gt;コンポーネント設計 ~Block~&lt;/h1&gt;
+
+&lt;p&gt;いきなり顔を作る前に、まずは顔の構成要素を見てみましょう。&lt;br&gt;
+（以降、構成要素を、「コンポーネント」といったり「モジュール」「パーツ」などと呼んだりします。） BEM（及びBEMoji）では &lt;strong&gt;「Block」&lt;/strong&gt; という単位で呼びます。&lt;/p&gt;
+
+&lt;p&gt;例えば、目、鼻、口のようなパーツがあります。 これらは、機能的にそれ以上分割できない要素と考えられます。 まずは、それらの一番小さな、基礎的な要素から設計を始めます。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;パーツ名&lt;/th&gt;
+&lt;th&gt;Emoji&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;目&lt;/td&gt;
+&lt;td&gt;👀&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;眉&lt;/td&gt;
+&lt;td&gt;➖&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;鼻&lt;/td&gt;
+&lt;td&gt;👃&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;口&lt;/td&gt;
+&lt;td&gt;👄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;また、今回はOOCSSのように「classを与えることで絵文字が描画される」という作りで考えていきます。 classを付与した要素の::after擬似要素にEmojiを描画していきます。&lt;/p&gt;
+&lt;div class=&#34;👀&#34;&gt;&lt;/div&gt;
+.👀{
+  &amp;::after{
+    content:&#34;👀&#34;;
+  }
+}
+
+&lt;p&gt;鼻、口も同様です。&lt;/p&gt;
+&lt;div class=&#34;👃&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;👄&#34;&gt;&lt;/div&gt;
+.👃{
+  &amp;::after{
+    content:&#34;👃&#34;;
+  }
+}
+.👄{
+  &amp;::after{
+    content:&#34;👄&#34;;
+  }
+}
+
+&lt;h1 id=&#34;コンポーネント設計-modifier&#34;&gt;コンポーネント設計 ~modifier~&lt;/h1&gt;
+
+&lt;p&gt;👂については正面から見て右側しかEmojiが存在しないため、&lt;code&gt;transform:rotateY(180deg)&lt;/code&gt;を用いてY軸を中心に180度ひっくり返したものを左耳とします。&lt;/p&gt;
+
+&lt;p&gt;このように、同じblockだとしても見た目が違うものについては&lt;strong&gt;modifier&lt;/strong&gt;として&lt;code&gt;--&lt;/code&gt;で表していきます。&lt;/p&gt;
+
+&lt;p&gt;下記のように記述します。&lt;/p&gt;
+&lt;div class=&#34;👂 👂--⬅️&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;👂&#34;&gt;&lt;/div&gt;
+.👂{
+  &amp;::after {
+    content: &#34;👂&#34;;
+  }
+
+  &amp;--⬅️ {
+    transform:rotateY(180deg);
+  }
+}
+
+&lt;p&gt;これで、顔に用いるパーツを一通り定義し終えました。&lt;/p&gt;
+
+&lt;h1 id=&#34;コンポーネント設計-element-block-in-block&#34;&gt;コンポーネント設計 ~Element &amp;amp; Block in Block~&lt;/h1&gt;
+
+&lt;p&gt;さて、パーツができたので、続いての作業は顔面への配置です。 😶をBlockとして考えます。&lt;/p&gt;
+
+&lt;p&gt;今までは、blockそのものが目や鼻などのパーツとして成立していました。 しかし、😶は今まで定義してきた目や鼻などによって成り立つ、言わば構成要素を持ちます。&lt;/p&gt;
+
+&lt;p&gt;ここで初めてでてくるのはBlockを構成する要素を表す&lt;strong&gt;Element&lt;/strong&gt;です。 😶にとっての👀や👃は、Elementとして考えることができます。&lt;/p&gt;
+
+&lt;p&gt;「さっきは全てBlockっていっていたのに、Elementなの？どういうこと？」と思われるかもしれませんが、まずは下記のコードを見てみましょう。&lt;/p&gt;
+&lt;div class=&#34;😶&#34;&gt;
+  &lt;div class=&#34;👂 👂--⬅️ 😶__👂⬅️&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;👂 😶__👂➡️&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;👀 😶__👀&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;👃 😶__👃&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;👄 😶__👄&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;このように、&lt;strong&gt;Blockとしてのclassも持ちながら、Elementとしてのclassも持つ&lt;/strong&gt; という状態になります。&lt;/p&gt;
+
+&lt;p&gt;Elementには&lt;strong&gt;「😶のパーツとして振る舞う時特有のスタイル」&lt;/strong&gt; を定義していきます。&lt;/p&gt;
+
+&lt;p&gt;下記のように記述します。&lt;/p&gt;
+.😶{
+  background: #C66D2F;
+  width: 200px;
+  height: 300px;
+  border-radius: 50% 50% 50% 50%;
+  position: relative;
+  &amp;::before { //ほっぺ
+    content:&#34;&#34;;
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
+    position: absolute;
+    background: #C66D2F;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+  }
+  &amp;::after { //ほっぺ
+    content:&#34;&#34;;
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
+    position: absolute;
+    background: #C66D2F;
+    bottom: 0;
+    left: -10px;
+    z-index: -1;
+  }
+  &amp;__👀{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 50px;
+    z-index: 1;
+  }
+  &amp;__👃{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 50%;
+    transform:translateY(-50%);
+  }
+  &amp;__👄{
+    position: absolute;
+    font-size:6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 60%;
+  }
+  &amp;__👂➡️{
+    position: absolute;
+    font-size:5rem;
+    right: -45px;
+    top:45px;
+  }
+  &amp;__👂⬅️{
+    position: absolute;
+    font-size:5rem;
+    left: -45px;
+    top:45px;
+  }
+  &amp;__➖⬅️{
+    position: absolute;
+    font-size:4rem;
+    left: 40px;
+    top:20px;
+    transform:rotate(40deg);
+  }
+  &amp;__➖➡️{
+    position: absolute;
+    font-size:4rem;
+    right: 35px;
+    top:25px;
+    transform:rotate(-10deg);
+  }
+}
+
+&lt;p&gt;必然的に、レイアウトや文字サイズの調整に関わる部分が多くなりますね。 （Emojiは文字なので&lt;code&gt;font-size&lt;/code&gt;で大きさを定義します）&lt;/p&gt;
+
+&lt;p&gt;以上のように、Blockの中にBlockを内包し、それらをElementとして扱うことがよくありますので覚えておきましょう。&lt;/p&gt;
+
+&lt;h1 id=&#34;デモ&#34;&gt;デモ&lt;/h1&gt;
+
+&lt;p&gt;同様にして体、帽子なども調整したものがこれです（外部リンク）。&lt;/p&gt;
+
+&lt;!--![image](https://qiita-image-store.s3.amazonaws.com/0/100561/ee51a43b-e235-fc4c-91f5-81064959ca38.png)--&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/nayucolony/pen/VmBrJO/&#34;&gt;Mrs.Emoji - codepen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;👣コンポーネント、👒コンポーネントが増え、さらにそれらが🍟コンポーネントのElementとして記述されています。 全て、😶コンポーネントと同様の手法でできています。 Block in Block in Blockなんてこともあるということがわかりますね。 何階層になったとしても同じです。&lt;/p&gt;
+
+&lt;p&gt;今回は😶や👣で例えましたが、これらは訳すと&amp;hellip;Head,Foot。すなわち、webサイトでいうとHeaderやFooterですね。 🍟は全体を表しているので、&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;要素と考えれば、これもWebサイトとして見えてくる&amp;hellip;かもしれません。&lt;/p&gt;
+
+&lt;p&gt;手はしっくりこなかったので付けませんでした（笑）&lt;/p&gt;
+
+&lt;h1 id=&#34;まとめ&#34;&gt;まとめ&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BEMはBlock,Element,modifierの3つの要素がある。&lt;/li&gt;
+&lt;li&gt;記述するときは&lt;code&gt;.block__element--modifier&lt;/code&gt;のように行う。&lt;/li&gt;
+&lt;li&gt;コンポーネントは小さな割り出しから考える。&lt;/li&gt;
+&lt;li&gt;コンポーネントが集まって、新たなコンポーネントとなるとき、その構成要素はElementとしても振る舞う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
+
+&lt;p&gt;コンポーネント設計に欠かせないものは、デザインを読み解くことです。 都度修正すること、スケールすることを考えると、「できてればいい」では済まなくなってきています。 コンポーネント設計をする感覚を身につけることで、修正につよいwebサイト制作を行っていきましょう！&lt;/p&gt;
+
+&lt;p&gt;ご質問などはコメントもしくはtwitter(&lt;a href=&#34;https://twitter.com/nayucolony&#34;&gt;@nayucolony&lt;/a&gt;)までお気軽にリプライをくださいませ！&lt;/p&gt;
+
+&lt;h1 id=&#34;next&#34;&gt;NEXT&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/advent-calendar/2016/emoji&#34;&gt;絵文字 / Emoji Advent Calendar 2016&lt;/a&gt; 12日目の記事は&lt;a href=&#34;https://twitter.com/ncaq&#34;&gt;エヌユル&lt;/a&gt;さんです！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。</title>
+      <link>http://nayucolony.net/fontplusday5</link>
+      <pubDate>Thu, 08 Dec 2016 13:40:41 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/fontplusday5</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://nayucolony.net/images/fontplusday5/eyecatch.jpg&#34; alt=&#34;FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］&#34; /&gt;
+（アイキャッチは&lt;a href=&#34;https://fontplus.connpass.com/event/44793/&#34;&gt;イベントページ&lt;/a&gt;より）&lt;/p&gt;
+
+&lt;p&gt;私は文章に起こす過程で咀嚼していくタイプなので、自分用メモですが公開します。
+（全文を文章に起こすのはさすがに無理で、これは咀嚼して文章に起こしたものなので、少し違った解釈があるかもしれませんがご了承ください）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;オープニング&#34;&gt;オープニング&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;佐藤さんが好きだということでお招きして開催している。&lt;/li&gt;
+&lt;li&gt;好きな点：より深いデザインの話をわかりやすくお話していただける&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;セッション-webにおけるタイポグラフィ&#34;&gt;セッション「Webにおけるタイポグラフィ」&lt;/h2&gt;
+
+&lt;p&gt;登壇者：&lt;a href=&#34;http://yoshihiko.com/&#34;&gt;佐藤好彦 (Yoshihiko Sato)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;スライドではなく1枚の大きなパネルでのトーク&lt;/p&gt;
+
+&lt;h2 id=&#34;最近の話&#34;&gt;最近の話&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テレビをみるようになった(見れる時代になってきた)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tver.jp/&#34;&gt;TVer&lt;/a&gt;などの配信サービスの普及&lt;/li&gt;
+&lt;li&gt;番組表に合わせないといけない時代でなくなった&lt;/li&gt;
+&lt;li&gt;TV配信コンテンツが充実してきた&lt;/li&gt;
+&lt;li&gt;録画視聴率が計測されている&lt;/li&gt;
+&lt;li&gt;タイムシフト視聴率:放送視聴率より録画の方が多い&lt;/li&gt;
+&lt;li&gt;視聴率が落ちていたわけではなく、測っていない部分をチェックするとしっかり見られていたことが判明。&lt;/li&gt;
+&lt;li&gt;ラジオでも似たようなサービスが増えた&lt;/li&gt;
+&lt;li&gt;SNSでTVのキャプチャがシェアされた時、TVをつけてももう終わっている&lt;/li&gt;
+&lt;li&gt;コンテンツに合わせた生活をしていないとテレビラジオの情報は手に入らない&lt;/li&gt;
+&lt;li&gt;現状、&lt;a href=&#34;https://www.youtube.com/?gl=JP&amp;amp;hl=ja&#34;&gt;Youtube&lt;/a&gt;などが技術面での懸念を克服し、技術的にはいつでもテレビを配信できる状況。&lt;/li&gt;
+&lt;li&gt;だが未だされていない。&lt;/li&gt;
+&lt;li&gt;コンテンツの見せ方をどうしていくのか&lt;/li&gt;
+&lt;li&gt;（主に関係各所の調整で難航中…）&lt;/li&gt;
+&lt;li&gt;解決の兆しは徐々に見えつつある&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.spotify.com/jp/&#34;&gt;spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.apple.com/jp/apple-music/&#34;&gt;apple music&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.co.jp/gp/kindle/ku/sign-up&#34;&gt;amazon kindle unlimited&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;「何をしたいか」「どう見せたいか」という話につながる。&lt;/li&gt;
+&lt;li&gt;デザインは手段であるべき&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;third-decade-of-web-webの30年&#34;&gt;Third decade of Web(webの30年)&lt;/h2&gt;
+
+&lt;h2 id=&#34;1994-2003-最初の10年&#34;&gt;1994~2003（最初の10年）&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;インフラの時代&lt;/li&gt;
+&lt;li&gt;真上に伸びていくイメージ&lt;/li&gt;
+&lt;li&gt;「ネットに繋ぐための会社」が儲かった&lt;/li&gt;
+&lt;li&gt;CDでいうとCDプレーヤーが売れた&lt;/li&gt;
+&lt;li&gt;普及が当たり前になると、CDというコンテンツに目が行き始める&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2004-2013-次の10年&#34;&gt;2004~2013（次の10年）&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「Webを作る会社」が伸びた&lt;/li&gt;
+&lt;li&gt;HTML,Flash,etc&lt;/li&gt;
+&lt;li&gt;できることが増えていく&lt;/li&gt;
+&lt;li&gt;SNSの普及&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.flickr.com/&#34;&gt;Flicker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.twitter.com/&#34;&gt;twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;これからの10年は&#34;&gt;これからの10年は？&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;線から面へ、次の次元は奥行き&lt;/li&gt;
+&lt;li&gt;厚みが生まれてくるのではないか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hyperlink-2004-2013に関連した話&#34;&gt;HyperLink(2004~2013に関連した話)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;もう最近はこう言わなくなったけれど…&lt;/li&gt;
+&lt;li&gt;情報をつなぐ =&amp;gt; 人を繋ぐ&lt;/li&gt;
+&lt;li&gt;SNSの発展&lt;/li&gt;
+&lt;li&gt;リアル世界に交流の広場という場所が少なくなったことに由来しているのではないか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linkの本質&#34;&gt;Linkの本質&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;情報がどのサーバにあってもいいというのが本質的な利点&lt;/li&gt;
+&lt;li&gt;Appleは今、ファイルを管理「させない」&lt;/li&gt;
+&lt;li&gt;ファイラがない、ディレクトリの概念も見せない&lt;/li&gt;
+&lt;li&gt;処理は全て自動か裏で行う。概念だけを見せる。&lt;/li&gt;
+&lt;li&gt;頑なにブラックボックス化している&lt;/li&gt;
+&lt;li&gt;Web全体もその方向に向かっている？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;テキストによる表現&#34;&gt;テキストによる表現&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ここだけが取り残されている&lt;/li&gt;
+&lt;li&gt;Facebookには音が入らない&lt;/li&gt;
+&lt;li&gt;違法性を遮断するため？&lt;/li&gt;
+&lt;li&gt;游ゴシック問題&lt;/li&gt;
+&lt;li&gt;解像度で紙に劣る&lt;/li&gt;
+&lt;li&gt;環境による見え方の違いが当たり前という現状&lt;/li&gt;
+&lt;li&gt;Webフォントに日本語がない、海外に遅れをとる現状&lt;/li&gt;
+&lt;li&gt;フォントでの解決ができない場合画像で解決するしかない状態&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2016年は転換の年&#34;&gt;2016年は転換の年&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上記の問題が解決されつつある（ようやくまとまりつつある）&lt;/li&gt;
+&lt;li&gt;フラットデザインという解決策&lt;/li&gt;
+&lt;li&gt;著書で詳しく書いてます&lt;/li&gt;
+&lt;li&gt;フラットデザインも流行って廃れる？&lt;/li&gt;
+&lt;li&gt;必然性に伴った流行&lt;/li&gt;
+&lt;li&gt;最近はわざわざフラットデザインとも呼ばなくなった&lt;/li&gt;
+&lt;li&gt;普及するとそこに触れなくなるものと同じ(n)&lt;/li&gt;
+&lt;li&gt;スマートフォンの解像度の高まり&lt;/li&gt;
+&lt;li&gt;2010年 iPhoneのRetina&lt;/li&gt;
+&lt;li&gt;その時は誰もがもっているわけではないが徐々に普及してきた&lt;/li&gt;
+&lt;li&gt;Webフォントの普及&lt;/li&gt;
+&lt;li&gt;海外フォントはすでに実現されていた&lt;/li&gt;
+&lt;li&gt;日本でも普及し始めた&lt;/li&gt;
+&lt;li&gt;速度的にも問題がなくなってきた&lt;/li&gt;
+&lt;li&gt;ページ内で使用されている文字から優先的なレンダリングを行うようになっている？（不明）&lt;/li&gt;
+&lt;li&gt;游ゴシック、游明朝&lt;/li&gt;
+&lt;li&gt;ウェイトの話はあるものの、共通フォントができた&lt;/li&gt;
+&lt;li&gt;Webにおけるグラフィック環境が整いつつある。&lt;/li&gt;
+&lt;li&gt;徐々に紙に迫りつつある&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;タイポグラフィとは&#34;&gt;タイポグラフィとは&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;文字表現によって価値を生み出す。&lt;/li&gt;
+&lt;li&gt;緊張感、親しみやすさ、美しさを表す&lt;/li&gt;
+&lt;li&gt;文字でイメージを作る&lt;/li&gt;
+&lt;li&gt;役割&lt;/li&gt;
+&lt;li&gt;目を引くため（あいさつ/おかず）&lt;/li&gt;
+&lt;li&gt;読むため（会話/ごはん）&lt;/li&gt;
+&lt;li&gt;インターフェースとして&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;webがエディトリアルに近づいてきている&#34;&gt;Webがエディトリアルに近づいてきている&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webはナビとコンテンツで成り立つものが多い。&lt;/li&gt;
+&lt;li&gt;どちらにデザインの比重を置くかが移り変わってきている。&lt;/li&gt;
+&lt;li&gt;従来は、共通部分であるナビゲーションにデザインとしてのウェイトがあった&lt;/li&gt;
+&lt;li&gt;最近はコンテンツ重視&lt;/li&gt;
+&lt;li&gt;SPではナビは「ハンバーガーメニュー」にまでシンプル化&lt;/li&gt;
+&lt;li&gt;書籍は大きなものから小さなものになった&lt;/li&gt;
+&lt;li&gt;大判本=&amp;gt;個人でよむ本=&amp;gt;雑誌、新書&lt;/li&gt;
+&lt;li&gt;Webは大きなモニターから小さなモニターになった&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;書籍と同じあゆみをしているので、エディトリアルに近づいてきている？&lt;/p&gt;
+
+&lt;h2 id=&#34;リズム-のしくみ&#34;&gt;「リズム」のしくみ&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;モダンスイスアーキテクチャのパッケージ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;音楽で見ると…&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ただノートを並べてもリズムは生まれない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;正しく並んでいるだけで、音の切れ目が見えないとリズムは感じない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex.)全部四分音符&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;それぞれを区切るとリズムに近く&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex)全部八分音符のスタッカート&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;規則的に変化する要素を入れるとリズムを感じる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(ex.)三拍目だけ四分音符にする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;そこからベースのリズムを抜いてもリズムが残る&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;休符を意図して入れることがリズムをうむ&lt;/p&gt;
+
+&lt;h2 id=&#34;視覚における-リズム&#34;&gt;視覚における「リズム」&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;繰り返しだけではない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;余白がまとまりを感じさせる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;音楽も、シーケンサーのグリッドを見ると視覚的なリズムも感じられる。&lt;/p&gt;
+
+&lt;h2 id=&#34;レイアウトの基準は行の高さ&#34;&gt;レイアウトの基準は行の高さ&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;句読点のあとの余白（文字半個分のマージン）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;漢字とかなの余白部分&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Webではline-height&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;not font-size&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remはrootのfont-sizeに対する相対的な大きさ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;emは親要素のfont-sizeに対する相対的な大きさ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;相対を使う以上、その文章においてどうあるべきかを考えるべきなのに、文字サイズを基準にレイアウトするのはおかしくない？（行高が基準になってない、文字の上下の余白を考慮されていない）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;font-sizeではなくline-heightを基準にレイアウトするべき。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remにはベーシックなline-heightのサイズを指定するというアイデア（この手法は一般的に使われているとは言えないが検証の価値はあるのではないか）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;remがline-heightになっていない場合カラムレイアウトをするときの横が合わない（デモ）&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;情報のまとまりを作る&#34;&gt;情報のまとまりを作る&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ただ文章を並べていることはまとまりがなく読みづらい&lt;/li&gt;
+&lt;li&gt;何もかも盛り込んで「おひつ」をだすのではなく、咀嚼できるレベルで「おにぎり」をだす&lt;/li&gt;
+&lt;li&gt;どの規模のおにぎりにしていくかは編集技術&lt;/li&gt;
+&lt;li&gt;編集技術を持って適切なまとまりを作る&lt;/li&gt;
+&lt;li&gt;業務においてはしっかりワークフローを持って実現されるべき&lt;/li&gt;
+&lt;li&gt;芸能人のアメブロに見る「まとまり」と「リズム」&lt;/li&gt;
+&lt;li&gt;意図した改行による「間」を演出している&lt;/li&gt;
+&lt;li&gt;そういえばスクリーンリーダーとか使うときに「間」を表現する手段ってないですよね。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;文字詰め&#34;&gt;文字詰め&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webでも文字詰めができるようになった&lt;/li&gt;
+&lt;li&gt;正しくは、普及に近づいた&lt;/li&gt;
+&lt;li&gt;参考:文字詰めできるCSSのfont-feature-settingsが凄い！ 日本語フォントこそ指定したい自動カーニング&lt;/li&gt;
+&lt;li&gt;Webではテキストはベタ組みするべきじゃない？という意見が多数&lt;/li&gt;
+&lt;li&gt;もともと最適化されているものに触れるべきではない？&lt;/li&gt;
+&lt;li&gt;使う使わないではなく、どう見せるためにどう使うか&lt;/li&gt;
+&lt;li&gt;長文で句読点が詰まっていると当然に読みづらい&lt;/li&gt;
+&lt;li&gt;デザイン的な見出しでは問題ない場合もある&lt;/li&gt;
+&lt;li&gt;行長、文章長、英単語などの兼ね合いで採択の是非は考慮するべき&lt;/li&gt;
+&lt;li&gt;特に英単語を含む文章においてのwrap,justifyなどの兼ね合いでカーニングを詰めたり開けたりの考慮は発生する&lt;/li&gt;
+&lt;li&gt;その際にJavaScriptなどであれこれするのではなく、CSSという選択肢が存在するということが重要&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここまでが本編トークでした。&lt;/p&gt;
+
+&lt;p&gt;次のパネルディスカッション以降のことはメモしていませんorz&lt;/p&gt;
+
+&lt;p&gt;今日私が一番すごいなとおもったのは、スピーカーの佐藤氏は一枚の大きなスライドをiPhoneに入れたものをスライドに投影し、ピンチインアウトで見せ場を操作しながらお話されていたという点です。
+スライドではそうはいきません。
+意図して大きく切り抜いたものをスライドとして用意しておく必要があります。&lt;/p&gt;
+
+&lt;p&gt;そういう場面切り替えの柔軟性もさることながら、引いてみたときに一枚の大きな「まとめられた」情報群として存在する資料でもあります。&lt;/p&gt;
+
+&lt;p&gt;ここにエディトリアルデザインの強さを感じました。&lt;/p&gt;
+
+&lt;p&gt;以上です。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>「はじめてのハッカソンvol.19 」に参加してきました。</title>
+      <link>http://nayucolony.net/hackathon-firststep-19</link>
+      <pubDate>Mon, 14 Nov 2016 13:32:16 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/hackathon-firststep-19</guid>
+      <description>&lt;p&gt;先日参加したイベント「&lt;a href=&#34;https://connpass.com/event/40602/&#34;&gt;CSS3の新レイアウト「Flexbox」ハンズオン 〜Flexでコレできるかな？〜&lt;/a&gt;」で知り合った「&lt;a href=&#34;http://design-illume.com/&#34;&gt;デザイン イリューム&lt;/a&gt;」のみまさんの主催イベント 「&lt;a href=&#34;http://hackathon.connpass.com/event/43181/&#34;&gt;はじめてのハッカソン&lt;/a&gt;」 に参加してきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ハッカソン（英語: hackathon 、別名:hack day ,hackfest ,codefest ）とはソフトウェア開発分野のプログラマやグラフィックデザイナー、ユーザインタフェース設計者、プロジェクトマネージャらが集中的に作業をするソフトウェア関連プロジェクトのイベントである。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3&#34;&gt;ハッカソン – Wikipedia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ハッカソンはプログラマーが集まってやるものだと思っていたのですが、イベント告知をふと見る &lt;strong&gt;「デザイナーやマークアップエンジニアも募集しています！」&lt;/strong&gt; とのこと。&lt;/p&gt;
+
+&lt;p&gt;これは行ってみるしかない！ということで、今回は &lt;strong&gt;マークアップエンジニア枠&lt;/strong&gt; での参加となりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;チーム分け&#34;&gt;チーム分け&lt;/h2&gt;
+
+&lt;p&gt;当日、チーム分けが発表され、私のチームはこんな感じ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;webデザイナー　１名&lt;/li&gt;
+&lt;li&gt;マークアップエンジニア　１名（私）&lt;/li&gt;
+&lt;li&gt;バックエンドエンジニア　2名&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;合計4名でバランスのいいチームでした。&lt;/p&gt;
+
+&lt;p&gt;他のチームにはディレクターがいたり、エンジニア３名で構成されたチームもあり、それぞれのチームが独自のフローで開発を行っていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;アイデア出し&#34;&gt;アイデア出し&lt;/h2&gt;
+
+&lt;p&gt;自己紹介をしつつアイデア出し。&lt;/p&gt;
+
+&lt;p&gt;今回は &lt;strong&gt;「音声感情認識API」&lt;/strong&gt; が提供されており、それを絡めて何かやろう！ということだけを決めてアイデアを出していきました。&lt;/p&gt;
+
+&lt;p&gt;たまたま自己紹介の中の「最近面白いアプリ」という項目があり、そこで「snow」があがったので、音声感情認識と絡めて 「電話版snowとかどう？」という &lt;strong&gt;何気ない発言からアイデア出しが加速した&lt;/strong&gt; 時はとてもワクワクしました。&lt;/p&gt;
+
+&lt;p&gt;何気ないキーワードの組み合わせから突然アイデア出しにエンジンがかかるので、尻込みせずにどんどん発言していくのが大事です！&lt;/p&gt;
+
+&lt;p&gt;結局、色んな方向に話が拡大しつつも、時間と実装の面も考慮して実装内容を詰めていったところで午前が終了。&lt;/p&gt;
+
+&lt;h2 id=&#34;実装作業&#34;&gt;実装作業&lt;/h2&gt;
+
+&lt;p&gt;実装内容と役割を分担したところで、実際に作業開始。&lt;/p&gt;
+
+&lt;p&gt;時間制限と、各自異なる分野異なる環境で普段開発を行っているので、基本的に &lt;strong&gt;共通言語は無い&lt;/strong&gt; ものと思わなければいけません。&lt;/p&gt;
+
+&lt;p&gt;早速バックエンドチームがAPIの仕様策定から、何を引き渡すのか？という話をはじめて、デザイナーが必要であろう素材を作り始めたところで&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;私「（あれ、何したらいいんだ）」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;今まで指示通りのオペレーションばかりしていたツケがこういうところで出てくるのだなと痛感。。。&lt;br&gt;
+普段から自分で考えてやっていかないとほんとだめですね。&lt;/p&gt;
+
+&lt;p&gt;そうはいってもエンジニアの端くれですので、プロトタイピングも兼ねてビュー部分の実装をHTML/CSSオンリーで進めていきました。
+アニメーションや状態の切り替えは 「男は黙ってjQuery」 ということでフルjQuery実装。下手にフレームワークを使うより、より共通に近いであろうjQueryを採用しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「あれ、jsonデータってどうやって取得するん」&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;「あれ、API叩くって、そもそもなんやったっけ」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;などとサーバ連携を数えるレベルでしたことなく、classの付け外しやクリックイベントくらいでしかjQueryを使ったことがない私が変な汗をかきそうになったりもしましたが、なんとかgoogle先生で解決。&lt;/p&gt;
+
+&lt;p&gt;そういうの、何度か写経したことは絶対あるんですけどね、教本とかで。
+写経して「ふーんなるほどね」となったところで、何も身についてないのが現実でした。
+実案件ですんなり使えて初めて身についたと言えるですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;成果報告&#34;&gt;成果報告&lt;/h2&gt;
+
+&lt;p&gt;成果報告の時点で思ったことが一つあります。&lt;/p&gt;
+
+&lt;p&gt;それは、&lt;strong&gt;「なんとか発表できる形を整える」&lt;/strong&gt; こと。&lt;/p&gt;
+
+&lt;p&gt;時間をたっぷり使えれば1から10まで自分の理想通りにいくかもしれませんが、ハッカソンは時間制限があります。&lt;/p&gt;
+
+&lt;p&gt;ここでの発表の形がそれぞれのチームで違ったのが面白かったです。&lt;/p&gt;
+
+&lt;p&gt;わたしのチームは取り決めをしていたわけではありませんが「とにかくデモページを動かす」というところに持って行こうとしていました。&lt;/p&gt;
+
+&lt;p&gt;結果、付加機能をかなりそぎ落とし、かなりミニマムな状態でしたがデモページをリリースできたのは良かったと思います。&lt;/p&gt;
+
+&lt;p&gt;終了時点で「最低限の機能+かなり完成形に近い付加機能」という状態だったのも、いい形で終えることができたのではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;他の２チームの発表も非常に参考になりました。&lt;/p&gt;
+
+&lt;p&gt;片方のチームは「フル実装されたプロトタイプをXDで作成」
+もう片方は「スライドに仕様をわかりやすくまとめて発表」
+と、それぞれ異なるアウトプットの形に持って行っていました。&lt;/p&gt;
+
+&lt;p&gt;「フル実装されたプロトタイプをXDでプレゼン」はディレクターがいたチームの報告で行われていました。デザイナーとディレクターでしっかり作り込まれたプロトタイプと、超ロジカルな要件定義、ターゲットユーザ、ペルソナ設定の説得力には驚きました。&lt;/p&gt;
+
+&lt;p&gt;また、「スライドに仕様をわかりやすくまとめて発表」を行っていたのはエンジニア３人で構成されたチームによって行われていました。作るアプリの特性上、視覚で分かりやすくできるものではなかったのですが、データの流れなどを丁寧に説明しておりなるほどと納得できました。&lt;/p&gt;
+
+&lt;p&gt;「アイデアを殺してでも実物が存在する状態にもっていく」にひたすらこだわったのはデザイナーとフロントエンドエンジニアが実装に関わったわたしのチームならではの発想だったのかなと思いました。実際にモノが存在しているという状態にもっていけたのはこっそり満足しています（笑）&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;わたしが伝えたかったハッカソンの魅力は以下の通りです！&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分のできないことに気づける&lt;/li&gt;
+&lt;li&gt;別分野の人と直接関われる&lt;/li&gt;
+&lt;li&gt;デザイナー、超スピードで素材生み出してヤバイ。&lt;/li&gt;
+&lt;li&gt;サーバサイド、「解析機能できたよ」と言われた時はリアルに「えっ」って声出ました。&lt;/li&gt;
+&lt;li&gt;「0から自分たちが作ったもの」はやっぱり嬉しい。&lt;/li&gt;
+&lt;li&gt;「こうすればよかった」が引き出しになるし、モチベーションに繋がる。
+
+&lt;ul&gt;
+&lt;li&gt;↑の後悔を取り戻すために早くなんか作りたい（笑）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;「はじめてのハッカソン」はエンジニアだけのイベントじゃありません！&lt;/strong&gt;&lt;br&gt;
+どの職種でもモノづくりに関わる人はみんなが活躍できるし楽しめるイベントだと思いました！&lt;/p&gt;
+
+&lt;p&gt;次回参加するときまでに、もっとサーバサイドとの連携に用いる技術を習得すると決めました！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</title>
+      <link>http://nayucolony.net/atom-vendorprefix</link>
+      <pubDate>Wed, 19 Oct 2016 13:14:00 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/atom-vendorprefix</guid>
+      <description>&lt;h2 id=&#34;勝手にベンダープレフィックスがつく&#34;&gt;勝手にベンダープレフィックスがつく&lt;/h2&gt;
+
+&lt;p&gt;emmet、つかってますか？&lt;br&gt;
+flexbox、つかってますか？&lt;br&gt;
+私は使ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ある日、&lt;code&gt;df&lt;/code&gt;で展開しようとして&lt;/p&gt;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+
+&lt;p&gt;みたいになってイライラしてました。
+これからはね、 &lt;strong&gt;Autoprefixer&lt;/strong&gt; の時代だからね、こんなもの勝手につけなくていいの。&lt;/p&gt;
+
+&lt;p&gt;Autoprefixerについては下記参照。&lt;br /&gt;
+&lt;a href=&#34;http://qiita.com/tonkotsuboy_com/items/377913c51b1ac00deffe&#34;&gt;CSSベンダープレフィックス-webkit-を今この瞬間に辞める為のAutoprefixerの導入とお薦め設定&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+
+&lt;p&gt;ホームディレクトリ&lt;code&gt;（Macintosh HD/ユーザ/ :house:）&lt;/code&gt;に
+&lt;code&gt;emmet&lt;/code&gt;というフォルダをつくって、その中に&lt;code&gt;preferences.json&lt;/code&gt;というフォルダを作る。&lt;/p&gt;
+
+&lt;p&gt;これは、Atomのemmetが標準でここのファイルを読み込むようになってて、ユーザーは元ファイルをいじらなくてもここにファイルを自作しておけば設定を上塗りしてくれるんです。&lt;/p&gt;
+
+&lt;p&gt;中身は以下の通り&lt;/p&gt;
+{
+  &#34;css.autoInsertVendorPrefixes&#34;: false,
+  &#34;less.autoInsertVendorPrefixes&#34;: false,
+  &#34;scss.autoInsertVendorPrefixes&#34;: false,
+  &#34;sass.autoInsertVendorPrefixes&#34;: false,
+  &#34;caniuse.enabled&#34;: false
+}
+
+&lt;p&gt;あとはAtomを再起動すればおっけーです。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;quot;caniuse.vendor&amp;quot;:false&lt;/code&gt;を書いちゃうと挿入機能がうまく無効化してくれない場合があるので
+上記のようにするといいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>styleguideジェネレータ「aigis」を使ってみた</title>
+      <link>http://nayucolony.net/aigis</link>
+      <pubDate>Wed, 21 Sep 2016 21:14:27 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/aigis</guid>
+      <description>&lt;p&gt;スタイルガイドジェネレータ「aigis」というものがあるらしく、ちょっと触って見るついでにメモを残しておきます。&lt;/p&gt;
+
+&lt;p&gt;exampleを触ってだいたいの感触を掴むというのがこのエントリの趣旨です。&lt;/p&gt;
+
+&lt;h2 id=&#34;aigisとは&#34;&gt;aigisとは&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.pxgrid.com/&#34;&gt;株式会社ピクセルグリッド&lt;/a&gt;謹製のスタイルガイドジェネレータです。
+&lt;/p&gt;
+
+&lt;p&gt;以下、&lt;a href=&#34;https://pxgrid.github.io/aigis/docs/jp/&#34;&gt;日本語ドキュメント&lt;/a&gt;より引用。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;aigisでは、メンテナブルなスタイルガイドを作成することができます。 aigisを使えば以下の様なことが可能です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テキストファイルであれば、.scss .styls .mdなど、どのような形式からでもスタイルガイドを作成できます。&lt;/li&gt;
+&lt;li&gt;Markdownを使用してドキュメントを記述することができます。&lt;/li&gt;
+&lt;li&gt;スタイルガイドのテーマをカスタマイズすることができます。またテーマでは、JadeやHandlebarsといったテンプレートエンジンを利用できます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;なお、このエントリは割と &lt;strong&gt;黒い画面こわい人向け&lt;/strong&gt; の記事です。&lt;/p&gt;
+
+&lt;p&gt;黒い画面怖くない人は、適宜読み飛ばしてください！
+(とか言っておきながら、npmコマンドとgitコマンドが動く環境になっていることが前提です！)&lt;/p&gt;
+
+&lt;h2 id=&#34;作業用フォルダをつくる&#34;&gt;作業用フォルダをつくる&lt;/h2&gt;
+
+&lt;p&gt;そういえば、いつも作業するときホームディレクトリに「Works」とか「Practice」とか作ってその中でやってるんですけど、なんかディレクトリ作るのに参考になるサイトないですかね〜。&lt;/p&gt;
+
+&lt;p&gt;とりあえずホームディレクトリに練習用フォルダを作っちゃいましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ~&lt;/code&gt;でホームディレクトリに戻れます。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、ホームディレクトリとは&lt;code&gt;Macintosh HD &amp;gt; ユーザ &amp;gt; ***(あなたのユーザ名)&lt;/code&gt; &lt;strong&gt;←ココ&lt;/strong&gt;&lt;/p&gt;
+$ cd ~            //ホームディレクトリへ移動
+$ mkdir practice  //practiceというフォルダを作る
+$ cd ./practice   //practiceへ移動
+
+&lt;p&gt;（$マークよりも右側を記述してくださいね）&lt;/p&gt;
+
+&lt;h2 id=&#34;aigisを落としてくる&#34;&gt;aigisを落としてくる&lt;/h2&gt;
+$ git clone https://github.com/pxgrid/aigis.git
+
+&lt;p&gt;これは、今いるディレクトリに&lt;a href=&#34;https://github.com/pxgrid/aigis&#34;&gt;aigis&lt;/a&gt;の中身をダウンロードしてくるコマンド。&lt;/p&gt;
+
+&lt;p&gt;gitコマンドねーよ！みたいなことを言われた人はがんばってgitをインストールしてください。&lt;/p&gt;
+Cloning into &#39;aigis&#39;...
+remote: Counting objects: 4360, done.
+remote: Total 4360 (delta 0), reused 0 (delta 0), pack-reused 4360
+Receiving objects: 100% (4360/4360), 933.49 KiB | 246.00 KiB/s, done.
+Resolving deltas: 100% (2229/2229), done.
+Checking connectivity... done.
+
+&lt;p&gt;まあなんかこんな感じになったらokです。&lt;/p&gt;
+
+&lt;h2 id=&#34;aigisをインストールする&#34;&gt;aigisをインストールする&lt;/h2&gt;
+
+&lt;p&gt;落としてきたのは、aigisに必要なファイルのダウンロード指示書だと思ってください。&lt;/p&gt;
+
+&lt;p&gt;（いろんなプログラムを組み合わせて動いてるから、全部詰め込むと重いんだよ）&lt;/p&gt;
+
+&lt;p&gt;ここで、追加でaigisに関連するファイルをインストールします。&lt;/p&gt;
+$ cd ./aigis/examples                //サンプルフォルダへ移動
+$ npm install --save-dev node-aigis  //aigisをインストール
+$ ./node_modules/.bin/aigis -v       //aigisのバージョンチェック
+1.1.5                                //バージョン
+
+&lt;p&gt;&lt;code&gt;$ npm install --save-dev node-aigis&lt;/code&gt;が動かねーよっていう方は多分npmだのnode.jsだのが入っていないので頑張っていれてください。&lt;/p&gt;
+
+&lt;p&gt;記事書いてる時点では1.1.5でしたがまあこの辺の数字は随時かわるかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;aigisのテンプレートを生成&#34;&gt;aigisのテンプレートを生成&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;$ ./node_modules/.bin/aigis init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;こうなったらokです&lt;/p&gt;
+Created the following files and directories:
+Cowardly refusing to overwrite existing: aigis_config.yml
+  aigis_assets
+  aigis_assets/css/highlight/okadia.css
+  aigis_assets/css/theme.css
+  template_ejs
+  template_ejs/components.ejs
+  template_ejs/index.ejs
+  template_ejs/sidemenu.ejs
+
+&lt;h2 id=&#34;aigisを起動&#34;&gt;aigisを起動&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;$ ./node_modules/.bin/aigis run -c ./aigis_config.yml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;こんな感じになります。
+意味的には、今いるファイルにある&lt;code&gt;aigis_config.yml&lt;/code&gt;をaigisに読み込ませるような感じです。&lt;/p&gt;
+[Info] Config File: /Users/yuki/practice/aigis/examples/aigis_config.yml
+[Info] Start: Generate Styleguide
+[Info] Output: /Users/yuki/practice/aigis/examples/styleguide
+[Info] Finish: Generate Styleguide
+
+&lt;p&gt;はい、これでok。&lt;/p&gt;
+
+&lt;h2 id=&#34;スタイルガイドを見てみる&#34;&gt;スタイルガイドを見てみる&lt;/h2&gt;
+
+&lt;p&gt;では、Finderでホームディレクトリ内に作った&lt;code&gt;practice&lt;/code&gt;フォルダの中の&lt;code&gt;aigis&lt;/code&gt;フォルダを開いてみましょう。&lt;br /&gt;
+&lt;code&gt;styleguide&lt;/code&gt;といフォルダがあると思いますが、これが先ほどaigisを起動させることで生成されたスタイルガイドです。
+&lt;code&gt;index.html&lt;/code&gt;を開くと、スタイルガイドが生成されていることがわかると思います。&lt;/p&gt;
+
+&lt;h3 id=&#34;index-html&#34;&gt;index.html&lt;/h3&gt;
+
+&lt;p&gt;基本的には、全て&lt;code&gt;aigis_config.yml&lt;/code&gt;がどのファイルをどうするのかという管理をしています。&lt;/p&gt;
+# Index page created from markdown file
+index: ./index.md
+
+&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;は、&lt;code&gt;aigis_config.yml&lt;/code&gt;と同階層にある&lt;code&gt;index.md&lt;/code&gt;から生成しますよ、とのこと。&lt;/p&gt;
+
+&lt;h3 id=&#34;その他ページ&#34;&gt;その他ページ&lt;/h3&gt;
+
+&lt;p&gt;サイドバーの&lt;code&gt;base&lt;/code&gt;をクリックするとbase部分に関する記述が出てきます。
+（なんか最後にスラッシュついてないのでちょっとおかしな遷移しますが）
+他ページも同様です。
+このあたりも&lt;code&gt;aigis_config.yml&lt;/code&gt;に書いています&lt;/p&gt;
+#The directory containing the source files to parse recursively
+source:
+  - ./css
+  - ./demo.md
+
+&lt;p&gt;つまり、今いる&lt;code&gt;examples&lt;/code&gt;フォルダ内の&lt;code&gt;css&lt;/code&gt;フォルダ内のテキストファイル(今回だと&lt;code&gt;style.css&lt;/code&gt;)、もしくは&lt;code&gt;demo.md&lt;/code&gt;から生成しますよということですね。
+他にも対象ファイルを増やしたければここに追記していきましょう。
+ちなみに、最初の「aigisとは？」の部分に書いたように、拡張子はかなりいろんな部分をサポートしているみたいです。
+ただし、&lt;code&gt;aigis_config.yml&lt;/code&gt;の以下の部分で「どの拡張子のファイルを対象にするのか」は書いておくこと。&lt;/p&gt;
+# The types that aigis will scan to document comment
+source_type:
+  - .css   
+  - .sass  
+  - .scss  
+  - .styl  
+# If you want to generate documents from markdown
+# source_type: .md
+
+&lt;p&gt;また、&lt;code&gt;.md&lt;/code&gt;がリストにないのに&lt;code&gt;demo.md&lt;/code&gt;が対象になっているのは、ファイル名と拡張子を指定しているからです。
+&lt;code&gt;./css&lt;/code&gt;のように、フォルダを指定した場合はフォルダ内にある上記リストの拡張子を持つファイルのみが生成対象になります。
+ファイル名と拡張子まで指定しなくても&lt;code&gt;.md&lt;/code&gt;を生成対象にしたい場合、一番下の行の#を消してコメントアウトを解除するか、リストに&lt;code&gt;.md&lt;/code&gt;を追加してしまいましょう。&lt;/p&gt;
+
+&lt;p&gt;(&lt;code&gt;//&lt;/code&gt;で始まる部分は説明用に私が記述したものです。)&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre&gt;
+
+
+//以下、メタ情報。カテゴリやタグの情報を書くとサイドバーとメインに自動反映してくれる。
+
+/*
+---                 
+name: Button
+category:           
+  - mod/btn         
+  - base            
+  - mod             
+tag:                
+  - latest          
+  - base            
+compile: false
+---
+
+//以下、メインセクション記述。markdownで書くこと。
+
+Button styles.
+* Base button style.          
+* Use `a` or `button` tag.
+
+//以下シンタックスエリア。ファイル形式を書くと自動でシンタックスハイライトがかかる。
+
+```html
+&amp;lt;a class=&#34;ag-btn&#34;&gt;Button&amp;lt;/a&gt;
+&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;Button&amp;lt;/button&gt;
+```
+
+```ejs
+&amp;lt;a class=&#34;ag-btn&#34;&gt;&amp;lt;%- name %&gt;&amp;lt;/a&gt;
+&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;&amp;lt;%- name %&gt;&amp;lt;/button&gt;
+```
+
+```jade
+a.ag-btn
+  != name
+button.ag-btn.ag-btn--primary
+  != name
+```
+
+```hbs
+{{include &#39;./button.html&#39;}}
+&amp;lt;hr&gt;
+&amp;lt;a class=&#34;ag-btn&#34;&gt;{{name}}&amp;lt;/a&gt;
+&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;{{name}}&amp;lt;/button&gt;
+```
+
+*/
+
+//以下、コンポーネントのCSS
+
+
+.ag-btn {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: none;
+  background-color: #3DB680;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 40px;
+  min-width: 200px;
+  font-size: 20px;
+  box-sizing: border-box;
+ }
+
+.ag-btn--primary {
+  color: black;
+  background-color: #FFEA3A;
+ }
+
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;:&lt;/code&gt;の後に半角スペースが空いてないとエラー吐いたりするなど割とシビアなので注意。
+あんまり縦長になるとつらそうなので、1スタイル1ファイルとかでいいかもしれませんね。
+今回だと、&lt;code&gt;header.css&lt;/code&gt;、&lt;code&gt;footer.css&lt;/code&gt;・・・などのように。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、今回は&lt;code&gt;examples/styleguide&lt;/code&gt;の中にファイルが吐き出されましたが、フォルダ名なんかは&lt;code&gt;aigis_config.yml&lt;/code&gt;内のここで変えられますよ。&lt;/p&gt;
+# The directory that aigis will build to
+dest: ./styleguide
+
+&lt;p&gt;この&lt;code&gt;dest:&lt;/code&gt;以降を任意のパスに書き換えることで好きな階層の好きなフォルダ内に吐き出させることができます。&lt;/p&gt;
+
+&lt;p&gt;また、更新があった場合は随時
+&lt;code&gt;./node_modules/.bin/aigis run -c ./aigis_config.yml&lt;/code&gt;
+を叩いて生成しなおしてください。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;さて、これで、aigisを使って自由にメンテナブルなstyleguideを作ることができますね！&lt;/p&gt;
+
+&lt;p&gt;スニペット管理にもなりますし、これでスタイル管理することで迷子にならないサイト制作をしていきましょう！&lt;/p&gt;
+
+&lt;p&gt;気が向いたら、gulpにaigisを組み込んで、変化があったら自動で生成されるようにしたりする方法も書きたいなと思います！&lt;/p&gt;
+
+&lt;p&gt;またこの記事は何か気づきがありしだい追記していく予定なのでどうぞよろしくおねがいします！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

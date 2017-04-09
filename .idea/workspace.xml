@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6624cb37-6165-460d-96c8-7308433a8001" name="Default" comment="">
+    <list default="true" id="6624cb37-6165-460d-96c8-7308433a8001" name="Default" comment="change pulish directory to docs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/bulma-functions/font-size.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/bulma-variables/github.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/bulma/bulma.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/fontplusday5/eyecatch.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/odb/odb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/2016-output/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/about/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/aigis/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/atom-vendorprefix/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/bemoji/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/prism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/dist13/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/fontplusday5/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/freelance/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/gulp-cli/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/hackathon-firststep-19/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/prism.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/pages/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/pages/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/pages/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/post/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/post/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/post/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/react-modal-position/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/results/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/rscss/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/sitemap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/editor/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/editor/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/editor/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/gulp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/gulp/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/gulp/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/lt/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/lt/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/lt/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/イベント/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/イベント/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/イベント/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/ハッカソン/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/ハッカソン/index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/tags/ハッカソン/page/1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/vim01/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/vue01/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.toml" afterPath="$PROJECT_DIR$/config.toml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.toml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.toml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,16 +111,6 @@
       </file>
       <file leaf-file-name="sanitize.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/foundation/sanitize.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/foundation/base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -336,7 +387,7 @@
       <option name="presentableId" value="Default" />
       <updated>1491750098286</updated>
       <workItem from="1491750100090" duration="973000" />
-      <workItem from="1491760765173" duration="1882000" />
+      <workItem from="1491760765173" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="add test article">
       <created>1491760932933</created>
@@ -387,11 +438,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491762997519</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change pulish directory to docs">
+      <created>1491764510115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491764510115</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2903000" />
+    <option name="totallyTimeSpent" value="2991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="34" width="1260" height="669" extended-state="0" />
@@ -430,7 +488,8 @@
     <MESSAGE value="delete old files" />
     <MESSAGE value="kill column-layout" />
     <MESSAGE value="delete trash files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete trash files" />
+    <MESSAGE value="change pulish directory to docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="change pulish directory to docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -534,14 +593,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/post/testtest.md" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/post/test.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -744,8 +795,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
