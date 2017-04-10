@@ -627,10 +627,20 @@ a:hover {
     font-weight: bold;
     font-size: 1.2em; }
 
-.article-list__item {
-  width: 100%; }
-  .article-list__item:not(:last-child) {
-    margin-bottom: 20px; }
+.article-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .article-list__item {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .article-list__item {
+        width: calc(50% - 10px); } }
+    .article-list__item:not(:last-child) {
+      margin-bottom: 20px; }
 
 .article-card {
   display: -ms-flexbox;
