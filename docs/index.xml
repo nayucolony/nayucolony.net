@@ -6,8 +6,178 @@
     <description>Recent content on nayucolony.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Wed, 18 Jan 2017 20:02:45 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Apr 2017 02:59:29 +0900</lastBuildDate>
     <atom:link href="http://nayucolony.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>「技術書典2」にサークル参加しました</title>
+      <link>http://nayucolony.net/techbookfest2</link>
+      <pubDate>Tue, 11 Apr 2017 02:59:29 +0900</pubDate>
+      
+      <guid>http://nayucolony.net/techbookfest2</guid>
+      <description>&lt;p&gt;2017年4月9日に秋葉原UDXのアキバ・スクエアで開催された&lt;a href=&#34;https://techbookfest.org/event/tbf02&#34;&gt;「技術書典2」&lt;/a&gt;に「nayucolony」というサークルで参加しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;経緯&#34;&gt;経緯&lt;/h2&gt;
+
+&lt;p&gt;昨年、とある勉強会で&lt;a href=&#34;https://twitter.com/llminatoll&#34;&gt;湊川あいさん(@llminatoll)&lt;/a&gt;とお友達になったり、うちの社長が&lt;a href=&#34;https://alexa.design/2nyoUv9&#34;&gt;ドーナツ屋さん&lt;/a&gt;だったりして、なんとなくそういうことをしている人がいるということは知っていました。&lt;/p&gt;
+
+&lt;p&gt;今回も湊川さんのリツイートか何かで回ってきた運営ツイートを見て「ふーん、出てみようかな〜」みたいなコメントをしてところ、「悩むならエントリーしてから悩め」みたいな雑な背中の押し方をする人たちにそそのかされ、気づいたら参加の手はずは整っていました。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;◎貴サークル「nayucolony」は、 え-03 に配置されました。&lt;a href=&#34;https://twitter.com/hashtag/%E6%8A%80%E8%A1%93%E6%9B%B8%E5%85%B8?src=hash&#34;&gt;#技術書典&lt;/a&gt;&lt;/p&gt;&amp;mdash; ナユ (@nayucolony) &lt;a href=&#34;https://twitter.com/nayucolony/status/820874215247052802&#34;&gt;2017年1月16日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;執筆体制&#34;&gt;執筆体制&lt;/h2&gt;
+
+&lt;p&gt;初の書籍執筆で勝手がわからず、かなりどたばたしました。&lt;/p&gt;
+
+&lt;h3 id=&#34;執筆ツールはre-view&#34;&gt;執筆ツールはRe:VIEW&lt;/h3&gt;
+
+&lt;p&gt;Re:VIEWという書籍執筆ツールをつかいました。
+&lt;a href=&#34;http://techbooster.org/&#34;&gt;TECHBOOSTER&lt;/a&gt;様がテキストをビルドする環境がすでに整ったレポジトリ(&lt;a href=&#34;https://github.com/TechBooster/C89-FirstStepReVIEW-v2&#34;&gt;TechBooster/C89-FirstStepReVIEW-v2&lt;/a&gt;）を公開してくれているので環境構築は困りませんでした。&lt;/p&gt;
+
+&lt;p&gt;これのおかげで環境はまるっとそのまま、あとは中身を書くだけという状態が一瞬にして出来上がりました。&lt;/p&gt;
+
+&lt;h3 id=&#34;デザイナーを仲間にした&#34;&gt;デザイナーを仲間にした&lt;/h3&gt;
+
+&lt;p&gt;一番強く僕の背中を蹴っ飛ばした&lt;a href=&#34;https://twitter.com/shizooo85&#34;&gt;shizoooさん(@shizooo85)&lt;/a&gt;が、売り子とデザイナーを引き受けてくれました。形態としては、一応外注です。&lt;/p&gt;
+
+&lt;p&gt;お願いしたことは以下の通りです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当日の売り子&lt;/li&gt;
+&lt;li&gt;表紙のデザイン&lt;/li&gt;
+&lt;li&gt;ダウンロードカードのデザインから印刷業者に出すまで&lt;/li&gt;
+&lt;li&gt;ブースに置くポップの作成&lt;/li&gt;
+&lt;li&gt;進捗管理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;イラストレーターを仲間にした&#34;&gt;イラストレーターを仲間にした&lt;/h3&gt;
+
+&lt;p&gt;デザイナーさんが妹様の&lt;a href=&#34;https://twitter.com/shirokuma_no6&#34;&gt;ろくさん(@shirokuma_no6)&lt;/a&gt;を紹介してくれました。
+こういう絵かける〜というサンプルを見せてもらってすごくピンときたので即決でした。&lt;/p&gt;
+
+&lt;p&gt;イラスト依頼のディレクションなど当然したことがないので「こういう題材で本を書きたいんですけど〜」と伝えたら、その週に突然ラフが飛んできました。この時、バカなディレクターがモックを見て「もうこのままアップしちゃってください」っていっちゃう気持ちがわかった気持ちだったんだろうなあ。髪は短くしたいとか、ターコイズを基調にしたいとか伝えたあとは丸投げしました。これは身内のイラストレーターだから出来る技だから、外注するときはこういうことをしないようにしましょう。&lt;/p&gt;
+
+&lt;p&gt;最終的には「おっぱいが性的すぎるのでもう一枚着せて」とか「スカートは脱がして」みたいな調整をしていてすごく楽しかったです。&lt;/p&gt;
+
+&lt;p&gt;結局&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「メインの全身イラスト」&lt;/li&gt;
+&lt;li&gt;「ダウンロードカード用のちびキャライラスト」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;を描いてもらいました。&lt;/p&gt;
+
+&lt;p&gt;また、身内とはいえ、外注なのでちゃんと報酬もお支払しましたが、明細は内緒です。&lt;/p&gt;
+
+&lt;h2 id=&#34;作業&#34;&gt;作業&lt;/h2&gt;
+
+&lt;p&gt;エントリーから当日まではまるっと3ヶ月あるにもかかわらず、執筆は難航しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;1月と2月は進捗ゼロ&#34;&gt;1月と2月は進捗ゼロ&lt;/h3&gt;
+
+&lt;p&gt;実はまじで1ページも書いていませんでした。理由は、体調を崩したのと、副業を解禁したばかりでそちらの案件で手が埋まっていたという理由。こういうことをしたい〜ということだけが浮ついていた状態でした。&lt;/p&gt;
+
+&lt;p&gt;ちなみにこの時点、ほぼイラストレータさんとのやりとりはありませんでした。&lt;/p&gt;
+
+&lt;h3 id=&#34;3月-地獄&#34;&gt;3月、地獄&lt;/h3&gt;
+
+&lt;p&gt;とにかく書きました。
+先に書いたように、イラストレータさんがめちゃくちゃ仕事がはやい方だったので、基本おまかせしていたらできていて、むしろできてないの自分だけで泣きそうでした。&lt;/p&gt;
+
+&lt;h3 id=&#34;4月-修羅場&#34;&gt;4月、修羅場&lt;/h3&gt;
+
+&lt;p&gt;退社即仮眠、朝まで執筆、一瞬寝て出社みたいな生活をしていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;当日&#34;&gt;当日&lt;/h2&gt;
+
+&lt;p&gt;なんと謎に売れゆきは好調でした。&lt;/p&gt;
+
+&lt;p&gt;最初は「サークル参加費と印刷費くらいは売上でるといいな〜」と思っていたり、あまったダウンロードカードは名刺代わりに持っておきたいから、ちょっと多めに刷ってください〜とか言ってたりとのほほんとした体制でした、が、当日謎に売れ、多めに刷った分も含めて手持ち在庫が全滅しました。ありがとうございました。&lt;/p&gt;
+
+&lt;p&gt;また、分類としては&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ジャケ買い&lt;/li&gt;
+&lt;li&gt;テーマ買い&lt;/li&gt;
+&lt;li&gt;中身めちゃくちゃ見て悩んで買い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の3パターンがあったように思います。&lt;/p&gt;
+
+&lt;h3 id=&#34;ジャケ買い&#34;&gt;ジャケ買い&lt;/h3&gt;
+
+&lt;p&gt;手前味噌ですが、今回表紙がめちゃくちゃかわいいんです。めちゃくちゃ目を惹く。
+サンプルはiPadを一台おいていたものの、目もくれずに買ってくださる方が多々いました。&lt;/p&gt;
+
+&lt;p&gt;イラストレータ冥利に尽きるというやつです。だって中身、全然かわいくないもの。&lt;/p&gt;
+
+&lt;h3 id=&#34;テーマ買い&#34;&gt;テーマ買い&lt;/h3&gt;
+
+&lt;p&gt;ウェブデザイナーやマークアップエンジニア向けのサークルは正直少なかったように思います。
+そんな中で、その職域の人がわかるテーマの書籍を出しているというのは売れた大きな要因だったのかなとか。&lt;/p&gt;
+
+&lt;h3 id=&#34;中身めちゃくちゃ見て悩んで買い&#34;&gt;中身めちゃくちゃ見て悩んで買い&lt;/h3&gt;
+
+&lt;p&gt;まじで執筆者冥利に尽きます。136ページもあったのにざーっと眺めて、最終的に買っていただけるというのは本当にうれしい。あと、読んだ後に表紙に戻してくれるのは、みんなリテラシー高いな〜と感心しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;反省&#34;&gt;反省&lt;/h2&gt;
+
+&lt;h3 id=&#34;執筆&#34;&gt;執筆&lt;/h3&gt;
+
+&lt;p&gt;アウトラインを作ることが大切だということを学びました。目次はそのままタスクリストにもなるし、それぞれがどのくらいの分量になれば目標のページ数に到達するのか？ということがわかります。まじで、段取りが9割です。&lt;/p&gt;
+
+&lt;h3 id=&#34;編集&#34;&gt;編集&lt;/h3&gt;
+
+&lt;p&gt;textlintとかエディターをチームに入れるとかテクニカルレビューを依頼するとかすればよかったと思いました。
+僕は癖で「することができる」「〜になります」という文が多く、横断検索して修正するみたいなことをしてすごく効率悪かったです。自然言語処理で、この辺は機械処理できるはず。&lt;/p&gt;
+
+&lt;p&gt;他にも「クラスをつけるorクラスを与えるorクラスを適用」のどれなのか？など、言い回しの統一にも地味に気を遣いました。この辺は、自分の信用する技術書を参考にすればいいのではないでしょうか。とにかくちまちまちまちま検索置換をして疲れました。&lt;/p&gt;
+
+&lt;h3 id=&#34;サークルチェックはする&#34;&gt;サークルチェックはする&lt;/h3&gt;
+
+&lt;p&gt;二人体制だったものの、前半は一般来場の方が列が途切れるまで徐々に入ってくるという状態でなかなか動けず、動けるころには完売サークルもちらほらありました。最初から会場内に入れるのはサークル参加の特権でもあるのに、こんな本あったのか、欲しかった〜、みたいな思いをしたのはもったいなかったです。
+最低限、ここは絶対にいく！という目処はつけておくことをおすすめします。今回の戦利品はたまたまフォローしていたので知っていたところからゲットしました。よかった。&lt;/p&gt;
+
+&lt;h3 id=&#34;お釣り問題&#34;&gt;お釣り問題&lt;/h3&gt;
+
+&lt;p&gt;ワンコインだったのと、買う側のリテラシーの高さが幸いし困ることはなかったです。
+小銭探してる人には、一万円崩せるよ〜みたいな声かけしてあげたり（笑）、他サークルいくときは金庫の100円玉を両替して持っていったりと、とにかく小銭を流通させると経済活動がスムーズになるのかな？などと思いつつ。&lt;/p&gt;
+
+&lt;h3 id=&#34;サンプル&#34;&gt;サンプル&lt;/h3&gt;
+
+&lt;p&gt;iPadを一台置いていましたが、ちょっとサンプル待ちにさせてしまうことがありました。一章だけチラ見せできるコピー本だったり、端末を複数だったり、もっとサンプルを手に取りやすいようにしておこうとおもいました。ま、次は物理本を出すけどな！&lt;/p&gt;
+
+&lt;h3 id=&#34;ソールドアウト対応&#34;&gt;ソールドアウト対応&lt;/h3&gt;
+
+&lt;p&gt;誤算でも売れるのは喜ぶべきことですが、ソールドした時のことを何も考えていなかったため、中盤非常に焦ったという話でした。
+嬉しい誤算ではあるものの、ちゃんと考えておくべきでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;次回に向けて&#34;&gt;次回に向けて&lt;/h2&gt;
+
+&lt;h3 id=&#34;頒布物について&#34;&gt;頒布物について&lt;/h3&gt;
+
+&lt;p&gt;今回、テーマがCSSフレームワーク完全網羅を目指していたのでページが136ページにも及びましたが、絶対本屋で出ないようなニッチなテーマを深掘りして、30ページ程度の物理本にするのがイベント的にもよさそうだなと感じました。ページ数が多すぎると、読む方も大変だし、印刷代はかさむし、あまりイベント向きじゃないです。次回、単著なら30ページ程度書いて、内容をめちゃくちゃしっかり整えたいです。だって薄い本だもん。ものが手に残るのは、やっぱりうれしいですしね。&lt;/p&gt;
+
+&lt;p&gt;また、せっかくかわいいキャラクターなので、ステッカーがほしい、という声もちらほら頂きました。エンジニアはステッカーが好き。実は制作チームにもその意見はあったのですが、納期との兼ね合いで見送りました。次はつくろう。&lt;/p&gt;
+
+&lt;h3 id=&#34;共著という選択肢もある&#34;&gt;共著という選択肢もある&lt;/h3&gt;
+
+&lt;p&gt;複数人で執筆チームを組んで制作をすると、レビューもできるし、負担も少ないし、告知の範囲も広がります。次回は共著だったり、寄稿だったりという手段も考えたいです。ぜひ、ご依頼待ってます。&lt;/p&gt;
+
+&lt;h3 id=&#34;イベント終了後の頒布&#34;&gt;イベント終了後の頒布&lt;/h3&gt;
+
+&lt;p&gt;近いうちに何かしらの手段を取る予定ですが、もう物理カードがないのでデータを買ってもらうことになっちゃうのでなんだか寂しいです。どうしよ。&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;技術書典運営チームの皆さん、本当に楽しいイベントをありがとうございました。&lt;/p&gt;
+
+&lt;p&gt;また、ブースにお越し頂いたみなさんも本当にありがとうございました。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>フリーランスエンジニアTips勉強会に行ってきました</title>
@@ -3113,259 +3283,6 @@ display: flex;
 
 &lt;p&gt;&lt;code&gt;&amp;quot;caniuse.vendor&amp;quot;:false&lt;/code&gt;を書いちゃうと挿入機能がうまく無効化してくれない場合があるので
 上記のようにするといいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>styleguideジェネレータ「aigis」を使ってみた</title>
-      <link>http://nayucolony.net/aigis</link>
-      <pubDate>Wed, 21 Sep 2016 21:14:27 +0900</pubDate>
-      
-      <guid>http://nayucolony.net/aigis</guid>
-      <description>&lt;p&gt;スタイルガイドジェネレータ「aigis」というものがあるらしく、ちょっと触って見るついでにメモを残しておきます。&lt;/p&gt;
-
-&lt;p&gt;exampleを触ってだいたいの感触を掴むというのがこのエントリの趣旨です。&lt;/p&gt;
-
-&lt;h2 id=&#34;aigisとは&#34;&gt;aigisとは&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.pxgrid.com/&#34;&gt;株式会社ピクセルグリッド&lt;/a&gt;謹製のスタイルガイドジェネレータです。
-&lt;/p&gt;
-
-&lt;p&gt;以下、&lt;a href=&#34;https://pxgrid.github.io/aigis/docs/jp/&#34;&gt;日本語ドキュメント&lt;/a&gt;より引用。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;aigisでは、メンテナブルなスタイルガイドを作成することができます。 aigisを使えば以下の様なことが可能です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テキストファイルであれば、.scss .styls .mdなど、どのような形式からでもスタイルガイドを作成できます。&lt;/li&gt;
-&lt;li&gt;Markdownを使用してドキュメントを記述することができます。&lt;/li&gt;
-&lt;li&gt;スタイルガイドのテーマをカスタマイズすることができます。またテーマでは、JadeやHandlebarsといったテンプレートエンジンを利用できます。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;なお、このエントリは割と &lt;strong&gt;黒い画面こわい人向け&lt;/strong&gt; の記事です。&lt;/p&gt;
-
-&lt;p&gt;黒い画面怖くない人は、適宜読み飛ばしてください！
-(とか言っておきながら、npmコマンドとgitコマンドが動く環境になっていることが前提です！)&lt;/p&gt;
-
-&lt;h2 id=&#34;作業用フォルダをつくる&#34;&gt;作業用フォルダをつくる&lt;/h2&gt;
-
-&lt;p&gt;そういえば、いつも作業するときホームディレクトリに「Works」とか「Practice」とか作ってその中でやってるんですけど、なんかディレクトリ作るのに参考になるサイトないですかね〜。&lt;/p&gt;
-
-&lt;p&gt;とりあえずホームディレクトリに練習用フォルダを作っちゃいましょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cd ~&lt;/code&gt;でホームディレクトリに戻れます。&lt;/p&gt;
-
-&lt;p&gt;ちなみに、ホームディレクトリとは&lt;code&gt;Macintosh HD &amp;gt; ユーザ &amp;gt; ***(あなたのユーザ名)&lt;/code&gt; &lt;strong&gt;←ココ&lt;/strong&gt;&lt;/p&gt;
-$ cd ~            //ホームディレクトリへ移動
-$ mkdir practice  //practiceというフォルダを作る
-$ cd ./practice   //practiceへ移動
-
-&lt;p&gt;（$マークよりも右側を記述してくださいね）&lt;/p&gt;
-
-&lt;h2 id=&#34;aigisを落としてくる&#34;&gt;aigisを落としてくる&lt;/h2&gt;
-$ git clone https://github.com/pxgrid/aigis.git
-
-&lt;p&gt;これは、今いるディレクトリに&lt;a href=&#34;https://github.com/pxgrid/aigis&#34;&gt;aigis&lt;/a&gt;の中身をダウンロードしてくるコマンド。&lt;/p&gt;
-
-&lt;p&gt;gitコマンドねーよ！みたいなことを言われた人はがんばってgitをインストールしてください。&lt;/p&gt;
-Cloning into &#39;aigis&#39;...
-remote: Counting objects: 4360, done.
-remote: Total 4360 (delta 0), reused 0 (delta 0), pack-reused 4360
-Receiving objects: 100% (4360/4360), 933.49 KiB | 246.00 KiB/s, done.
-Resolving deltas: 100% (2229/2229), done.
-Checking connectivity... done.
-
-&lt;p&gt;まあなんかこんな感じになったらokです。&lt;/p&gt;
-
-&lt;h2 id=&#34;aigisをインストールする&#34;&gt;aigisをインストールする&lt;/h2&gt;
-
-&lt;p&gt;落としてきたのは、aigisに必要なファイルのダウンロード指示書だと思ってください。&lt;/p&gt;
-
-&lt;p&gt;（いろんなプログラムを組み合わせて動いてるから、全部詰め込むと重いんだよ）&lt;/p&gt;
-
-&lt;p&gt;ここで、追加でaigisに関連するファイルをインストールします。&lt;/p&gt;
-$ cd ./aigis/examples                //サンプルフォルダへ移動
-$ npm install --save-dev node-aigis  //aigisをインストール
-$ ./node_modules/.bin/aigis -v       //aigisのバージョンチェック
-1.1.5                                //バージョン
-
-&lt;p&gt;&lt;code&gt;$ npm install --save-dev node-aigis&lt;/code&gt;が動かねーよっていう方は多分npmだのnode.jsだのが入っていないので頑張っていれてください。&lt;/p&gt;
-
-&lt;p&gt;記事書いてる時点では1.1.5でしたがまあこの辺の数字は随時かわるかもしれません。&lt;/p&gt;
-
-&lt;h2 id=&#34;aigisのテンプレートを生成&#34;&gt;aigisのテンプレートを生成&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;$ ./node_modules/.bin/aigis init&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;こうなったらokです&lt;/p&gt;
-Created the following files and directories:
-Cowardly refusing to overwrite existing: aigis_config.yml
-  aigis_assets
-  aigis_assets/css/highlight/okadia.css
-  aigis_assets/css/theme.css
-  template_ejs
-  template_ejs/components.ejs
-  template_ejs/index.ejs
-  template_ejs/sidemenu.ejs
-
-&lt;h2 id=&#34;aigisを起動&#34;&gt;aigisを起動&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;$ ./node_modules/.bin/aigis run -c ./aigis_config.yml&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;こんな感じになります。
-意味的には、今いるファイルにある&lt;code&gt;aigis_config.yml&lt;/code&gt;をaigisに読み込ませるような感じです。&lt;/p&gt;
-[Info] Config File: /Users/yuki/practice/aigis/examples/aigis_config.yml
-[Info] Start: Generate Styleguide
-[Info] Output: /Users/yuki/practice/aigis/examples/styleguide
-[Info] Finish: Generate Styleguide
-
-&lt;p&gt;はい、これでok。&lt;/p&gt;
-
-&lt;h2 id=&#34;スタイルガイドを見てみる&#34;&gt;スタイルガイドを見てみる&lt;/h2&gt;
-
-&lt;p&gt;では、Finderでホームディレクトリ内に作った&lt;code&gt;practice&lt;/code&gt;フォルダの中の&lt;code&gt;aigis&lt;/code&gt;フォルダを開いてみましょう。&lt;br /&gt;
-&lt;code&gt;styleguide&lt;/code&gt;といフォルダがあると思いますが、これが先ほどaigisを起動させることで生成されたスタイルガイドです。
-&lt;code&gt;index.html&lt;/code&gt;を開くと、スタイルガイドが生成されていることがわかると思います。&lt;/p&gt;
-
-&lt;h3 id=&#34;index-html&#34;&gt;index.html&lt;/h3&gt;
-
-&lt;p&gt;基本的には、全て&lt;code&gt;aigis_config.yml&lt;/code&gt;がどのファイルをどうするのかという管理をしています。&lt;/p&gt;
-# Index page created from markdown file
-index: ./index.md
-
-&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;は、&lt;code&gt;aigis_config.yml&lt;/code&gt;と同階層にある&lt;code&gt;index.md&lt;/code&gt;から生成しますよ、とのこと。&lt;/p&gt;
-
-&lt;h3 id=&#34;その他ページ&#34;&gt;その他ページ&lt;/h3&gt;
-
-&lt;p&gt;サイドバーの&lt;code&gt;base&lt;/code&gt;をクリックするとbase部分に関する記述が出てきます。
-（なんか最後にスラッシュついてないのでちょっとおかしな遷移しますが）
-他ページも同様です。
-このあたりも&lt;code&gt;aigis_config.yml&lt;/code&gt;に書いています&lt;/p&gt;
-#The directory containing the source files to parse recursively
-source:
-  - ./css
-  - ./demo.md
-
-&lt;p&gt;つまり、今いる&lt;code&gt;examples&lt;/code&gt;フォルダ内の&lt;code&gt;css&lt;/code&gt;フォルダ内のテキストファイル(今回だと&lt;code&gt;style.css&lt;/code&gt;)、もしくは&lt;code&gt;demo.md&lt;/code&gt;から生成しますよということですね。
-他にも対象ファイルを増やしたければここに追記していきましょう。
-ちなみに、最初の「aigisとは？」の部分に書いたように、拡張子はかなりいろんな部分をサポートしているみたいです。
-ただし、&lt;code&gt;aigis_config.yml&lt;/code&gt;の以下の部分で「どの拡張子のファイルを対象にするのか」は書いておくこと。&lt;/p&gt;
-# The types that aigis will scan to document comment
-source_type:
-  - .css   
-  - .sass  
-  - .scss  
-  - .styl  
-# If you want to generate documents from markdown
-# source_type: .md
-
-&lt;p&gt;また、&lt;code&gt;.md&lt;/code&gt;がリストにないのに&lt;code&gt;demo.md&lt;/code&gt;が対象になっているのは、ファイル名と拡張子を指定しているからです。
-&lt;code&gt;./css&lt;/code&gt;のように、フォルダを指定した場合はフォルダ内にある上記リストの拡張子を持つファイルのみが生成対象になります。
-ファイル名と拡張子まで指定しなくても&lt;code&gt;.md&lt;/code&gt;を生成対象にしたい場合、一番下の行の#を消してコメントアウトを解除するか、リストに&lt;code&gt;.md&lt;/code&gt;を追加してしまいましょう。&lt;/p&gt;
-
-&lt;p&gt;(&lt;code&gt;//&lt;/code&gt;で始まる部分は説明用に私が記述したものです。)&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre&gt;
-
-
-//以下、メタ情報。カテゴリやタグの情報を書くとサイドバーとメインに自動反映してくれる。
-
-/*
----                 
-name: Button
-category:           
-  - mod/btn         
-  - base            
-  - mod             
-tag:                
-  - latest          
-  - base            
-compile: false
----
-
-//以下、メインセクション記述。markdownで書くこと。
-
-Button styles.
-* Base button style.          
-* Use `a` or `button` tag.
-
-//以下シンタックスエリア。ファイル形式を書くと自動でシンタックスハイライトがかかる。
-
-```html
-&amp;lt;a class=&#34;ag-btn&#34;&gt;Button&amp;lt;/a&gt;
-&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;Button&amp;lt;/button&gt;
-```
-
-```ejs
-&amp;lt;a class=&#34;ag-btn&#34;&gt;&amp;lt;%- name %&gt;&amp;lt;/a&gt;
-&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;&amp;lt;%- name %&gt;&amp;lt;/button&gt;
-```
-
-```jade
-a.ag-btn
-  != name
-button.ag-btn.ag-btn--primary
-  != name
-```
-
-```hbs
-{{include &#39;./button.html&#39;}}
-&amp;lt;hr&gt;
-&amp;lt;a class=&#34;ag-btn&#34;&gt;{{name}}&amp;lt;/a&gt;
-&amp;lt;button class=&#34;ag-btn ag-btn--primary&#34;&gt;{{name}}&amp;lt;/button&gt;
-```
-
-*/
-
-//以下、コンポーネントのCSS
-
-
-.ag-btn {
-  -webkit-appearance: none;
-  display: inline-block;
-  border: none;
-  background-color: #3DB680;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-  line-height: 40px;
-  min-width: 200px;
-  font-size: 20px;
-  box-sizing: border-box;
- }
-
-.ag-btn--primary {
-  color: black;
-  background-color: #FFEA3A;
- }
-
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code&gt;:&lt;/code&gt;の後に半角スペースが空いてないとエラー吐いたりするなど割とシビアなので注意。
-あんまり縦長になるとつらそうなので、1スタイル1ファイルとかでいいかもしれませんね。
-今回だと、&lt;code&gt;header.css&lt;/code&gt;、&lt;code&gt;footer.css&lt;/code&gt;・・・などのように。&lt;/p&gt;
-
-&lt;p&gt;ちなみに、今回は&lt;code&gt;examples/styleguide&lt;/code&gt;の中にファイルが吐き出されましたが、フォルダ名なんかは&lt;code&gt;aigis_config.yml&lt;/code&gt;内のここで変えられますよ。&lt;/p&gt;
-# The directory that aigis will build to
-dest: ./styleguide
-
-&lt;p&gt;この&lt;code&gt;dest:&lt;/code&gt;以降を任意のパスに書き換えることで好きな階層の好きなフォルダ内に吐き出させることができます。&lt;/p&gt;
-
-&lt;p&gt;また、更新があった場合は随時
-&lt;code&gt;./node_modules/.bin/aigis run -c ./aigis_config.yml&lt;/code&gt;
-を叩いて生成しなおしてください。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;さて、これで、aigisを使って自由にメンテナブルなstyleguideを作ることができますね！&lt;/p&gt;
-
-&lt;p&gt;スニペット管理にもなりますし、これでスタイル管理することで迷子にならないサイト制作をしていきましょう！&lt;/p&gt;
-
-&lt;p&gt;気が向いたら、gulpにaigisを組み込んで、変化があったら自動で生成されるようにしたりする方法も書きたいなと思います！&lt;/p&gt;
-
-&lt;p&gt;またこの記事は何か気づきがありしだい追記していく予定なのでどうぞよろしくおねがいします！&lt;/p&gt;</description>
     </item>
     
   </channel>
