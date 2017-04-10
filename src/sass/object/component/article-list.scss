@@ -1,6 +1,12 @@
 .article-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   &__item {
     width: 100%;
+    @include media-query(md) {
+      width: calc(50% - 10px);
+    }
     &:not(:last-child) {
       margin-bottom: 20px;
     }
