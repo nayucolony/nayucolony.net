@@ -11,6 +11,8 @@ tags = ["event"]
 
 <!--more-->
 
+当日は[「Bulma Code Reading フレームワークに学ぶCSSテクニック」](https://taimen.jp/view/?item_id=2791)という電子書籍を頒布していました。
+
 ## 経緯
 
 昨年、とある勉強会で[湊川あいさん(@llminatoll)](https://twitter.com/llminatoll)とお友達になったり、うちの社長が[ドーナツ屋さん](https://alexa.design/2nyoUv9)だったりして、なんとなくそういうことをしている人がいるということは知っていました。
