@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://nayucolony.net/strengthsfinder</loc>
+    <lastmod>2017-04-13T00:24:07+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nayucolony.net/techbookfest2</loc>
     <lastmod>2017-04-11T02:59:29+09:00</lastmod>
   </url>
@@ -83,7 +88,7 @@
   
   <url>
     <loc>http://nayucolony.net/tags/</loc>
-    <lastmod>2017-01-18T20:02:45+09:00</lastmod>
+    <lastmod>2017-04-13T00:24:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,7 +124,7 @@
   
   <url>
     <loc>http://nayucolony.net/post/</loc>
-    <lastmod>2017-04-11T02:59:29+09:00</lastmod>
+    <lastmod>2017-04-13T00:24:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -130,7 +135,7 @@
   
   <url>
     <loc>http://nayucolony.net/</loc>
-    <lastmod>2017-04-11T02:59:29+09:00</lastmod>
+    <lastmod>2017-04-13T00:24:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
