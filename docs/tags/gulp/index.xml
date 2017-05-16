@@ -2,67 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gulp on nayucolony.net</title>
-    <link>http://nayucolony.net/tags/gulp/index.xml</link>
+    <link>http://nayucolony.net/tags/gulp/</link>
     <description>Recent content in Gulp on nayucolony.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <atom:link href="http://nayucolony.net/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2016 13:18:13 +0900</lastBuildDate>
+    
+	<atom:link href="http://nayucolony.net/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>globalにgulp-cliをインストールしようとするとエラーが発生する</title>
-      <link>http://nayucolony.net/gulp-cli</link>
+      <link>http://nayucolony.net/gulp-cli/</link>
       <pubDate>Tue, 13 Dec 2016 13:18:13 +0900</pubDate>
       
-      <guid>http://nayucolony.net/gulp-cli</guid>
+      <guid>http://nayucolony.net/gulp-cli/</guid>
       <description>&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
 
 &lt;p&gt;gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
 インストールは中断され、gulp-cliがインストールできない。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-nayucolony:~ demo$ sudo npm install -g gulp-cli
-/usr/local/bin/gulp -&gt; /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
-npm ERR! Darwin 15.6.0
-npm ERR! argv &#34;/usr/local/bin/node&#34; &#34;/usr/local/bin/npm&#34; &#34;install&#34; &#34;-g&#34; &#34;gulp-cli&#34;
-npm ERR! node v6.9.2
-npm ERR! npm  v3.10.9
-npm ERR! path /usr/local/share/man/man1/gulp.1
-npm ERR! code EEXIST
-
-npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
-npm ERR! File exists: /usr/local/share/man/man1/gulp.1
-npm ERR! Move it away, and try again.
-
-npm ERR! Please include the following file with any support request:
-npm ERR!     /Users/demo/npm-debug.log
-nayucolony:~ demo$ gulp -v
--bash: /usr/local/bin/gulp: No such file or directory
-nayucolony:~ demo$
-
-&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
-
-&lt;p&gt;下記に注目&lt;/p&gt;
-npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
-npm ERR! File exists: /usr/local/share/man/man1/gulp.1
-npm ERR! Move it away, and try again.
-
-&lt;p&gt;npm側から操作できないゴミファイルが存在してインストールがうまくいってない様子&lt;/p&gt;
-
-&lt;h2 id=&#34;対応&#34;&gt;対応&lt;/h2&gt;
-
-&lt;p&gt;下記のコマンドを叩いて、上記の２行目に表示されているゴミファイルを削除する&lt;/p&gt;
-sudo rm /usr/local/share/man/man1/gulp.1
-
-&lt;p&gt;その後、改めて&lt;/p&gt;
-sudo npm install -g gulp-cli
-
-&lt;p&gt;を叩くことでインストールが完了した。&lt;/p&gt;
-
-&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;sudo&lt;/code&gt;は管理者権限で実行するためのコマンドで、パスワードを要求されることがあるので都度入力を行うこと。&lt;/p&gt;
-
-&lt;p&gt;また、本件とは関係しないが、gulp-cliをglobalにインストールすることについては公式の推奨事項ではあるものの、否定的な意見もあるのでよく考えて行うこと。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
