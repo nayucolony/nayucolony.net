@@ -12,6 +12,7 @@ deployment:
     branch: master
     commands:
       - git clone git@github.com:nayucolony/nayucolony.net.git
+      - ls
       - hugo
       - git add .
       - git commit -m "[ci skip] publish"
