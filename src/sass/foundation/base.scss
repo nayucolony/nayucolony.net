@@ -40,3 +40,8 @@ a:hover {
   transition: .2s;
   color: $color-pale-black;
 }
+
+ul,ol {
+  list-style-type: none;
+  padding: 0;
+}

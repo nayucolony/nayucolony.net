@@ -496,6 +496,10 @@ a:hover {
   transition: .2s;
   color: #555; }
 
+ul, ol {
+  list-style-type: none;
+  padding: 0; }
+
 /*layout*/
 .l-header {
   display: -ms-flexbox;
@@ -506,9 +510,15 @@ a:hover {
 .l-footer {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 30px 0; }
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px 0;
+  width: 680px;
+  margin: 0 auto; }
+
+.footer-heading {
+  font-weight: bold;
+  font-size: 1.25rem; }
 
 .l-main {
   width: 90%;
@@ -630,17 +640,14 @@ a:hover {
 .article-list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .article-list__item {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .article-list > li {
+    padding-top: .75em;
+    padding-bottom: .75em;
     width: 100%; }
-    @media screen and (min-width: 768px) {
-      .article-list__item {
-        width: calc(50% - 10px); } }
-    .article-list__item:not(:last-child) {
-      margin-bottom: 20px; }
+    .article-list > li:not(:last-child) {
+      border-bottom: 1px solid #555; }
 
 .article-card {
   display: -ms-flexbox;
