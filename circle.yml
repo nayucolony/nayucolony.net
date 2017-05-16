@@ -15,6 +15,7 @@ deployment:
       - ls
       - rm -rf nayucolony.net
       - rm -rf docs
+      - mkdir docs
       - cd docs && touch CNAME
       - echo 'nayucolony.net' > CNAME
       - hugo
