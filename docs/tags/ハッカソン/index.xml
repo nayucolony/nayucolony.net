@@ -2,24 +2,132 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ハッカソン on nayucolony.net</title>
-    <link>http://nayucolony.net/tags/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3/</link>
+    <link>http://nayucolony.net/tags/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3/index.xml</link>
     <description>Recent content in ハッカソン on nayucolony.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Mon, 14 Nov 2016 13:32:16 +0900</lastBuildDate>
-    
-	<atom:link href="http://nayucolony.net/tags/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://nayucolony.net/tags/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>「はじめてのハッカソンvol.19 」に参加してきました。</title>
-      <link>http://nayucolony.net/hackathon-firststep-19/</link>
+      <link>http://nayucolony.net/hackathon-firststep-19</link>
       <pubDate>Mon, 14 Nov 2016 13:32:16 +0900</pubDate>
       
-      <guid>http://nayucolony.net/hackathon-firststep-19/</guid>
+      <guid>http://nayucolony.net/hackathon-firststep-19</guid>
       <description>&lt;p&gt;先日参加したイベント「&lt;a href=&#34;https://connpass.com/event/40602/&#34;&gt;CSS3の新レイアウト「Flexbox」ハンズオン 〜Flexでコレできるかな？〜&lt;/a&gt;」で知り合った「&lt;a href=&#34;http://design-illume.com/&#34;&gt;デザイン イリューム&lt;/a&gt;」のみまさんの主催イベント 「&lt;a href=&#34;http://hackathon.connpass.com/event/43181/&#34;&gt;はじめてのハッカソン&lt;/a&gt;」 に参加してきました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ハッカソン（英語: hackathon 、別名:hack day ,hackfest ,codefest ）とはソフトウェア開発分野のプログラマやグラフィックデザイナー、ユーザインタフェース設計者、プロジェクトマネージャらが集中的に作業をするソフトウェア関連プロジェクトのイベントである。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3&#34;&gt;ハッカソン – Wikipedia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ハッカソンはプログラマーが集まってやるものだと思っていたのですが、イベント告知をふと見る &lt;strong&gt;「デザイナーやマークアップエンジニアも募集しています！」&lt;/strong&gt; とのこと。&lt;/p&gt;
+
+&lt;p&gt;これは行ってみるしかない！ということで、今回は &lt;strong&gt;マークアップエンジニア枠&lt;/strong&gt; での参加となりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;チーム分け&#34;&gt;チーム分け&lt;/h2&gt;
+
+&lt;p&gt;当日、チーム分けが発表され、私のチームはこんな感じ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;webデザイナー　１名&lt;/li&gt;
+&lt;li&gt;マークアップエンジニア　１名（私）&lt;/li&gt;
+&lt;li&gt;バックエンドエンジニア　2名&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;合計4名でバランスのいいチームでした。&lt;/p&gt;
+
+&lt;p&gt;他のチームにはディレクターがいたり、エンジニア３名で構成されたチームもあり、それぞれのチームが独自のフローで開発を行っていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;アイデア出し&#34;&gt;アイデア出し&lt;/h2&gt;
+
+&lt;p&gt;自己紹介をしつつアイデア出し。&lt;/p&gt;
+
+&lt;p&gt;今回は &lt;strong&gt;「音声感情認識API」&lt;/strong&gt; が提供されており、それを絡めて何かやろう！ということだけを決めてアイデアを出していきました。&lt;/p&gt;
+
+&lt;p&gt;たまたま自己紹介の中の「最近面白いアプリ」という項目があり、そこで「snow」があがったので、音声感情認識と絡めて 「電話版snowとかどう？」という &lt;strong&gt;何気ない発言からアイデア出しが加速した&lt;/strong&gt; 時はとてもワクワクしました。&lt;/p&gt;
+
+&lt;p&gt;何気ないキーワードの組み合わせから突然アイデア出しにエンジンがかかるので、尻込みせずにどんどん発言していくのが大事です！&lt;/p&gt;
+
+&lt;p&gt;結局、色んな方向に話が拡大しつつも、時間と実装の面も考慮して実装内容を詰めていったところで午前が終了。&lt;/p&gt;
+
+&lt;h2 id=&#34;実装作業&#34;&gt;実装作業&lt;/h2&gt;
+
+&lt;p&gt;実装内容と役割を分担したところで、実際に作業開始。&lt;/p&gt;
+
+&lt;p&gt;時間制限と、各自異なる分野異なる環境で普段開発を行っているので、基本的に &lt;strong&gt;共通言語は無い&lt;/strong&gt; ものと思わなければいけません。&lt;/p&gt;
+
+&lt;p&gt;早速バックエンドチームがAPIの仕様策定から、何を引き渡すのか？という話をはじめて、デザイナーが必要であろう素材を作り始めたところで&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;私「（あれ、何したらいいんだ）」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;今まで指示通りのオペレーションばかりしていたツケがこういうところで出てくるのだなと痛感。。。&lt;br&gt;
+普段から自分で考えてやっていかないとほんとだめですね。&lt;/p&gt;
+
+&lt;p&gt;そうはいってもエンジニアの端くれですので、プロトタイピングも兼ねてビュー部分の実装をHTML/CSSオンリーで進めていきました。
+アニメーションや状態の切り替えは 「男は黙ってjQuery」 ということでフルjQuery実装。下手にフレームワークを使うより、より共通に近いであろうjQueryを採用しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「あれ、jsonデータってどうやって取得するん」&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;「あれ、API叩くって、そもそもなんやったっけ」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;などとサーバ連携を数えるレベルでしたことなく、classの付け外しやクリックイベントくらいでしかjQueryを使ったことがない私が変な汗をかきそうになったりもしましたが、なんとかgoogle先生で解決。&lt;/p&gt;
+
+&lt;p&gt;そういうの、何度か写経したことは絶対あるんですけどね、教本とかで。
+写経して「ふーんなるほどね」となったところで、何も身についてないのが現実でした。
+実案件ですんなり使えて初めて身についたと言えるですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;成果報告&#34;&gt;成果報告&lt;/h2&gt;
+
+&lt;p&gt;成果報告の時点で思ったことが一つあります。&lt;/p&gt;
+
+&lt;p&gt;それは、&lt;strong&gt;「なんとか発表できる形を整える」&lt;/strong&gt; こと。&lt;/p&gt;
+
+&lt;p&gt;時間をたっぷり使えれば1から10まで自分の理想通りにいくかもしれませんが、ハッカソンは時間制限があります。&lt;/p&gt;
+
+&lt;p&gt;ここでの発表の形がそれぞれのチームで違ったのが面白かったです。&lt;/p&gt;
+
+&lt;p&gt;わたしのチームは取り決めをしていたわけではありませんが「とにかくデモページを動かす」というところに持って行こうとしていました。&lt;/p&gt;
+
+&lt;p&gt;結果、付加機能をかなりそぎ落とし、かなりミニマムな状態でしたがデモページをリリースできたのは良かったと思います。&lt;/p&gt;
+
+&lt;p&gt;終了時点で「最低限の機能+かなり完成形に近い付加機能」という状態だったのも、いい形で終えることができたのではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;他の２チームの発表も非常に参考になりました。&lt;/p&gt;
+
+&lt;p&gt;片方のチームは「フル実装されたプロトタイプをXDで作成」
+もう片方は「スライドに仕様をわかりやすくまとめて発表」
+と、それぞれ異なるアウトプットの形に持って行っていました。&lt;/p&gt;
+
+&lt;p&gt;「フル実装されたプロトタイプをXDでプレゼン」はディレクターがいたチームの報告で行われていました。デザイナーとディレクターでしっかり作り込まれたプロトタイプと、超ロジカルな要件定義、ターゲットユーザ、ペルソナ設定の説得力には驚きました。&lt;/p&gt;
+
+&lt;p&gt;また、「スライドに仕様をわかりやすくまとめて発表」を行っていたのはエンジニア３人で構成されたチームによって行われていました。作るアプリの特性上、視覚で分かりやすくできるものではなかったのですが、データの流れなどを丁寧に説明しておりなるほどと納得できました。&lt;/p&gt;
+
+&lt;p&gt;「アイデアを殺してでも実物が存在する状態にもっていく」にひたすらこだわったのはデザイナーとフロントエンドエンジニアが実装に関わったわたしのチームならではの発想だったのかなと思いました。実際にモノが存在しているという状態にもっていけたのはこっそり満足しています（笑）&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;わたしが伝えたかったハッカソンの魅力は以下の通りです！&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自分のできないことに気づける&lt;/li&gt;
+&lt;li&gt;別分野の人と直接関われる&lt;/li&gt;
+&lt;li&gt;デザイナー、超スピードで素材生み出してヤバイ。&lt;/li&gt;
+&lt;li&gt;サーバサイド、「解析機能できたよ」と言われた時はリアルに「えっ」って声出ました。&lt;/li&gt;
+&lt;li&gt;「0から自分たちが作ったもの」はやっぱり嬉しい。&lt;/li&gt;
+&lt;li&gt;「こうすればよかった」が引き出しになるし、モチベーションに繋がる。
+
+&lt;ul&gt;
+&lt;li&gt;↑の後悔を取り戻すために早くなんか作りたい（笑）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;「はじめてのハッカソン」はエンジニアだけのイベントじゃありません！&lt;/strong&gt;&lt;br&gt;
+どの職種でもモノづくりに関わる人はみんなが活躍できるし楽しめるイベントだと思いました！&lt;/p&gt;
+
+&lt;p&gt;次回参加するときまでに、もっとサーバサイドとの連携に用いる技術を習得すると決めました！&lt;/p&gt;</description>
     </item>
     
   </channel>
