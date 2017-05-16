@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="generator" content="Hugo 0.17-DEV" />
     
-    <title>globalにgulp-cliをインストールしようとするとエラーが発生する | nayucolony.net</title>
+    <title> | nayucolony.net</title>
     
 
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    <meta property="og:title" content="globalにgulp-cliをインストールしようとするとエラーが発生する" />
+    <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://nayucolony.net/gulp-cli/" />
+    <meta property="og:url" content="http://nayucolony.net/test/" />
     <meta property="og:image" content="https://nayucolony.net" />
     <meta property="og:site_name" content="nayucolony.net" />
-    <meta property="og:description" content="現象
-
-gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
-インストールは中断され、gulp-cliがインストールできない。
-
-" />
+    <meta property="og:description" content="test" />
 
     
     <meta property="fb:app_id" content="736893639822676" />
@@ -78,19 +73,19 @@ ga('send', 'pageview');
     
 <article class="article-post">
 	<header>
-    <h1 class="article-post__title">globalにgulp-cliをインストールしようとするとエラーが発生する</h1>
-    <time datetime="2016-12-13T13:18:13&#43;09:00">
-      2016年12月13日
+    <h1 class="article-post__title"></h1>
+    <time datetime="2017-05-16T17:17:49&#43;09:00">
+      2017年5月16日
     </time>
     <ul class="share-buttons">
       <li>
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </li>
       <li>
-        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="globalにgulp-cliをインストールしようとするとエラーが発生する" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
       </li>
       <li>
-        <div class="fb-like" data-href="http://nayucolony.net/gulp-cli/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+        <div class="fb-like" data-href="http://nayucolony.net/test/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
       </li>
       <li class="share-buttons__pocket">
         <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
@@ -100,55 +95,8 @@ ga('send', 'pageview');
 
     <div class="hero"><img src="" alt=""/></div>
   </header>
-  <h2 id="現象">現象</h2>
+  <p>test</p>
 
-<p>gulp 4.x系に対応するべく、globalからgulp(3.9.0)をアンインストールし、改めてgulp-cliをインストールしようとしたろころ下記のようなエラーが発生する。
-インストールは中断され、gulp-cliがインストールできない。</p>
-
-<p></p>
-nayucolony:~ demo$ sudo npm install -g gulp-cli
-/usr/local/bin/gulp -> /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
-npm ERR! Darwin 15.6.0
-npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp-cli"
-npm ERR! node v6.9.2
-npm ERR! npm  v3.10.9
-npm ERR! path /usr/local/share/man/man1/gulp.1
-npm ERR! code EEXIST
-
-npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
-npm ERR! File exists: /usr/local/share/man/man1/gulp.1
-npm ERR! Move it away, and try again.
-
-npm ERR! Please include the following file with any support request:
-npm ERR!     /Users/demo/npm-debug.log
-nayucolony:~ demo$ gulp -v
--bash: /usr/local/bin/gulp: No such file or directory
-nayucolony:~ demo$
-
-<h2 id="原因">原因</h2>
-
-<p>下記に注目</p>
-npm ERR! Refusing to delete /usr/local/share/man/man1/gulp.1: ../../../lib/node_modules/gulp/gulp.1 symlink target is not controlled by npm /usr/local
-npm ERR! File exists: /usr/local/share/man/man1/gulp.1
-npm ERR! Move it away, and try again.
-
-<p>npm側から操作できないゴミファイルが存在してインストールがうまくいってない様子</p>
-
-<h2 id="対応">対応</h2>
-
-<p>下記のコマンドを叩いて、上記の２行目に表示されているゴミファイルを削除する</p>
-sudo rm /usr/local/share/man/man1/gulp.1
-
-<p>その後、改めて</p>
-sudo npm install -g gulp-cli
-
-<p>を叩くことでインストールが完了した。</p>
-
-<h2 id="備考">備考</h2>
-
-<p><code>sudo</code>は管理者権限で実行するためのコマンドで、パスワードを要求されることがあるので都度入力を行うこと。</p>
-
-<p>また、本件とは関係しないが、gulp-cliをglobalにインストールすることについては公式の推奨事項ではあるものの、否定的な意見もあるのでよく考えて行うこと。</p>
   <footer>
     <hr>
     <ul class="share-buttons">
@@ -171,14 +119,9 @@ sudo npm install -g gulp-cli
     
     <li class="pager__item">
       <div class="pager__label -prev">前の投稿</div>
-      <a class="pager__link" href="http://nayucolony.net/rscss/">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</a>
+      <a class="pager__link" href="http://nayucolony.net/strengthsfinder/">ストレングス・ファインダー2.0をやってみました</a>
     </li>
     
-    
-    <li class="pager__item">
-      <div class="pager__label -next">次の投稿</div>
-      <a class="pager__link" href="http://nayucolony.net/dist13/">DIST.13「トクするCSS」に出演しました。</a>
-    </li>
     
   </ol>
   
