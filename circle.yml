@@ -15,8 +15,8 @@ deployment:
       - ls
       - rm -rf nayucolony.net
       - rm -rf docs
-      - touch docs/CNAME
-      - echo 'nayucolony.net' > docs/CNAME
+      - cd docs && touch CNAME
+      - echo 'nayucolony.net' > CNAME
       - hugo
       - git add .
       - git commit -m "[ci skip] publish"
