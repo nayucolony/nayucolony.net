@@ -68,4 +68,15 @@
   </footer>
 
 </article>
+<footer class="l-footer">
+  <div class="footer-heading">最近の学び</div>
+  <ul class="article-list">
+    {{ range where .Site.RegularPages "Params.category" "!=" "page" }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  <div class="l-footer__copyright">
+    <small class="copyright">© 2017 nayucolony.net</small>
+  </div>
+</footer>
 {{ end }}

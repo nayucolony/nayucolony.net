@@ -69,24 +69,35 @@ ga('send', 'pageview');
       </ul>
     </nav>
 
-    <main class="l-main ">
+    <main class="l-main">
     
 
-    <div class="article-list">
-      
-      
-        <div class="article-list__item">
-          <div class="article-card">
-  <img src="" alt="" class="article-card__eyecatch"/>
-  <div class="article-card__title">
-    <a href="http://nayucolony.net/atom-vendorprefix">AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</a>
-  </div>
-  <div class="article-card__date">
-    <time datetime="2016-10-19T13:14:00&#43;09:00">
-      2016年10月19日
-    </time>
-  </div>
-  <div class="article-card__summary">
+
+
+<article class="article-post">
+    <header>
+        <h1 class="article-post__title">AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</h1>
+        <time datetime="2016-10-19T13:14:00&#43;09:00">
+        2016年10月19日
+        </time>
+        <ul class="share-buttons">
+            <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+                <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li>
+                <div class="fb-like" data-href="http://nayucolony.net/atom-vendorprefix" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </li>
+            <li class="share-buttons__pocket">
+                <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+            </li>
+        </ul>
+        <hr>
+
+        <div class="hero"><img src="" alt=""/></div>
+    </header>
     <h2 id="勝手にベンダープレフィックスがつく">勝手にベンダープレフィックスがつく</h2>
 
 <p>emmet、つかってますか？<br>
@@ -94,26 +105,130 @@ flexbox、つかってますか？<br>
 私は使ってます。</p>
 
 <p></p>
-  </div>
-  
-    <div class="article-card__more">
-      <a href="atom-vendorprefix">続きを読む</a>
-    </div>
-  
-</div>
 
-        </div>
-      
-    </div>
+<p>ある日、<code>df</code>で展開しようとして</p>
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
 
+<p>みたいになってイライラしてました。
+これからはね、 <strong>Autoprefixer</strong> の時代だからね、こんなもの勝手につけなくていいの。</p>
 
-    </main>
-    <footer class="l-footer">
-      <div class="l-footer__copyright">
-        <small class="copyright">© 2017 nayucolony.net</small>
-      </div>
+<p>Autoprefixerについては下記参照。<br />
+<a href="http://qiita.com/tonkotsuboy_com/items/377913c51b1ac00deffe">CSSベンダープレフィックス-webkit-を今この瞬間に辞める為のAutoprefixerの導入とお薦め設定</a></p>
+
+<h2 id="解決方法">解決方法</h2>
+
+<p>ホームディレクトリ<code>（Macintosh HD/ユーザ/ :house:）</code>に
+<code>emmet</code>というフォルダをつくって、その中に<code>preferences.json</code>というフォルダを作る。</p>
+
+<p>これは、Atomのemmetが標準でここのファイルを読み込むようになってて、ユーザーは元ファイルをいじらなくてもここにファイルを自作しておけば設定を上塗りしてくれるんです。</p>
+
+<p>中身は以下の通り</p>
+{
+  "css.autoInsertVendorPrefixes": false,
+  "less.autoInsertVendorPrefixes": false,
+  "scss.autoInsertVendorPrefixes": false,
+  "sass.autoInsertVendorPrefixes": false,
+  "caniuse.enabled": false
+}
+
+<p>あとはAtomを再起動すればおっけーです。</p>
+
+<p><code>&quot;caniuse.vendor&quot;:false</code>を書いちゃうと挿入機能がうまく無効化してくれない場合があるので
+上記のようにするといいと思います。</p>
+    <footer>
+        <hr>
+        <ul class="share-buttons">
+            <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+                <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li>
+                <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </li>
+            <li class="share-buttons__pocket">
+                <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+            </li>
+        </ul>
+        <hr>
+        
+        <ol class="pager">
+            
+            <li class="pager__item">
+                <div class="pager__label -prev">前の投稿</div>
+                <a class="pager__link" href="http://nayucolony.net/aigis">styleguideジェネレータ「aigis」を使ってみた</a>
+            </li>
+            
+            
+            <li class="pager__item">
+                <div class="pager__label -next">次の投稿</div>
+                <a class="pager__link" href="http://nayucolony.net/hackathon-firststep-19">「はじめてのハッカソンvol.19 」に参加してきました。</a>
+            </li>
+            
+        </ol>
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </footer>
+
+</article>
+
+
+
+</main>
+<footer class="l-footer">
+    <div class="footer-heading">最近の学び</div>
+    <ul class="article-list">
+        
+        <li><a href="http://nayucolony.net/strengthsfinder">ストレングス・ファインダー2.0をやってみました</a></li>
+        
+        <li><a href="http://nayucolony.net/techbookfest2">「技術書典2」にサークル参加しました</a></li>
+        
+        <li><a href="http://nayucolony.net/freelance">フリーランスエンジニアTips勉強会に行ってきました</a></li>
+        
+        <li><a href="http://nayucolony.net/vim01">Vimを使い始めました</a></li>
+        
+        <li><a href="http://nayucolony.net/2016-output">2016年のアウトプット活動まとめ</a></li>
+        
+        <li><a href="http://nayucolony.net/dist13">DIST.13「トクするCSS」に出演しました。</a></li>
+        
+        <li><a href="http://nayucolony.net/gulp-cli">globalにgulp-cliをインストールしようとするとエラーが発生する</a></li>
+        
+        <li><a href="http://nayucolony.net/rscss">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</a></li>
+        
+        <li><a href="http://nayucolony.net/vue01">Vue.jsをはじめてみる#1 ~公式ガイドを読む編~</a></li>
+        
+        <li><a href="http://nayucolony.net/react-modal-position">Android4.4系でReact-modalの表示位置がずれる</a></li>
+        
+        <li><a href="http://nayucolony.net/bemoji">絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~</a></li>
+        
+        <li><a href="http://nayucolony.net/fontplusday5">FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。</a></li>
+        
+        <li><a href="http://nayucolony.net/hackathon-firststep-19">「はじめてのハッカソンvol.19 」に参加してきました。</a></li>
+        
+        <li><a href="http://nayucolony.net/atom-vendorprefix">AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</a></li>
+        
+        <li><a href="http://nayucolony.net/aigis">styleguideジェネレータ「aigis」を使ってみた</a></li>
+        
+        <li><a href="http://nayucolony.net/principles-of-programming"></a></li>
+        
+    </ul>
+    <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+    </div>
+</footer>
 
 
   </body>
+
+
 </html>

@@ -69,47 +69,294 @@ ga('send', 'pageview');
       </ul>
     </nav>
 
-    <main class="l-main ">
+    <main class="l-main">
     
 
-    <div class="article-list">
-      
-      
-        <div class="article-list__item">
-          <div class="article-card">
-  <img src="/images/bulma/001.jpg" alt="" class="article-card__eyecatch"/>
-  <div class="article-card__title">
-    <a href="http://nayucolony.net/techbookfest2">「技術書典2」にサークル参加しました</a>
-  </div>
-  <div class="article-card__date">
-    <time datetime="2017-04-11T02:59:29&#43;09:00">
-      2017年4月11日
-    </time>
-  </div>
-  <div class="article-card__summary">
+
+
+<article class="article-post">
+    <header>
+        <h1 class="article-post__title">「技術書典2」にサークル参加しました</h1>
+        <time datetime="2017-04-11T02:59:29&#43;09:00">
+        2017年4月11日
+        </time>
+        <ul class="share-buttons">
+            <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+                <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="「技術書典2」にサークル参加しました" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li>
+                <div class="fb-like" data-href="http://nayucolony.net/techbookfest2" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </li>
+            <li class="share-buttons__pocket">
+                <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+            </li>
+        </ul>
+        <hr>
+
+        <div class="hero"><img src="/images/bulma/001.jpg" alt=""/></div>
+    </header>
     <p>2017年4月9日に秋葉原UDXのアキバ・スクエアで開催された<a href="https://techbookfest.org/event/tbf02">「技術書典2」</a>に「nayucolony」というサークルで参加しました。</p>
 
 <p></p>
-  </div>
-  
-    <div class="article-card__more">
-      <a href="techbookfest2">続きを読む</a>
-    </div>
-  
-</div>
 
-        </div>
-      
-    </div>
+<p>当日は<a href="https://taimen.jp/view/?item_id=2791">「Bulma Code Reading フレームワークに学ぶCSSテクニック」</a>という電子書籍を頒布していました。</p>
 
+<h2 id="経緯">経緯</h2>
 
-    </main>
-    <footer class="l-footer">
-      <div class="l-footer__copyright">
-        <small class="copyright">© 2017 nayucolony.net</small>
-      </div>
+<p>昨年、とある勉強会で<a href="https://twitter.com/llminatoll">湊川あいさん(@llminatoll)</a>とお友達になったり、うちの社長が<a href="https://alexa.design/2nyoUv9">ドーナツ屋さん</a>だったりして、なんとなくそういうことをしている人がいるということは知っていました。</p>
+
+<p>今回も湊川さんのリツイートか何かで回ってきた運営ツイートを見て「ふーん、出てみようかな〜」みたいなコメントをしてところ、「悩むならエントリーしてから悩め」みたいな雑な背中の押し方をする人たちにそそのかされ、気づいたら参加の手はずは整っていました。</p>
+
+<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">◎貴サークル「nayucolony」は、 え-03 に配置されました。<a href="https://twitter.com/hashtag/%E6%8A%80%E8%A1%93%E6%9B%B8%E5%85%B8?src=hash">#技術書典</a></p>&mdash; ナユ (@nayucolony) <a href="https://twitter.com/nayucolony/status/820874215247052802">2017年1月16日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<h2 id="執筆体制">執筆体制</h2>
+
+<p>初の書籍執筆で勝手がわからず、かなりどたばたしました。</p>
+
+<h3 id="執筆ツールはre-view">執筆ツールはRe:VIEW</h3>
+
+<p>Re:VIEWという書籍執筆ツールをつかいました。
+<a href="http://techbooster.org/">TECHBOOSTER</a>様がテキストをビルドする環境がすでに整ったレポジトリ(<a href="https://github.com/TechBooster/C89-FirstStepReVIEW-v2">TechBooster/C89-FirstStepReVIEW-v2</a>）を公開してくれているので環境構築は困りませんでした。</p>
+
+<p>これのおかげで環境はまるっとそのまま、あとは中身を書くだけという状態が一瞬にして出来上がりました。</p>
+
+<h3 id="デザイナーを仲間にした">デザイナーを仲間にした</h3>
+
+<p>一番強く僕の背中を蹴っ飛ばした<a href="https://twitter.com/shizooo85">shizoooさん(@shizooo85)</a>が、売り子とデザイナーを引き受けてくれました。形態としては、一応外注です。</p>
+
+<p>お願いしたことは以下の通りです。</p>
+
+<ul>
+<li>当日の売り子</li>
+<li>表紙のデザイン</li>
+<li>ダウンロードカードのデザインから印刷業者に出すまで</li>
+<li>ブースに置くポップの作成</li>
+<li>進捗管理</li>
+</ul>
+
+<h3 id="イラストレーターを仲間にした">イラストレーターを仲間にした</h3>
+
+<p>デザイナーさんが妹様の<a href="https://twitter.com/shirokuma_no6">ろくさん(@shirokuma_no6)</a>を紹介してくれました。
+こういう絵かける〜というサンプルを見せてもらってすごくピンときたので即決でした。</p>
+
+<p>イラスト依頼のディレクションなど当然したことがないので「こういう題材で本を書きたいんですけど〜」と伝えたら、その週に突然ラフが飛んできました。この時、バカなディレクターがモックを見て「もうこのままアップしちゃってください」っていっちゃう気持ちがわかった気持ちだったんだろうなあ。髪は短くしたいとか、ターコイズを基調にしたいとか伝えたあとは丸投げしました。これは身内のイラストレーターだから出来る技だから、外注するときはこういうことをしないようにしましょう。</p>
+
+<p>最終的には「おっぱいが性的すぎるのでもう一枚着せて」とか「スカートは脱がして」みたいな調整をしていてすごく楽しかったです。</p>
+
+<p>結局</p>
+
+<ul>
+<li>「メインの全身イラスト」</li>
+<li>「ダウンロードカード用のちびキャライラスト」</li>
+</ul>
+
+<p>を描いてもらいました。</p>
+
+<p>また、身内とはいえ、外注なのでちゃんと報酬もお支払しましたが、明細は内緒です。</p>
+
+<h2 id="作業">作業</h2>
+
+<p>エントリーから当日まではまるっと3ヶ月あるにもかかわらず、執筆は難航しました。</p>
+
+<h3 id="1月と2月は進捗ゼロ">1月と2月は進捗ゼロ</h3>
+
+<p>実はまじで1ページも書いていませんでした。体調を崩したのと、副業を解禁したばかりでそちらの案件で手が埋まっていたという理由。こういうことをしたい〜ということだけが浮ついていた状態でした。</p>
+
+<p>ちなみにこの時点、ほぼイラストレータさんとのやりとりはありませんでした。</p>
+
+<h3 id="3月-地獄">3月、地獄</h3>
+
+<p>とにかく書きました。
+先に書いたように、イラストレータさんがめちゃくちゃ仕事がはやい方だったので、基本おまかせしていたらできていて、むしろできてないの自分だけで泣きそうでした。</p>
+
+<h3 id="4月-修羅場">4月、修羅場</h3>
+
+<p>退社即仮眠、朝まで執筆、一瞬寝て出社みたいな生活をしていました。</p>
+
+<h2 id="当日">当日</h2>
+
+<p>なんと謎に売れゆきは好調でした。</p>
+
+<p>最初は「サークル参加費と印刷費くらいは売上でるといいな〜」と思っていたり、あまったダウンロードカードは名刺代わりに持っておきたいから、ちょっと多めに刷ってください〜とか言ってたりとのほほんとした体制でした、が、当日謎に売れ、多めに刷った分も含めて手持ち在庫が全滅しました。ありがとうございました。</p>
+
+<p>また、分類としては</p>
+
+<ul>
+<li>ジャケ買い</li>
+<li>テーマ買い</li>
+<li>中身めちゃくちゃ見て悩んで買い</li>
+</ul>
+
+<p>の3パターンがあったように思います。</p>
+
+<h3 id="ジャケ買い">ジャケ買い</h3>
+
+<p>手前味噌ですが、今回表紙がめちゃくちゃかわいいんです。めちゃくちゃ目を惹く。
+サンプルはiPadを一台おいていたものの、目もくれずに買ってくださる方が多々いました。</p>
+
+<p>イラストレータ冥利に尽きるというやつです。だって中身、全然かわいくないもの。</p>
+
+<h3 id="テーマ買い">テーマ買い</h3>
+
+<p>ウェブデザイナーやマークアップエンジニア向けのサークルは正直少なかったように思います。
+そんな中で、その職域の人がわかるテーマの書籍を出しているというのは売れた大きな要因だったのかなとか。</p>
+
+<h3 id="中身めちゃくちゃ見て悩んで買い">中身めちゃくちゃ見て悩んで買い</h3>
+
+<p>まじで執筆者冥利に尽きます。136ページもあったのにざーっと眺めて、最終的に買っていただけるというのは本当にうれしい。あと、読んだ後に表紙に戻してくれるのは、みんなリテラシー高いな〜と感心しました。</p>
+
+<h2 id="反省">反省</h2>
+
+<h3 id="執筆">執筆</h3>
+
+<p>アウトラインを作ることが大切だということを学びました。目次はそのままタスクリストにもなるし、それぞれがどのくらいの分量になれば目標のページ数に到達するのか？ということがわかります。まじで、段取りが9割です。</p>
+
+<h3 id="編集">編集</h3>
+
+<p>textlintとかエディターをチームに入れるとかテクニカルレビューを依頼するとかすればよかったと思いました。
+僕は癖で「することができる」「〜になります」という文が多く、横断検索して修正するみたいなことをしてすごく効率悪かったです。自然言語処理で、この辺は機械処理できるはず。</p>
+
+<p>他にも「クラスをつけるorクラスを与えるorクラスを適用」のどれなのか？など、言い回しの統一にも地味に気を遣いました。この辺は、自分の信用する技術書を参考にすればいいのではないでしょうか。とにかくちまちまちまちま検索置換をして疲れました。</p>
+
+<h3 id="サークルチェックはする">サークルチェックはする</h3>
+
+<p>二人体制だったものの、前半は一般来場の方が列が途切れるまで徐々に入ってくるという状態でなかなか動けず、動けるころには完売サークルもちらほらありました。最初から会場内に入れるのはサークル参加の特権でもあるのに、こんな本あったのか、欲しかった〜、みたいな思いをしたのはもったいなかったです。
+最低限、ここは絶対にいく！という目処はつけておくことをおすすめします。今回の戦利品はたまたまフォローしていたので知っていたところからゲットしました。よかった。</p>
+
+<h3 id="お釣り問題">お釣り問題</h3>
+
+<p>ワンコインだったのと、買う側のリテラシーの高さが幸いし困ることはなかったです。
+小銭探してる人には、一万円崩せるよ〜みたいな声かけしてあげたり（笑）、他サークルいくときは金庫の100円玉を両替して持っていったりと、とにかく小銭を流通させると経済活動がスムーズになるのかな？などと思いつつ。</p>
+
+<h3 id="サンプル">サンプル</h3>
+
+<p>iPadを一台置いていましたが、ちょっとサンプル待ちにさせてしまうことがありました。一章だけチラ見せできるコピー本だったり、端末を複数だったり、もっとサンプルを手に取りやすいようにしておこうとおもいました。ま、次は物理本を出すけどな！</p>
+
+<h3 id="ソールドアウト対応">ソールドアウト対応</h3>
+
+<p>誤算でも売れるのは喜ぶべきことですが、ソールドした時のことを何も考えていなかったため、中盤非常に焦ったという話でした。
+嬉しい誤算ではあるものの、ちゃんと考えておくべきでした。</p>
+
+<h2 id="次回に向けて">次回に向けて</h2>
+
+<h3 id="頒布物について">頒布物について</h3>
+
+<p>今回、テーマがCSSフレームワーク完全網羅を目指していたのでページが136ページにも及びましたが、絶対本屋で出ないようなニッチなテーマを深掘りして、30ページ程度の物理本にするのがイベント的にもよさそうだなと感じました。ページ数が多すぎると、読む方も大変だし、印刷代はかさむし、あまりイベント向きじゃないです。次回、単著なら30ページ程度書いて、内容をめちゃくちゃしっかり整えたいです。だって薄い本だもん。ものが手に残るのは、やっぱりうれしいですしね。</p>
+
+<p>また、せっかくかわいいキャラクターなので、ステッカーがほしい、という声もちらほら頂きました。エンジニアはステッカーが好き。実は制作チームにもその意見はあったのですが、納期との兼ね合いで見送りました。次はつくろう。</p>
+
+<h3 id="共著という選択肢もある">共著という選択肢もある</h3>
+
+<p>複数人で執筆チームを組んで制作をすると、レビューもできるし、負担も少ないし、告知の範囲も広がります。次回は共著だったり、寄稿だったりという手段も考えたいです。ぜひ、ご依頼待ってます。</p>
+
+<h3 id="イベント終了後の頒布">イベント終了後の頒布</h3>
+
+<p>近いうちに何かしらの手段を取る予定ですが、もう物理カードがないのでデータを買ってもらうことになっちゃうのでなんだか寂しいです。どうしよ。</p>
+
+<h2 id="最後に">最後に</h2>
+
+<p>技術書典運営チームの皆さん、本当に楽しいイベントをありがとうございました。</p>
+
+<p>また、ブースにお越し頂いたみなさんも本当にありがとうございました。</p>
+
+<p>最後に私の戦利品はこちらっ
+<img src="/images/bulma/002.jpg" alt="" /></p>
+    <footer>
+        <hr>
+        <ul class="share-buttons">
+            <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="nayucolony" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+                <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="nayucolony.net" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li>
+                <div class="fb-like" data-href="http://nayucolony.net/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </li>
+            <li class="share-buttons__pocket">
+                <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+            </li>
+        </ul>
+        <hr>
+        
+        <ol class="pager">
+            
+            <li class="pager__item">
+                <div class="pager__label -prev">前の投稿</div>
+                <a class="pager__link" href="http://nayucolony.net/freelance">フリーランスエンジニアTips勉強会に行ってきました</a>
+            </li>
+            
+            
+            <li class="pager__item">
+                <div class="pager__label -next">次の投稿</div>
+                <a class="pager__link" href="http://nayucolony.net/strengthsfinder">ストレングス・ファインダー2.0をやってみました</a>
+            </li>
+            
+        </ol>
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </footer>
+
+</article>
+
+
+
+</main>
+<footer class="l-footer">
+    <div class="footer-heading">最近の学び</div>
+    <ul class="article-list">
+        
+        <li><a href="http://nayucolony.net/strengthsfinder">ストレングス・ファインダー2.0をやってみました</a></li>
+        
+        <li><a href="http://nayucolony.net/techbookfest2">「技術書典2」にサークル参加しました</a></li>
+        
+        <li><a href="http://nayucolony.net/freelance">フリーランスエンジニアTips勉強会に行ってきました</a></li>
+        
+        <li><a href="http://nayucolony.net/vim01">Vimを使い始めました</a></li>
+        
+        <li><a href="http://nayucolony.net/2016-output">2016年のアウトプット活動まとめ</a></li>
+        
+        <li><a href="http://nayucolony.net/dist13">DIST.13「トクするCSS」に出演しました。</a></li>
+        
+        <li><a href="http://nayucolony.net/gulp-cli">globalにgulp-cliをインストールしようとするとエラーが発生する</a></li>
+        
+        <li><a href="http://nayucolony.net/rscss">RSCSSとFlexboxを使ってまるっと１ページコーディングしてみた。</a></li>
+        
+        <li><a href="http://nayucolony.net/vue01">Vue.jsをはじめてみる#1 ~公式ガイドを読む編~</a></li>
+        
+        <li><a href="http://nayucolony.net/react-modal-position">Android4.4系でReact-modalの表示位置がずれる</a></li>
+        
+        <li><a href="http://nayucolony.net/bemoji">絵文字でわかるCSS設計 ~BEMとコンポーネント設計 with BEMoji~</a></li>
+        
+        <li><a href="http://nayucolony.net/fontplusday5">FONTPLUS DAYセミナー Vol. 5［Webにおけるタイポグラフィ］に行ってきました。</a></li>
+        
+        <li><a href="http://nayucolony.net/hackathon-firststep-19">「はじめてのハッカソンvol.19 」に参加してきました。</a></li>
+        
+        <li><a href="http://nayucolony.net/atom-vendorprefix">AtomのEmmetでvendor-prefixが勝手に挿入されるのを無効にする</a></li>
+        
+        <li><a href="http://nayucolony.net/aigis">styleguideジェネレータ「aigis」を使ってみた</a></li>
+        
+        <li><a href="http://nayucolony.net/principles-of-programming"></a></li>
+        
+    </ul>
+    <div class="l-footer__copyright">
+        <small class="copyright">© 2017 nayucolony.net</small>
+    </div>
+</footer>
 
 
   </body>
+
+
 </html>

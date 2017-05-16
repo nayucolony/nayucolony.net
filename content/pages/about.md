@@ -3,6 +3,7 @@
 Title = "about"
 date = "2017-01-12T21:14:11+09:00"
 slug = "about"
+category = "page"
 +++
 
 ## ブログについて
