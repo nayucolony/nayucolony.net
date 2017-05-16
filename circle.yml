@@ -16,3 +16,7 @@ deployment:
       - git add .
       - git commit -m "[ci skip] publish"
       - git push origin master
+
+test:
+  override:
+    - exit 0
